@@ -12,14 +12,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // colors: {
-      //   'dark-pink-1': '#f80068',
-      //   'dark-pink-2': '#d10058',
-      //   'black-1': '#0d0005',
-      //   'black-2': '#0000004d',
-      //   'gray': '#676767',
-      //   'dark-gray': '#333'
-      // },
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        'dark-pink-1': '#f80068',
+        'dark-pink-2': '#d10058',
+        'darkblue': '#000929e6',
+        'black': '#111111',
+        'gray': '#676767',
+        'dark-gray': '#333'
+      },
       fontFamily: {
         sans: ["Rubik", ...defaultTheme.fontFamily.sans],
       },

@@ -3,7 +3,8 @@
 <head>
   <title>{{page.title}}</title>
   <!-- CSS only -->
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
 
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="shortcut icon" href="/assets/logo_red.svg" type="image/x-icon">
@@ -14,8 +15,7 @@
 <body>
   {% include header.html %}
   {{ content }}
-  <footer class="">
-  </footer>
+  {% include footer.html %}
 </body>
 
 </html>

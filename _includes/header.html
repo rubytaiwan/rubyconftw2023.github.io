@@ -1,12 +1,20 @@
-
-<header class="bg-black uppercase font-sans text-3.75">
-  <nav class="mx-auto flex max-w-7xl items-center justify-end gap-x-6 p-6 lg:px-8" aria-label="Global">
+<header 
+  x-data="{
+    is_open_mobile_nav: false,
+    at_top: true,
+  }"
+  class="bg-black uppercase font-sans text-3.75" 
+  @scroll.window= "at_top= (window.pageYOffset > 20) ? false : true"
+  x-bind:class="{'bg-transparent: !at_top'}"
+  >
+  <nav 
+    class="mx-auto flex max-w-7xl h-fit sticky items-center justify-end gap-x-6 p-6 lg:px-8" aria-label="Global">
     <div class="hidden lg:flex lg:gap-x-12 ">
-      <a href="#" class="font-semibold leading-6 text-white">News</a>
-      <a href="#" class="font-semibold leading-6 text-white">Speakers</a>
-      <a href="#" class="font-semibold leading-6 text-white">Schedule</a>
-      <a href="#" class="font-semibold leading-6 text-white">Venue</a>
-      <a href="#" class="font-semibold leading-6 text-white">Sponser</a>
+      <a href="#news" class="font-semibold leading-6 text-white hover:text-dark-pink-2">News</a>
+      <a href="#speakers" class="font-semibold leading-6 text-white hover:text-dark-pink-2">Speakers</a>
+      <a href="#schedule" class="font-semibold leading-6 text-white hover:text-dark-pink-2">Schedule</a>
+      <a href="#venue" class="font-semibold leading-6 text-white hover:text-dark-pink-2">Venue</a>
+      <a href="#sponser" class="font-semibold leading-6 text-white hover:text-dark-pink-2">Sponser</a>
     </div>
     <div class="flex lg:hidden">
       <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -16,30 +24,38 @@
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <input type="checkbox" class="peer z-50 absolute top-6 right-6 opacity-0" />
   <div class="lg:hidden" role="dialog" aria-modal="true">
     <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-0 z-10"></div>
-    <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-      <div class="flex items-center gap-x-6">
-        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-          <span class="sr-only">Close menu</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      <div class="mt-6 flow-root">
-        <div class="-my-6 divide-y divide-gray-500/10">
-          <div class="space-y-2 py-6">
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50">News</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50">Speakers</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50">Schedule</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50">Venue</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50">Sponsors</a>
+    <div class="lg:hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-10"></div>
+      <div
+        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <button @click="is_open_mobile_nav=!is_open_mobile_nav" type="button"
+            class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <svg class="h-8 w-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.6666 25.8334H28.3333M11.6666 14.1667H28.3333M11.6666 20.0001H28.3333" stroke="#444444"
+                stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+        <div x-show="is_open_mobile_nav" x-transition:enter.scale.80 x-transition:leave.scale.90 class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#news"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-dark-pink-2">News</a>
+              <a href="#speakers"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-dark-pink-2">Speakers</a>
+              <a href="#schedule"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-dark-pink-2">Schedule</a>
+              <a href="#venue"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-dark-pink-2">Venue</a>
+              <a href="#sponser"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-dark-pink-2">Sponser</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </header>
