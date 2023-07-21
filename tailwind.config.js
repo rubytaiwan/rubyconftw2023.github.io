@@ -15,9 +15,16 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        'dark-pink': '#d90845',
+        'dark-pink-100': '#d90845',
+        'dark-pink-200': '#990531',
         'darkblue': '#000929e6',
         'black': '#111111',
+        'gray': '#676767',
+        'light-gray-100': '#fafafa',
+        'light-gray-200': '#f0f0f0',
+        'light-gray-300': '#ddd',
+        'light-gray-400': '#ccc'
+
       },
       fontFamily: {
         sans: ["Rubik", ...defaultTheme.fontFamily.sans],

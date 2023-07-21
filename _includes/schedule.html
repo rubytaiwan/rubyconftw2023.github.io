@@ -1,0 +1,204 @@
+<div
+  x-data="{
+    day:1
+  }"
+  class="max-w-7xl mx-auto font-sans py-24"
+>
+  <div class="">
+    <div class="flex flex-col justify-center items-center gap-4">
+      <span class="text-dark-pink-100 text-2xl font-base italic">Schedule</span>
+      <h2 class="text-3xl uppercase font-bold">Our Event Schedule</h2>
+      <img src="../assets/sec-line2.png" alt="" />
+    </div>
+    <div class="w-full mt-10 text-gray">
+      <!-- Day tab -->
+      <div
+        class="grid md:grid-cols-2 items-center justify-items-center bg-white text-black font-bold text-base"
+      >
+        <div
+          x-on:click="day = 1"
+          x-bind:class="{ 'bg-dark-pink-100': day == 1}"
+          class="cursor-pointer hover:text-white text-center focus:text-white w-full py-2.5 px-3.5 border border-light-gray-300"
+        >
+          <span
+            class="uppercase text-xl text-black"
+            x-bind:class="{ 'text-white': day == 1}"
+            >Friday</span
+          ><br />
+          <span
+            class="uppercase text-gray"
+            x-bind:class="{ 'text-light-gray-400': day == 1}"
+            >15 Dec, 2023</span
+          >
+        </div>
+        <div
+          x-on:click="day = 2"
+          x-bind:class="{' bg-dark-pink-100': day == 2}"
+          class="cursor-pointer hover:text-white text-center focus:text-dark-pink-100 w-full py-2.5 px-3.5 border border-light-gray-300"
+        >
+          <span
+            class="uppercase text-xl text-black"
+            x-bind:class="{ 'text-white': day == 2}"
+            >Satuday</span
+          ><br />
+          <span
+            class="uppercase text-gray"
+            x-bind:class="{ 'text-light-gray-400': day == 2}"
+            >16 Dec, 2023</span
+          >
+        </div>
+      </div>
+
+      <div class="grid gap-8 bg-light-gray-100 py-12 px-6">
+        <!-- Hall -->
+        <div
+          class="grid grid-cols-3 justify-items-center items-center bg-darkblue text-white font-medium text-base"
+        >
+          <div
+            class="grid col-start-2 gap-1 text-center justify-items-center py-5 font-semibold"
+          >
+            1001 Auditorium
+          </div>
+          <div
+            class="grid gap-1 text-center justify-items-center py-5 font-semibold"
+          >
+            1002 Auditorium
+          </div>
+        </div>
+        <!-- Day 1 -->
+        {% for item in site.data.schedule %} {% if item.day == 1%}
+        <div x-show="day == 1">
+          {% if item.title %}
+          <!-- Title -->
+          <div
+            class="grid grid-cols-3 justify-items-center items-center bg-zinc-100 font-medium text-base"
+          >
+            <div
+              class="grid gap-1 text-center justify-items-start py-5 font-semibold"
+            >
+              {{ item.time}}
+            </div>
+            <div
+              class="grid col-span-2 gap-1 text-center justify-items-center py-5 uppercase text-lg font-bold text-dark-pink-100"
+            >
+              {{ item.title }}
+            </div>
+          </div>
+          {% endif %}
+          <!-- Speaker -->
+          {% if item.agenda %}
+          <div
+            class="grid grid-cols-3 justify-items-center items-center bg-white"
+          >
+            <div class="grid gap-1 text-center justify-items-center py-10">
+              <p class="text-lg font-semibold">{{ item.time}}</p>
+            </div>
+            <!-- Speaker avatar and info -->
+            {% for speaker_item in item.speaker %}
+            <div class="grid gap-1 text-center justify-items-center py-10">
+              <img
+                src="../assets/test_img.jpg"
+                alt=""
+                class="mx-auto rounded-full border-4 border-dark-pink-100"
+              />
+              <p class="text-gray text-xs">
+                <i class="fa fa-microphone pr-2"></i>Speaker
+              </p>
+              <p class="text-dark-pink-100 text-xl font-bold">
+                {{ item.title_main }}
+              </p>
+              <p class="text-black text-lg font-normal">
+                {{ speaker_item.name}}
+              </p>
+              <p
+                class="font-normal text-sm uppercase bg-dark-pink-100 px-2.5 py-1 h-fit w-fit text-white rounded-md"
+              >
+                en
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif%}
+        </div>
+        {% endif%} {% endfor %}
+        <!-- Day 2 -->
+        {% for item in site.data.schedule %} {% if item.day == 2%}
+        <div x-show="day == 2">
+          {% if item.title %}
+          <!-- Title -->
+          <div
+            class="grid grid-cols-3 justify-items-center items-center bg-zinc-100 font-medium text-base"
+          >
+            <div
+              class="grid gap-1 text-center justify-items-start py-5 font-semibold"
+            >
+              {{ item.time}}
+            </div>
+            <div
+              class="grid col-span-2 gap-1 text-center justify-items-center py-5 uppercase text-lg font-bold text-dark-pink-100"
+            >
+              {{ item.title }}
+            </div>
+          </div>
+          {% endif %}
+          <!-- Speaker -->
+          {% if item.agenda %}
+          <div
+            class="grid grid-cols-3 justify-items-center items-center bg-white"
+          >
+            <div class="grid gap-1 text-center justify-items-center py-10">
+              <p class="text-lg font-semibold">{{ item.time}}</p>
+            </div>
+            <!-- Speaker avatar and info -->
+            {% for speaker_item in item.speaker %}
+            <div class="grid gap-1 text-center justify-items-center py-10">
+              <img
+                src="../assets/test_img.jpg"
+                alt=""
+                class="mx-auto rounded-full border-4 border-dark-pink-100"
+              />
+              <p class="text-gray text-xs">
+                <i class="fa fa-microphone pr-2"></i>Speaker
+              </p>
+              <!-- <p class="text-dark-pink-100 text-xl font-bold">
+                {{ item.title_main }}
+              </p> -->
+              <p class="text-black text-lg font-normal">
+                {{ speaker_item.name}}
+              </p>
+              <p
+                class="font-normal text-sm uppercase bg-dark-pink-100 px-2.5 py-1 h-fit w-fit text-white rounded-md"
+              >
+                en
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif%}
+        </div>
+        {% endif%} {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="col-span-2">
+  <div class="grid gap-7">
+    <span class="text-sm">08.00 am - 03.00 pm</span>
+    <h3 class="text-2xl font-medium text-black">Demonstration Sunday 2018</h3>
+    <p class="text-sm">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provi dent, similique sunt in culpa.</p>
+    <div class="flex justify-between">
+      <div class="bg-gradient-to-r from-dark-pink-200 to-dark-pink-100 font-semibold text-sm w-fit h-fit rounded-md text-white px-4 py-1.5">
+        <a class="" href=""> View Details</a>
+      </div>
+      <div class="flex gap-2 items-center">
+        <span class="text-sm font-medium"> You Can Share It : </span>
+        <ul class="flex text-xs gap-2">
+          <li class="border border-light-gray-300 rounded-md hover:bg-dark-pink-100 hover:text-white px-3 py-1.5 "><a href="#"> <i class="fa fa-facebook " aria-hidden="true"></i> Facebook</a></li>
+          <li class="border border-light-gray-300 rounded-md hover:bg-dark-pink-100 hover:text-white px-3 py-1.5 "><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+          <li class="border border-light-gray-300 rounded-md hover:bg-dark-pink-100 hover:text-white px-3 py-1.5 "><a href="#"><i class="fa fa-home" aria-hidden="true"></i> HomePage</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> -->
