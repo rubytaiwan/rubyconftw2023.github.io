@@ -1,4 +1,4 @@
-<!doctype html>
+<html class="scroll-smooth" id="top">
 
 <head>
   <title>{{page.title}}</title>
@@ -7,15 +7,22 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
 
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link crossorigin="anonymous" href="//use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet">
   <link rel="shortcut icon" href="/assets/logo_red.svg" type="image/x-icon">
   <link rel="icon" href="/assets/logo_red.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="relative bg-black bg-opacity-50">
   {% include header.html %}
-  {{ content }}
+  <div class="max-w-7xl mx-auto mt-[4.25rem] md:mt-[4.5rem]">
+    {{ content }}
+  </div>
   {% include footer.html %}
+  
+  <a href="#top" class="fixed bg-dark-pink hover:bg-pink-700 right-3 md:right-8 bottom-3 md:bottom-10 z-30 flex flex-col items-center justify-center rounded-md w-10 h-10 text-white">
+    <i class="fa fa-angle-up fa-lg"></i>
+  </a>
 </body>
-
 </html>

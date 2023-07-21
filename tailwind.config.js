@@ -15,15 +15,13 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        'dark-pink-1': '#f80068',
-        'dark-pink-2': '#d10058',
+        'dark-pink': '#d90845',
         'darkblue': '#000929e6',
         'black': '#111111',
-        'gray': '#676767',
-        'dark-gray': '#333'
       },
       fontFamily: {
         sans: ["Rubik", ...defaultTheme.fontFamily.sans],
+        russo: ["Russo One", "sans-serif"]
       },
       fontSize: {
         '2.5': '0.625rem', // 10px
