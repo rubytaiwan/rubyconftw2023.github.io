@@ -1,5 +1,10 @@
+title: Ruby Conf Taiwan 2023
+
 plugins:
   - jekyll-postcss
 
 postcss:
   cache: false
+
+include:
+  - node_modules/
