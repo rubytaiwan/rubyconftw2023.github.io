@@ -16,7 +16,7 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         'dark-pink': '#d90845',
-        'darkblue': '#000929e6',
+        'darkblue': '#000929',
         'black': '#111111',
       },
       fontFamily: {

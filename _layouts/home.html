@@ -1,26 +1,39 @@
 <html class="scroll-smooth" id="top">
+  <head>
+    <title>{{page.title}}</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"
+    ></script>
 
-<head>
-  <title>{{page.title}}</title>
-  <!-- CSS only -->
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      crossorigin="anonymous"
+      href="//use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/assets/logo_red.svg" type="image/x-icon" />
+    <link rel="icon" href="/assets/logo_red.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+    />
+  </head>
 
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link crossorigin="anonymous" href="//use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet">
-  <link rel="shortcut icon" href="/assets/logo_red.svg" type="image/x-icon">
-  <link rel="icon" href="/assets/logo_red.svg" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-</head>
-
-<body class="relative bg-black bg-opacity-50">
-  {% include header.html %}
-  {{ content }}
-  {% include footer.html %}
-  
-  <a href="#top" class="fixed bg-dark-pink hover:bg-pink-700 right-3 md:right-8 bottom-3 md:bottom-10 z-30 flex flex-col items-center justify-center rounded-md w-10 h-10 text-white">
-    <i class="fa fa-angle-up fa-lg"></i>
-  </a>
-</body>
+  <body class="relative max-h-screen bg-darkblue">
+    {% include header.html %} {{ content }} {% include footer.html %}
+    <a
+      href="#top"
+      class="fixed bg-dark-pink hover:bg-pink-700 right-3 md:right-8 bottom-3 md:bottom-10 z-30 flex flex-col items-center justify-center rounded-md w-10 h-10 text-white"
+    >
+      <i class="fa fa-angle-up fa-lg"></i>
+    </a>
+  </body>
 </html>
