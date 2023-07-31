@@ -1,0 +1,179 @@
+<html class="scroll-smooth" id="top">
+  <head>
+    <title>Ruby Conf Taiwan 2023</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"
+    ></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      crossorigin="anonymous"
+      href="//use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/assets/logo_red.svg" type="image/x-icon" />
+    <link rel="icon" href="/assets/logo_red.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body class="relative max-h-screen bg-darkblue">
+    <header 
+  x-data="{
+    is_open_mobile_nav: false,
+    at_top: true,
+  }"
+  class="h-fit font-sans text-3.75 overflow-auto" 
+  @scroll.window="at_top = (window.pageYOffset > 20) ? false : true"
+  
+  >
+  <div 
+    x-bind:class="{'bg-black shadow duration-100': !at_top}" 
+    class="fixed top-0 w-full right-0 z-10 h-fit"
+  >
+    <!-- Desktop menu -->
+    <div
+      x-bind:class="{'bg-black shadow duration-100': !at_top}"
+      class="hidden md:flex items-center justify-between max-w-7xl mx-auto gap-x-6 w-full p-6">
+      <div class="inline-flex items-center gap-x-2">
+        <img src="../assets/logo_pink.svg" class="w-auto h-8 mx-auto"></img>
+        <div class="text-2xl text-white font-extrabold font-russo">RubyConf</div>
+      </div>
+      <div class="hidden md:flex md:gap-x-12 uppercase">
+        <!-- <a href="#news" class="font-semibold leading-6 text-white hover:text-dark-pink">News</a>
+        <a href="#speakers" class="font-semibold leading-6 text-white hover:text-dark-pink">Speakers</a>
+        <a href="#schedule" class="font-semibold leading-6 text-white hover:text-dark-pink">Schedule</a>
+        <a href="#venue" class="font-semibold leading-6 text-white hover:text-dark-pink">Venue</a>
+        <a href="#sponsor" class="font-semibold leading-6 text-white hover:text-dark-pink">Sponsor</a> -->
+      </div>
+      <div class="flex md:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <i class="fa fa-camera-retro"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu  -->
+    <div class="md:hidden">
+      <div class="md:hidden">
+        <div class="fixed inset-y-0 right-0 z-10 w-full h-fit bg-black px-6 py-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="absolute top-0 left-0 pt-2.5 flex justify-center w-full">
+            <img src="/assets/logo_white.svg" width="40" />
+          </div>
+          <div class="flex items-center gap-5">
+            <button x-on:click="is_open_mobile_nav= !is_open_mobile_nav" type="button"
+              class="rounded-md p-1 text-white">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="text-white">Menu</div>
+          </div>
+          <div 
+            x-show="is_open_mobile_nav"
+            x-transition:enter="transition ease-out duration-100"
+            x-transition:enter-start="transform opacity-0 scale-95"
+            x-transition:enter-end="transform opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75"
+            x-transition:leave-start="transform opacity-100 scale-100"
+            x-transition:leave-end="transform opacity-0 scale-95" 
+            class="mt-6 flow-root"
+            x-on:click.away="is_open_mobile_nav = false">          
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <!-- <a href="#news"
+                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">News</a>
+                <a href="#speakers"
+                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Speakers</a>
+                <a href="#schedule"
+                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Schedule</a>
+                <a href="#venue"
+                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Venue</a>
+                <a href="#sponser"
+                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Sponsor</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+ <div class="relative w-full">
+  <div class="max-h-screen">
+    <img src="/assets/banner_bg.jpg" class="object-left-bottom object-cover max-h-screen w-full" />
+  </div>
+  <div class="absolute top-0 bottom-0 flex justify-center items-center w-full bg-[#000929]/[0.7]">
+    <div class="pt-16 md:pt-0 mr-3 md:mr-7">
+      <p class="font-sans font-bold text-center sm:text-end text-white text-xl sm:text-2xl md:text-4xl lg:text-6xl">
+        The largest Ruby
+      </p>
+      <p class="mt-1 md:mt-7 font-sans font-bold text-center sm:text-end text-white text-xl sm:text-2xl md:text-4xl lg:text-6xl">
+        conference in Taiwan
+      </p>
+      <p class="mt-1 md:mt-7 font-sans font-bold text-center text-white text-xl sm:text-2xl md:text-4xl lg:text-5xl">
+        2023.12.15 - 2023.12.16
+      </p>
+      <p class="mt-3 md:mt-8 lg:mt-16 font-sans text-white text-xl sm:text-2xl md:text-4xl lg:text-5xl w-full text-center">
+        Coming Soon
+      </p>
+    </div>
+    <div class="hidden sm:block w-[7rem] sm:w-[10rem] md:w-[15rem] xl:w-[25rem]">
+      <img src="/assets/logo_white.svg" class="w-full" />
+    </div>
+  </div>
+</div>
+
+ <footer class="md:relative w-full text-white mt-10 bg-darkblue">
+  <div class="mx-auto max-w-7xl overflow-hidden px-6 md:py-10 py-24">
+    <img src="../assets/logo_pink.svg" class="w-auto h-24 mx-auto"></img>
+    <nav class="py-6 flex md:flex-row justify-center items-center gap-x-10 gap-y-5 flex-col border-b border-dashed border-b-dark-pink " aria-label="Footer">
+      <!-- <div>
+        <a href="#" class="text-white text-lg font-semibold hover:text-dark-pink">Code of Product</a>
+      </div> -->
+      <!-- <div>
+        <a href="#" class="text-white text-lg font-semibold hover:text-dark-pink">Team Member</a>
+      </div> -->
+      <div>
+        <a href="https://ruby.tw/" target="_blank" class="text-white text-lg font-semibold hover:text-dark-pink">Ruby Taiwan</a>
+      </div>
+    </nav>
+    <div class="mt-6 flex justify-center space-x-10 text-dark-pink ">
+      <a href="https://www.facebook.com/rubyconftw" target="_blank" class="text-gray-400 hover:text-gray-500">
+        <span class="sr-only">Facebook</span>
+        <div class="flex justify-center items-center rounded-full bg-dark-pink w-[1.875rem] h-[1.875rem]">
+          <i class="fa fa-facebook text-white"></i>
+        </div>
+      </a>
+      <a href="https://twitter.com/rubyconftw" target="_blank" class="text-gray-400 hover:text-gray-500">
+        <span class="sr-only">Twitter</span>
+        <div class="flex justify-center items-center rounded-full bg-dark-pink w-[1.875rem] h-[1.875rem]">
+          <i class="fa fa-twitter text-white"></i>
+        </div>
+      </a>
+      <a href="mailto:contact@rubyconf.tw" target="_blank" class="text-gray-400 hover:text-gray-500">
+        <span class="sr-only">Email</span>
+        <div class="flex justify-center items-center rounded-full bg-dark-pink w-[1.875rem] h-[1.875rem]">
+          <i class="fa fa-envelope text-white"></i>
+        </div>
+      </a>
+    </div>
+    <p class="mt-10 text-center text-xs leading-5 text-white">&copy; Ruby Conf Taiwan 2023</p>
+  </div>
+</footer>
+
+    <a
+      href="#top"
+      class="fixed bg-dark-pink hover:bg-pink-700 right-3 md:right-8 bottom-3 md:bottom-10 z-30 flex flex-col items-center justify-center rounded-md w-10 h-10 text-white"
+    >
+      <i class="fa fa-angle-up fa-lg"></i>
+    </a>
+  </body>
+</html>
