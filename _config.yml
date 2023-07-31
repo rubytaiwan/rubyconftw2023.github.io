@@ -1,4 +1,5 @@
 title: Ruby Conf Taiwan 2023
+cfp_link: https://cfp.rubyconf.tw
 
 plugins:
   - jekyll-postcss
