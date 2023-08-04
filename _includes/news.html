@@ -1,12 +1,8 @@
 {% if site.data.news %}
   <section class="bg-white">
     <div class="flex flex-col items-center mx-auto py-10 md:py-24 max-w-7xl px-6">
-      <div class="flex flex-col items-center pb-5 md:pb-14 border-b-2 border-b-dark-pink w-full">
-        <h3 class="font-bold text-4xl">NEWS</h3>
-        <div class="my-4 hidden md:block">
-          <img src="assets/sec-line2.png" alt=""/>
-        </div>
-      </div>
+      {% include section_title.html title='News' sm_show=false %}
+      <div class="border-b-2 border-b-dark-pink w-full pb-5 md:pb-14"></div>
       {% for each in site.data.news %}
         <div class="w-full" x-data="{ 'showModal': false }" >
           <a class="group grid grid-cols-5 items-center py-6 border-b-2 border-b-dark-pink w-full cursor-pointer"
