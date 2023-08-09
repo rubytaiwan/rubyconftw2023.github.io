@@ -2,13 +2,13 @@
   <section class="bg-white">
     <div class="flex flex-col items-center mx-auto py-10 md:py-24 max-w-7xl px-6">
       {% include section_title.html title='News' sm_show=false %}
-      <div class="border-b-2 border-b-dark-pink w-full pb-5 md:pb-14"></div>
+      <div class="border-b-2 border-b-dark-pink-100 w-full pb-5 md:pb-14"></div>
       {% for each in site.data.news %}
         <div class="w-full" x-data="{ 'showModal': false }" >
-          <a class="group grid grid-cols-5 items-center py-6 border-b-2 border-b-dark-pink w-full cursor-pointer"
+          <a class="group grid grid-cols-5 items-center py-6 border-b-2 border-b-dark-pink-100 w-full cursor-pointer"
               @click="showModal = true">
-            <div class="col-span-5 md:col-span-1 group-hover:text-dark-pink text-center">{{ each.time }}</div>
-            <div class="col-span-5 md:col-span-4 group-hover:text-dark-pink text-xl text-center md:text-start">{{ each.title }}</div>
+            <div class="col-span-5 md:col-span-1 group-hover:text-dark-pink-100 text-center">{{ each.time }}</div>
+            <div class="col-span-5 md:col-span-4 group-hover:text-dark-pink-100 text-xl text-center md:text-start">{{ each.title }}</div>
           </a>
           <!-- Modal -->
           <div x-show="showModal" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -18,7 +18,7 @@
                 <div class="relative transform overflow-hidden rounded-lg p-4 md:p-8 w-[60rem] bg-white text-left shadow-xl transition-all ">
                   <div class="w-full p-2 md:p-4 bg-white">
                     <div>
-                      <div class="flex items-center text-dark-pink font-bold italic">
+                      <div class="flex items-center text-dark-pink-100 font-bold italic">
                         {{ each.time }}
                         <div class='ml-2 h-1.5'>
                           <img  src="assets/sec-line.png" alt="">
@@ -26,12 +26,12 @@
                       </div>
                       <div class="mt-5 text-lg md:text-2xl font-bold">{{ each.title }}</div>
                     </div>
-                    <div class="mt-5 md:mt-8 text-grey">
+                    <div class="mt-5 md:mt-8 text-gray">
                       {{ each.content | markdownify }}
                     </div>
                     <div>
                       <button @click="showModal = false" type="button"
-                        class="py-3 px-8 mt-10 rounded-md bg-gradient-to-r from-dark-pink to-dark-pink-2 hover:from-dark-pink-2 hover:to-dark-pink font-bold text-white">close</button>
+                        class="py-3 px-8 mt-10 rounded-md bg-gradient-to-r from-dark-pink-100 to-dark-pink-100-2 hover:from-dark-pink-100-2 hover:to-dark-pink-100 font-bold text-white">close</button>
                     </div>
                   </div>
                 </div>
