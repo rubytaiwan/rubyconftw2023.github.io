@@ -19,6 +19,7 @@ module.exports = {
         'dark-pink-2': '#990531',
         'darkblue': '#000929',
         'black': '#111111',
+        'grey': '#676767'
       },
       fontFamily: {
         sans: ["Rubik", ...defaultTheme.fontFamily.sans],
