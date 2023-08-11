@@ -24,12 +24,6 @@ module.exports = {
         'light-gray-200': '#f0f0f0',
         'light-gray-300': '#ddd',
         'light-gray-400': '#ccc',
-        'dark-pink': '#d90845',
-        'dark-pink-2': '#990531',
-        'darkblue': '#000929',
-        'black': '#111111',
-        'grey-500': '#676767',
-        'grey-100': '#f0f0f0'
       },
       fontFamily: {
         sans: ["Rubik", ...defaultTheme.fontFamily.sans],
