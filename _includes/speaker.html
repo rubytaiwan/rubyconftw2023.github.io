@@ -1,0 +1,37 @@
+{% if site.data.schedule %}
+<div class="relative font-sans bg-[url('/assets/banner_bg.jpg')] bg-fixed bg-cover bg-bottom after:absolute after:top-0 after:bg-[#000929]/[0.8] after:w-full after:h-full after:z-0">
+  <div class="relative z-10 max-w-7xl mx-auto py-24">
+    <div class="flex flex-col justify-center items-center gap-4">
+        <h2 class="text-3xl uppercase font-bold text-white">Speaker</h2>
+        <img src="../assets/sec-line2.png" alt="" />
+    </div>
+    <div class="mt-10 grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 md:gap-8">
+      {% for item in site.data.schedule %}
+      {% unless item.title %}
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="col-span3 md:col-span-1">
+        {% for speaker_item in item.speaker %}
+          <a class="w-full relative" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-48 md:px-20 w-full">
+                <img class="w-full border-8 border-dark-pink-100 rounded-full" src="{{speaker_item.avatar}}"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">{{ speaker_item.name }}</p>
+                <p class="text-center text-sm">{{ speaker_item.title }}</p>
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+          <!-- Modal -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            {% include schedule_modal.html item=item %}
+          </div>
+        </div>
+      {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
