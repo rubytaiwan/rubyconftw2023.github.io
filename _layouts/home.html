@@ -7,7 +7,6 @@
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"
     ></script>
-
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link
       crossorigin="anonymous"
@@ -25,13 +24,20 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
     />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MDS4BN4PN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4MDS4BN4PN');
+    </script>
   </head>
 
   <body class="relative max-h-screen bg-darkblue">
     {% include header.html %} {{ content }} {% include footer.html %}
     <a
       href="#top"
-      class="fixed bg-dark-pink hover:bg-pink-700 right-3 md:right-8 bottom-3 md:bottom-10 z-30 flex flex-col items-center justify-center rounded-md w-10 h-10 text-white"
+      class="fixed bg-dark-pink-100 hover:bg-pink-700 right-3 md:right-8 bottom-3 md:bottom-10 z-30 flex flex-col items-center justify-center rounded-md w-10 h-10 text-white"
     >
       <i class="fa fa-angle-up fa-lg"></i>
     </a>
