@@ -7,7 +7,6 @@
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"
     ></script>
-
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link
       crossorigin="anonymous"
@@ -25,6 +24,13 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
     />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MDS4BN4PN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4MDS4BN4PN');
+    </script>
   </head>
 
   <body class="relative max-h-screen bg-darkblue">
@@ -39,7 +45,7 @@
   >
   <div 
     x-bind:class="{'bg-black shadow duration-100': !at_top}" 
-    class="fixed top-0 w-full right-0 z-10 h-fit"
+    class="fixed top-0 w-full right-0 z-20 h-fit"
   >
     <!-- Desktop menu -->
     <div
@@ -53,8 +59,8 @@
         <!-- <a href="#news" class="font-semibold leading-6 text-white hover:text-dark-pink">News</a>
         <a href="#speakers" class="font-semibold leading-6 text-white hover:text-dark-pink">Speakers</a>
         <a href="#schedule" class="font-semibold leading-6 text-white hover:text-dark-pink">Schedule</a>
-        <a href="#venue" class="font-semibold leading-6 text-white hover:text-dark-pink">Venue</a>
-        <a href="#sponsor" class="font-semibold leading-6 text-white hover:text-dark-pink">Sponsor</a> -->
+        <a href="#venue" class="font-semibold leading-6 text-white hover:text-dark-pink">Venue</a> -->
+        <a href="#sponsor" class="font-semibold leading-6 text-white hover:text-dark-pink">Sponsor</a>
       </div>
       <div class="flex md:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -66,7 +72,7 @@
     <div class="md:hidden">
       <div class="md:hidden">
         <div class="fixed inset-y-0 right-0 z-10 w-full h-fit bg-black px-6 py-5">
-          <div class="absolute top-0 left-0 pt-2.5 flex justify-center w-full">
+          <div @click="is_open_mobile_nav = true" class="absolute top-0 left-0 pt-2.5 flex justify-center w-full">
             <img src="/assets/logo_white.svg" width="40" />
           </div>
           <div class="flex items-center gap-5">
@@ -91,13 +97,13 @@
                 <!-- <a href="#news"
                   class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">News</a>
                 <a href="#speakers"
-                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Speakers</a>
+                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink-100">Speakers</a>
                 <a href="#schedule"
                   class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Schedule</a>
                 <a href="#venue"
-                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Venue</a>
+                   class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Venue</a> -->
                 <a href="#sponser"
-                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Sponsor</a> -->
+                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Sponsor</a>
               </div>
             </div>
           </div>
@@ -125,7 +131,7 @@
         <a
           href="https://cfp.rubyconf.tw/activities/2023"
           target="_blank"
-          class="md:py-7 md:px-10 py-1.5 px-7 w-fit rounded-md bg-gradient-to-l hover:bg-gradient-to-r from-dark-pink to-dark-pink-2 font-sans uppercase text-white text-sm md:text-4xl lg:text-5xl font-medium text-center"
+          class="md:py-7 md:px-10 py-1.5 px-7 w-fit rounded-md bg-gradient-to-l hover:bg-gradient-to-r from-dark-pink-100 to-dark-pink-200 font-sans uppercase text-white text-sm md:text-4xl lg:text-5xl font-medium text-center"
         >
           Call for Proposals</a
         >
@@ -138,36 +144,71 @@
 </div>
 
 
- <footer class="md:relative w-full text-white mt-10 bg-darkblue">
+<div id="news" class="w-full">
+
+</div>
+
+<div id="speakers" class="w-full">
+
+
+
+</div>
+
+<div id="schedule" class="w-full">
+
+
+</div>
+
+<div id="sponsor" class="w-full">
+<section class="bg-light-gray-200">
+  <div class="flex flex-col items-center mx-auto py-10 md:py-24 max-w-7xl px-6">
+    <div class="flex flex-col justify-center items-center gap-4">
+  <h2 class="text-3xl uppercase font-bold">Sponsors</h2>
+  
+    <img class="my-4 hidden md:block" src="assets/sec-line2.png" alt=""/>
+  
+</div>
+    
+    <div class="mt-10 text-darkblue text-center text-2xl font-semibold italic">
+      We are Calling for Sponsorship! <br/>
+      Please check out the 
+      <a class="text-dark-pink-200 underline" href="../assets/pdf/en_Sponsordeck.pdf" target="_blank">Sponsor Deck</a> / 
+      <a class="text-dark-pink-200 underline" href="../assets/pdf/Sponsordeck.pdf" target="_blank">贊助提案說明書</a> and consider supporting the event.</div>
+    <a class="mt-10 px-4 py-2 rounded bg-dark-pink-200 text-white text-2xl italic" href="https://reurl.cc/qLxoE0" target="_blank">Support us</a>
+  </div>
+</section>
+
+</div>
+ <footer class="md:relative w-full text-white bg-darkblue">
   <div class="mx-auto max-w-7xl overflow-hidden px-6 md:py-10 py-24">
     <img src="../assets/logo_pink.svg" class="w-auto h-24 mx-auto"></img>
-    <nav class="py-6 flex md:flex-row justify-center items-center gap-x-10 gap-y-5 flex-col border-b border-dashed border-b-dark-pink " aria-label="Footer">
+    <nav class="py-6 flex md:flex-row justify-center items-center gap-x-10 gap-y-5 flex-col border-b border-dashed border-b-dark-pink-100 " aria-label="Footer">
       <!-- <div>
-        <a href="#" class="text-white text-lg font-semibold hover:text-dark-pink">Code of Product</a>
+        <a href="#" class="text-white text-lg font-semibold hover:text-dark-pink-100">Code of Product</a>
       </div> -->
       <!-- <div>
-        <a href="#" class="text-white text-lg font-semibold hover:text-dark-pink">Team Member</a>
+        <a href="#" class="text-white text-lg font-semibold hover:text-dark-pink-100">Team Member</a>
       </div> -->
       <div>
-        <a href="https://ruby.tw/" target="_blank" class="text-white text-lg font-semibold hover:text-dark-pink">Ruby Taiwan</a>
+        <a href="https://ruby.tw/" target="_blank" class="text-white text-lg font-semibold hover:text-dark-pink-100">Ruby Taiwan</a>
       </div>
     </nav>
-    <div class="mt-6 flex justify-center space-x-10 text-dark-pink ">
+    <div class="mt-6 flex justify-center space-x-10 text-dark-pink-100 ">
       <a href="https://www.facebook.com/rubyconftw" target="_blank" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Facebook</span>
-        <div class="flex justify-center items-center rounded-full bg-dark-pink w-[1.875rem] h-[1.875rem]">
+        <div class="flex justify-center items-center rounded-full bg-dark-pink-100 w-[1.875rem] h-[1.875rem]">
           <i class="fa fa-facebook text-white"></i>
         </div>
       </a>
       <a href="https://twitter.com/rubyconftw" target="_blank" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Twitter</span>
-        <div class="flex justify-center items-center rounded-full bg-dark-pink w-[1.875rem] h-[1.875rem]">
+        <div class="flex justify-center items-center rounded-full bg-dark-pink-100 w-[1.875rem] h-[1.875rem]">
           <i class="fa fa-twitter text-white"></i>
         </div>
       </a>
       <a href="mailto:contact@rubyconf.tw" target="_blank" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Email</span>
-        <div class="flex justify-center items-center rounded-full bg-dark-pink w-[1.875rem] h-[1.875rem]">
+        <div class="flex justify-center items-center rounded-full bg-dark-pink-100 w-[1.875rem] h-[1.875rem]">
           <i class="fa fa-envelope text-white"></i>
         </div>
       </a>
@@ -178,7 +219,7 @@
 
     <a
       href="#top"
-      class="fixed bg-dark-pink hover:bg-pink-700 right-3 md:right-8 bottom-3 md:bottom-10 z-30 flex flex-col items-center justify-center rounded-md w-10 h-10 text-white"
+      class="fixed bg-dark-pink-100 hover:bg-pink-700 right-3 md:right-8 bottom-3 md:bottom-10 z-30 flex flex-col items-center justify-center rounded-md w-10 h-10 text-white"
     >
       <i class="fa fa-angle-up fa-lg"></i>
     </a>
