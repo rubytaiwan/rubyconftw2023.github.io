@@ -5,26 +5,24 @@
   }"
   class="h-fit font-sans text-3.75 overflow-auto" 
   @scroll.window="at_top = (window.pageYOffset > 20) ? false : true"
-  
   >
   <div 
-    x-bind:class="{'bg-black shadow duration-100': !at_top}" 
+    x-bind:class="{'bg-dark-blue-200 shadow duration-100': !at_top}" 
     class="fixed top-0 w-full right-0 z-20 h-fit"
   >
     <!-- Desktop menu -->
     <div
-      x-bind:class="{'bg-black shadow duration-100': !at_top}"
+      x-bind:class="{'bg-dark-blue-200 shadow duration-100': !at_top}"
       class="hidden md:flex items-center justify-between max-w-7xl mx-auto gap-x-6 w-full p-6">
       <div class="inline-flex items-center gap-x-2">
-        <img src="../assets/logo_pink.svg" class="w-auto h-8 mx-auto"></img>
-        <div class="text-2xl text-white font-extrabold font-russo">RubyConf</div>
+        <div class="text-3xl text-white font-extrabold font-russo">RubyConf</div>
       </div>
       <div class="hidden md:flex md:gap-x-12 uppercase">
-        <!-- <a href="#news" class="font-semibold leading-6 text-white hover:text-dark-pink">News</a>
-        <a href="#speakers" class="font-semibold leading-6 text-white hover:text-dark-pink">Speakers</a>
-        <a href="#schedule" class="font-semibold leading-6 text-white hover:text-dark-pink">Schedule</a>
-        <a href="#venue" class="font-semibold leading-6 text-white hover:text-dark-pink">Venue</a> -->
-        <a href="#sponsor" class="font-semibold leading-6 text-white hover:text-dark-pink">Sponsor</a>
+        <!-- <a href="#news" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">News</a>
+        <a href="#speakers" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Speakers</a>
+        <a href="#schedule" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Schedule</a>
+        <a href="#venue" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Venue</a> -->
+        <a href="#sponsor" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Sponsor</a>
       </div>
       <div class="flex md:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -33,43 +31,42 @@
       </div>
     </div>
     <!-- Mobile menu  -->
-    <div class="md:hidden">
-      <div class="md:hidden">
-        <div class="fixed inset-y-0 right-0 z-10 w-full h-fit bg-black px-6 py-5">
-          <div @click="is_open_mobile_nav = true" class="absolute top-0 left-0 pt-2.5 flex justify-center w-full">
-            <img src="/assets/logo_white.svg" width="40" />
-          </div>
-          <div class="flex items-center gap-5">
-            <button x-on:click="is_open_mobile_nav= !is_open_mobile_nav" type="button"
-              class="rounded-md p-1 text-white">
-              <i class="fa fa-bars"></i>
-            </button>
-            <div class="text-white">Menu</div>
-          </div>
-          <div 
-            x-show="is_open_mobile_nav"
-            x-transition:enter="transition ease-out duration-100"
-            x-transition:enter-start="transform opacity-0 scale-95"
-            x-transition:enter-end="transform opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-75"
-            x-transition:leave-start="transform opacity-100 scale-100"
-            x-transition:leave-end="transform opacity-0 scale-95" 
-            class="mt-6 flow-root"
-            x-on:click.away="is_open_mobile_nav = false">          
-            <div class="-my-6 divide-y divide-gray-500/10">
-              <div class="space-y-2 py-6">
-                <!-- <a href="#news"
-                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">News</a>
-                <a href="#speakers"
-                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink-100">Speakers</a>
-                <a href="#schedule"
-                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Schedule</a>
-                <a href="#venue"
-                   class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Venue</a> -->
-                <a href="#sponser"
-                  class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Sponsor</a>
-              </div>
-            </div>
+    <div x-bind:class="{'bg-dark-blue-200 shadow duration-100': !at_top || is_open_mobile_nav}"
+        class="md:hidden fixed inset-y-0 right-0 z-10 w-full h-fit px-6 py-5">
+      <div @click="is_open_mobile_nav = true" 
+           x-bind:class="(at_top && !is_open_mobile_nav) ? 'hidden' : 'flex justify-center w-full'"
+           class="absolute top-0 left-0 pt-2.5">
+        <img src="/assets/logo_white.svg" width="40" />
+      </div>
+      <div class="flex items-center gap-5">
+        <button x-on:click="is_open_mobile_nav= !is_open_mobile_nav" type="button"
+                class="rounded-md p-1 text-white text-2xl">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="text-white">Menu</div>
+      </div>
+      <div 
+        x-show="is_open_mobile_nav"
+        x-transition:enter="transition ease-out duration-100"
+        x-transition:enter-start="transform opacity-0 scale-95"
+        x-transition:enter-end="transform opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-75"
+        x-transition:leave-start="transform opacity-100 scale-100"
+        x-transition:leave-end="transform opacity-0 scale-95" 
+        class="mt-6 flow-root"
+        x-on:click.away="is_open_mobile_nav = false">          
+        <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="space-y-2 py-6">
+            <!-- <a href="#news"
+              class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">News</a>
+            <a href="#speakers"
+              class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink-100">Speakers</a>
+            <a href="#schedule"
+              class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Schedule</a>
+            <a href="#venue"
+                class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Venue</a> -->
+            <a href="#sponser"
+              class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Sponsor</a>
           </div>
         </div>
       </div>

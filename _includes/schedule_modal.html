@@ -34,17 +34,17 @@
               {{ include.item.time }} ~ {{ include.item.end }}
             </span>
           </div>
-          <p class="text-xl md:text-2xl font-bold text-darkblue">{{ include.item.title_main }}</p>
-          <p class="text-xl md:text-2xl font-bold text-darkblue">{{ include.item.subtitle }}</p>
+          <p class="text-xl md:text-2xl font-bold text-dark-blue-200">{{ include.item.title_main }}</p>
+          <p class="text-xl md:text-2xl font-bold text-dark-blue-200">{{ include.item.subtitle }}</p>
           <p class="my-3">{{ include.item.description_en }}</p>
           <p>{{ include.item.description_zh }}</p>
-          <p class="font-normal text-xs uppercase bg-darkblue my-2 px-2.5 py-1 h-fit w-fit text-white rounded-md">
+          <p class="font-normal text-xs uppercase bg-dark-blue-200 my-2 px-2.5 py-1 h-fit w-fit text-white rounded-md">
             {{ include.item.lang }}
           </p>
         </div>
       </div>
       <button @click="open = false" class="absolute right-5 top-5">
-        <i class="fa fa-times text-darkblue"></i>
+        <i class="fa fa-times text-dark-blue-200"></i>
       </button>
     </div>
   </div>
