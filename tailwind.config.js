@@ -15,9 +15,11 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        'dark-pink-100': '#d90845',
+        'dark-pink-100': '#E93763',
         'dark-pink-200': '#990531',
-        'darkblue': '#000929e6',
+        'light-pink-100': '#E87690',
+        'dark-blue-200': '#0A0324',
+        'dark-blue-100': '#0C0A81',
         'black': '#111111',
         'gray': '#676767',
         'light-gray-100': '#fafafa',
@@ -27,7 +29,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Rubik", ...defaultTheme.fontFamily.sans],
-        russo: ["Russo One", "sans-serif"]
+        russo: ["Russo One", "sans-serif"],
+        lobster: ['Lobster', 'cursive']
       },
       fontSize: {
         '2.5': '0.625rem', // 10px
