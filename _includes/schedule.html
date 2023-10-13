@@ -1,64 +1,32 @@
-{% if site.data.schedule %}
-<div
-  x-data="{
+{% if site.show_schedule %}
+<div x-data="{
     day:1
-  }"
-  class="z-10 font-sans bg-white"
->
+  }" class="z-10 font-sans bg-white">
   <div class="max-w-7xl mx-auto py-24">
     {% include section_title.html title='Schedule' sm_show_decorate=true %}
     <div class="w-full mt-10 text-gray">
       <!-- Day tab -->
-      <div
-        class="grid md:grid-cols-2 items-center justify-items-center bg-white text-black font-bold text-base"
-      >
-        <div
-          x-on:click="day = 1"
-          x-bind:class="{ 'bg-dark-pink-100': day == 1}"
-          class="cursor-pointer hover:text-white text-center focus:text-white w-full py-2.5 px-3.5 border border-light-gray-300"
-        >
-          <span
-            class="uppercase text-xl text-black"
-            x-bind:class="{ 'text-white': day == 1}"
-            >Friday</span
-          ><br />
-          <span
-            class="uppercase text-gray"
-            x-bind:class="{ 'text-light-gray-400': day == 1}"
-            >15 Dec, 2023</span
-          >
+      <div class="grid md:grid-cols-2 items-center justify-items-center bg-white text-black font-bold text-base">
+        <div x-on:click="day = 1" x-bind:class="{ 'bg-dark-pink-100': day == 1}"
+          class="cursor-pointer hover:text-white text-center focus:text-white w-full py-2.5 px-3.5 border border-light-gray-300">
+          <span class="uppercase text-xl text-black" x-bind:class="{ 'text-white': day == 1}">Friday</span><br />
+          <span class="uppercase text-gray" x-bind:class="{ 'text-light-gray-400': day == 1}">15 Dec, 2023</span>
         </div>
-        <div
-          x-on:click="day = 2"
-          x-bind:class="{' bg-dark-pink-100': day == 2}"
-          class="cursor-pointer hover:text-white text-center focus:text-dark-pink-100 w-full py-2.5 px-3.5 border border-light-gray-300"
-        >
-          <span
-            class="uppercase text-xl text-black"
-            x-bind:class="{ 'text-white': day == 2}"
-            >Satuday</span
-          ><br />
-          <span
-            class="uppercase text-gray"
-            x-bind:class="{ 'text-light-gray-400': day == 2}"
-            >16 Dec, 2023</span
-          >
+        <div x-on:click="day = 2" x-bind:class="{' bg-dark-pink-100': day == 2}"
+          class="cursor-pointer hover:text-white text-center focus:text-dark-pink-100 w-full py-2.5 px-3.5 border border-light-gray-300">
+          <span class="uppercase text-xl text-black" x-bind:class="{ 'text-white': day == 2}">Satuday</span><br />
+          <span class="uppercase text-gray" x-bind:class="{ 'text-light-gray-400': day == 2}">16 Dec, 2023</span>
         </div>
       </div>
 
       <div class="grid gap-8 bg-light-gray-100 py-12 px-6">
         <!-- Hall -->
         <div
-          class="hidden md:grid grid-cols-3 justify-items-center items-center bg-dark-blue-200 text-white font-medium text-base"
-        >
-          <div
-            class="grid col-start-2 gap-1 text-center justify-items-center py-5 font-semibold"
-          >
+          class="hidden md:grid grid-cols-3 justify-items-center items-center bg-dark-blue-200 text-white font-medium text-base">
+          <div class="grid col-start-2 gap-1 text-center justify-items-center py-5 font-semibold">
             1001 Auditorium
           </div>
-          <div
-            class="grid gap-1 text-center justify-items-center py-5 font-semibold"
-          >
+          <div class="grid gap-1 text-center justify-items-center py-5 font-semibold">
             1002 Auditorium
           </div>
         </div>
@@ -66,56 +34,54 @@
         <div x-show="day == {{item.day}}" x-data="{open: false, toggle() { this.open = ! this.open }  }">
           {% if item.title %}
           <!-- Title -->
-          <div
-            class="grid grid-cols-3 justify-items-center items-center bg-zinc-100 font-medium text-base"
-          >
-            <div
-              class="col-span-3 md:col-span-1 grid gap-1 text-center justify-items-start py-5 font-semibold"
-            >
+          <div class="grid grid-cols-3 justify-items-center items-center bg-zinc-100 font-medium text-base">
+            <div class="col-span-3 md:col-span-1 grid gap-1 text-center justify-items-start py-5 font-semibold">
               {{ item.time}}
             </div>
             <div
-              class="col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center py-5 uppercase text-lg font-bold text-dark-pink-100"
-            >
+              class="col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center py-5 uppercase text-lg font-bold text-dark-pink-100">
               {{ item.title }}
             </div>
           </div>
           {% else %}
           <!-- agenda -->
-            <div class="grid grid-cols-3 gap-y-2 justify-items-center items-center bg-white py-10">
-              <div class="block md:hidden col-span-3 md:col-span-1 text-center">
-                <p class="rounded px-2 py-1 bg-dark-blue-200 text-white text-sm font-semiblod">{{ item.room }}</p>
-              </div>
-              <div class="col-span-3 md:col-span-1 text-center">
-                <p class="text-lg font-semibold">{{ item.time}}</p>
-              </div>
-              <!-- Speaker avatar and info -->
-              {% for speaker_item in item.speaker %}
-                {% if item.room == 1001 %}
-                  <button @click="toggle()" class="group col-statr-1 md:col-start-2 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center">
-                    {% include schedule_card.html title_main=item.title_main lang=item.lang
-                      speaker_name=speaker_item.name subtitle=item.subtitle speaker_avatar=speaker_item.avatar %}
-                  </button>
-                {% elsif item.room == 1002 %}
-                  <button @click="toggle()" class="group col-statr-1 md:col-start-3 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center">
-                    {% include schedule_card.html title_main=item.title_main lang=item.lang
-                      speaker_name=speaker_item.name subtitle=item.subtitle speaker_avatar=speaker_item.avatar %}
-                  </button>
-                {% else %}
-                  <button @click="toggle()" class="group col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center">
-                    {% include schedule_card.html title_main=item.title_main lang=item.lang
-                    speaker_name=speaker_item.name subtitle=item.subtitle speaker_avatar=speaker_item.avatar %}
-                  </button>
-                {% endif %}
-              {% endfor %}
+          <div class="grid grid-cols-3 gap-y-2 justify-items-center items-center bg-white py-10">
+            <div class="block md:hidden col-span-3 md:col-span-1 text-center">
+              <p class="rounded px-2 py-1 bg-dark-blue-200 text-white text-sm font-semiblod">{{ item.room }}</p>
             </div>
+            <div class="col-span-3 md:col-span-1 text-center">
+              <p class="text-lg font-semibold">{{ item.time}}</p>
+            </div>
+            <!-- Speaker avatar and info -->
+            {% for speaker_item in item.speaker %}
+            {% if item.room == 1001 %}
+            <button @click="toggle()"
+              class="group col-statr-1 md:col-start-2 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center">
+              {% include schedule_card.html title_main=item.title_main lang=item.lang
+              speaker_name=speaker_item.name subtitle=item.subtitle speaker_avatar=speaker_item.avatar %}
+            </button>
+            {% elsif item.room == 1002 %}
+            <button @click="toggle()"
+              class="group col-statr-1 md:col-start-3 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center">
+              {% include schedule_card.html title_main=item.title_main lang=item.lang
+              speaker_name=speaker_item.name subtitle=item.subtitle speaker_avatar=speaker_item.avatar %}
+            </button>
+            {% else %}
+            <button @click="toggle()"
+              class="group col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center">
+              {% include schedule_card.html title_main=item.title_main lang=item.lang
+              speaker_name=speaker_item.name subtitle=item.subtitle speaker_avatar=speaker_item.avatar %}
+            </button>
+            {% endif %}
+            {% endfor %}
+          </div>
           <!-- Modal -->
-            <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-              {% include schedule_modal.html item=item %}
-            </div>
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            {% include schedule_modal.html item=item %}
+          </div>
           {% endif%}
         </div>
-        {% endfor %}    
+        {% endfor %}
       </div>
     </div>
   </div>
