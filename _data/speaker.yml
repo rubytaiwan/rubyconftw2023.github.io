@@ -1,0 +1,10 @@
+- name: Yukihiro Matsumoto (Matz)
+  avatar: assets/speaker_avatar/matz.jpg
+  description: Creator of Ruby, Heroku
+  github: https://github.com/matz
+  twitter: https://twitter.com/yukihiro_matz
+- name: Tim Riley
+  avatar: assets/speaker_avatar/tim-riley.jpg
+  description: Tim is a Principal Engineer at Buildkite, a co-founder of dry-rb, and a core team member of Hanami and rom-rb. He’s excited by small libraries, first-class functions, and pushing forward web app development with Ruby.
+  github: https://github.com/timriley
+  personal_web: https://timriley.info/
