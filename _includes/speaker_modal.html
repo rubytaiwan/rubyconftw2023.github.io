@@ -15,7 +15,7 @@
         <!-- description -->
         <div class="col-span-5 md:col-span-3 pt-2 md:pt-8">
           <p class="text-center lg:text-start my-3">{{ include.speaker.description }}</p>
-          <div class="flex justify-center md:justify-start text-dark-pink-100 text-2xl gap-x-4" >
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
             {% if include.speaker.github %}
             <a target="_blank" href="{{ include.speaker.github }}">
               <i class="fa fa-github" aria-hidden="true"></i>
@@ -23,12 +23,12 @@
             {% endif %}
             {% if include.speaker.personal_web %}
             <a target="_blank" href="{{ include.speaker.personal_web }}">
-              <i class="fa fa-external-link" aria-hidden="true"></i>
+              <img src="assets/icons/home.png" class="w-8 h-8" />
             </a>
             {% endif %}
             {% if include.speaker.twitter %}
             <a target="_blank" href="{{ include.speaker.twitter }}">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
             </a>
             {% endif %}
           </div>

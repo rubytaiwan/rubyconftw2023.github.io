@@ -25,6 +25,7 @@
   companies:
     - name: "Libhunt"
       logo: "sponsor_avatar/libhunt.png"
+      logo_size: "square"
       link: https://www.libhunt.com/
       desc: |-
         Discover trending open-source projects and their alternatives.
@@ -33,3 +34,4 @@
   companies:
     - name: "日本・松江市 ( Matsue City JAPAN)"
       logo: "sponsor_avatar/matsue.png"
+      logo_size: "square"
