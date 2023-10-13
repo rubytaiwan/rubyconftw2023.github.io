@@ -1,0 +1,37 @@
+- title: Bundler
+  sponsor: true
+  companies:
+    - name: "租寓"
+      logo: "sponsor_avatar/zuyou.svg"
+      link: https://www.zuyou.com.tw/
+      desc: |-
+        在房價居高不下、租屋又容易像在踩地雷的狀況下，Zuyou租寓平台致力於提供好品質的房源與租屋體驗，並透過全景照片、線上契約與繳租等等，使租屋管理更為科技化。同時透過英文的服務，使台灣成為更國際友善的地方。我們不僅僅希望更好的找房與居住體驗，更希望透過共生租屋概念的提倡來促進租客彼此的文化交流。在2019年，我們創下了200個房間的里程碑，總共服務了超過1000個房客。我們的下一個階段，是希望讓房客們能對他們居住的社區有認識更多及創造更多的在地認同，同時也希望提供房客超越單純居住的價值。
+
+- title: partner
+  companies:
+    - name: "五倍紅寶石股份有限公司"
+      logo: "sponsor_avatar/5xRuby.png"
+      link: https://5xruby.com/
+      desc: |-
+        五倍紅寶石軟體開發是台灣規模最大的 Ruby / Rails 系統開發公司，為企業提供產品開發、技術諮詢服務，客戶來自上市企業與新創公司，遍佈全球。我們長年支援技術社群，為協助工程師職涯成長而努力。企業願景為「用讓工程師快樂的開發工具，創造讓世人熱愛的服務」。
+
+    - name: "國立臺北教育大學"
+      logo: "sponsor_avatar/ntue_dtd.svg"
+      link: https://dtd.ntue.edu.tw/#/
+      desc: |-
+        由於科技持續地發展與應用，不斷推陳出新的資訊產品，牽動了人們對於數位科技的產品觀點與需求，此一衝擊主導了現在與未來就業市場對於兼備數位科技與視覺設計領域人才的迫切需求。 具備跨領域能力的人才，不僅不可取代性高，在未來也更具備競爭優勢。有鑑於相關人才的迫切需求，本校積極投入相關資源，嘗試以更前瞻、更開放的作法來培養現在與未來的產業所需的人才，而數位科技設計學系的成立，正是國立臺北教育大學積極培養跨領域人才的濫觴。 本校於民國95年8月成立《數位內容設計學系》開始招收一般高中生，以科技、資訊與設計的理論課程為核心，搭配紮實的實作與專題課程，培育學生具備優異的跨領域數位科技設計的專長，畢業學生授予《設計學士學位》。
+
+- title: media partner
+  companies:
+    - name: "Libhunt"
+      logo: "sponsor_avatar/libhunt.png"
+      logo_size: "square"
+      link: https://www.libhunt.com/
+      desc: |-
+        Discover trending open-source projects and their alternatives.
+
+- title: special thanks
+  companies:
+    - name: "日本・松江市 ( Matsue City JAPAN)"
+      logo: "sponsor_avatar/matsue.png"
+      logo_size: "square"

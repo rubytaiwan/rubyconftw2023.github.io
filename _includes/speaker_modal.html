@@ -1,0 +1,42 @@
+<div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-4 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="{{ include.speaker.avatar }}"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">{{ include.speaker.name }}</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2 md:pt-8">
+          <p class="text-center lg:text-start my-3">{{ include.speaker.description }}</p>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            {% if include.speaker.github %}
+            <a target="_blank" href="{{ include.speaker.github }}">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            {% endif %}
+            {% if include.speaker.personal_web %}
+            <a target="_blank" href="{{ include.speaker.personal_web }}">
+              <img src="assets/icons/home.png" class="w-8 h-8" />
+            </a>
+            {% endif %}
+            {% if include.speaker.twitter %}
+            <a target="_blank" href="{{ include.speaker.twitter }}">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
