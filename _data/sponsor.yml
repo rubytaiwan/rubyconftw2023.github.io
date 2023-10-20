@@ -1,3 +1,81 @@
+- title: Gem
+  sponsor: true
+  companies:
+    - id: 1
+      name: "凱鈿行動科技股份有限公司"
+      logo: "sponsor_avatar/kdan.png"
+      link: https://www.kdanmobile.com/zh-tw
+      desc: |-
+        Kdan Mobile Taiwan 凱鈿行動科技致力提供全方位的行動工作軟體服務，服務項目包含數位文件管理、電子簽署、內容創作及數據整合服務等，協助全球用戶與企業加速數位轉型，提升工作效率，並以更有效率且便利的方式，實踐永續發展的未來。
+
+        凱鈿總部位於台灣，營運據點佈及中國、美國、日本和韓國。在 2023 年榮登金融時報 (Financial Times) 亞太地區高成長企業 500 強，名列台灣IT與軟體類別之首，旗下服務至今已累積全球超過一千兩百萬的會員數。
+
+        凱鈿行動科技致力於人才的永續發展，我們
+
+        * ∙ 提供媲美矽谷的開放式工作空間，讓同仁能夠隨時切換工作模式。
+        * ∙ 實行混合辦公和彈性工時，提供更好的工作平衡。
+        * ∙ 首創額外 8 天 VIP 假和員旅假，重視同仁身心平衡，提升生活品質。
+        * ∙ 建立透明化的職涯發展路徑，確保每個人都有公平的晉升機會。
+        * ∙ 透明、開放與平行的溝通文化，讓每位同仁的聲音與想法都被聽見。
+        * ∙ 打造以部門為核心的學習型組織，讓每位同仁都能夠在學習中成長並發揮潛能。
+
+        我們相信，多元共融的文化，成就更好的你
+      spotlight: true
+      recruitment_link: https://www.yourator.co/companies/KdanMobile
+      benefits: |-
+        法定項目
+
+        勞保、健保、特別休假、勞退、婚假
+
+        其他福利
+
+        < 凱鈿福利 2.0 > 除了基本員工團保、每年員工健康檢查、三節禮金外，凱鈿擁有七大不可思議！
+
+        * 1.於法定特休制度外，加入凱鈿額外享有8天的 Kdan VIP 專屬假，出國玩囉！
+        * 2.混合辦公、彈性工時安排，自己的工作時段自己決定！
+        * 3.源源不絕的飲料、咖啡與零食供你增加腦力，別擔心，我們也有飛輪讓你吃再多零食也不怕胖！
+        * 4.不定期 Team Building 活動加上雙月下午茶，戶外踏青、電影包場、保齡球 PK，帶你追趕跑跳碰
+        * 5.豐沛的內部培訓資源，並提供進修學習方案補助，讓你不斷向上提升！
+        * 6.開放式工作空間，不管你想在窗邊眺望市景還是在按摩椅上思考人生，工作模式隨你切換
+        * 7.我們有被設計耽誤的 Bartender、被程式耽誤的歌手，還有更多有趣的人等你來認識！
+
+        -------------------------------------------
+
+        我們希望這是真正吸引你加入凱鈿的原因：
+        凱鈿 A.I.R，這是凱鈿人習以為常就像空氣一樣的企業文化！
+
+        * ※敏捷（Agility）
+
+        迅速因應國際市場變化和客戶需求，塑造不斷滾動調整的團隊文化，改善是我們的精神，熱情使我們不斷突破挑戰，以適應不斷變化的環境。　
+
+        * ※共融（Inclusion）
+
+        凱鈿擁有一支國際化的團隊，這意味著我們來自不同的文化和背景，能夠接納和尊重多元的觀點。在凱鈿，我們鼓勵每位凱鈿人分享自己的想法，透過透明且開放的溝通方式，激盪出創新的火花。
+
+        * ※可靠（Reliabilty）
+
+        可靠的團隊凝聚在一起，齊力打造可靠的服務體驗於客戶。每位凱鈿人專注於為客戶提供優質服務和產品，在這裡你可以找到屬於自己能發光發熱的舞台。
+
+        快加入我們成為令人驕傲的凱鈿人！Be Awesome Today！
+      benefits_en: |-
+        < Kdan Benefits and Perks 2.0 > Despite the basic bonus for three festivals, high-quality health check, and group insurance, there are also seven mysteries in Kdan!
+
+        * ☞ Besides the annual leave established by the government, you can also enjoy a bonus 8-day Kdan VIP holiday per year.
+
+        * ☞ Flexible work time arrangement, you will decide your own work time!
+
+        * ☞ There are always unlimited snacks and drinks for you to accelerate your brain. No worries, there are also stationary bikes if you want to burn a couple calories during the day.
+
+        * ☞ Occasional team building events, outdoor activities, movie reservations, bowling events, we make sure to let you have fun while you’re here.
+
+        * ☞ Provide learning packages for you to upgrade yourself!
+
+        * ☞ Open and cozy workspace, anywhere in the office can be your desk.
+
+        * ☞ We have a bartender held up by the design team, a singer held up by the programming team, and many more interesting individuals for you to know!
+
+        Join us now to become one of our proudest Kdan members! Be Awesome Today!
+
 - title: Bundler
   sponsor: true
   companies:
