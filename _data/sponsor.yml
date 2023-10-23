@@ -113,3 +113,28 @@
     - name: "日本・松江市 ( Matsue City JAPAN)"
       logo: "sponsor_avatar/matsue.png"
       logo_size: "square"
+      img_1: sponsor_avatar/creator_of_ruby.png
+      img_1_desc: Creator of Ruby
+      img_2: sponsor_avatar/city_map.png
+      img_2_desc: Access to RubyCityMATSUE
+      img_3: sponsor_avatar/mayor.png
+      img_3_desc: Matsue City Mayor Uesada & Taipei City Mayor Chiang at Jiangou Flower Market before Chinese New Year.
+      desc_1: |-
+        Matsue City is situated to the north of Hiroshima and is the prefectural
+        capital of Shimane Prefecture.
+        Due to the fact that the creator of the programming language
+        Ruby, Mr. Yukihiro Matsumoto lives in Matsue, the ‘Ruby City Matsue
+        Project’ kick started in 2006 and since then Matsue has been known as
+        the holy land of Ruby. The RubyWorld Conference that has been held in
+        Matsue since 2012 brings together Rubyists from across the world.
+        Likewise in 2006, Matsue City and Taipei City started exchanges due
+        to the connections brought on by the flower of wealth, peony and since
+        then every year, one can appreciate the peonies from Matsue at the
+        Jianguo Flower Festival before the Chinese New Year.
+      desc_2: |-
+        In 2014 Matsue City and Taipei City exchanged an MOU and in 2022,　with the addition of four
+        cities from the surrounding region (Shimane Prefecture: Izumo City &amp; Yasugi City; Tottori
+        Prefecture: Yonago City &amp; Sakaiminato City) signed a new MOU with Taipei City.
+      desc_3: |-
+        Moving forward, Matsue City and Taipei City would like to share the spirit of ‘Happy Hacking!!’ and
+        deepen the ties through Ruby.
