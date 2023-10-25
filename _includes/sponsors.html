@@ -41,7 +41,7 @@
                     <p>{{ company.desc | markdownify }}</p>
                   </div>
                   <div class="w-1/3 hidden md:flex justify-center pl-5 pr-10">
-                    <img {% if company.logo_size == 'square' %} class="h-40 object-contain" {% else %} class="w-full object-contain" {% endif %} src="../assets/{{ company.logo }}" />
+                    <img class="w-full object-contain" src="../assets/{{ company.logo }}" />
                   </div>
                 </div>
                 {% if company.link %}
