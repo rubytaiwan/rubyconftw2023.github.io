@@ -1,0 +1,36 @@
+<div class="w-full bg-white">
+  <div class="flex items-center text-dark-pink-100 font-bold italic">
+    {{ include.item.title }}
+    <div class='ml-2 h-1.5'>
+      <img src="assets/sec-line.png" alt="">
+    </div>
+  </div>
+  <h1 class="mt-2 md:mt-8 mb-4 text-3xl md:text-5xl italic font-bold">{{ include.company.name }}</h1>
+
+  <div class="flex flex-wrap flex-col-reverse md:flex-row">
+    <div class="mt-4 md:mt-0 w-full md:w-3/4">{{ include.company.desc_1 | markdownify }}</div>
+    <div class="w-full md:w-1/4">
+      <img class="mx-auto w-2/3" src="/assets/{{ include.company.img_1 }}"/>
+      <p class="mt-2 text-center text-sm">{{ include.company.img_1_desc }}</p>
+    </div>
+  </div>
+  <div class="mt-4">{{ include.company.desc_2 | markdownify }}</div>
+  <div class="mt-4">{{ include.company.desc_3 | markdownify }}</div>
+  <div class="mt-4 grid grid-cols-3 gap-x-4">
+    <div class="col-span-3 md:col-span-1">
+      <img class="mx-auto w-2/3 md:w-full" src="/assets/{{ include.company.img_3 }}"/>
+      <p class="mt-2 text-center md:text-start text-sm">{{ include.company.img_3_desc }}</p>
+    </div>
+    <div class="mt-4 md:mt-0 col-span-3 md:col-span-2">
+      <img src="/assets/{{ include.company.img_2 }}"/>
+      <p class="mt-2 text-center text-sm">{{ include.company.img_2_desc }}</p>
+    </div>
+  </div>
+  
+</div>
+{% if include.company.link %}
+<div class="mt-4 py-3 md:pr-10 text-end">
+  <a href="{{ include.company.link }}" target="_blank"
+    class="py-3 px-8 rounded-md bg-gradient-to-r from-dark-pink-100 to-dark-pink-200 hover:from-dark-pink-200 hover:to-dark-pink-100 font-bold text-white">website</a>
+</div>
+{% endif %}

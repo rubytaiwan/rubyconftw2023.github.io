@@ -7,7 +7,7 @@
     <div class="w-full flex flex-wrap justify-center">
       {% for company in item.companies %}
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
-        <a @click="showModal = true" class="align-center">
+        <a @click="showModal = true" class="cursor-pointer align-center">
           <img {% if item.title=='Ruby' %} class="h-40 mx-auto" {% elsif item.title=='Rails' %} class="h-32 mx-auto" {%
             else %} class="h-24 mx-auto" {% endif %} src="/assets/{{ company.logo }}" />
         </a>
@@ -22,6 +22,10 @@
                   class="cursor-pointer absolute right-4 md:right-10 top-4 md:top-10 text-xl">
                   <i class="fa fa-times" aria-hidden="true"></i>
                 </a>
+                
+                {% if item.title == 'special thanks' %}
+                {% include special_thanks_modal.html item=item company=company %}
+                {% else %}
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
@@ -45,6 +49,7 @@
                   <a href="{{ company.link }}" target="_blank"
                     class="py-3 px-8 rounded-md bg-gradient-to-r from-dark-pink-100 to-dark-pink-200 hover:from-dark-pink-200 hover:to-dark-pink-100 font-bold text-white">website</a>
                 </div>
+                {% endif %}
                 {% endif %}
               </div>
             </div>
