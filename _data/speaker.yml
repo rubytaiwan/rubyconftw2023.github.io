@@ -5,6 +5,7 @@
   twitter: https://twitter.com/yukihiro_matz
 - name: Tim Riley
   avatar: assets/speaker_avatar/tim-riley.jpg
-  description: Tim is a Principal Engineer at Buildkite, a co-founder of dry-rb, and a core team member of Hanami and rom-rb. He’s excited by small libraries, first-class functions, and pushing forward web app development with Ruby.
-  github: https://github.com/timriley
+  description: |-
+    Tim is a core team member of [Hanami](https://hanamirb.org/), [dry-rb](https://dry-rb.org/) and [rom-rb](https://rom-rb.org/) and a Principal Engineer at [Buildkite](https://buildkite.com/). He’s been writing Ruby for over 20 years and still loves it! He works to bring the joy of Ruby to writing real, maintainable apps of all shapes and sizes.
   personal_web: https://timriley.info/
+  mastodon: https://ruby.social/@timriley
