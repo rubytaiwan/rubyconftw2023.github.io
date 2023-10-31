@@ -208,7 +208,7 @@
             
             
             
-            <a target="_blank" href="https://twitter.com/yukihiro_matz">
+            <a target="_blank" href="">
               <img src="assets/icons/twitter.png" class="w-8 h-7" />
             </a>
             
@@ -265,6 +265,10 @@
 </div>
           <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
             
+            <a target="_blank" href="https://github.com/timriley">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
             
             <a target="_blank" href="https://timriley.info/">
               <img src="assets/icons/home.png" class="w-8 h-8" />
@@ -275,6 +279,1541 @@
             <a target="_blank" href="https://ruby.social/@timriley">
               <img src="assets/icons/mastodon.svg" class="w-9 h-9" />
             </a>
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/197/icon.png"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Ryo Kajiwara</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/197/icon.png"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Ryo Kajiwara</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>A wild (freelance) programmer. I can do cryptography and authentication/authorization a little.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/sylph01">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/148/work_profile.jpeg"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Hiroshi SHIBATA</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/148/work_profile.jpeg"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Hiroshi SHIBATA</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>OSS programmer, Ruby committer, maintainer of many OSS such as ruby, rubygems, bundler, rake, and administrator of ruby-lang.org. He is working in public relations of technology for ANDPAD Inc. and full time OSS developer for the Ruby programming language.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/hsbt">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">政憲 邱</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">政憲 邱</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>程式語言愛好者，主要使用 Ruby 語言，認為軟體開發也能具備美感，正在尋找滿足敏捷、架構與享受開發過程之間的平衡點。</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/elct9620">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/541665?v=3"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Andrei Bondarev</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//avatars.githubusercontent.com/u/541665?v=3"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Andrei Bondarev</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>Andrei has been a software engineering professional for almost 13 years. Among many others he’s been fortunate to make his impact at Spree Commerce (Acquired by First Data), WeddingWire (merged with The Knot), FiscalNote (IPO), National Public Radio, and USA Today. He currently runs a software dev firm, and serves as an Architect/Engineering Manager/Fractional CTO on the client projects. In his free time he enjoys playing tennis and going on long runs while listening to podcasts.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/andreibondarev">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/1930954?v=3"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Hiếu Nguyễn</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//avatars.githubusercontent.com/u/1930954?v=3"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Hiếu Nguyễn</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>I’m an enthusiastic programmer who focuses on backend development. Writing about coding is my usual blogging gig, but I also like to talk about books, manga, and other random things.</p>
+<p>I’m currently Senior Staff Software Engineer at Ascenda. My work involves building world-class authentication system tailored for rewards program in financial industry.</p>
+<p>You can also checkout my bio in <a href="https://hieuk09.github.io/bio">https://hieuk09.github.io/bio</a></p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/hieuk09">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/10135?v=3"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Charles Oliver Nutter</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//avatars.githubusercontent.com/u/10135?v=3"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Charles Oliver Nutter</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>Charles works on JRuby and JVM languages at Red Hat</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/headius">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/7455098?v=3"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">constdrop</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//avatars.githubusercontent.com/u/7455098?v=3"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">constdrop</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><ul>
+<li>Name: Tetsuya Hirota</li>
+<li>Job Title: Director and CTO at Dogrun Inc. (<a href="https://dogrun.jp/en/">https://dogrun.jp/en/</a>)</li>
+<li>Location: Shizuoka-city Japan</li>
+<li>My Job:
+<ul>
+<li>Bioinformatics database development.</li>
+<li>Developing applications using deep learning for our clients.</li>
+</ul></li>
+<li>Volunteer: Programming courses mainly for children in Makinohara-city.</li>
+</ul>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/constdrop">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/366910?v=3"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">lulalala</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//avatars.githubusercontent.com/u/366910?v=3"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">lulalala</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>A Rubyist from Taiwan who works for GitLab. My hobbies include traveling, developing 2ch-like imageboard, and to draw doujinshi.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/lulalala">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/139/Me.jpg"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Helio Cola</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/139/Me.jpg"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Helio Cola</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>He(lio) is a passionate software engineer and has created things primarily in C/C++ &amp; Ruby, over the past 20+ years.
+He(lio) met Ruby v1.8.7 and Rails 2.x in 2010 and it is a Happy Developer since then.</p>
+<p>He(lio) is currently helping small and medium side Dev teams as a part-time Rails consultant, while he is dusting off some old products, building new ones, doing some OSS, and enjoying more time with his 2 children.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/heliocola">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/289/icon.jpg"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">cindyliu923</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/289/icon.jpg"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">cindyliu923</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>大家好，我是 Cindy，5 年 Rails 工程師經驗，目前在資安公司 <a href="https://devco.re">DEVCORE</a> 擔任開發工程師，歡迎大家參觀我的 <a href="https://cindyliu923.com">個人網站</a>。
+/
+Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. I currently work as a developer at a cybersecurity company called <a href="https://devco.re">DEVCORE</a>. Feel free to visit my <a href="https://cindyliu923.com">personal website</a>.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/cindyliu923">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/5077225?v=3"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Stephen Margheim</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//avatars.githubusercontent.com/u/5077225?v=3"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Stephen Margheim</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>Hey! I’m Stephen. I am an American expat living in Berlin Germany. I love Ruby and I love SQLite.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/fractaledmind">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/203/my_icon.jpg"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Junichi Kobayashi</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/203/my_icon.jpg"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Junichi Kobayashi</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>永和システムマネジメントでWebエンジニアとして働いています。</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/junk0612">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/299/3.jpg"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Huy Du Gia</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/299/3.jpg"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Huy Du Gia</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>Huy is a Software Engineer driven by a genuine passion for his craft. He loves tackling complex challenges in finance and technology. He firmly believes that technology can revolutionize our world in every aspect, and he’s excited about using his skills to make a positive impact.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/dugiahuy">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/9867?v=3"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Radoslav Stankov</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//avatars.githubusercontent.com/u/9867?v=3"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Radoslav Stankov</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>Rado has more than 20 years of experience working in tech. He is currently the CTO and Co-Founder at Angry Building. Previously was Head of Engineering at Product Hunt. Enjoys blogging, conference speaking, and solving problems.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/RStankov">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/277/hasumikin.jpg"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Hitoshi Hasumi</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/277/hasumikin.jpg"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Hitoshi Hasumi</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>Creator of PicoRuby and PRK Firmware.
+Maintainer of CRuby&#39;s IRB and Reline.
+A final nominee of the Ruby Prize 2021.
+Twice first prize winner of the Fukuoka Ruby Award in 2020 and 2022.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/hasumikin">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/1012014?v=3"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Masafumi OKURA</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//avatars.githubusercontent.com/u/1012014?v=3"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Masafumi OKURA</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>Rubyist, Kaigi on Rails chief organizer, the author of Alba gem.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/okuramasafumi">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/279106?v=3"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Cristian Planas</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//avatars.githubusercontent.com/u/279106?v=3"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Cristian Planas</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>I am a software engineer that has been working primarily with Rails since the release of Rails 3, more than 10 years ago.</p>
+<p>Performance optimization has been an obsession for me since I founded my first start-up as a solo engineer in 2012. Currently, I am a Group Tech Lead and Senior Staff Engineer at Zendesk, where I focus on performance optimization.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/Gawyn">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/12554?v=3"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Tse-Ching Ho</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//avatars.githubusercontent.com/u/12554?v=3"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Tse-Ching Ho</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>何澤清，Ruby/Rails/React 工程師，黃碼科技負責人。
+具多年純 Rails 或純 React 或 Rails + React 混合式專案的開發經驗。
+擅長網站應用系統規劃和製作，熟悉專業顧問和教育訓練。
+目前偏好前後端分離開發，特別重視 UI/UX 的規劃和 API 的設計。</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/tsechingho">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/302/proprofile.jpeg"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Warren Wong</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/302/proprofile.jpeg"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Warren Wong</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>I&#39;m the CTO of Viewabo, a venture-backed startup. We help our partner companies see what their customers see.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/wrrnwng">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/529248?v=3"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">John Lin</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//avatars.githubusercontent.com/u/529248?v=3"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">John Lin</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>Principle Engineer at West Pharmaceutical Services. Ruby lover. All-stack developer. Organizer of Swift Taipei. Find me at <a href="https://johnlin.vc">https://johnlin.vc</a></p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/johnlinvc">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/181/Yuji.jpeg"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Yuji Yokoo</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/181/Yuji.jpeg"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Yuji Yokoo</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>Yuji is a long-time programmer and software developer based in Adelaide, Australia. He is from and grew up in Tokyo, Japan playing lots of video games. He used to be a Windows desktop application developer until he discovered Ruby.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/yujiyokoo">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/104/IMG_7663_square.jpg"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">ihower</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/104/IMG_7663_square.jpg"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">ihower</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>張文鈿，網路暱稱是 ihower。2006 年開始用 Ruby 進行開發，著有 &quot;Rails 實戰聖經&quot; 一書，2018 年成立愛好資訊科技有限公司。近期熱衷投入 Generative AI 和 LLM 的應用開發，並發行 &quot;愛好 AI Engineer&quot; 電子報分享新知。</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/ihower">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/304/tony.png"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">煒航 簡</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/304/tony.png"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">煒航 簡</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>Rubyist, Rustacean, Web Developer, Software Architect, Conference Speaker, Book Writer, Amateur Piano Player/Composer, Video Gamer, Whiskey Lover.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/tonytonyjan">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+      <button @click="open = false" class="absolute right-5 top-5">
+        <i class="fa fa-times text-dark-blue-200"></i>
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      
+        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
+              class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="toggle()">
+            <div class="w-full hover:-translate-y-6">
+              <div class="px-20 w-full">
+                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/40/9KKRA.png"/>
+              </div>
+              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+                <p class="font-bold">Ted Johansson</p>
+              </div>
+            </div>
+          </a>
+          <!-- Modal  -->
+          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity">
+  <div class="flex min-h-full items-center justify-center p-4 text-center ">
+    <div class="relative transform overflow-x-hidden rounded-lg w-[50rem] p-4 md:p-8 bg-white text-left shadow-xl transition-all ">
+      <div class="w-full p-2 md:p-4 bg-white grid grid-cols-5 gap-x-2 justify-center md:justify-start">
+        <!-- avatar -->
+        <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
+          <div class="flex flex-col items-center">
+            <img
+              class="border-4 border-dark-pink-100 rounded-full w-32 md:w-48"
+              src="//cfp.rubyconf.tw/uploads/user/photo/40/9KKRA.png"
+            />
+            <p class="mt-2 font-sans font-semibold text-black text-xl">Ted Johansson</p>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-5 md:col-span-3 pt-2">
+          <div class="flex items-center text-dark-pink-100 font-bold italic">
+            speaker
+            <div class='ml-2 h-1.5'>
+              <img src="assets/sec-line.png" alt="">
+            </div>
+          </div>
+          <div class="markdownify leading-7 text-center md:text-start my-3"><p>A web developer of twenty years, and a Rubyist of ten, Ted spends his time both at work (Discourse) and outside of it contributing to open source projects. He&#39;s also really into rock climbing, but not particularly good at it. You&#39;ll often find him reminiscing about &quot;the good old days&quot;, when web development (allegedly) wasn&#39;t so complicated.</p>
+</div>
+          <div class="flex justify-center items-center md:justify-start text-dark-pink-100 text-4xl gap-x-4" >
+            
+            <a target="_blank" href="https://github.com/Drenmi">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            
+            
+            
+            <a target="_blank" href="">
+              <img src="assets/icons/twitter.png" class="w-8 h-7" />
+            </a>
+            
             
           </div>
         </div>
