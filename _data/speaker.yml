@@ -100,7 +100,7 @@
     uniquely positioned to bring these features to Ruby! This talk will show how JRuby
     is taking advantage of the modern JVM with exciting examples you can try today!</p>"
   language: English
-- name: constdrop
+- name: Hirota Tetsuya
   avatar: "//avatars.githubusercontent.com/u/7455098?v=3"
   title: ''
   urlGithub: https://github.com/constdrop
@@ -124,7 +124,7 @@
     in Python, it uses iterparse() to parse each element in the first layer. Therefore,
     we created a similar mechanism in Ruby and also used ractor to speed it up.</p>"
   language: English
-- name: lulalala
+- name: Mark Chao
   avatar: "//avatars.githubusercontent.com/u/366910?v=3"
   title: Listia
   urlGithub: https://github.com/lulalala
