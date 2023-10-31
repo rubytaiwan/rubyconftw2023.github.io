@@ -1,11 +1,368 @@
 - name: Yukihiro Matsumoto (Matz)
   avatar: assets/speaker_avatar/matz.jpg
-  description: Creator of Ruby, Heroku
-  github: https://github.com/matz
-  twitter: https://twitter.com/yukihiro_matz
+  bio: Creator of Ruby, Heroku
+  urlGithub: https://github.com/matz
+  urltwitter: https://twitter.com/yukihiro_matz
+  language: English
 - name: Tim Riley
   avatar: assets/speaker_avatar/tim-riley.jpg
-  description: |-
+  language: English
+  bio: |-
     Tim is a core team member of [Hanami](https://hanamirb.org/), [dry-rb](https://dry-rb.org/) and [rom-rb](https://rom-rb.org/) and a Principal Engineer at [Buildkite](https://buildkite.com/). He’s been writing Ruby for over 20 years and still loves it! He works to bring the joy of Ruby to writing real, maintainable apps of all shapes and sizes.
   personal_web: https://timriley.info/
   mastodon: https://ruby.social/@timriley
+  urlGithub: https://github.com/timriley
+- name: Ryo Kajiwara
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/197/icon.png"
+  urlGithub: https://github.com/sylph01
+  urltwitter: https://twitter.com/s01
+  bio: "<p>A wild (freelance) programmer. I can do cryptography and authentication/authorization
+    a little.</p>"
+  subject: Adventures in the Dungeons of OpenSSL
+  summary: "<p>As part of implementing Hybrid Public Key Encryption (HPKE; RFC 9180)
+    in Ruby, I had a chance to send a patch into Ruby&#39;s OpenSSL gem. Missing functionalities?
+    Major version upgrade of the OpenSSL backend? There is a deep dungeon behind one
+    of Ruby&#39;s default gem, and I will talk about one adventure through this dungeon.
+    </p>"
+  language: English
+- name: Hiroshi SHIBATA
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/148/work_profile.jpeg"
+  title: Fellow, ANDPAD, Inc.
+  urlGithub: https://github.com/hsbt
+  urltwitter: https://twitter.com/hsbt
+  bio: "<p>OSS programmer, Ruby committer, maintainer of many OSS such as ruby, rubygems,
+    bundler, rake, and administrator of ruby-lang.org. He is working in public relations
+    of technology for ANDPAD Inc. and full time OSS developer for the Ruby programming
+    language.</p>"
+  subject: Deep dive into Ruby require
+  summary: |-
+    <p>Since Ruby&#39;s bundled and default gems change every year with each release, some versions may suddenly happen <code>LoadError</code> at <code>require</code> when running <code>bundle exec</code> or <code>bin/rails</code>, for example <code>matrix</code> or <code>net-smtp</code>.</p>
+    <p>In this presentation, I will introduce the details of the functionality that extends Ruby&#39;s <code>require</code> to provide guidance to users on what they can do to load them. And I will also show how $LOAD_PATH is build behind Ruby and Rails by Bundler.</p>
+  language: English
+- name: 政憲 邱
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"
+  title: Rails Developer, 五倍紅寶石
+  urlGithub: https://github.com/elct9620
+  urltwitter: https://twitter.com/elct9620
+  bio: "<p>程式語言愛好者，主要使用 Ruby 語言，認為軟體開發也能具備美感，正在尋找滿足敏捷、架構與享受開發過程之間的平衡點。</p>"
+  subject: Rethink Rails Architecture
+  summary: "<p>Rails 讓開發 Web Application 變得相當容易，然而因為簡化了許多問題，當我們面臨更複雜的系統時感到極大的挑戰。複雜的
+    Rails 專案之所以難以維護是 Rails 在架構上的設計造成的限制，讓我們重新思考 Rails 來尋找更容易維護的架構。</p>"
+  language: Chinese
+- name: Andrei Bondarev
+  avatar: "//avatars.githubusercontent.com/u/541665?v=3"
+  title: ''
+  urlGithub: https://github.com/andreibondarev
+  urltwitter: ''
+  bio: "<p>Andrei has been a software engineering professional for almost 13 years.
+    Among many others he’s been fortunate to make his impact at Spree Commerce (Acquired
+    by First Data), WeddingWire (merged with The Knot), FiscalNote (IPO), National
+    Public Radio, and USA Today. He currently runs a software dev firm, and serves
+    as an Architect/Engineering Manager/Fractional CTO on the client projects. In
+    his free time he enjoys playing tennis and going on long runs while listening
+    to podcasts.</p>"
+  subject: Building LLM applications in Ruby
+  summary: "<p>The Large-Language Models have taken application development by storm.
+    Ruby has libraries that help build LLM applications, e.g.: Langchain.rb. We need
+    to understand what kind of LLM applications can be built, how to build them, and
+    what are common pitfalls when building them. We&#39;re going to look at building
+    vector (semantic) search, chat bots and business process automation solutions.
+    We&#39;re going to learn AI/LLM-related concepts, terms and ideas, learn what
+    AI agents are, and look at some of the latest cutting edge AI research.</p>"
+  language: English
+- name: Hiếu Nguyễn
+  avatar: "//avatars.githubusercontent.com/u/1930954?v=3"
+  title: ''
+  urlGithub: https://github.com/hieuk09
+  urltwitter: ''
+  bio: |-
+    <p>I’m an enthusiastic programmer who focuses on backend development. Writing about coding is my usual blogging gig, but I also like to talk about books, manga, and other random things.</p>
+    <p>I’m currently Senior Staff Software Engineer at Ascenda. My work involves building world-class authentication system tailored for rewards program in financial industry.</p>
+    <p>You can also checkout my bio in <a href="https://hieuk09.github.io/bio">https://hieuk09.github.io/bio</a></p>
+  subject: Solving Real-World Challenges with Ruby Ractor
+  summary: "<p>In this talk, we explore on how we can take advantage of Ractor to
+    improve parallel processing in some real world scenarios, such as data encryption
+    and transaction processing. We delve into some features of Ractor, with their
+    strength and limitation, and how to migrate thread-based or process-based functionalities
+    using them. This talk hopefully will give the audience more insights on how they
+    can improve their application performance.</p>"
+  language: English
+- name: Charles Oliver Nutter
+  avatar: "//avatars.githubusercontent.com/u/10135?v=3"
+  title: ''
+  urlGithub: https://github.com/headius
+  urltwitter: ''
+  bio: "<p>Charles works on JRuby and JVM languages at Red Hat</p>"
+  subject: Ruby on the Modern JVM with JRuby
+  summary: "<p>Over the past year, the JVM has added native support for fibers (via
+    Project Loom virtual threads), native function calls (via Project Panama), and
+    now has started to add support for native ahead-of-time compilation. JRuby is
+    uniquely positioned to bring these features to Ruby! This talk will show how JRuby
+    is taking advantage of the modern JVM with exciting examples you can try today!</p>"
+  language: English
+- name: constdrop
+  avatar: "//avatars.githubusercontent.com/u/7455098?v=3"
+  title: ''
+  urlGithub: https://github.com/constdrop
+  urltwitter: ''
+  bio: |-
+    <ul>
+    <li>Name: Tetsuya Hirota</li>
+    <li>Job Title: Director and CTO at Dogrun Inc. (<a href="https://dogrun.jp/en/">https://dogrun.jp/en/</a>)</li>
+    <li>Location: Shizuoka-city Japan</li>
+    <li>My Job:
+    <ul>
+    <li>Bioinformatics database development.</li>
+    <li>Developing applications using deep learning for our clients.</li>
+    </ul></li>
+    <li>Volunteer: Programming courses mainly for children in Makinohara-city.</li>
+    </ul>
+  subject: High Speed Parsing Massive XML Data in Ruby
+  summary: "<p>A massive XML called BioProject has been published. However, when I
+    parsed the XML as it was, rexml got freeze somewhere, and nokogiri ended up consuming
+    a large amount of memory and being slow. Looking at the sample implementation
+    in Python, it uses iterparse() to parse each element in the first layer. Therefore,
+    we created a similar mechanism in Ruby and also used ractor to speed it up.</p>"
+  language: English
+- name: lulalala
+  avatar: "//avatars.githubusercontent.com/u/366910?v=3"
+  title: Listia
+  urlGithub: https://github.com/lulalala
+  urltwitter: ''
+  bio: "<p>A Rubyist from Taiwan who works for GitLab. My hobbies include traveling,
+    developing 2ch-like imageboard, and to draw doujinshi.</p>"
+  subject: Translating XML and Epub using ChatGPT
+  summary: "<p>Natsukantou and epub-translator gems offer XML translation by allowing
+    users to mix &amp; match filters and translation services (DeepL/ChatGPT). The
+    gem&#39;s architecture will be presented, showcasing its middleware pattern, the
+    use cases and wizard configuration inference.</p>"
+  language: English
+- name: Helio Cola
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/139/Me.jpg"
+  title: ''
+  urlGithub: https://github.com/heliocola
+  urltwitter: https://twitter.com/https://ruby.social/hacrods
+  bio: |-
+    <p>He(lio) is a passionate software engineer and has created things primarily in C/C++ &amp; Ruby, over the past 20+ years.
+    He(lio) met Ruby v1.8.7 and Rails 2.x in 2010 and it is a Happy Developer since then.</p>
+    <p>He(lio) is currently helping small and medium side Dev teams as a part-time Rails consultant, while he is dusting off some old products, building new ones, doing some OSS, and enjoying more time with his 2 children.</p>
+  subject: Let's pop into Passkeys
+  summary: |-
+    <p>Can you recall a world without having to remember passwords? If Passkeys becomes widely available, that world is a few steps away in our future. Instead of remembering passwords, we will use our biometrics, already available in our phones, laptops, and desktops, and public key encryption!
+    To a future with no passwords!</p>
+  language: English
+- name: cindyliu923
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/289/icon.jpg"
+  title: Development Engineer, DEVCORE
+  urlGithub: https://github.com/cindyliu923
+  urltwitter: ''
+  bio: |-
+    <p>大家好，我是 Cindy，5 年 Rails 工程師經驗，目前在資安公司 <a href="https://devco.re">DEVCORE</a> 擔任開發工程師，歡迎大家參觀我的 <a href="https://cindyliu923.com">個人網站</a>。
+    /
+    Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. I currently work as a developer at a cybersecurity company called <a href="https://devco.re">DEVCORE</a>. Feel free to visit my <a href="https://cindyliu923.com">personal website</a>.</p>
+  subject: 你有被同事打過嗎？ / Ever Been Punched by a Colleague?
+  summary: |-
+    <p>Race condition 是在 Ruby on Rails 應用程式中可能出現的問題之一，尤其涉及多執行緒的情況。這次演講提供了 race condition 的基本概念，以及如何在 Rails 中測試和解決這些問題的方法。測試 race condition 的方法至關重要，可以通過模擬並發情境來確保穩定性。</p>
+    <p>&quot;Race condition&quot; is a potential issue in Ruby on Rails applications, especially in situations involving multiple threads. This presentation provides a basic understanding of race conditions and how to test and resolve them in Rails. Testing for race conditions is crucial and can be achieved by simulating concurrent scenarios to ensure stability.</p>
+  language: Chinese
+- name: Stephen Margheim
+  avatar: "//avatars.githubusercontent.com/u/5077225?v=3"
+  title: ''
+  urlGithub: https://github.com/fractaledmind
+  urltwitter: ''
+  bio: "<p>Hey! I’m Stephen. I am an American expat living in Berlin Germany. I love
+    Ruby and I love SQLite.</p>"
+  subject: How (and why) to run SQLite in production
+  summary: "<p>You&#39;ve heard the whispers, sensed the hype, but you&#39;re still
+    not sure what all the fuss is about with SQLite these days. Join me as we explore
+    the use-cases and benefits of running SQLite in a production environment. Along
+    the way, we will learn why SQLite makes sense as your next production database
+    and how to ensure that your setup is optimized for end-user performance and developer
+    happiness. We will setup and deploy a full Rails application—with caching, background
+    jobs, websockets, and full-text search all backed by SQLite—in these 40 minutes.
+    Come along for the ride!</p>"
+  language: English
+- name: Junichi Kobayashi
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/203/my_icon.jpg"
+  title: ESM, Inc.
+  urlGithub: https://github.com/junk0612
+  urltwitter: https://twitter.com/junk0612
+  bio: "<p>永和システムマネジメントでWebエンジニアとして働いています。</p>"
+  subject: Understanding Parser Generators surronding Ruby with Contributing Lrama
+  summary: "<p>At RubyKaigi 2023, yui-knk introduced Lrama, for which I submitted
+    a PR to implement the &#39;Named References&#39; feature, a functionality found
+    in GNU Bison. In this presentation, I will delve into the internal workings of
+    Lrama gained through this implementation. Alongside, I will touch upon the foundational
+    knowledge of parsers and parser generators, as well as the current state of parsers
+    surrounding Ruby.</p>"
+  language: English
+- name: Huy Du Gia
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/299/3.jpg"
+  title: Software Engineer, Rakuten Viki
+  urlGithub: https://github.com/dugiahuy
+  urltwitter: https://twitter.com/DuGiaHuy
+  bio: "<p>Huy is a Software Engineer driven by a genuine passion for his craft. He
+    loves tackling complex challenges in finance and technology. He firmly believes
+    that technology can revolutionize our world in every aspect, and he’s excited
+    about using his skills to make a positive impact.</p>"
+  subject: Monadic Approach to Ruby Error Handling
+  summary: |-
+    <p>Error handling is an essential part of software development. No matter how well-written your code is, there will always be errors. The key is to handle them in a way that minimizes their impact.</p>
+    <p>In this talk, we will build a foundation of error handling concepts, categorizing errors and exceptions in Ruby. We&#39;ll look at practical code examples that demonstrate common issues when propagating errors through layers of code. Explore how Monadic Handling abstract away error handling details by combine Monads Result and Service Object in Ruby programming. </p>
+    <p>This talk will empower you understand how to use Monadic Handling Ruby code. You&#39;ll leave with a deeper appreciation of monads and concrete strategies for encapsulating errors elegantly in your Ruby applications. Join me to discover how monads enable you to minimize disruption and maximize control over error handling in Ruby.</p>
+  language: English
+- name: Radoslav Stankov
+  avatar: "//avatars.githubusercontent.com/u/9867?v=3"
+  title: ''
+  urlGithub: https://github.com/RStankov
+  urltwitter: ''
+  bio: "<p>Rado has more than 20 years of experience working in tech. He is currently
+    the CTO and Co-Founder at Angry Building. Previously was Head of Engineering at
+    Product Hunt. Enjoys blogging, conference speaking, and solving problems.</p>"
+  subject: Component Driven UI with ViewComponent gem
+  summary: |-
+    <p>The View layer is the messiest part of a Ruby on Rails application. Developers are confused about where to put logic. Should it be in the model, presenter, decorator, helper, or partial?</p>
+    <p>ViewComponents, developed by GitHub simplifies the View layer and makes it much easier to manage.</p>
+  language: English
+- name: Hitoshi Hasumi
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/277/hasumikin.jpg"
+  title: Monstarlab
+  urlGithub: https://github.com/hasumikin
+  urltwitter: https://twitter.com/hasumikin
+  bio: |-
+    <p>Creator of PicoRuby and PRK Firmware.
+    Maintainer of CRuby&#39;s IRB and Reline.
+    A final nominee of the Ruby Prize 2021.
+    Twice first prize winner of the Fukuoka Ruby Award in 2020 and 2022.</p>
+  subject: The Rise of Microcontroller Ruby
+  summary: |-
+    <p>In this presentation, we will embark on a journey of live coding to bring microcontrollers to life.
+    All you need is (at least) two &quot;Raspberry Pi Pico W&quot; boards, the same number of USB cables, and a laptop.
+    Witness the realization of PicoRuby, a production-ready Ruby implementation for microcontrollers, as we delve into the world of innovation.</p>
+  language: English
+- name: Masafumi OKURA
+  avatar: "//avatars.githubusercontent.com/u/1012014?v=3"
+  title: Software developer
+  urlGithub: https://github.com/okuramasafumi
+  urltwitter: https://twitter.com/okuramasafumi
+  bio: "<p>Rubyist, Kaigi on Rails chief organizer, the author of Alba gem.</p>"
+  subject: Writing Minitest clone in 30 minutes
+  summary: |-
+    <p>Minitest is a testing library for Ruby that&#39;s bundled with CRuby. Unlike RSpec, it takes more straightforward approach. Class, method and assertion are all we need to write tests in Minitest.
+    However, there are still some magical things going on here. What do assertions actually do? How does <code>autorun</code> feature work?
+    In this talk, we&#39;ll write code together. More specifically, we&#39;ll write simpler clone of Minitest and make it work.</p>
+  language: English
+- name: Cristian Planas
+  avatar: "//avatars.githubusercontent.com/u/279106?v=3"
+  title: ''
+  urlGithub: https://github.com/Gawyn
+  urltwitter: ''
+  bio: |-
+    <p>I am a software engineer that has been working primarily with Rails since the release of Rails 3, more than 10 years ago.</p>
+    <p>Performance optimization has been an obsession for me since I founded my first start-up as a solo engineer in 2012. Currently, I am a Group Tech Lead and Senior Staff Engineer at Zendesk, where I focus on performance optimization.</p>
+  subject: 'A Rails performance guidebook: from 0 to 1B requests/day'
+  summary: |-
+    <p>Building a feature is not good enough anymore: all your work won&#39;t be of use if it&#39;s not performant enough. So how to improve performance? After all, performance is not an easy discipline to master: all slow applications are slow in their own way, meaning that there is no silver bullet for these kinds of problems.</p>
+    <p>In this presentation, we will guide you across patterns, strategies, and little tricks to improve performance. We will do that by sharing real stories of our daily experience facing and solving real performance issues in an application that daily serves billions of requests per day.</p>
+  language: English
+- name: Tse-Ching Ho
+  avatar: "//avatars.githubusercontent.com/u/12554?v=3"
+  title: ''
+  urlGithub: https://github.com/tsechingho
+  urltwitter: ''
+  bio: |-
+    <p>何澤清，Ruby/Rails/React 工程師，黃碼科技負責人。
+    具多年純 Rails 或純 React 或 Rails + React 混合式專案的開發經驗。
+    擅長網站應用系統規劃和製作，熟悉專業顧問和教育訓練。
+    目前偏好前後端分離開發，特別重視 UI/UX 的規劃和 API 的設計。</p>
+  subject: 從設計階段就開始元件化 Rails 專案
+  summary: |-
+    <p>介紹如何從 Figma 設計稿，就開始規劃、製作與預覽元件（View Component + Lookbook）。
+    說明目前偏好的元件組成方式，協助製作元件的工具和注意事項，以及安置元件到頁面中的方式（partial + helper）。
+    展示利用 settings 搭配 builder 活用元件的嘗試。</p>
+  language: Chinese
+- name: Warren Wong
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/302/proprofile.jpeg"
+  title: CTO, Viewabo
+  urlGithub: https://github.com/wrrnwng
+  urltwitter: https://twitter.com/wrrnwng
+  bio: "<p>I&#39;m the CTO of Viewabo, a venture-backed startup. We help our partner
+    companies see what their customers see.</p>"
+  subject: How Rails 7 Helped Us Achieve GDPR Compliance
+  summary: "<p>Rails 7 introduced a new feature called Active Record Encryption. I
+    will go over what it is, how it works, and how Viewabo used it to help us achieve
+    GDPR compliance. I will include example usage and an overview of the preparatory
+    work that went into implementing Active Record Encryption.</p>"
+  language: English
+- name: John Lin
+  avatar: "//avatars.githubusercontent.com/u/529248?v=3"
+  title: ''
+  urlGithub: https://github.com/johnlinvc
+  urltwitter: ''
+  bio: <p>Principle Engineer at West Pharmaceutical Services. Ruby lover. All-stack
+    developer. Organizer of Swift Taipei. Find me at <a href="https://johnlin.vc">https://johnlin.vc</a></p>
+  subject: 發掘 Ruby 的內建 Gems / Unearth Ruby builtin Gems
+  summary: |-
+    <p>你曾經在不用外部 <code>Gems</code> 的情況下使用 Ruby 嗎？</p>
+    <p>Ruby 其實內建了很多非常實用的 <code>Gems</code>。不需要做任何的額外安裝就可以直接使用。
+    這些<code>Gems</code> 包括方便的資料結構與演算法，跨平台的檔案處理，實用的簡易伺服器等等。讓我們一起來發掘各種鮮為人知的內建 <code>Gems</code>。</p>
+    <p>How many times did you run <code>ruby</code> without external <code>Gems</code>?</p>
+    <p>Ruby includes many <code>Gems</code> by default. We can use them without extra installation steps. These <code>Gems</code> includes convenient data structure and algorithms, cross platform file handling and practical simple server, etc. Let&#39;s unearth the less known builtin <code>Gems</code>.</p>
+  language: Chinese
+- name: Yuji Yokoo
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/181/Yuji.jpeg"
+  title: ''
+  urlGithub: https://github.com/yujiyokoo
+  urltwitter: https://twitter.com/yujiyokoo
+  bio: "<p>Yuji is a long-time programmer and software developer based in Adelaide,
+    Australia. He is from and grew up in Tokyo, Japan playing lots of video games.
+    He used to be a Windows desktop application developer until he discovered Ruby.</p>"
+  subject: Developing cross-platform mruby software for Dreamcast and Wii
+  summary: |-
+    <p>With mruby, we can write Ruby for many environments including old video game consoles. I am working on a cross-platform library for mruby so software written for mruby on Dreamcast can be run on Wii with little change to the source. I have ported the block puzzle I showed at RubyConfTW 2019 to Wii, and am now working on the presentation tool.</p>
+    <p>I will tell you about what is involved in making a cross-platform mruby library for Dreamcast and Wii, as well as challenges and lessons learned.</p>
+    <p>This presentation will (hopefully) be delivered on either of those consoles and will include some live demos.</p>
+  language: English
+- name: ihower
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/104/IMG_7663_square.jpg"
+  title: ''
+  urlGithub: https://github.com/ihower
+  urltwitter: ''
+  bio: "<p>張文鈿，網路暱稱是 ihower。2006 年開始用 Ruby 進行開發，著有 &quot;Rails 實戰聖經&quot; 一書，2018
+    年成立愛好資訊科技有限公司。近期熱衷投入 Generative AI 和 LLM 的應用開發，並發行 &quot;愛好 AI Engineer&quot;
+    電子報分享新知。</p>"
+  subject: '淺談 Generative AI Engineer: 給 Rubyist 的上手指南'
+  summary: "<p>在這場分享中，我們將新定義 Generative AI Engineer (生成式 AI 工程師) 這一新興職位。除了 LLM 模型本身之外，要真正開發
+    AI 應用，我們還需要面對許多的挑戰和工作。隨著開發 AI 應用的門檻逐漸降低，許多原先沒有 AI 背景的應用軟體工程師，現在也能透過呼叫 LLM API
+    轉型成為 AI 工程師，不再需要從零開始學習訓練機器學習模型，而是專注在 Prompt Engineering (提示工程) 和開發各種 AI 應用，如 Chatbot、Retrieval
+    Augmented Generation(RAG)、Vector Search、Agents 和 OpenAI Function Calling 等。歡迎一起探索這個新時代的
+    AI 工程師角色。</p>"
+  language: Chinese
+- name: 煒航 簡
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/304/tony.png"
+  title: ''
+  urlGithub: https://github.com/tonytonyjan
+  urltwitter: ''
+  bio: "<p>Rubyist, Rustacean, Web Developer, Software Architect, Conference Speaker,
+    Book Writer, Amateur Piano Player/Composer, Video Gamer, Whiskey Lover.</p>"
+  subject: 'Refining Fork Management: From Workarounds to `Process#_fork`'
+  summary: |-
+    <p>With the release of Ruby 3.1 in 2021, an enhancement arrived as <code>Process#_fork</code>, allowing us to override the fork method. This addition simplifies creating callbacks when forking. While there was no official method to track fork events prior to Ruby 3.1, this limitation didn&#39;t deter the community from exploring various approaches to achieve the same goal.</p>
+    <p>In the past, Rails encouraged the use of <code>before_fork</code> and <code>after_fork</code> for connection management, redis-rb ensured fork safety by storing the <code>Process#pid</code> in a variable, and some even used threads to track fork events.</p>
+    <p>During this session, I will delve into the backstory of <code>_fork</code> and explore the diverse methods the community employed for creating callbacks during forking prior to Ruby 3.1.</p>
+  language: Chinese
+- name: Ted Johansson
+  avatar: "//cfp.rubyconf.tw/uploads/user/photo/40/9KKRA.png"
+  title: Baconware
+  urlGithub: https://github.com/Drenmi
+  urltwitter: https://twitter.com/drenmi
+  bio: "<p>A web developer of twenty years, and a Rubyist of ten, Ted spends his time
+    both at work (Discourse) and outside of it contributing to open source projects.
+    He&#39;s also really into rock climbing, but not particularly good at it. You&#39;ll
+    often find him reminiscing about &quot;the good old days&quot;, when web development
+    (allegedly) wasn&#39;t so complicated.</p>"
+  subject: The Forgotten Web
+  summary: |-
+    <p>Is Rails still a good choice in 2023? For a new project at work? For a side hustle? How about for someone just looking to get into web development? How does it stack up against &quot;modern&quot; frameworks?</p>
+    <p>In this presentation we explore the ancient history of web development, discuss the perils of &quot;the modern web application&quot;, highlight a brewing generational conflict, and examine how Rails&#39; connection to the past puts it in a unique position to project itself into the future.</p>
+  language: English
