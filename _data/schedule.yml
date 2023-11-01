@@ -1,0 +1,424 @@
+- id: 0
+  day: 1
+  time: 09:00 am
+  end: 10:00 am
+  title: "Registration"
+- id: 1
+  day: 1
+  room: L405
+  time: 10:00 am
+  end: 10:20 am
+  title: "Opening"
+- id: 2
+  day: 1
+  time: 10:20 am
+  end: 11:20 am
+  sessions:
+    - session_id: 1
+      subject: "TBD"
+      lang: "EN"
+      speakers: [0]
+- id: 3
+  day: 1
+  room: L405
+  time: 11:20 am
+  end: 11:25 am
+  title: "Break"
+- id: 4
+  day: 1
+  time: 11:25 am
+  end: 12:05 pm
+  sessions:
+    - session_id: 2
+      room: L405
+      subject: "A Rails performance guidebook: from 0 to 1B requests/day"
+      summary: |-
+        <p>Building a feature is not good enough anymore: all your work won&#39;t be of use if it&#39;s not performant enough. So how to improve performance? After all, performance is not an easy discipline to master: all slow applications are slow in their own way, meaning that there is no silver bullet for these kinds of problems.</p>
+        <p>In this presentation, we will guide you across patterns, strategies, and little tricks to improve performance. We will do that by sharing real stories of our daily experience facing and solving real performance issues in an application that daily serves billions of requests per day.</p>
+      lang: "EN"
+      speakers: [18]
+    - session_id: 3
+      room: L406
+      subject: "Adventures in the Dungeons of OpenSSL"
+      summary: |-
+        As part of implementing Hybrid Public Key Encryption (HPKE; RFC 9180)
+        in Ruby, I had a chance to send a patch into Ruby&#39;s OpenSSL gem. Missing functionalities?
+        Major version upgrade of the OpenSSL backend? There is a deep dungeon behind one
+        of Ruby&#39;s default gem, and I will talk about one adventure through this dungeon.
+      lang: "EN"
+      speakers: [2]
+- id: 5
+  day: 1
+  time: 12:05 pm
+  end: 13:30 pm
+  title: "LUNCH"
+- id: 6
+  day: 1
+  time: 13:30 pm
+  end: 14:10 pm
+  sessions:
+    - session_id: 4
+      room: L405
+      subject: Developing cross-platform mruby software for Dreamcast and Wii
+      summary: |-
+        <p>With mruby, we can write Ruby for many environments including old video game consoles. I am working on a cross-platform library for mruby so software written for mruby on Dreamcast can be run on Wii with little change to the source. I have ported the block puzzle I showed at RubyConfTW 2019 to Wii, and am now working on the presentation tool.</p>
+        <p>I will tell you about what is involved in making a cross-platform mruby library for Dreamcast and Wii, as well as challenges and lessons learned.</p>
+        <p>This presentation will (hopefully) be delivered on either of those consoles and will include some live demos.</p>
+      lang: "EN"
+      speakers: [22]
+    - session_id: 5
+      room: L406
+      subject: High Speed Parsing Massive XML Data in Ruby
+      summary:
+        "<p>A massive XML called BioProject has been published. However, when I
+        parsed the XML as it was, rexml got freeze somewhere, and nokogiri ended up consuming
+        a large amount of memory and being slow. Looking at the sample implementation
+        in Python, it uses iterparse() to parse each element in the first layer. Therefore,
+        we created a similar mechanism in Ruby and also used ractor to speed it up.</p>"
+      lang: "EN"
+      speakers: [8]
+- id: 7
+  day: 1
+  time: 14:10 pm
+  end: 14:15 pm
+  title: "Break"
+- id: 8
+  day: 1
+  time: 14:15 pm
+  end: 14:55 pm
+  sessions:
+    - session_id: 6
+      room: L405
+      subject: "Refining Fork Management: From Workarounds to `Process#_fork`"
+      summary: |-
+        <p>With the release of Ruby 3.1 in 2021, an enhancement arrived as <code>Process#_fork</code>, allowing us to override the fork method. This addition simplifies creating callbacks when forking. While there was no official method to track fork events prior to Ruby 3.1, this limitation didn&#39;t deter the community from exploring various approaches to achieve the same goal.</p>
+        <p>In the past, Rails encouraged the use of <code>before_fork</code> and <code>after_fork</code> for connection management, redis-rb ensured fork safety by storing the <code>Process#pid</code> in a variable, and some even used threads to track fork events.</p>
+        <p>During this session, I will delve into the backstory of <code>_fork</code> and explore the diverse methods the community employed for creating callbacks during forking prior to Ruby 3.1.</p>
+      lang: "CN"
+      speakers: [24]
+    - session_id: 7
+      room: L406
+      subject: Translating XML and Epub using ChatGPT
+      summary:
+        "<p>Natsukantou and epub-translator gems offer XML translation by allowing
+        users to mix &amp; match filters and translation services (DeepL/ChatGPT). The
+        gem&#39;s architecture will be presented, showcasing its middleware pattern, the
+        use cases and wizard configuration inference.</p>"
+      lang: "EN"
+      speakers: [9]
+- id: 9
+  day: 1
+  time: 14:55 pm
+  end: 15:30 pm
+  title: "Tea Time"
+- id: 10
+  day: 1
+  time: 15:30 pm
+  end: 16:10 pm
+  sessions:
+    - session_id: 8
+      room: L405
+      subject: Deep dive into Ruby require
+      summary: |-
+        <p>Since Ruby&#39;s bundled and default gems change every year with each release, some versions may suddenly happen <code>LoadError</code> at <code>require</code> when running <code>bundle exec</code> or <code>bin/rails</code>, for example <code>matrix</code> or <code>net-smtp</code>.</p>
+        <p>In this presentation, I will introduce the details of the functionality that extends Ruby&#39;s <code>require</code> to provide guidance to users on what they can do to load them. And I will also show how $LOAD_PATH is build behind Ruby and Rails by Bundler.</p>
+      lang: "EN"
+      speakers: [3]
+    - session_id: 9
+      room: L406
+      subject: "Let's pop into Passkeys"
+      summary: |-
+        <p>Can you recall a world without having to remember passwords? If Passkeys becomes widely available, that world is a few steps away in our future. Instead of remembering passwords, we will use our biometrics, already available in our phones, laptops, and desktops, and public key encryption!
+        To a future with no passwords!</p>
+      lang: "EN"
+      speakers: [10]
+- id: 11
+  day: 1
+  time: 16:10 pm
+  end: 16:15 pm
+  title: "Break"
+- id: 12
+  day: 1
+  time: 16:15 pm
+  end: 16:55 pm
+  sessions:
+    - session_id: 10
+      room: L405
+      subject: 從設計階段就開始元件化 Rails 專案
+      summary: |-
+        <p>介紹如何從 Figma 設計稿，就開始規劃、製作與預覽元件（View Component + Lookbook）。
+        說明目前偏好的元件組成方式，協助製作元件的工具和注意事項，以及安置元件到頁面中的方式（partial + helper）。
+        展示利用 settings 搭配 builder 活用元件的嘗試。</p>
+      lang: "CN"
+      speakers: [19]
+    - session_id: 11
+      room: L406
+      subject: Understanding Parser Generators surronding Ruby with Contributing Lrama
+      summary:
+        "<p>At RubyKaigi 2023, yui-knk introduced Lrama, for which I submitted
+        a PR to implement the &#39;Named References&#39; feature, a functionality found
+        in GNU Bison. In this presentation, I will delve into the internal workings of
+        Lrama gained through this implementation. Alongside, I will touch upon the foundational
+        knowledge of parsers and parser generators, as well as the current state of parsers
+        surrounding Ruby.</p>"
+      lang: "EN"
+      speakers: [13]
+- id: 13
+  day: 1
+  time: 16:55 pm
+  end: 17:00 pm
+  title: "Break"
+- id: 14
+  day: 1
+  time: 17:00 pm
+  end: 17:40 pm
+  sessions:
+    - session_id: 12
+      room: L405
+      subject: The Rise of Microcontroller Ruby
+      summary: |-
+        <p>In this presentation, we will embark on a journey of live coding to bring microcontrollers to life.
+        All you need is (at least) two &quot;Raspberry Pi Pico W&quot; boards, the same number of USB cables, and a laptop.
+        Witness the realization of PicoRuby, a production-ready Ruby implementation for microcontrollers, as we delve into the world of innovation.</p>
+      lang: "EN"
+      speakers: [16]
+    - session_id: 13
+      room: L406
+      subject: Component Driven UI with ViewComponent gem
+      summary: |-
+        <p>The View layer is the messiest part of a Ruby on Rails application. Developers are confused about where to put logic. Should it be in the model, presenter, decorator, helper, or partial?</p>
+        <p>ViewComponents, developed by GitHub simplifies the View layer and makes it much easier to manage.</p>
+      lang: "EN"
+      speakers: [15]
+- id: 15
+  day: 2
+  time: 09:30 am
+  end: 10:00 am
+  title: "Registration"
+- id: 16
+  day: 2
+  time: 10:00 am
+  end: 10:40 am
+  sessions:
+    - session_id: 14
+      room: L405
+      subject: Rethink Rails Architecture
+      summary:
+        "<p>Rails 讓開發 Web Application 變得相當容易，然而因為簡化了許多問題，當我們面臨更複雜的系統時感到極大的挑戰。複雜的
+        Rails 專案之所以難以維護是 Rails 在架構上的設計造成的限制，讓我們重新思考 Rails 來尋找更容易維護的架構。</p>"
+      lang: "CN"
+      speakers: [4]
+    - session_id: 15
+      room: L406
+      subject: Building LLM applications in Ruby
+      summary:
+        "<p>The Large-Language Models have taken application development by storm.
+        Ruby has libraries that help build LLM applications, e.g.: Langchain.rb. We need
+        to understand what kind of LLM applications can be built, how to build them, and
+        what are common pitfalls when building them. We&#39;re going to look at building
+        vector (semantic) search, chat bots and business process automation solutions.
+        We&#39;re going to learn AI/LLM-related concepts, terms and ideas, learn what
+        AI agents are, and look at some of the latest cutting edge AI research.</p>"
+      lang: "EN"
+      speakers: [5]
+- id: 17
+  day: 2
+  time: 10:40 am
+  end: 10:45 am
+  title: "Break"
+- id: 18
+  day: 2
+  time: 10:45 am
+  end: 11:25 am
+  sessions:
+    - session_id: 16
+      room: L405
+      subject: Handling 225k requests per second to RubyGems.org
+      summary: |-
+        Chances are you’ve run bundle install or gem install at some point, seeing as we’re at RubyConf. Turns out, you’re not alone. At peak times, RubyGems.org has received as many as 225 thousand requests per second. How does a small, mostly-volunteer team handle serving all that traffic with their rails app? Let’s dive into how using CDNs, scaling with static files, and wrangling expensive endpoints has kept your favorite gem index up and running over the past decade.
+      lang: "EN"
+      speakers:
+        - name: "Samuel Giddins"
+          avatar: "//avatars.githubusercontent.com/u/1946610?v=3"
+    - session_id: 17
+      room: L406
+      subject: How Rails 7 Helped Us Achieve GDPR Compliance
+      summary:
+        "<p>Rails 7 introduced a new feature called Active Record Encryption. I
+        will go over what it is, how it works, and how Viewabo used it to help us achieve
+        GDPR compliance. I will include example usage and an overview of the preparatory
+        work that went into implementing Active Record Encryption.</p>"
+      lang: "EN"
+      speakers: [20]
+- id: 19
+  day: 2
+  time: 11:25 am
+  end: 11:30 am
+  title: "Break"
+- id: 20
+  day: 2
+  time: 11:30 am
+  end: 12:10 am
+  sessions:
+    - session_id: 18
+      room: L405
+      subject: Yet Another Ruby DSL for LLM
+      summary: |-
+        在過去一年裏我們經歷了 LLM 的巨大衝擊，但是對於使用 LLM 實作應用依然困難重重。如何利用 Ruby 的 meta-programming 更好地對 LLM 進行處理和約束從而實作下一世代的 AI 應用是本 Topic 試圖討論的關鍵問題。
+      lang: "CN"
+      speakers:
+        - name: "Delton Ding"
+          avatar: "//avatars.githubusercontent.com/u/2303500?v=3"
+    - session_id: 19
+      room: L406
+      subject: Monadic Approach to Ruby Error Handling
+      summary: |-
+        <p>Error handling is an essential part of software development. No matter how well-written your code is, there will always be errors. The key is to handle them in a way that minimizes their impact.</p>
+        <p>In this talk, we will build a foundation of error handling concepts, categorizing errors and exceptions in Ruby. We&#39;ll look at practical code examples that demonstrate common issues when propagating errors through layers of code. Explore how Monadic Handling abstract away error handling details by combine Monads Result and Service Object in Ruby programming. </p>
+        <p>This talk will empower you understand how to use Monadic Handling Ruby code. You&#39;ll leave with a deeper appreciation of monads and concrete strategies for encapsulating errors elegantly in your Ruby applications. Join me to discover how monads enable you to minimize disruption and maximize control over error handling in Ruby.</p>
+      lang: "EN"
+      speakers: [14]
+- id: 21
+  day: 2
+  time: 12:10 pm
+  end: 13:30 pm
+  title: "LUNCH"
+- id: 22
+  day: 2
+  time: 13:30 pm
+  end: 14:10 pm
+  sessions:
+    - session_id: 20
+      room: L405
+      subject: Writing Minitest clone in 30 minutes
+      summary: |-
+        <p>Minitest is a testing library for Ruby that&#39;s bundled with CRuby. Unlike RSpec, it takes more straightforward approach. Class, method and assertion are all we need to write tests in Minitest.
+        However, there are still some magical things going on here. What do assertions actually do? How does <code>autorun</code> feature work?
+        In this talk, we&#39;ll write code together. More specifically, we&#39;ll write simpler clone of Minitest and make it work.</p>
+      lang: "EN"
+      speakers: [17]
+    - session_id: 21
+      room: L406
+      subject: 發掘 Ruby 的內建 Gems / Unearth Ruby builtin Gems
+      summary: |-
+        <p>你曾經在不用外部 <code>Gems</code> 的情況下使用 Ruby 嗎？</p>
+        <p>Ruby 其實內建了很多非常實用的 <code>Gems</code>。不需要做任何的額外安裝就可以直接使用。
+        這些<code>Gems</code> 包括方便的資料結構與演算法，跨平台的檔案處理，實用的簡易伺服器等等。讓我們一起來發掘各種鮮為人知的內建 <code>Gems</code>。</p>
+        <p>How many times did you run <code>ruby</code> without external <code>Gems</code>?</p>
+        <p>Ruby includes many <code>Gems</code> by default. We can use them without extra installation steps. These <code>Gems</code> includes convenient data structure and algorithms, cross platform file handling and practical simple server, etc. Let&#39;s unearth the less known builtin <code>Gems</code>.</p>
+      lang: "CN"
+      speakers: [21]
+- id: 23
+  day: 2
+  time: 14:10 pm
+  end: 14:15 pm
+  title: "Break"
+- id: 24
+  day: 2
+  time: 14:15 pm
+  end: 14:55 pm
+  sessions:
+    - session_id: 22
+      room: L405
+      subject: How (and why) to run SQLite in production
+      summary:
+        "<p>You&#39;ve heard the whispers, sensed the hype, but you&#39;re still
+        not sure what all the fuss is about with SQLite these days. Join me as we explore
+        the use-cases and benefits of running SQLite in a production environment. Along
+        the way, we will learn why SQLite makes sense as your next production database
+        and how to ensure that your setup is optimized for end-user performance and developer
+        happiness. We will setup and deploy a full Rails application—with caching, background
+        jobs, websockets, and full-text search all backed by SQLite—in these 40 minutes.
+        Come along for the ride!</p>"
+      lang: "EN"
+      speakers: [12]
+    - session_id: 23
+      room: L406
+      subject: The Forgotten Web
+      summary: |-
+        <p>Is Rails still a good choice in 2023? For a new project at work? For a side hustle? How about for someone just looking to get into web development? How does it stack up against &quot;modern&quot; frameworks?</p>
+        <p>In this presentation we explore the ancient history of web development, discuss the perils of &quot;the modern web application&quot;, highlight a brewing generational conflict, and examine how Rails&#39; connection to the past puts it in a unique position to project itself into the future.</p>
+      lang: "EN"
+      speakers: [25]
+
+- id: 25
+  day: 2
+  time: 14:55 am
+  end: 15:25 pm
+  title: "Tea Time"
+- id: 26
+  day: 2
+  time: 15:25 pm
+  end: 16:05 pm
+  sessions:
+    - session_id: 24
+      room: L405
+      subject: "淺談 Generative AI Engineer: 給 Rubyist 的上手指南"
+      summary:
+        "<p>在這場分享中，我們將新定義 Generative AI Engineer (生成式 AI 工程師) 這一新興職位。除了 LLM 模型本身之外，要真正開發
+        AI 應用，我們還需要面對許多的挑戰和工作。隨著開發 AI 應用的門檻逐漸降低，許多原先沒有 AI 背景的應用軟體工程師，現在也能透過呼叫 LLM API
+        轉型成為 AI 工程師，不再需要從零開始學習訓練機器學習模型，而是專注在 Prompt Engineering (提示工程) 和開發各種 AI 應用，如 Chatbot、Retrieval
+        Augmented Generation(RAG)、Vector Search、Agents 和 OpenAI Function Calling 等。歡迎一起探索這個新時代的
+        AI 工程師角色。</p>"
+      lang: "CN"
+      speakers: [23]
+    - session_id: 25
+      room: L406
+      subject: Solving Real-World Challenges with Ruby Ractor
+      summary:
+        "<p>In this talk, we explore on how we can take advantage of Ractor to
+        improve parallel processing in some real world scenarios, such as data encryption
+        and transaction processing. We delve into some features of Ractor, with their
+        strength and limitation, and how to migrate thread-based or process-based functionalities
+        using them. This talk hopefully will give the audience more insights on how they
+        can improve their application performance.</p>"
+      lang: "EN"
+      speakers: [6]
+- id: 27
+  day: 2
+  time: 16:05 pm
+  end: 16:10 pm
+  title: "Break"
+- id: 28
+  day: 2
+  time: 16:10 pm
+  end: 16:50 pm
+  sessions:
+    - session_id: 26
+      room: L405
+      subject: Ruby on the Modern JVM with JRuby
+      summary:
+        "<p>Over the past year, the JVM has added native support for fibers (via
+        Project Loom virtual threads), native function calls (via Project Panama), and
+        now has started to add support for native ahead-of-time compilation. JRuby is
+        uniquely positioned to bring these features to Ruby! This talk will show how JRuby
+        is taking advantage of the modern JVM with exciting examples you can try today!</p>"
+      lang: "EN"
+      speakers: [7]
+    - session_id: 27
+      room: L406
+      subject: 你有被同事打過嗎？ / Ever Been Punched by a Colleague?
+      summary: |-
+        <p>Race condition 是在 Ruby on Rails 應用程式中可能出現的問題之一，尤其涉及多執行緒的情況。這次演講提供了 race condition 的基本概念，以及如何在 Rails 中測試和解決這些問題的方法。測試 race condition 的方法至關重要，可以通過模擬並發情境來確保穩定性。</p>
+        <p>&quot;Race condition&quot; is a potential issue in Ruby on Rails applications, especially in situations involving multiple threads. This presentation provides a basic understanding of race conditions and how to test and resolve them in Rails. Testing for race conditions is crucial and can be achieved by simulating concurrent scenarios to ensure stability.</p>
+      lang: "CN"
+      speakers: [11]
+- id: 29
+  day: 2
+  time: 16:50 am
+  end: 16:55 pm
+  title: "Break"
+- id: 30
+  day: 2
+  time: 16:55 pm
+  end: 17:55 pm
+  sessions:
+    - session_id: 28
+      subject: Keynote
+      lang: "EN"
+      speakers: [1]
+- id: 31
+  day: 2
+  time: 17:55 am
+  end: 18:05 pm
+  title: "Closing"

@@ -24,61 +24,65 @@
         <div
           class="hidden md:grid grid-cols-3 justify-items-center items-center bg-dark-blue-200 text-white font-medium text-base">
           <div class="grid col-start-2 gap-1 text-center justify-items-center py-5 font-semibold">
-            1001 Auditorium
+            L405 Auditorium
           </div>
           <div class="grid gap-1 text-center justify-items-center py-5 font-semibold">
-            1002 Auditorium
+            L406 Auditorium
           </div>
         </div>
         {% for item in site.data.schedule %}
-        <div x-show="day == {{item.day}}" x-data="{open: false, toggle() { this.open = ! this.open }  }">
+        <div x-show="day == {{item.day}}" x-data="{open_id: 0}">
           {% if item.title %}
           <!-- Title -->
           <div class="grid grid-cols-3 justify-items-center items-center bg-zinc-100 font-medium text-base">
-            <div class="col-span-3 md:col-span-1 grid gap-1 text-center justify-items-start py-5 font-semibold">
+            <div class="col-span-3 md:col-span-1 grid gap-1 justify-items-start py-5 font-semibold text-center text-2xl md:text-xl">
               {{ item.time}}
             </div>
             <div
-              class="col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center py-5 uppercase text-lg font-bold text-dark-pink-100">
+              {% if item.title == 'Break' %}
+                class="col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center py-5 uppercase text-lg font-bold text-gray"
+              {% else %}
+                class="col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center py-5 uppercase text-lg font-bold text-dark-pink-100"
+              {% endif %}>
               {{ item.title }}
             </div>
           </div>
           {% else %}
-          <!-- agenda -->
-          <div class="grid grid-cols-3 gap-y-2 justify-items-center items-center bg-white py-10">
-            <div class="block md:hidden col-span-3 md:col-span-1 text-center">
-              <p class="rounded px-2 py-1 bg-dark-blue-200 text-white text-sm font-semiblod">{{ item.room }}</p>
-            </div>
+          <!-- sessions start -->
+          <div class="grid grid-cols-3 gap-y-2 justify-items-center items-center bg-white py-6 md:py-10">
             <div class="col-span-3 md:col-span-1 text-center">
-              <p class="text-lg font-semibold">{{ item.time}}</p>
+              <p class="text-2xl md:text-xl font-semibold">{{ item.time}}</p>
             </div>
+            {% for session in item.sessions %}
             <!-- Speaker avatar and info -->
-            {% for speaker_item in item.speaker %}
-            {% if item.room == 1001 %}
-            <button @click="toggle()"
-              class="group col-statr-1 md:col-start-2 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center">
-              {% include schedule_card.html title_main=item.title_main lang=item.lang
-              speaker_name=speaker_item.name subtitle=item.subtitle speaker_avatar=speaker_item.avatar %}
+            <button @click="open_id = {{session.session_id}}"
+              {% if session.room == 'L405' %}
+              class="group col-statr-1 md:col-start-2 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center"
+              {% elsif session.room == 'L406' %}
+              class="group col-statr-1 md:col-start-3 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center"
+              {% else %}
+              class="group col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center"
+              {% endif %}
+            >
+            {% for speaker_index in session.speakers %}
+              {% if speaker_index.name %}
+                {% include schedule_card.html subject=session.subject lang=session.lang
+                  speaker_name=speaker_index.name speaker_avatar=speaker_index.avatar room=session.room %}
+              {% else %}
+                {% assign speaker = site.data.speaker[speaker_index] %}
+                {% include schedule_card.html subject=session.subject lang=session.lang
+                speaker_name=speaker.name speaker_avatar=speaker.avatar room=session.room %}
+              {% endif %}
+            {% endfor %}
             </button>
-            {% elsif item.room == 1002 %}
-            <button @click="toggle()"
-              class="group col-statr-1 md:col-start-3 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center">
-              {% include schedule_card.html title_main=item.title_main lang=item.lang
-              speaker_name=speaker_item.name subtitle=item.subtitle speaker_avatar=speaker_item.avatar %}
-            </button>
-            {% else %}
-            <button @click="toggle()"
-              class="group col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center">
-              {% include schedule_card.html title_main=item.title_main lang=item.lang
-              speaker_name=speaker_item.name subtitle=item.subtitle speaker_avatar=speaker_item.avatar %}
-            </button>
-            {% endif %}
+            <!-- Modal start -->
+            <div x-show="open_id == {{session.session_id}}" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+              {% include schedule_modal.html day=item.day time=item.time end=item.end speakers=session.speakers session=session %}
+            </div>
+            <!-- Modal end -->
             {% endfor %}
           </div>
-          <!-- Modal -->
-          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            {% include schedule_modal.html item=item %}
-          </div>
+          <!-- sessions end -->
           {% endif%}
         </div>
         {% endfor %}

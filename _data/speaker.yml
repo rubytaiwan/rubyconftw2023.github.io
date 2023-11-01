@@ -1,10 +1,12 @@
-- name: Yukihiro Matsumoto (Matz)
+- index: 0
+  name: Yukihiro Matsumoto (Matz)
   avatar: assets/speaker_avatar/matz.jpg
   bio: Creator of Ruby, Heroku
   urlGithub: https://github.com/matz
   urltwitter: https://twitter.com/yukihiro_matz
   language: English
-- name: Tim Riley
+- index: 1
+  name: Tim Riley
   avatar: assets/speaker_avatar/tim-riley.jpg
   language: English
   bio: |-
@@ -12,7 +14,13 @@
   personal_web: https://timriley.info/
   mastodon: https://ruby.social/@timriley
   urlGithub: https://github.com/timriley
-- name: Ryo Kajiwara
+  subject: Quest of the Rubyist
+  summary: |-
+    What do curiosity, cooperation and cognisance mean for the budding Rubyist? And can these virtues help us follow the path of programmer happiness?
+
+    As we enter a land where both peril and opportunity abound, how can we plot a course towards towards the Ruby of our future? Let’s find out together, as we embark on the adventure of our time!
+- index: 2
+  name: Ryo Kajiwara
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/197/icon.png"
   urlGithub: https://github.com/sylph01
   urltwitter: https://twitter.com/s01
@@ -25,7 +33,8 @@
     of Ruby&#39;s default gem, and I will talk about one adventure through this dungeon.
     </p>"
   language: English
-- name: Hiroshi SHIBATA
+- index: 3
+  name: Hiroshi SHIBATA
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/148/work_profile.jpeg"
   title: Fellow, ANDPAD, Inc.
   urlGithub: https://github.com/hsbt
@@ -39,7 +48,8 @@
     <p>Since Ruby&#39;s bundled and default gems change every year with each release, some versions may suddenly happen <code>LoadError</code> at <code>require</code> when running <code>bundle exec</code> or <code>bin/rails</code>, for example <code>matrix</code> or <code>net-smtp</code>.</p>
     <p>In this presentation, I will introduce the details of the functionality that extends Ruby&#39;s <code>require</code> to provide guidance to users on what they can do to load them. And I will also show how $LOAD_PATH is build behind Ruby and Rails by Bundler.</p>
   language: English
-- name: 政憲 邱
+- index: 4
+  name: 政憲 邱
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"
   title: Rails Developer, 五倍紅寶石
   urlGithub: https://github.com/elct9620
@@ -49,7 +59,8 @@
   summary: "<p>Rails 讓開發 Web Application 變得相當容易，然而因為簡化了許多問題，當我們面臨更複雜的系統時感到極大的挑戰。複雜的
     Rails 專案之所以難以維護是 Rails 在架構上的設計造成的限制，讓我們重新思考 Rails 來尋找更容易維護的架構。</p>"
   language: Chinese
-- name: Andrei Bondarev
+- index: 5
+  name: Andrei Bondarev
   avatar: "//avatars.githubusercontent.com/u/541665?v=3"
   title: ''
   urlGithub: https://github.com/andreibondarev
@@ -70,7 +81,8 @@
     We&#39;re going to learn AI/LLM-related concepts, terms and ideas, learn what
     AI agents are, and look at some of the latest cutting edge AI research.</p>"
   language: English
-- name: Hiếu Nguyễn
+- index: 6
+  name: Hiếu Nguyễn
   avatar: "//avatars.githubusercontent.com/u/1930954?v=3"
   title: ''
   urlGithub: https://github.com/hieuk09
@@ -87,7 +99,8 @@
     using them. This talk hopefully will give the audience more insights on how they
     can improve their application performance.</p>"
   language: English
-- name: Charles Oliver Nutter
+- index: 7
+  name: Charles Oliver Nutter
   avatar: "//avatars.githubusercontent.com/u/10135?v=3"
   title: ''
   urlGithub: https://github.com/headius
@@ -100,7 +113,8 @@
     uniquely positioned to bring these features to Ruby! This talk will show how JRuby
     is taking advantage of the modern JVM with exciting examples you can try today!</p>"
   language: English
-- name: Hirota Tetsuya
+- index: 8
+  name: Hirota Tetsuya
   avatar: "//avatars.githubusercontent.com/u/7455098?v=3"
   title: ''
   urlGithub: https://github.com/constdrop
@@ -124,7 +138,8 @@
     in Python, it uses iterparse() to parse each element in the first layer. Therefore,
     we created a similar mechanism in Ruby and also used ractor to speed it up.</p>"
   language: English
-- name: Mark Chao
+- index: 9
+  name: Mark Chao
   avatar: "//avatars.githubusercontent.com/u/366910?v=3"
   title: Listia
   urlGithub: https://github.com/lulalala
@@ -137,7 +152,8 @@
     gem&#39;s architecture will be presented, showcasing its middleware pattern, the
     use cases and wizard configuration inference.</p>"
   language: English
-- name: Helio Cola
+- index: 10
+  name: Helio Cola
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/139/Me.jpg"
   title: ''
   urlGithub: https://github.com/heliocola
@@ -151,7 +167,8 @@
     <p>Can you recall a world without having to remember passwords? If Passkeys becomes widely available, that world is a few steps away in our future. Instead of remembering passwords, we will use our biometrics, already available in our phones, laptops, and desktops, and public key encryption!
     To a future with no passwords!</p>
   language: English
-- name: cindyliu923
+- index: 11
+  name: cindyliu923
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/289/icon.jpg"
   title: Development Engineer, DEVCORE
   urlGithub: https://github.com/cindyliu923
@@ -165,7 +182,8 @@
     <p>Race condition 是在 Ruby on Rails 應用程式中可能出現的問題之一，尤其涉及多執行緒的情況。這次演講提供了 race condition 的基本概念，以及如何在 Rails 中測試和解決這些問題的方法。測試 race condition 的方法至關重要，可以通過模擬並發情境來確保穩定性。</p>
     <p>&quot;Race condition&quot; is a potential issue in Ruby on Rails applications, especially in situations involving multiple threads. This presentation provides a basic understanding of race conditions and how to test and resolve them in Rails. Testing for race conditions is crucial and can be achieved by simulating concurrent scenarios to ensure stability.</p>
   language: Chinese
-- name: Stephen Margheim
+- index: 12
+  name: Stephen Margheim
   avatar: "//avatars.githubusercontent.com/u/5077225?v=3"
   title: ''
   urlGithub: https://github.com/fractaledmind
@@ -182,7 +200,8 @@
     jobs, websockets, and full-text search all backed by SQLite—in these 40 minutes.
     Come along for the ride!</p>"
   language: English
-- name: Junichi Kobayashi
+- index: 13
+  name: Junichi Kobayashi
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/203/my_icon.jpg"
   title: ESM, Inc.
   urlGithub: https://github.com/junk0612
@@ -196,7 +215,8 @@
     knowledge of parsers and parser generators, as well as the current state of parsers
     surrounding Ruby.</p>"
   language: English
-- name: Huy Du Gia
+- index: 14
+  name: Huy Du Gia
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/299/3.jpg"
   title: Software Engineer, Rakuten Viki
   urlGithub: https://github.com/dugiahuy
@@ -211,7 +231,8 @@
     <p>In this talk, we will build a foundation of error handling concepts, categorizing errors and exceptions in Ruby. We&#39;ll look at practical code examples that demonstrate common issues when propagating errors through layers of code. Explore how Monadic Handling abstract away error handling details by combine Monads Result and Service Object in Ruby programming. </p>
     <p>This talk will empower you understand how to use Monadic Handling Ruby code. You&#39;ll leave with a deeper appreciation of monads and concrete strategies for encapsulating errors elegantly in your Ruby applications. Join me to discover how monads enable you to minimize disruption and maximize control over error handling in Ruby.</p>
   language: English
-- name: Radoslav Stankov
+- index: 15
+  name: Radoslav Stankov
   avatar: "//avatars.githubusercontent.com/u/9867?v=3"
   title: ''
   urlGithub: https://github.com/RStankov
@@ -224,7 +245,8 @@
     <p>The View layer is the messiest part of a Ruby on Rails application. Developers are confused about where to put logic. Should it be in the model, presenter, decorator, helper, or partial?</p>
     <p>ViewComponents, developed by GitHub simplifies the View layer and makes it much easier to manage.</p>
   language: English
-- name: Hitoshi Hasumi
+- index: 16
+  name: Hitoshi Hasumi
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/277/hasumikin.jpg"
   title: Monstarlab
   urlGithub: https://github.com/hasumikin
@@ -240,7 +262,8 @@
     All you need is (at least) two &quot;Raspberry Pi Pico W&quot; boards, the same number of USB cables, and a laptop.
     Witness the realization of PicoRuby, a production-ready Ruby implementation for microcontrollers, as we delve into the world of innovation.</p>
   language: English
-- name: Masafumi OKURA
+- index: 17
+  name: Masafumi OKURA
   avatar: "//avatars.githubusercontent.com/u/1012014?v=3"
   title: Software developer
   urlGithub: https://github.com/okuramasafumi
@@ -252,7 +275,8 @@
     However, there are still some magical things going on here. What do assertions actually do? How does <code>autorun</code> feature work?
     In this talk, we&#39;ll write code together. More specifically, we&#39;ll write simpler clone of Minitest and make it work.</p>
   language: English
-- name: Cristian Planas
+- index: 18
+  name: Cristian Planas
   avatar: "//avatars.githubusercontent.com/u/279106?v=3"
   title: ''
   urlGithub: https://github.com/Gawyn
@@ -265,7 +289,8 @@
     <p>Building a feature is not good enough anymore: all your work won&#39;t be of use if it&#39;s not performant enough. So how to improve performance? After all, performance is not an easy discipline to master: all slow applications are slow in their own way, meaning that there is no silver bullet for these kinds of problems.</p>
     <p>In this presentation, we will guide you across patterns, strategies, and little tricks to improve performance. We will do that by sharing real stories of our daily experience facing and solving real performance issues in an application that daily serves billions of requests per day.</p>
   language: English
-- name: Tse-Ching Ho
+- index: 19
+  name: Tse-Ching Ho
   avatar: "//avatars.githubusercontent.com/u/12554?v=3"
   title: ''
   urlGithub: https://github.com/tsechingho
@@ -281,7 +306,8 @@
     說明目前偏好的元件組成方式，協助製作元件的工具和注意事項，以及安置元件到頁面中的方式（partial + helper）。
     展示利用 settings 搭配 builder 活用元件的嘗試。</p>
   language: Chinese
-- name: Warren Wong
+- index: 20
+  name: Warren Wong
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/302/proprofile.jpeg"
   title: CTO, Viewabo
   urlGithub: https://github.com/wrrnwng
@@ -294,7 +320,8 @@
     GDPR compliance. I will include example usage and an overview of the preparatory
     work that went into implementing Active Record Encryption.</p>"
   language: English
-- name: John Lin
+- index: 21
+  name: John Lin
   avatar: "//avatars.githubusercontent.com/u/529248?v=3"
   title: ''
   urlGithub: https://github.com/johnlinvc
@@ -309,7 +336,8 @@
     <p>How many times did you run <code>ruby</code> without external <code>Gems</code>?</p>
     <p>Ruby includes many <code>Gems</code> by default. We can use them without extra installation steps. These <code>Gems</code> includes convenient data structure and algorithms, cross platform file handling and practical simple server, etc. Let&#39;s unearth the less known builtin <code>Gems</code>.</p>
   language: Chinese
-- name: Yuji Yokoo
+- index: 22
+  name: Yuji Yokoo
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/181/Yuji.jpeg"
   title: ''
   urlGithub: https://github.com/yujiyokoo
@@ -323,7 +351,8 @@
     <p>I will tell you about what is involved in making a cross-platform mruby library for Dreamcast and Wii, as well as challenges and lessons learned.</p>
     <p>This presentation will (hopefully) be delivered on either of those consoles and will include some live demos.</p>
   language: English
-- name: ihower
+- index: 23
+  name: ihower
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/104/IMG_7663_square.jpg"
   title: ''
   urlGithub: https://github.com/ihower
@@ -338,7 +367,8 @@
     Augmented Generation(RAG)、Vector Search、Agents 和 OpenAI Function Calling 等。歡迎一起探索這個新時代的
     AI 工程師角色。</p>"
   language: Chinese
-- name: 煒航 簡
+- index: 24
+  name: 煒航 簡
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/304/tony.png"
   title: ''
   urlGithub: https://github.com/tonytonyjan
@@ -351,7 +381,8 @@
     <p>In the past, Rails encouraged the use of <code>before_fork</code> and <code>after_fork</code> for connection management, redis-rb ensured fork safety by storing the <code>Process#pid</code> in a variable, and some even used threads to track fork events.</p>
     <p>During this session, I will delve into the backstory of <code>_fork</code> and explore the diverse methods the community employed for creating callbacks during forking prior to Ruby 3.1.</p>
   language: Chinese
-- name: Ted Johansson
+- index: 25
+  name: Ted Johansson
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/40/9KKRA.png"
   title: Baconware
   urlGithub: https://github.com/Drenmi
