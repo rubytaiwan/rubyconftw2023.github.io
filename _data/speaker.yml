@@ -397,3 +397,9 @@
     <p>Is Rails still a good choice in 2023? For a new project at work? For a side hustle? How about for someone just looking to get into web development? How does it stack up against &quot;modern&quot; frameworks?</p>
     <p>In this presentation we explore the ancient history of web development, discuss the perils of &quot;the modern web application&quot;, highlight a brewing generational conflict, and examine how Rails&#39; connection to the past puts it in a unique position to project itself into the future.</p>
   language: English
+- index: 26
+  name: "Delton Ding"
+  avatar: "//avatars.githubusercontent.com/u/2303500?v=3"
+- index: 27
+  name: "Samuel Giddins"
+  avatar: "//avatars.githubusercontent.com/u/1946610?v=3"

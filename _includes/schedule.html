@@ -65,14 +65,9 @@
               {% endif %}
             >
             {% for speaker_index in session.speakers %}
-              {% if speaker_index.name %}
-                {% include schedule_card.html subject=session.subject lang=session.lang
-                  speaker_name=speaker_index.name speaker_avatar=speaker_index.avatar room=session.room %}
-              {% else %}
-                {% assign speaker = site.data.speaker[speaker_index] %}
-                {% include schedule_card.html subject=session.subject lang=session.lang
-                speaker_name=speaker.name speaker_avatar=speaker.avatar room=session.room %}
-              {% endif %}
+              {% assign speaker = site.data.speaker[speaker_index] %}
+              {% include schedule_card.html subject=session.subject lang=session.lang
+              speaker_name=speaker.name speaker_avatar=speaker.avatar room=session.room %}
             {% endfor %}
             </button>
             <!-- Modal start -->
