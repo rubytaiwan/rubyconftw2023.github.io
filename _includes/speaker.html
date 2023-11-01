@@ -1,29 +1,35 @@
-{% if site.data.speaker %}
-<div class="relative font-sans bg-dark-blue-200">
-  <div class="relative z-10 max-w-7xl mx-auto py-10 md:py-24">
+{% if site.data.schedule %}
+<div class="relative z-10 font-sans bg-dark-blue-200">
+  <div class="relative max-w-7xl mx-auto py-10 md:py-24">
     <div class="flex flex-col justify-center items-center gap-4">
         <h2 class="text-2xl md:text-3xl uppercase font-bold text-white">Speaker</h2>
         <img src="../assets/sec-line2.png" alt="" />
     </div>
-    <div class="mt-10 flex flex-wrap justify-center">
-      {% for item in site.data.speaker %}
-        <div  x-data="{open: false, toggle() { this.open = ! this.open }}"
-              class="w-full md:w-1/2 lg:w-1/3">
-          <a class="w-full relative cursor-pointer" @click="toggle()">
+    <div x-data="{open_id: 0}" class="mt-10 flex flex-wrap justify-center">
+      {% for item in site.data.schedule %}
+      {% for session in item.sessions %}
+      {% for speaker_index in session.speakers %}
+      {% unless speaker_index.name %}
+      {% assign speaker = site.data.speaker[speaker_index] %}
+        <div class="w-full md:w-1/2 lg:w-1/3">
+          <a class="w-full relative cursor-pointer" @click="open_id = {{session.session_id}}">
             <div class="w-full hover:-translate-y-6">
               <div class="px-20 w-full">
-                <img class="max-w-20 w-full border-8 border-dark-pink-100 rounded-full" src="{{item.avatar}}"/>
+                <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="{{speaker.avatar}}"/>
               </div>
               <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
-                <p class="font-bold">{{ item.name }}</p>
+                <p class="font-bold">{{ speaker.name }}</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            {% include speaker_modal.html speaker=item %}
+          <div x-show="open_id == {{session.session_id}}" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            {% include schedule_modal.html day=item.day time=item.time end=item.end speakers=session.speakers session=session %}
           </div>
         </div>
+      {% endunless %}
+      {% endfor %}
+      {% endfor %}
       {% endfor %}
     </div>
   </div>

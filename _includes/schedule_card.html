@@ -1,24 +1,23 @@
-<div class="w-64">
+{% if include.room%}
+<p class="md:hidden font-normal uppercase bg-dark-blue-200 mt-8 mb-4 px-2.5 py-1 h-fit w-fit text-white rounded-md">
+  {{ include.room }}
+</p>
+{% endif %}
+<div class="w-64 h-64">
   <img
     src="{{include.speaker_avatar}}"
-    alt=""
-    class="mx-auto rounded-full border-4 border-dark-pink-100"
-  />
+    class="w-full h-full mx-auto rounded-full border-4 border-dark-pink-100 object-cover"/>
 </div>
 <p class="text-gray text-xs">
-  <i class="fa fa-microphone pr-2 text-dark-pink-100"></i>Speaker
+  <i class="fa fa-microphone pr-2 text-dark-pink-100"></i>
+  Speaker
 </p>
 <p class="group-hover:text-dark-pink-100 text-black text-xl font-bold">
-  {{ include.title_main }}
-</p>
-<p class="group-hover:text-dark-pink-100 text-black text-xl font-bold">
-  {{ include.subtitle }}
+  {{ include.subject }}
 </p>
 <p class="text-black text-lg font-normal">
   {{ include.speaker_name}}
 </p>
-<p
-  class="font-normal text-sm uppercase bg-dark-pink-100 px-2.5 py-1 h-fit w-fit text-white rounded-md"
->
+<p class="font-normal uppercase bg-dark-pink-100 px-2.5 py-1 h-fit w-fit text-white rounded-md">
   {{ include.lang }}
 </p>

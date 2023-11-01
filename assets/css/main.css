@@ -9,3 +9,23 @@
   color: #0C0A81;
   text-decoration: underline;
 }
+
+
+.markdownify p {
+  margin-bottom: 1rem;
+}
+
+.markdownify ul {
+  text-align: left;
+}
+
+.markdownify li::before {
+  content: "●";
+  padding-right: 8px;
+}
+
+.markdownify ul li ul li::before {
+  margin-left: 8px;
+  content: "○";
+  padding-right: 8px;
+}
