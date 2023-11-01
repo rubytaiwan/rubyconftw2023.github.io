@@ -237,9 +237,7 @@
       summary: |-
         Chances are you’ve run bundle install or gem install at some point, seeing as we’re at RubyConf. Turns out, you’re not alone. At peak times, RubyGems.org has received as many as 225 thousand requests per second. How does a small, mostly-volunteer team handle serving all that traffic with their rails app? Let’s dive into how using CDNs, scaling with static files, and wrangling expensive endpoints has kept your favorite gem index up and running over the past decade.
       lang: "EN"
-      speakers:
-        - name: "Samuel Giddins"
-          avatar: "//avatars.githubusercontent.com/u/1946610?v=3"
+      speakers: [27]
     - session_id: 17
       room: L406
       subject: How Rails 7 Helped Us Achieve GDPR Compliance
@@ -266,9 +264,7 @@
       summary: |-
         在過去一年裏我們經歷了 LLM 的巨大衝擊，但是對於使用 LLM 實作應用依然困難重重。如何利用 Ruby 的 meta-programming 更好地對 LLM 進行處理和約束從而實作下一世代的 AI 應用是本 Topic 試圖討論的關鍵問題。
       lang: "CN"
-      speakers:
-        - name: "Delton Ding"
-          avatar: "//avatars.githubusercontent.com/u/2303500?v=3"
+      speakers: [26]
     - session_id: 19
       room: L406
       subject: Monadic Approach to Ruby Error Handling

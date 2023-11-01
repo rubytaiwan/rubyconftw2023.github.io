@@ -1,7 +1,129 @@
-- title: Gem
+- title: Ruby
   sponsor: true
   companies:
     - id: 1
+      name: PicCollage 拼貼趣
+      logo: "sponsor_avatar/piccollage.png"
+      link: https://picc.co/
+      desc: |-
+        嗨！我們是來自矽谷的新創團隊 PicCollage Company，我們團隊鼓勵自由創造，擁抱差異與多元文化，打造『開放、學習、分享』的工作環境。團隊近期專注於將『Creative AI』的概念導入產品開發，運用 Generative AI、Machine Learning、Data Analytics等技術，致力打造讓使用者能輕鬆發揮創意的影像編輯產品。
+        主要產品『PicCollage 拼貼趣』是一個追求自由創造及分享的影像拼貼App，主要使用者來自美國、英國及日本等國家。目前全球下載量已突破 2.6 億，每個月 1500 萬穩定用戶量，並穩定增長中！另外，新產品團隊 Explore 以『團隊協作、AI應用及影音編輯 』三大方向， 持續開發具有影響力的產品，再戰繼 PicCollage App 之後的下一個產品里程碑
+        期待遇見更多 #builders #dreamers #thinkers 來激盪創意，加入 PicCollage Company 和我們一起做出好玩、富有創意的軟體產品到全世界 globe showing Americas🌍
+      find_out_more: https://www.yourator.co/companies/PicCollage
+      ad_1_left: |-
+        <h3 class="mb-2 text-lg md:text-xl font-bold">『PicCollage拼貼趣』招募中</h3>
+        <h3 class="mb-2 text-lg md:text-xl font-bold">💡理念：</h3>
+        Win as a Team 團隊力量
+        Always be Learning 學無止境
+        Live Well, Work Well 好好生活，好好工作
+
+        <h3 class="mb-2 text-lg md:text-xl font-bold">😇福利：</h3>
+        法定項目
+        勞保、健保、特別休假、勞退、婚假
+        其他福利
+        Flexible Work Time & Remote Work 彈性上下班時間 & 遠端工作
+        Maker Time 每週一天 Maker Time，不進行不必要的會議和討論
+        Team Activities and Workshops 各式活動與學習機會 (技術分享、Design Demo, Hack Days等）
+        Fun, Creative & International 雙語工作環境，團隊成員來自世界各地
+        Free Lunch and Dinner in the Office 辦公室內團隊午餐晚餐
+        Sports Classes in Office/Online 和同事一起起來動一動
+        PicCafe 健康零食水果，永遠餵飽你的胃
+        Awesome & Fun Office 有趣舒適大稻埕風的辦公室
+
+        <h3 class="mb-2 text-lg md:text-xl font-bold">💼目前職缺：</h3>
+        We are looking for a Backend Developer with web and API development experience who is enthusiastic about clean and performant code to work on high-traffic applications that provide fun creative experiences for millions of people around the world.
+        
+        <h3 class="mb-2 text-lg md:text-xl font-bold">Backend Developer</h3>
+        
+        薪資範圍 NT$ 1,000,000 - 1,800,000 (年薪)
+        
+        <h3 class="mb-2 text-lg md:text-xl font-bold">Ruby on Rails Backend Developer</h3>
+        
+        薪資範圍 NT$ 1,800,000 - 2,700,000 (年薪)
+
+- title: Rails
+  sponsor: true
+  companies:
+    - id: 2
+      name: "曉數碼股份有限公司"
+      logo: "sponsor_avatar/akatsuki.png"
+      link: https://aktsk.com.tw/
+      desc: |-
+        曉數碼為日本上市集團 Akatsuki 於 2014 年在台灣設立的子公司，致力於營運、開發各種能躍動人心的手機遊戲。
+
+        曉數碼與日本知名 IP 商合作營運國際版手遊，重視在地化品質並放眼國際市場，團隊中聚集了來自不同區域的成員，包含台、日、韓、英、法、德、西與印度等，在多元的文化激盪下，提供最貼近全球用戶的在地化作品。而旗下子品牌「曙光工作室」所原創開發的敘事解謎遊戲《傾聽畫語》，自上市以來獲得無數國際獎項的肯定；2023 年更宣布新作《The Star Named EOS》製作中，將娛樂所帶來的幸福感，不斷傳遞給世界各地的人們。
+
+        同時，曉數碼亦積極打造幸福職場 ，透過完善且多元的福利制度，守護團隊成員的身心健康，並支持成員們發揮創意、挑戰與學習。我們深信，只要於創作中注滿熱忱，必定能將這份感動加以擴散，成就令人們笑顏逐開的世界，帶來無比閃耀的多彩風貌。
+      find_out_more: https://aktsktwhire.teamdoor.io/
+      ad_1_left: |-
+        <h3 class="mb-2 text-lg md:text-xl font-bold">Our Mission</h3>
+        <h3 class="mb-2 text-lg md:text-xl font-bold">Entertain the world.</h3>
+        <h3 class="mb-2 text-lg md:text-xl font-bold">Resonate with creators.</h3>
+        <p>We believe entertainment can move people’s hearts.
+        It expands the world you see and deepens connections between
+        family, friends, and those you have yet to meet.
+        Entertainment creates experiences that are unforgettable in life.
+        By being true to our creative and expressive selves and by 
+        resonating with artists and creators from around the world,
+        Akatsuki aims to continue to deliver entertainment
+        that moves people's hearts.
+      ad_1_right_a: |-
+        * ◆ 獎金/禮品類
+        * 1.年終獎金
+        * 2.個人績效獎金
+        * 3.員工推薦獎金
+        * 4.營運分紅獎品/獎金
+
+        * ◆ 休閒類
+        * 1.員工旅遊補助
+        * 2.部門聚餐
+        * 3.慶生會
+        * 4.員工交流社團
+
+        * ◆ 制度類
+        * 1.定期加薪評鑑考核 （一年2次）
+        * 2.完整的教育訓練
+        * 3.順暢的升遷管道
+
+        * ◆ 設備類
+        * 1.電子化圖書館 (藏書超過1,400本，持續增加中)
+        * 2.健身器材
+        * 3.沙發休息區
+        * 4.各類休閒遊戲機
+      ad_1_right_b: |-
+        * ◆ 請/休假制度
+        * 1.週休二日
+        * 2.特休/年假
+        * 3.生日假
+        * 4.陪產假
+        * 5.家庭照顧假
+        * 6.女性同仁生理假
+        * 7.同仁育嬰假
+        * 8.未滿一年即享年假
+
+        * ◆ 其他
+        * 1.外語培訓（英語・日語）
+        * 2.教育研修訓練（台灣・日本）
+        * 3.最新技術交流（鼓勵參加同業交流活動）
+        * 4.各式聚餐
+        * 5.免費點心、飲料
+        * 6.每週兩天按摩服務
+        * 7.年度健康檢查
+        * 8.員工協助方案
+
+        * ◆ 補助類
+        * 1.結婚禮金
+        * 2.生育津貼
+        * 3.員工進修補助
+        * 4.退職金提撥
+        * 5.通勤交通費
+        * 6.購書費
+        * 7.社團活動補助
+        * 8.育兒津貼
+- title: Gem
+  sponsor: true
+  companies:
+    - id: 3
       name: "凱鈿行動科技股份有限公司"
       logo: "sponsor_avatar/kdan.png"
       link: https://www.kdanmobile.com/zh-tw
@@ -21,8 +143,9 @@
 
         我們相信，多元共融的文化，成就更好的你
       spotlight: true
-      recruitment_link: https://www.yourator.co/companies/KdanMobile
-      benefits: |-
+      find_out_more: https://www.yourator.co/companies/KdanMobile
+      ad_1_left: |-
+        <h3 class="mb-4 text-lg md:text-xl text-white font-bold"> ▶ 公司福利 </h3>
         法定項目
 
         勞保、健保、特別休假、勞退、婚假
@@ -57,7 +180,8 @@
         可靠的團隊凝聚在一起，齊力打造可靠的服務體驗於客戶。每位凱鈿人專注於為客戶提供優質服務和產品，在這裡你可以找到屬於自己能發光發熱的舞台。
 
         快加入我們成為令人驕傲的凱鈿人！Be Awesome Today！
-      benefits_en: |-
+      ad_1_right: |-
+        <h3 class="my-4 md:mt-0 text-lg md:text-xl text-white font-bold">▶ benefits</h3>
         < Kdan Benefits and Perks 2.0 > Despite the basic bonus for three festivals, high-quality health check, and group insurance, there are also seven mysteries in Kdan!
 
         * ☞ Besides the annual leave established by the government, you can also enjoy a bonus 8-day Kdan VIP holiday per year.
