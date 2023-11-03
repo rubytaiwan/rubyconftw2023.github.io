@@ -51,7 +51,7 @@
 - index: 4
   name: 政憲 邱
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"
-  title: Rails Developer, 五倍紅寶石
+  title: Tech Lead, Gogolook
   urlGithub: https://github.com/elct9620
   urltwitter: https://twitter.com/elct9620
   bio: "<p>程式語言愛好者，主要使用 Ruby 語言，認為軟體開發也能具備美感，正在尋找滿足敏捷、架構與享受開發過程之間的平衡點。</p>"
@@ -206,7 +206,7 @@
   title: ESM, Inc.
   urlGithub: https://github.com/junk0612
   urltwitter: https://twitter.com/junk0612
-  bio: "<p>永和システムマネジメントでWebエンジニアとして働いています。</p>"
+  bio: "<p>I am an engineer at ESM, Inc., with a keen interest in Ruby parsers and their related technologies.</p>"
   subject: Understanding Parser Generators surronding Ruby with Contributing Lrama
   summary: "<p>At RubyKaigi 2023, yui-knk introduced Lrama, for which I submitted
     a PR to implement the &#39;Named References&#39; feature, a functionality found
