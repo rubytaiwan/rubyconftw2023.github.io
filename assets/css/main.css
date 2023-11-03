@@ -10,6 +10,10 @@
   text-decoration: underline;
 }
 
+.markdownify a::hover {
+  opacity: 70;
+}
+
 
 .markdownify p {
   margin-bottom: 1rem;
@@ -19,13 +23,23 @@
   text-align: left;
 }
 
-.markdownify li::before {
-  content: "●";
+.bio.markdownify li::before {
+  content: "•";
   padding-right: 8px;
 }
 
-.markdownify ul li ul li::before {
+.bio.markdownify ul li ul li::before {
   margin-left: 8px;
-  content: "○";
+  content: "。";
   padding-right: 8px;
+}
+
+.markdownify h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.markdownify .pink-h3{
+  color: #990531;
 }

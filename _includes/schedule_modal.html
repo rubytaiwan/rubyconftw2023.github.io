@@ -13,7 +13,7 @@
           />
           <p class="mt-2 text-lg text-gray font-bold">{{ speaker.name }}</p>
           <p class="mt-1 text-gray text-sm font-semibold">{{ speaker.title }}</p>
-          <div class="mt-2 text-gray markdownify">{{ speaker.bio }}</div>
+          <div class="mt-2 text-gray bio markdownify">{{ speaker.bio }}</div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             {% if speaker.urlGithub %}
             <a target="_blank" href="{{ speaker.urlGithub }}" class="cursor-pointer hover:opacity-70 text-4xl">

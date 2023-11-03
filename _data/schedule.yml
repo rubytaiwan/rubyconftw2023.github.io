@@ -410,7 +410,11 @@
   end: 17:55 pm
   sessions:
     - session_id: 28
-      subject: Keynote
+      subject: Quest of the Rubyist
+      summary: |-
+        What do curiosity, cooperation and cognisance mean for the budding Rubyist? And can these virtues help us follow the path of programmer happiness?
+
+        As we enter a land where both peril and opportunity abound, how can we plot a course towards towards the Ruby of our future? Let’s find out together, as we embark on the adventure of our time!
       lang: "EN"
       speakers: [1]
 - id: 31
