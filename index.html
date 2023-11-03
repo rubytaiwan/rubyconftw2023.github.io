@@ -52,15 +52,22 @@
       x-bind:class="{'bg-dark-blue-200 shadow duration-100': !at_top}"
       class="hidden md:flex items-center justify-between max-w-7xl mx-auto gap-x-6 w-full p-6">
       <div class="inline-flex items-center gap-x-2">
-        <div class="text-3xl text-white font-extrabold font-russo">RubyConf Taiwan</div>
+        <div class="text-3xl text-white font-extrabold font-russo">RubyConf Taiwan 2023</div>
       </div>
-      <div class="hidden md:flex md:gap-x-12 uppercase">
+      <div class="hidden md:flex md:gap-x-12 uppercase items-center">
         <!-- <a href="#news" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">News</a>
-        <a href="#schedule" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Schedule</a>
         <a href="#venue" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Venue</a> -->
         <a href="#speakers" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Speakers</a>
+        <a href="#schedule" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Schedule</a>
         <a href="#spotlight_zone" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Spotlight Zone</a>
         <a href="#sponsor" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Sponsor</a>
+        <a
+          href="https://rubytaiwan.kktix.cc/events/rubyconftw2023"
+          target="_blank"
+          class="py-1 px-4 rounded-full bg-dark-pink-100 font-sans font-bold text-white text-lg tracking-wider text-center"
+        >
+        Register Now</a
+        >
       </div>
       <div class="flex md:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -97,16 +104,23 @@
           <div class="space-y-2 py-6">
             <!-- <a href="#news"
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">News</a>
-            <a href="#schedule"
-              class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Schedule</a>
+            
             <a href="#venue"
                 class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Venue</a> -->
             <a href="#speakers"
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink-100">Speakers</a>
+            <a href="#schedule"
+              class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Schedule</a>
             <a href="#spotlight_zone"
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Spotlight Zone</a>
             <a href="#sponsor"
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Sponsor</a>
+            <a href="https://rubytaiwan.kktix.cc/events/rubyconftw2023"
+               target="_blank"
+               class="mt-2 py-1 px-4 rounded-full bg-dark-pink-100 font-sans font-semibold text-white tracking-wider text-center"
+            >
+            Register Now</a
+            >
           </div>
         </div>
       </div>
@@ -202,7 +216,7 @@
           />
           <p class="mt-2 text-lg text-gray font-bold">Yukihiro Matsumoto (Matz)</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify">Creator of Ruby, Heroku</div>
+          <div class="mt-2 text-gray bio markdownify">Creator of Ruby, Heroku</div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/matz" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -284,7 +298,7 @@
           />
           <p class="mt-2 text-lg text-gray font-bold">Cristian Planas</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>I am a software engineer that has been working primarily with Rails since the release of Rails 3, more than 10 years ago.</p>
+          <div class="mt-2 text-gray bio markdownify"><p>I am a software engineer that has been working primarily with Rails since the release of Rails 3, more than 10 years ago.</p>
 <p>Performance optimization has been an obsession for me since I founded my first start-up as a solo engineer in 2012. Currently, I am a Group Tech Lead and Senior Staff Engineer at Zendesk, where I focus on performance optimization.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
@@ -370,7 +384,7 @@
           />
           <p class="mt-2 text-lg text-gray font-bold">Ryo Kajiwara</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>A wild (freelance) programmer. I can do cryptography and authentication/authorization a little.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>A wild (freelance) programmer. I can do cryptography and authentication/authorization a little.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/sylph01" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -461,7 +475,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">Yuji Yokoo</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Yuji is a long-time programmer and software developer based in Adelaide, Australia. He is from and grew up in Tokyo, Japan playing lots of video games. He used to be a Windows desktop application developer until he discovered Ruby.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Yuji is a long-time programmer and software developer based in Adelaide, Australia. He is from and grew up in Tokyo, Japan playing lots of video games. He used to be a Windows desktop application developer until he discovered Ruby.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/yujiyokoo" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -547,7 +561,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">Hirota Tetsuya</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><ul>
+          <div class="mt-2 text-gray bio markdownify"><ul>
 <li>Name: Tetsuya Hirota</li>
 <li>Job Title: Director and CTO at Dogrun Inc. (<a href="https://dogrun.jp/en/">https://dogrun.jp/en/</a>)</li>
 <li>Location: Shizuoka-city Japan</li>
@@ -645,7 +659,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">煒航 簡</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Rubyist, Rustacean, Web Developer, Software Architect, Conference Speaker, Book Writer, Amateur Piano Player/Composer, Video Gamer, Whiskey Lover.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Rubyist, Rustacean, Web Developer, Software Architect, Conference Speaker, Book Writer, Amateur Piano Player/Composer, Video Gamer, Whiskey Lover.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/tonytonyjan" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -731,7 +745,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">Mark Chao</p>
           <p class="mt-1 text-gray text-sm font-semibold">Listia</p>
-          <div class="mt-2 text-gray markdownify"><p>A Rubyist from Taiwan who works for GitLab. My hobbies include traveling, developing 2ch-like imageboard, and to draw doujinshi.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>A Rubyist from Taiwan who works for GitLab. My hobbies include traveling, developing 2ch-like imageboard, and to draw doujinshi.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/lulalala" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -819,7 +833,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">Hiroshi SHIBATA</p>
           <p class="mt-1 text-gray text-sm font-semibold">Fellow, ANDPAD, Inc.</p>
-          <div class="mt-2 text-gray markdownify"><p>OSS programmer, Ruby committer, maintainer of many OSS such as ruby, rubygems, bundler, rake, and administrator of ruby-lang.org. He is working in public relations of technology for ANDPAD Inc. and full time OSS developer for the Ruby programming language.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>OSS programmer, Ruby committer, maintainer of many OSS such as ruby, rubygems, bundler, rake, and administrator of ruby-lang.org. He is working in public relations of technology for ANDPAD Inc. and full time OSS developer for the Ruby programming language.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/hsbt" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -904,7 +918,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">Helio Cola</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>He(lio) is a passionate software engineer and has created things primarily in C/C++ &amp; Ruby, over the past 20+ years.
+          <div class="mt-2 text-gray bio markdownify"><p>He(lio) is a passionate software engineer and has created things primarily in C/C++ &amp; Ruby, over the past 20+ years.
 He(lio) met Ruby v1.8.7 and Rails 2.x in 2010 and it is a Happy Developer since then.</p>
 <p>He(lio) is currently helping small and medium side Dev teams as a part-time Rails consultant, while he is dusting off some old products, building new ones, doing some OSS, and enjoying more time with his 2 children.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
@@ -995,7 +1009,7 @@ To a future with no passwords!</p>
           />
           <p class="mt-2 text-lg text-gray font-bold">Tse-Ching Ho</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>何澤清，Ruby/Rails/React 工程師，黃碼科技負責人。
+          <div class="mt-2 text-gray bio markdownify"><p>何澤清，Ruby/Rails/React 工程師，黃碼科技負責人。
 具多年純 Rails 或純 React 或 Rails + React 混合式專案的開發經驗。
 擅長網站應用系統規劃和製作，熟悉專業顧問和教育訓練。
 目前偏好前後端分離開發，特別重視 UI/UX 的規劃和 API 的設計。</p></div>
@@ -1084,7 +1098,7 @@ To a future with no passwords!</p>
           />
           <p class="mt-2 text-lg text-gray font-bold">Junichi Kobayashi</p>
           <p class="mt-1 text-gray text-sm font-semibold">ESM, Inc.</p>
-          <div class="mt-2 text-gray markdownify"><p>永和システムマネジメントでWebエンジニアとして働いています。</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>I am an engineer at ESM, Inc., with a keen interest in Ruby parsers and their related technologies.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/junk0612" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -1172,7 +1186,7 @@ To a future with no passwords!</p>
           />
           <p class="mt-2 text-lg text-gray font-bold">Hitoshi Hasumi</p>
           <p class="mt-1 text-gray text-sm font-semibold">Monstarlab</p>
-          <div class="mt-2 text-gray markdownify"><p>Creator of PicoRuby and PRK Firmware.
+          <div class="mt-2 text-gray bio markdownify"><p>Creator of PicoRuby and PRK Firmware.
 Maintainer of CRuby&#39;s IRB and Reline.
 A final nominee of the Ruby Prize 2021.
 Twice first prize winner of the Fukuoka Ruby Award in 2020 and 2022.</p></div>
@@ -1261,7 +1275,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Radoslav Stankov</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Rado has more than 20 years of experience working in tech. He is currently the CTO and Co-Founder at Angry Building. Previously was Head of Engineering at Product Hunt. Enjoys blogging, conference speaking, and solving problems.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Rado has more than 20 years of experience working in tech. He is currently the CTO and Co-Founder at Angry Building. Previously was Head of Engineering at Product Hunt. Enjoys blogging, conference speaking, and solving problems.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/RStankov" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -1349,8 +1363,8 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             src="//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"
           />
           <p class="mt-2 text-lg text-gray font-bold">政憲 邱</p>
-          <p class="mt-1 text-gray text-sm font-semibold">Rails Developer, 五倍紅寶石</p>
-          <div class="mt-2 text-gray markdownify"><p>程式語言愛好者，主要使用 Ruby 語言，認為軟體開發也能具備美感，正在尋找滿足敏捷、架構與享受開發過程之間的平衡點。</p></div>
+          <p class="mt-1 text-gray text-sm font-semibold">Tech Lead, Gogolook</p>
+          <div class="mt-2 text-gray bio markdownify"><p>程式語言愛好者，主要使用 Ruby 語言，認為軟體開發也能具備美感，正在尋找滿足敏捷、架構與享受開發過程之間的平衡點。</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/elct9620" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -1434,7 +1448,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Andrei Bondarev</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Andrei has been a software engineering professional for almost 13 years. Among many others he’s been fortunate to make his impact at Spree Commerce (Acquired by First Data), WeddingWire (merged with The Knot), FiscalNote (IPO), National Public Radio, and USA Today. He currently runs a software dev firm, and serves as an Architect/Engineering Manager/Fractional CTO on the client projects. In his free time he enjoys playing tennis and going on long runs while listening to podcasts.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Andrei has been a software engineering professional for almost 13 years. Among many others he’s been fortunate to make his impact at Spree Commerce (Acquired by First Data), WeddingWire (merged with The Knot), FiscalNote (IPO), National Public Radio, and USA Today. He currently runs a software dev firm, and serves as an Architect/Engineering Manager/Fractional CTO on the client projects. In his free time he enjoys playing tennis and going on long runs while listening to podcasts.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/andreibondarev" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -1522,7 +1536,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Samuel Giddins</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"></div>
+          <div class="mt-2 text-gray bio markdownify"></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             
@@ -1598,7 +1612,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Warren Wong</p>
           <p class="mt-1 text-gray text-sm font-semibold">CTO, Viewabo</p>
-          <div class="mt-2 text-gray markdownify"><p>I&#39;m the CTO of Viewabo, a venture-backed startup. We help our partner companies see what their customers see.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>I&#39;m the CTO of Viewabo, a venture-backed startup. We help our partner companies see what their customers see.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/wrrnwng" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -1686,7 +1700,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Delton Ding</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"></div>
+          <div class="mt-2 text-gray bio markdownify"></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             
@@ -1762,7 +1776,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Huy Du Gia</p>
           <p class="mt-1 text-gray text-sm font-semibold">Software Engineer, Rakuten Viki</p>
-          <div class="mt-2 text-gray markdownify"><p>Huy is a Software Engineer driven by a genuine passion for his craft. He loves tackling complex challenges in finance and technology. He firmly believes that technology can revolutionize our world in every aspect, and he’s excited about using his skills to make a positive impact.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Huy is a Software Engineer driven by a genuine passion for his craft. He loves tackling complex challenges in finance and technology. He firmly believes that technology can revolutionize our world in every aspect, and he’s excited about using his skills to make a positive impact.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/dugiahuy" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -1852,7 +1866,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Masafumi OKURA</p>
           <p class="mt-1 text-gray text-sm font-semibold">Software developer</p>
-          <div class="mt-2 text-gray markdownify"><p>Rubyist, Kaigi on Rails chief organizer, the author of Alba gem.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Rubyist, Kaigi on Rails chief organizer, the author of Alba gem.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/okuramasafumi" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -1938,7 +1952,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">John Lin</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Principle Engineer at West Pharmaceutical Services. Ruby lover. All-stack developer. Organizer of Swift Taipei. Find me at <a href="https://johnlin.vc">https://johnlin.vc</a></p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Principle Engineer at West Pharmaceutical Services. Ruby lover. All-stack developer. Organizer of Swift Taipei. Find me at <a href="https://johnlin.vc">https://johnlin.vc</a></p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/johnlinvc" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -2030,7 +2044,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">Stephen Margheim</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Hey! I’m Stephen. I am an American expat living in Berlin Germany. I love Ruby and I love SQLite.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Hey! I’m Stephen. I am an American expat living in Berlin Germany. I love Ruby and I love SQLite.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/fractaledmind" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -2114,7 +2128,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">Ted Johansson</p>
           <p class="mt-1 text-gray text-sm font-semibold">Baconware</p>
-          <div class="mt-2 text-gray markdownify"><p>A web developer of twenty years, and a Rubyist of ten, Ted spends his time both at work (Discourse) and outside of it contributing to open source projects. He&#39;s also really into rock climbing, but not particularly good at it. You&#39;ll often find him reminiscing about &quot;the good old days&quot;, when web development (allegedly) wasn&#39;t so complicated.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>A web developer of twenty years, and a Rubyist of ten, Ted spends his time both at work (Discourse) and outside of it contributing to open source projects. He&#39;s also really into rock climbing, but not particularly good at it. You&#39;ll often find him reminiscing about &quot;the good old days&quot;, when web development (allegedly) wasn&#39;t so complicated.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/Drenmi" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -2203,7 +2217,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">ihower</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>張文鈿，網路暱稱是 ihower。2006 年開始用 Ruby 進行開發，著有 &quot;Rails 實戰聖經&quot; 一書，2018 年成立愛好資訊科技有限公司。近期熱衷投入 Generative AI 和 LLM 的應用開發，並發行 &quot;愛好 AI Engineer&quot; 電子報分享新知。</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>張文鈿，網路暱稱是 ihower。2006 年開始用 Ruby 進行開發，著有 &quot;Rails 實戰聖經&quot; 一書，2018 年成立愛好資訊科技有限公司。近期熱衷投入 Generative AI 和 LLM 的應用開發，並發行 &quot;愛好 AI Engineer&quot; 電子報分享新知。</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/ihower" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -2287,7 +2301,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">Hiếu Nguyễn</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>I’m an enthusiastic programmer who focuses on backend development. Writing about coding is my usual blogging gig, but I also like to talk about books, manga, and other random things.</p>
+          <div class="mt-2 text-gray bio markdownify"><p>I’m an enthusiastic programmer who focuses on backend development. Writing about coding is my usual blogging gig, but I also like to talk about books, manga, and other random things.</p>
 <p>I’m currently Senior Staff Software Engineer at Ascenda. My work involves building world-class authentication system tailored for rewards program in financial industry.</p>
 <p>You can also checkout my bio in <a href="https://hieuk09.github.io/bio">https://hieuk09.github.io/bio</a></p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
@@ -2377,7 +2391,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">Charles Oliver Nutter</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Charles works on JRuby and JVM languages at Red Hat</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Charles works on JRuby and JVM languages at Red Hat</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/headius" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -2461,7 +2475,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">cindyliu923</p>
           <p class="mt-1 text-gray text-sm font-semibold">Development Engineer, DEVCORE</p>
-          <div class="mt-2 text-gray markdownify"><p>大家好，我是 Cindy，5 年 Rails 工程師經驗，目前在資安公司 <a href="https://devco.re">DEVCORE</a> 擔任開發工程師，歡迎大家參觀我的 <a href="https://cindyliu923.com">個人網站</a>。
+          <div class="mt-2 text-gray bio markdownify"><p>大家好，我是 Cindy，5 年 Rails 工程師經驗，目前在資安公司 <a href="https://devco.re">DEVCORE</a> 擔任開發工程師，歡迎大家參觀我的 <a href="https://cindyliu923.com">個人網站</a>。
 /
 Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. I currently work as a developer at a cybersecurity company called <a href="https://devco.re">DEVCORE</a>. Feel free to visit my <a href="https://cindyliu923.com">personal website</a>.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
@@ -2552,7 +2566,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           />
           <p class="mt-2 text-lg text-gray font-bold">Tim Riley</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify">Tim is a core team member of [Hanami](https://hanamirb.org/), [dry-rb](https://dry-rb.org/) and [rom-rb](https://rom-rb.org/) and a Principal Engineer at [Buildkite](https://buildkite.com/). He’s been writing Ruby for over 20 years and still loves it! He works to bring the joy of Ruby to writing real, maintainable apps of all shapes and sizes.</div>
+          <div class="mt-2 text-gray bio markdownify">Tim is a core team member of [Hanami](https://hanamirb.org/), [dry-rb](https://dry-rb.org/) and [rom-rb](https://rom-rb.org/) and a Principal Engineer at [Buildkite](https://buildkite.com/). He’s been writing Ruby for over 20 years and still loves it! He works to bring the joy of Ruby to writing real, maintainable apps of all shapes and sizes.</div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/timriley" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -2587,8 +2601,10 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             16:55 pm ~ 17:55 pm
           </span>
         </div>
-        <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Keynote</p>
-        <div class="markdownify mt-3">
+        <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Quest of the Rubyist</p>
+        <div class="markdownify mt-3"><p>What do curiosity, cooperation and cognisance mean for the budding Rubyist? And can these virtues help us follow the path of programmer happiness?</p>
+
+<p>As we enter a land where both peril and opportunity abound, how can we plot a course towards towards the Ruby of our future? Let’s find out together, as we embark on the adventure of our time!</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
           EN
@@ -2742,7 +2758,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           />
           <p class="mt-2 text-lg text-gray font-bold">Yukihiro Matsumoto (Matz)</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify">Creator of Ruby, Heroku</div>
+          <div class="mt-2 text-gray bio markdownify">Creator of Ruby, Heroku</div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/matz" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -2869,7 +2885,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           />
           <p class="mt-2 text-lg text-gray font-bold">Cristian Planas</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>I am a software engineer that has been working primarily with Rails since the release of Rails 3, more than 10 years ago.</p>
+          <div class="mt-2 text-gray bio markdownify"><p>I am a software engineer that has been working primarily with Rails since the release of Rails 3, more than 10 years ago.</p>
 <p>Performance optimization has been an obsession for me since I founded my first start-up as a solo engineer in 2012. Currently, I am a Group Tech Lead and Senior Staff Engineer at Zendesk, where I focus on performance optimization.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
@@ -2974,7 +2990,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           />
           <p class="mt-2 text-lg text-gray font-bold">Ryo Kajiwara</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>A wild (freelance) programmer. I can do cryptography and authentication/authorization a little.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>A wild (freelance) programmer. I can do cryptography and authentication/authorization a little.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/sylph01" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -3110,7 +3126,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">Yuji Yokoo</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Yuji is a long-time programmer and software developer based in Adelaide, Australia. He is from and grew up in Tokyo, Japan playing lots of video games. He used to be a Windows desktop application developer until he discovered Ruby.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Yuji is a long-time programmer and software developer based in Adelaide, Australia. He is from and grew up in Tokyo, Japan playing lots of video games. He used to be a Windows desktop application developer until he discovered Ruby.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/yujiyokoo" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -3215,7 +3231,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">Hirota Tetsuya</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><ul>
+          <div class="mt-2 text-gray bio markdownify"><ul>
 <li>Name: Tetsuya Hirota</li>
 <li>Job Title: Director and CTO at Dogrun Inc. (<a href="https://dogrun.jp/en/">https://dogrun.jp/en/</a>)</li>
 <li>Location: Shizuoka-city Japan</li>
@@ -3358,7 +3374,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">煒航 簡</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Rubyist, Rustacean, Web Developer, Software Architect, Conference Speaker, Book Writer, Amateur Piano Player/Composer, Video Gamer, Whiskey Lover.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Rubyist, Rustacean, Web Developer, Software Architect, Conference Speaker, Book Writer, Amateur Piano Player/Composer, Video Gamer, Whiskey Lover.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/tonytonyjan" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -3463,7 +3479,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">Mark Chao</p>
           <p class="mt-1 text-gray text-sm font-semibold">Listia</p>
-          <div class="mt-2 text-gray markdownify"><p>A Rubyist from Taiwan who works for GitLab. My hobbies include traveling, developing 2ch-like imageboard, and to draw doujinshi.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>A Rubyist from Taiwan who works for GitLab. My hobbies include traveling, developing 2ch-like imageboard, and to draw doujinshi.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/lulalala" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -3596,7 +3612,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">Hiroshi SHIBATA</p>
           <p class="mt-1 text-gray text-sm font-semibold">Fellow, ANDPAD, Inc.</p>
-          <div class="mt-2 text-gray markdownify"><p>OSS programmer, Ruby committer, maintainer of many OSS such as ruby, rubygems, bundler, rake, and administrator of ruby-lang.org. He is working in public relations of technology for ANDPAD Inc. and full time OSS developer for the Ruby programming language.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>OSS programmer, Ruby committer, maintainer of many OSS such as ruby, rubygems, bundler, rake, and administrator of ruby-lang.org. He is working in public relations of technology for ANDPAD Inc. and full time OSS developer for the Ruby programming language.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/hsbt" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -3700,7 +3716,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           />
           <p class="mt-2 text-lg text-gray font-bold">Helio Cola</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>He(lio) is a passionate software engineer and has created things primarily in C/C++ &amp; Ruby, over the past 20+ years.
+          <div class="mt-2 text-gray bio markdownify"><p>He(lio) is a passionate software engineer and has created things primarily in C/C++ &amp; Ruby, over the past 20+ years.
 He(lio) met Ruby v1.8.7 and Rails 2.x in 2010 and it is a Happy Developer since then.</p>
 <p>He(lio) is currently helping small and medium side Dev teams as a part-time Rails consultant, while he is dusting off some old products, building new ones, doing some OSS, and enjoying more time with his 2 children.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
@@ -3836,7 +3852,7 @@ To a future with no passwords!</p>
           />
           <p class="mt-2 text-lg text-gray font-bold">Tse-Ching Ho</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>何澤清，Ruby/Rails/React 工程師，黃碼科技負責人。
+          <div class="mt-2 text-gray bio markdownify"><p>何澤清，Ruby/Rails/React 工程師，黃碼科技負責人。
 具多年純 Rails 或純 React 或 Rails + React 混合式專案的開發經驗。
 擅長網站應用系統規劃和製作，熟悉專業顧問和教育訓練。
 目前偏好前後端分離開發，特別重視 UI/UX 的規劃和 API 的設計。</p></div>
@@ -3944,7 +3960,7 @@ To a future with no passwords!</p>
           />
           <p class="mt-2 text-lg text-gray font-bold">Junichi Kobayashi</p>
           <p class="mt-1 text-gray text-sm font-semibold">ESM, Inc.</p>
-          <div class="mt-2 text-gray markdownify"><p>永和システムマネジメントでWebエンジニアとして働いています。</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>I am an engineer at ESM, Inc., with a keen interest in Ruby parsers and their related technologies.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/junk0612" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -4077,7 +4093,7 @@ To a future with no passwords!</p>
           />
           <p class="mt-2 text-lg text-gray font-bold">Hitoshi Hasumi</p>
           <p class="mt-1 text-gray text-sm font-semibold">Monstarlab</p>
-          <div class="mt-2 text-gray markdownify"><p>Creator of PicoRuby and PRK Firmware.
+          <div class="mt-2 text-gray bio markdownify"><p>Creator of PicoRuby and PRK Firmware.
 Maintainer of CRuby&#39;s IRB and Reline.
 A final nominee of the Ruby Prize 2021.
 Twice first prize winner of the Fukuoka Ruby Award in 2020 and 2022.</p></div>
@@ -4185,7 +4201,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Radoslav Stankov</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Rado has more than 20 years of experience working in tech. He is currently the CTO and Co-Founder at Angry Building. Previously was Head of Engineering at Product Hunt. Enjoys blogging, conference speaking, and solving problems.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Rado has more than 20 years of experience working in tech. He is currently the CTO and Co-Founder at Angry Building. Previously was Head of Engineering at Product Hunt. Enjoys blogging, conference speaking, and solving problems.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/RStankov" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -4318,8 +4334,8 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             src="//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"
           />
           <p class="mt-2 text-lg text-gray font-bold">政憲 邱</p>
-          <p class="mt-1 text-gray text-sm font-semibold">Rails Developer, 五倍紅寶石</p>
-          <div class="mt-2 text-gray markdownify"><p>程式語言愛好者，主要使用 Ruby 語言，認為軟體開發也能具備美感，正在尋找滿足敏捷、架構與享受開發過程之間的平衡點。</p></div>
+          <p class="mt-1 text-gray text-sm font-semibold">Tech Lead, Gogolook</p>
+          <div class="mt-2 text-gray bio markdownify"><p>程式語言愛好者，主要使用 Ruby 語言，認為軟體開發也能具備美感，正在尋找滿足敏捷、架構與享受開發過程之間的平衡點。</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/elct9620" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -4422,7 +4438,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Andrei Bondarev</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Andrei has been a software engineering professional for almost 13 years. Among many others he’s been fortunate to make his impact at Spree Commerce (Acquired by First Data), WeddingWire (merged with The Knot), FiscalNote (IPO), National Public Radio, and USA Today. He currently runs a software dev firm, and serves as an Architect/Engineering Manager/Fractional CTO on the client projects. In his free time he enjoys playing tennis and going on long runs while listening to podcasts.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Andrei has been a software engineering professional for almost 13 years. Among many others he’s been fortunate to make his impact at Spree Commerce (Acquired by First Data), WeddingWire (merged with The Knot), FiscalNote (IPO), National Public Radio, and USA Today. He currently runs a software dev firm, and serves as an Architect/Engineering Manager/Fractional CTO on the client projects. In his free time he enjoys playing tennis and going on long runs while listening to podcasts.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/andreibondarev" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -4555,7 +4571,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Samuel Giddins</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"></div>
+          <div class="mt-2 text-gray bio markdownify"></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             
@@ -4650,7 +4666,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Warren Wong</p>
           <p class="mt-1 text-gray text-sm font-semibold">CTO, Viewabo</p>
-          <div class="mt-2 text-gray markdownify"><p>I&#39;m the CTO of Viewabo, a venture-backed startup. We help our partner companies see what their customers see.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>I&#39;m the CTO of Viewabo, a venture-backed startup. We help our partner companies see what their customers see.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/wrrnwng" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -4783,7 +4799,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Delton Ding</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"></div>
+          <div class="mt-2 text-gray bio markdownify"></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             
@@ -4878,7 +4894,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Huy Du Gia</p>
           <p class="mt-1 text-gray text-sm font-semibold">Software Engineer, Rakuten Viki</p>
-          <div class="mt-2 text-gray markdownify"><p>Huy is a Software Engineer driven by a genuine passion for his craft. He loves tackling complex challenges in finance and technology. He firmly believes that technology can revolutionize our world in every aspect, and he’s excited about using his skills to make a positive impact.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Huy is a Software Engineer driven by a genuine passion for his craft. He loves tackling complex challenges in finance and technology. He firmly believes that technology can revolutionize our world in every aspect, and he’s excited about using his skills to make a positive impact.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/dugiahuy" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -5013,7 +5029,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           />
           <p class="mt-2 text-lg text-gray font-bold">Masafumi OKURA</p>
           <p class="mt-1 text-gray text-sm font-semibold">Software developer</p>
-          <div class="mt-2 text-gray markdownify"><p>Rubyist, Kaigi on Rails chief organizer, the author of Alba gem.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Rubyist, Kaigi on Rails chief organizer, the author of Alba gem.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/okuramasafumi" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -5118,7 +5134,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">John Lin</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Principle Engineer at West Pharmaceutical Services. Ruby lover. All-stack developer. Organizer of Swift Taipei. Find me at <a href="https://johnlin.vc">https://johnlin.vc</a></p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Principle Engineer at West Pharmaceutical Services. Ruby lover. All-stack developer. Organizer of Swift Taipei. Find me at <a href="https://johnlin.vc">https://johnlin.vc</a></p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/johnlinvc" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -5255,7 +5271,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">Stephen Margheim</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Hey! I’m Stephen. I am an American expat living in Berlin Germany. I love Ruby and I love SQLite.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Hey! I’m Stephen. I am an American expat living in Berlin Germany. I love Ruby and I love SQLite.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/fractaledmind" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -5358,7 +5374,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">Ted Johansson</p>
           <p class="mt-1 text-gray text-sm font-semibold">Baconware</p>
-          <div class="mt-2 text-gray markdownify"><p>A web developer of twenty years, and a Rubyist of ten, Ted spends his time both at work (Discourse) and outside of it contributing to open source projects. He&#39;s also really into rock climbing, but not particularly good at it. You&#39;ll often find him reminiscing about &quot;the good old days&quot;, when web development (allegedly) wasn&#39;t so complicated.</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>A web developer of twenty years, and a Rubyist of ten, Ted spends his time both at work (Discourse) and outside of it contributing to open source projects. He&#39;s also really into rock climbing, but not particularly good at it. You&#39;ll often find him reminiscing about &quot;the good old days&quot;, when web development (allegedly) wasn&#39;t so complicated.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/Drenmi" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -5492,7 +5508,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">ihower</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>張文鈿，網路暱稱是 ihower。2006 年開始用 Ruby 進行開發，著有 &quot;Rails 實戰聖經&quot; 一書，2018 年成立愛好資訊科技有限公司。近期熱衷投入 Generative AI 和 LLM 的應用開發，並發行 &quot;愛好 AI Engineer&quot; 電子報分享新知。</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>張文鈿，網路暱稱是 ihower。2006 年開始用 Ruby 進行開發，著有 &quot;Rails 實戰聖經&quot; 一書，2018 年成立愛好資訊科技有限公司。近期熱衷投入 Generative AI 和 LLM 的應用開發，並發行 &quot;愛好 AI Engineer&quot; 電子報分享新知。</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/ihower" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -5595,7 +5611,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">Hiếu Nguyễn</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>I’m an enthusiastic programmer who focuses on backend development. Writing about coding is my usual blogging gig, but I also like to talk about books, manga, and other random things.</p>
+          <div class="mt-2 text-gray bio markdownify"><p>I’m an enthusiastic programmer who focuses on backend development. Writing about coding is my usual blogging gig, but I also like to talk about books, manga, and other random things.</p>
 <p>I’m currently Senior Staff Software Engineer at Ascenda. My work involves building world-class authentication system tailored for rewards program in financial industry.</p>
 <p>You can also checkout my bio in <a href="https://hieuk09.github.io/bio">https://hieuk09.github.io/bio</a></p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
@@ -5730,7 +5746,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">Charles Oliver Nutter</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify"><p>Charles works on JRuby and JVM languages at Red Hat</p></div>
+          <div class="mt-2 text-gray bio markdownify"><p>Charles works on JRuby and JVM languages at Red Hat</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/headius" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -5833,7 +5849,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           />
           <p class="mt-2 text-lg text-gray font-bold">cindyliu923</p>
           <p class="mt-1 text-gray text-sm font-semibold">Development Engineer, DEVCORE</p>
-          <div class="mt-2 text-gray markdownify"><p>大家好，我是 Cindy，5 年 Rails 工程師經驗，目前在資安公司 <a href="https://devco.re">DEVCORE</a> 擔任開發工程師，歡迎大家參觀我的 <a href="https://cindyliu923.com">個人網站</a>。
+          <div class="mt-2 text-gray bio markdownify"><p>大家好，我是 Cindy，5 年 Rails 工程師經驗，目前在資安公司 <a href="https://devco.re">DEVCORE</a> 擔任開發工程師，歡迎大家參觀我的 <a href="https://cindyliu923.com">個人網站</a>。
 /
 Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. I currently work as a developer at a cybersecurity company called <a href="https://devco.re">DEVCORE</a>. Feel free to visit my <a href="https://cindyliu923.com">personal website</a>.</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
@@ -5938,7 +5954,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
   Speaker
 </p>
 <p class="group-hover:text-dark-pink-100 text-black text-xl font-bold">
-  Keynote
+  Quest of the Rubyist
 </p>
 <p class="text-black text-lg font-normal">
   Tim Riley
@@ -5965,7 +5981,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           />
           <p class="mt-2 text-lg text-gray font-bold">Tim Riley</p>
           <p class="mt-1 text-gray text-sm font-semibold"></p>
-          <div class="mt-2 text-gray markdownify">Tim is a core team member of [Hanami](https://hanamirb.org/), [dry-rb](https://dry-rb.org/) and [rom-rb](https://rom-rb.org/) and a Principal Engineer at [Buildkite](https://buildkite.com/). He’s been writing Ruby for over 20 years and still loves it! He works to bring the joy of Ruby to writing real, maintainable apps of all shapes and sizes.</div>
+          <div class="mt-2 text-gray bio markdownify">Tim is a core team member of [Hanami](https://hanamirb.org/), [dry-rb](https://dry-rb.org/) and [rom-rb](https://rom-rb.org/) and a Principal Engineer at [Buildkite](https://buildkite.com/). He’s been writing Ruby for over 20 years and still loves it! He works to bring the joy of Ruby to writing real, maintainable apps of all shapes and sizes.</div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
             
             <a target="_blank" href="https://github.com/timriley" class="cursor-pointer hover:opacity-70 text-4xl">
@@ -6000,8 +6016,10 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             16:55 pm ~ 17:55 pm
           </span>
         </div>
-        <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Keynote</p>
-        <div class="markdownify mt-3">
+        <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Quest of the Rubyist</p>
+        <div class="markdownify mt-3"><p>What do curiosity, cooperation and cognisance mean for the budding Rubyist? And can these virtues help us follow the path of programmer happiness?</p>
+
+<p>As we enter a land where both peril and opportunity abound, how can we plot a course towards towards the Ruby of our future? Let’s find out together, as we embark on the adventure of our time!</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
           EN
@@ -6058,18 +6076,30 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
     
     
       
+          <div x-on:click="showSection = 1"
+              class="flex items-center rounded-md py-8 px-2 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
+              :class="showSection != 1 ? 'bg-white/40': ''">
+            <img class="max-w-[12.25rem] max-h-[3rem]" src="assets/sponsor_avatar/piccollage.png">
+          </div>
+      
     
     
     
+      
+          <div x-on:click="showSection = 2"
+              class="flex items-center rounded-md py-8 px-2 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
+              :class="showSection != 2 ? 'bg-white/40': ''">
+            <img class="max-w-[12.25rem] max-h-[3rem]" src="assets/sponsor_avatar/akatsuki.png">
+          </div>
       
     
     
     
       
           <div x-on:click="showSection = 3"
-              class="rounded-md py-8 px-2 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
+              class="flex items-center rounded-md py-8 px-2 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
               :class="showSection != 3 ? 'bg-white/40': ''">
-            <img class="h-12" src="assets/sponsor_avatar/kdan.png">
+            <img class="max-w-[12.25rem] max-h-[3rem]" src="assets/sponsor_avatar/kdan.png">
           </div>
       
     
@@ -6093,25 +6123,178 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
     
       
     
+      
+    
+    
+    
+      
+    
     
     </div>
     <!-- 徵才資訊 -->
     
     
       
-    
-    
-    
+      
+      <div x-show="showSection == 1"
+          class="rounded-lg w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
+        <h2 class="mb-4 w-full text-2xl md:text-3xl text-white font-bold"> 『PicCollage拼貼趣』招募中 </h2>
+        <div class="flex flex-wrap md:flex-nowrap">
+          <div class="markdownify leading-8 w-full md:w-fit">
+            <h3>💡理念：</h3>
+<p>Win as a Team 團隊力量
+Always be Learning 學無止境
+Live Well, Work Well 好好生活，好好工作</p>
+
+<h3>😇福利：</h3>
+<p>法定項目
+勞保、健保、特別休假、勞退、婚假
+其他福利
+Flexible Work Time &amp; Remote Work 彈性上下班時間 &amp; 遠端工作
+Maker Time 每週一天 Maker Time，不進行不必要的會議和討論
+Team Activities and Workshops 各式活動與學習機會 (技術分享、Design Demo, Hack Days等）
+Fun, Creative &amp; International 雙語工作環境，團隊成員來自世界各地
+Free Lunch and Dinner in the Office 辦公室內團隊午餐晚餐
+Sports Classes in Office/Online 和同事一起起來動一動
+PicCafe 健康零食水果，永遠餵飽你的胃
+Awesome &amp; Fun Office 有趣舒適大稻埕風的辦公室</p>
+
+<h3>💼目前職缺：</h3>
+<p>We are looking for a Backend Developer with web and API development experience who is enthusiastic about clean and performant code to work on high-traffic applications that provide fun creative experiences for millions of people around the world.</p>
+
+<h3><a target="_blank" href="https://www.yourator.co/companies/PicCollage/jobs/4369">Backend Developer</a></h3>
+
+<p>薪資範圍 NT$ 1,000,000 - 1,800,000 (年薪)</p>
+
+<h3><a target="_blank" href="https://www.yourator.co/companies/PicCollage/jobs/10227">Ruby on Rails Backend Developer</a></h3>
+
+<p>薪資範圍 NT$ 1,800,000 - 2,700,000 (年薪)</p>
+
+          </div>
+          
+        </div>
+        <div class="flex justify-end mt-8">
+          <a target="_blank" href="https://www.yourator.co/companies/PicCollage" class="rounded-md borde border-b-4 border-dark-pink-200 py-2 px-4 bg-dark-pink-100 text-white text-base md:text-xl font-bold hover:bg-dark-pink-100/70">FIND OUT MORE</a>
+        </div>
+      </div>
+      
       
     
     
     
+      
+      
+        
+<div x-show="showSection == 2"
+  class="rounded-lg w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
+<div class="grid grid-cols-4 gap-x-4">
+  <h2 class="mb-4 col-span-4 text-2xl md:text-3xl text-white font-bold"> Recruitment </h2>
+  <div class="markdownify leading-8 col-span-4 md:col-span-2">
+    <h3>Our Mission</h3>
+<h3 class="pink-h3">Entertain the world.</h3>
+<h3 class="pink-h3">Resonate with creators.</h3>
+<p>We believe entertainment can move people’s hearts.
+It expands the world you see and deepens connections between
+family, friends, and those you have yet to meet.
+Entertainment creates experiences that are unforgettable in life.
+By being true to our creative and expressive selves and by 
+resonating with artists and creators from around the world,
+Akatsuki aims to continue to deliver entertainment
+that moves people's hearts.
+</p>
+
+  </div>
+  <div class="leading-8 col-span-2 md:col-span-1">
+    <ul>
+  <li>◆ 獎金/禮品類</li>
+  <li>1.年終獎金</li>
+  <li>2.個人績效獎金</li>
+  <li>3.員工推薦獎金</li>
+  <li>
+    <p>4.營運分紅獎品/獎金</p>
+  </li>
+  <li>◆ 休閒類</li>
+  <li>1.員工旅遊補助</li>
+  <li>2.部門聚餐</li>
+  <li>3.慶生會</li>
+  <li>
+    <p>4.員工交流社團</p>
+  </li>
+  <li>◆ 制度類</li>
+  <li>1.定期加薪評鑑考核 （一年2次）</li>
+  <li>2.完整的教育訓練</li>
+  <li>
+    <p>3.順暢的升遷管道</p>
+  </li>
+  <li>◆ 設備類</li>
+  <li>1.電子化圖書館 (藏書超過1,400本，持續增加中)</li>
+  <li>2.健身器材</li>
+  <li>3.沙發休息區</li>
+  <li>4.各類休閒遊戲機</li>
+</ul>
+
+  </div>
+  <div class="leading-8 col-span-2 md:col-span-1">
+    <ul>
+  <li>◆ 請/休假制度</li>
+  <li>1.週休二日</li>
+  <li>2.特休/年假</li>
+  <li>3.生日假</li>
+  <li>4.陪產假</li>
+  <li>5.家庭照顧假</li>
+  <li>6.女性同仁生理假</li>
+  <li>7.同仁育嬰假</li>
+  <li>
+    <p>8.未滿一年即享年假</p>
+  </li>
+  <li>◆ 其他</li>
+  <li>1.外語培訓（英語・日語）</li>
+  <li>2.教育研修訓練（台灣・日本）</li>
+  <li>3.最新技術交流（鼓勵參加同業交流活動）</li>
+  <li>4.各式聚餐</li>
+  <li>5.免費點心、飲料</li>
+  <li>6.每週兩天按摩服務</li>
+  <li>7.年度健康檢查</li>
+  <li>
+    <p>8.員工協助方案</p>
+  </li>
+  <li>◆ 補助類</li>
+  <li>1.結婚禮金</li>
+  <li>2.生育津貼</li>
+  <li>3.員工進修補助</li>
+  <li>4.退職金提撥</li>
+  <li>5.通勤交通費</li>
+  <li>6.購書費</li>
+  <li>7.社團活動補助</li>
+  <li>8.育兒津貼</li>
+</ul>
+
+  </div>
+  <h33 class="mb-4 col-span-4 text-2xl md:text-3xl text-white font-bold"> NEW Game </h3>
+  <div class="col-span-4 md:col-span-2"><img src="assets/sponsor_avatar/akatsuki_ad_img.png"/></div>
+  <div class="leading-8 col-span-4 md:col-span-2">
+    <div class="mb-4"><p>曉數碼旗下遊戲工作室品牌「曙光工作室」新作《The Star Named EOS》將於明年推出
+歡迎至 Steam 試玩並加入願望清單！</p>
+</div>
+    <div class="text-right md:text-left"><a target="_blank" href="https://bit.ly/3QHeMuF" class="py-2 px-4 text-white bg-dark-blue-200 hover:opacity-70 rounded-md">Steam 頁面</a></div>
+  </div>
+</div>
+<div class="flex justify-end mt-8">
+  <a target="_blank" href="https://aktsktwhire.teamdoor.io/" class="rounded-md borde border-b-4 border-dark-pink-200 py-2 px-4 bg-dark-pink-100 text-white text-base md:text-xl font-bold hover:bg-dark-pink-100/70">FIND OUT MORE</a>
+</div>
+</div>
+      
+      
+    
+    
+    
+      
       
       <div x-show="showSection == 3"
           class="rounded-lg w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
-        <div class="grid grid-cols-2 gap-x-4">
-          <h2 class="mb-4 col-span-2 text-2xl md:text-3xl text-red-400 font-bold"> Recruitment </h2>
-          <div class="markdownify leading-8 col-span-2 md:col-span-1">
+        <h2 class="mb-4 w-full text-2xl md:text-3xl text-white font-bold"> Recruitment </h2>
+        <div class="flex flex-wrap md:flex-nowrap">
+          <div class="markdownify leading-8 w-full md:w-fit">
             <h3 class="mb-4 text-lg md:text-xl text-white font-bold"> ▶ 公司福利 </h3>
 <p>法定項目</p>
 
@@ -6157,7 +6340,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
 <p>快加入我們成為令人驕傲的凱鈿人！Be Awesome Today！</p>
 
           </div>
-          <div class="leading-8 col-span-2 md:col-span-1">
+          
+          <div class="markdownify leading-8 w-full md:w-fit">
             <h3 class="my-4 md:mt-0 text-lg md:text-xl text-white font-bold">▶ benefits</h3>
 <p>&lt; Kdan Benefits and Perks 2.0 &gt; Despite the basic bonus for three festivals, high-quality health check, and group insurance, there are also seven mysteries in Kdan!</p>
 
@@ -6188,14 +6372,24 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
 <p>Join us now to become one of our proudest Kdan members! Be Awesome Today!</p>
 
           </div>
+          
         </div>
         <div class="flex justify-end mt-8">
           <a target="_blank" href="https://www.yourator.co/companies/KdanMobile" class="rounded-md borde border-b-4 border-dark-pink-200 py-2 px-4 bg-dark-pink-100 text-white text-base md:text-xl font-bold hover:bg-dark-pink-100/70">FIND OUT MORE</a>
         </div>
       </div>
       
+      
     
     
+    
+      
+    
+    
+    
+      
+    
+      
     
       
     
@@ -6203,11 +6397,9 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
     
       
     
+    
+    
       
-    
-      
-    
-    
     
       
     
@@ -6237,7 +6429,10 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
         <a @click="showModal = true" class="cursor-pointer align-center">
-          <img  class="w-50 mx-auto"  src="/assets/sponsor_avatar/piccollage.png" />
+          <img
+            
+              class="w-50 mx-auto"
+             src="/assets/sponsor_avatar/piccollage.png" />
         </a>
         <!-- Modal -->
         <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -6264,9 +6459,9 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
                       </div>
                     </div>
                     <p class="mt-2 md:mt-8 mb-4 text-3xl md:text-5xl italic font-bold">PicCollage 拼貼趣</p>
-                    <p><p>嗨！我們是來自矽谷的新創團隊 PicCollage Company，我們團隊鼓勵自由創造，擁抱差異與多元文化，打造『開放、學習、分享』的工作環境。團隊近期專注於將『Creative AI』的概念導入產品開發，運用 Generative AI、Machine Learning、Data Analytics等技術，致力打造讓使用者能輕鬆發揮創意的影像編輯產品。
-主要產品『PicCollage 拼貼趣』是一個追求自由創造及分享的影像拼貼App，主要使用者來自美國、英國及日本等國家。目前全球下載量已突破 2.6 億，每個月 1500 萬穩定用戶量，並穩定增長中！另外，新產品團隊 Explore 以『團隊協作、AI應用及影音編輯 』三大方向， 持續開發具有影響力的產品，再戰繼 PicCollage App 之後的下一個產品里程碑
-期待遇見更多 #builders #dreamers #thinkers 來激盪創意，加入 PicCollage Company 和我們一起做出好玩、富有創意的軟體產品到全世界 globe showing Americas🌍</p>
+                    <p><p>嗨！我們是來自矽谷的新創團隊 PicCollage Company，我們團隊鼓勵自由創造，擁抱差異與多元文化，打造『開放、學習、分享』的工作環境。團隊近期專注於將『<strong>Creative AI</strong>』的概念導入產品開發，運用<strong> Generative AI、Machine Learning、Data Analytics</strong>等技術，致力打造讓使用者能輕鬆發揮<strong>創意</strong>的<strong>影像編輯產品</strong>。
+主要產品『<strong>PicCollage 拼貼趣</strong>』是一個追求自由創造及分享的影像拼貼App，主要使用者來自美國、英國及日本等國家。目前<strong>全球下載量已突破 2.6 億，每個月 1500 萬穩定用戶量</strong>，並穩定增長中！另外，新產品團隊 Explore 以『<strong>團隊協作、AI應用及影音編輯</strong> 』三大方向， 持續開發具有影響力的產品，再戰繼 PicCollage App 之後的下一個產品里程碑
+期待遇見更多<strong> #builders #dreamers #thinkers </strong>來激盪創意，加入 PicCollage Company 和我們一起做出好玩、富有創意的軟體產品到全世界 globe showing Americas🌍</p>
 </p>
                   </div>
                   <div class="w-1/3 hidden md:flex justify-center pl-5 pr-10">
@@ -6293,7 +6488,10 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
         <a @click="showModal = true" class="cursor-pointer align-center">
-          <img  class="w-50 mx-auto"  src="/assets/sponsor_avatar/akatsuki.png" />
+          <img
+            
+              class="w-50 mx-auto" 
+             src="/assets/sponsor_avatar/akatsuki.png" />
         </a>
         <!-- Modal -->
         <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -6351,7 +6549,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
         <a @click="showModal = true" class="cursor-pointer align-center">
-          <img  class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/kdan.png" />
+          <img
+             class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/kdan.png" />
         </a>
         <!-- Modal -->
         <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -6420,7 +6619,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
         <a @click="showModal = true" class="cursor-pointer align-center">
-          <img  class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/zuyou.svg" />
+          <img
+             class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/zuyou.svg" />
         </a>
         <!-- Modal -->
         <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -6474,7 +6674,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
         <a @click="showModal = true" class="cursor-pointer align-center">
-          <img  class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/5xRuby.png" />
+          <img
+             class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/5xRuby.png" />
         </a>
         <!-- Modal -->
         <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -6523,7 +6724,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
         <a @click="showModal = true" class="cursor-pointer align-center">
-          <img  class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/ntuedtd.png" />
+          <img
+             class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/ntuedtd.png" />
         </a>
         <!-- Modal -->
         <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -6572,7 +6774,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
         <a @click="showModal = true" class="cursor-pointer align-center">
-          <img  class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/ocf.png" />
+          <img
+             class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/ocf.png" />
         </a>
         <!-- Modal -->
         <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -6626,7 +6829,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
         <a @click="showModal = true" class="cursor-pointer align-center">
-          <img  class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/libhunt.png" />
+          <img
+             class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/libhunt.png" />
         </a>
         <!-- Modal -->
         <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -6675,12 +6879,119 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
     </div>
     
+    <h3 class="mt-12 text-3xl font-sans capitalize font-semibold text-dark-blue-200 italic">speaker sponsor</h3>
+    <div class="w-full flex flex-wrap justify-center">
+      
+      <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
+        <a @click="showModal = true" class="cursor-pointer align-center">
+          <img
+             class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/dogruninc.png" />
+        </a>
+        <!-- Modal -->
+        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
+          <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4 text-center ">
+              <div
+                class="relative transform overflow-hidden rounded-lg p-4 md:p-8 w-[60rem] bg-white text-left shadow-xl transition-all ">
+                <a @click="showModal = false"
+                  class="cursor-pointer absolute right-4 md:right-10 top-4 md:top-10 text-xl">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+                
+                
+                <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
+                  <div class="w-full md:w-2/3 md:pr-4">
+                    <div class="w-full md:hidden">
+                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/dogruninc.png" />
+                    </div>
+                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                      speaker sponsor
+                      <div class='ml-2 h-1.5 invisible md:visible'>
+                        <img src="assets/sec-line.png" alt="">
+                      </div>
+                    </div>
+                    <p class="mt-2 md:mt-8 mb-4 text-3xl md:text-5xl italic font-bold">dogrun Inc.</p>
+                    <p><p>We develop databases, data search systems, and data visualization tools for the life sciences.</p>
+</p>
+                  </div>
+                  <div class="w-1/3 hidden md:flex justify-center pl-5 pr-10">
+                    <img class="w-full object-contain" src="../assets/sponsor_avatar/dogruninc.png" />
+                  </div>
+                </div>
+                
+                <div class="mt-4 py-3 md:pr-10 text-end">
+                  <a href="https://dogrun.jp/en/" target="_blank"
+                    class="py-3 px-8 rounded-md bg-gradient-to-r from-dark-pink-100 to-dark-pink-200 hover:from-dark-pink-200 hover:to-dark-pink-100 font-bold text-white">website</a>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
+        <a @click="showModal = true" class="cursor-pointer align-center">
+          <img
+             class="h-24 mx-auto"
+             src="/assets/sponsor_avatar/esm.png" />
+        </a>
+        <!-- Modal -->
+        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
+          <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4 text-center ">
+              <div
+                class="relative transform overflow-hidden rounded-lg p-4 md:p-8 w-[60rem] bg-white text-left shadow-xl transition-all ">
+                <a @click="showModal = false"
+                  class="cursor-pointer absolute right-4 md:right-10 top-4 md:top-10 text-xl">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+                
+                
+                <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
+                  <div class="w-full md:w-2/3 md:pr-4">
+                    <div class="w-full md:hidden">
+                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/esm.png" />
+                    </div>
+                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                      speaker sponsor
+                      <div class='ml-2 h-1.5 invisible md:visible'>
+                        <img src="assets/sec-line.png" alt="">
+                      </div>
+                    </div>
+                    <p class="mt-2 md:mt-8 mb-4 text-3xl md:text-5xl italic font-bold">ESM</p>
+                    <p><p>ESM is one of Japan’s premier companies building Ruby/Rails applications in an agile way. We believe in Ruby and Agile because we believe in people. We build applications which work well and make customers happy.</p>
+</p>
+                  </div>
+                  <div class="w-1/3 hidden md:flex justify-center pl-5 pr-10">
+                    <img class="w-full object-contain" src="../assets/sponsor_avatar/esm.png" />
+                  </div>
+                </div>
+                
+                <div class="mt-4 py-3 md:pr-10 text-end">
+                  <a href="https://agile.esm.co.jp/" target="_blank"
+                    class="py-3 px-8 rounded-md bg-gradient-to-r from-dark-pink-100 to-dark-pink-200 hover:from-dark-pink-200 hover:to-dark-pink-100 font-bold text-white">website</a>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
     <h3 class="mt-12 text-3xl font-sans capitalize font-semibold text-dark-blue-200 italic">special thanks</h3>
     <div class="w-full flex flex-wrap justify-center">
       
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
         <a @click="showModal = true" class="cursor-pointer align-center">
-          <img  class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/matsue.png" />
+          <img
+             class="w-full h-24 mx-auto px-12"  src="/assets/sponsor_avatar/matsue.png" />
         </a>
         <!-- Modal -->
         <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
