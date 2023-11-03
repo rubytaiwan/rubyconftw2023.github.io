@@ -6,18 +6,19 @@
       logo: "sponsor_avatar/piccollage.png"
       link: https://picc.co/
       desc: |-
-        嗨！我們是來自矽谷的新創團隊 PicCollage Company，我們團隊鼓勵自由創造，擁抱差異與多元文化，打造『開放、學習、分享』的工作環境。團隊近期專注於將『Creative AI』的概念導入產品開發，運用 Generative AI、Machine Learning、Data Analytics等技術，致力打造讓使用者能輕鬆發揮創意的影像編輯產品。
-        主要產品『PicCollage 拼貼趣』是一個追求自由創造及分享的影像拼貼App，主要使用者來自美國、英國及日本等國家。目前全球下載量已突破 2.6 億，每個月 1500 萬穩定用戶量，並穩定增長中！另外，新產品團隊 Explore 以『團隊協作、AI應用及影音編輯 』三大方向， 持續開發具有影響力的產品，再戰繼 PicCollage App 之後的下一個產品里程碑
-        期待遇見更多 #builders #dreamers #thinkers 來激盪創意，加入 PicCollage Company 和我們一起做出好玩、富有創意的軟體產品到全世界 globe showing Americas🌍
+        嗨！我們是來自矽谷的新創團隊 PicCollage Company，我們團隊鼓勵自由創造，擁抱差異與多元文化，打造『開放、學習、分享』的工作環境。團隊近期專注於將『<strong>Creative AI</strong>』的概念導入產品開發，運用<strong> Generative AI、Machine Learning、Data Analytics</strong>等技術，致力打造讓使用者能輕鬆發揮<strong>創意</strong>的<strong>影像編輯產品</strong>。
+        主要產品『<strong>PicCollage 拼貼趣</strong>』是一個追求自由創造及分享的影像拼貼App，主要使用者來自美國、英國及日本等國家。目前<strong>全球下載量已突破 2.6 億，每個月 1500 萬穩定用戶量</strong>，並穩定增長中！另外，新產品團隊 Explore 以『<strong>團隊協作、AI應用及影音編輯</strong> 』三大方向， 持續開發具有影響力的產品，再戰繼 PicCollage App 之後的下一個產品里程碑
+        期待遇見更多<strong> #builders #dreamers #thinkers </strong>來激盪創意，加入 PicCollage Company 和我們一起做出好玩、富有創意的軟體產品到全世界 globe showing Americas🌍
+      spotlight: true
       find_out_more: https://www.yourator.co/companies/PicCollage
+      spotlight_sub_title: 『PicCollage拼貼趣』招募中
       ad_1_left: |-
-        <h3 class="mb-2 text-lg md:text-xl font-bold">『PicCollage拼貼趣』招募中</h3>
-        <h3 class="mb-2 text-lg md:text-xl font-bold">💡理念：</h3>
+        <h3>💡理念：</h3>
         Win as a Team 團隊力量
         Always be Learning 學無止境
         Live Well, Work Well 好好生活，好好工作
 
-        <h3 class="mb-2 text-lg md:text-xl font-bold">😇福利：</h3>
+        <h3>😇福利：</h3>
         法定項目
         勞保、健保、特別休假、勞退、婚假
         其他福利
@@ -30,14 +31,14 @@
         PicCafe 健康零食水果，永遠餵飽你的胃
         Awesome & Fun Office 有趣舒適大稻埕風的辦公室
 
-        <h3 class="mb-2 text-lg md:text-xl font-bold">💼目前職缺：</h3>
+        <h3>💼目前職缺：</h3>
         We are looking for a Backend Developer with web and API development experience who is enthusiastic about clean and performant code to work on high-traffic applications that provide fun creative experiences for millions of people around the world.
         
-        <h3 class="mb-2 text-lg md:text-xl font-bold">Backend Developer</h3>
+        <h3><a target="_blank" href="https://www.yourator.co/companies/PicCollage/jobs/4369">Backend Developer</a></h3>
         
         薪資範圍 NT$ 1,000,000 - 1,800,000 (年薪)
         
-        <h3 class="mb-2 text-lg md:text-xl font-bold">Ruby on Rails Backend Developer</h3>
+        <h3><a target="_blank" href="https://www.yourator.co/companies/PicCollage/jobs/10227">Ruby on Rails Backend Developer</a></h3>
         
         薪資範圍 NT$ 1,800,000 - 2,700,000 (年薪)
 
@@ -54,11 +55,13 @@
         曉數碼與日本知名 IP 商合作營運國際版手遊，重視在地化品質並放眼國際市場，團隊中聚集了來自不同區域的成員，包含台、日、韓、英、法、德、西與印度等，在多元的文化激盪下，提供最貼近全球用戶的在地化作品。而旗下子品牌「曙光工作室」所原創開發的敘事解謎遊戲《傾聽畫語》，自上市以來獲得無數國際獎項的肯定；2023 年更宣布新作《The Star Named EOS》製作中，將娛樂所帶來的幸福感，不斷傳遞給世界各地的人們。
 
         同時，曉數碼亦積極打造幸福職場 ，透過完善且多元的福利制度，守護團隊成員的身心健康，並支持成員們發揮創意、挑戰與學習。我們深信，只要於創作中注滿熱忱，必定能將這份感動加以擴散，成就令人們笑顏逐開的世界，帶來無比閃耀的多彩風貌。
+      spotlight: true
+      spotlight_file: akatsuki 
       find_out_more: https://aktsktwhire.teamdoor.io/
       ad_1_left: |-
-        <h3 class="mb-2 text-lg md:text-xl font-bold">Our Mission</h3>
-        <h3 class="mb-2 text-lg md:text-xl font-bold">Entertain the world.</h3>
-        <h3 class="mb-2 text-lg md:text-xl font-bold">Resonate with creators.</h3>
+        <h3>Our Mission</h3>
+        <h3 class="pink-h3">Entertain the world.</h3>
+        <h3 class="pink-h3">Resonate with creators.</h3>
         <p>We believe entertainment can move people’s hearts.
         It expands the world you see and deepens connections between
         family, friends, and those you have yet to meet.
@@ -120,6 +123,10 @@
         * 6.購書費
         * 7.社團活動補助
         * 8.育兒津貼
+      ad_2_left: assets/sponsor_avatar/akatsuki_ad_img.png
+      ad_2_right: |-
+        曉數碼旗下遊戲工作室品牌「曙光工作室」新作《The Star Named EOS》將於明年推出
+        歡迎至 Steam 試玩並加入願望清單！
 - title: Gem
   sponsor: true
   companies:
@@ -143,6 +150,7 @@
 
         我們相信，多元共融的文化，成就更好的你
       spotlight: true
+      spotlight_sub_title: Recruitment
       find_out_more: https://www.yourator.co/companies/KdanMobile
       ad_1_left: |-
         <h3 class="mb-4 text-lg md:text-xl text-white font-bold"> ▶ 公司福利 </h3>
@@ -232,16 +240,27 @@
   companies:
     - name: "LibHunt"
       logo: "sponsor_avatar/libhunt.png"
-      logo_size: "square"
       link: https://www.libhunt.com/
       desc: |-
         Discover trending open-source projects and their alternatives.
-
+- title: speaker sponsor
+  companies:
+    - name: "dogrun Inc."
+      logo: "sponsor_avatar/dogruninc.png"
+      link: https://dogrun.jp/en/ 
+      desc: |-
+        We develop databases, data search systems, and data visualization tools for the life sciences.
+    - name: "ESM"
+      logo: "sponsor_avatar/esm.png"
+      logo_size: "square"
+      link: https://agile.esm.co.jp/
+      desc: |-
+        ESM is one of Japan's premier companies building Ruby/Rails applications in an agile way. We believe in Ruby and Agile because we believe in people. We build applications which work well and make customers happy.
+    
 - title: special thanks
   companies:
     - name: "日本・松江市 ( Matsue City JAPAN)"
       logo: "sponsor_avatar/matsue.png"
-      logo_size: "square"
       img_1: sponsor_avatar/creator_of_ruby.png
       img_1_desc: Creator of Ruby
       img_2: sponsor_avatar/city_map.png
