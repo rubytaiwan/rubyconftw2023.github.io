@@ -157,7 +157,7 @@
   avatar: "assets/speaker_avatar/HelioCola.jpg"
   title: ''
   urlGithub: https://github.com/heliocola
-  urltwitter: https://twitter.com/https://ruby.social/hacrods
+  mastodon: https://ruby.social/hacrods
   bio: |-
     <p>He(lio) is a passionate software engineer and has created things primarily in C/C++ &amp; Ruby, over the past 20+ years.
     He(lio) met Ruby v1.8.7 and Rails 2.x in 2010 and it is a Happy Developer since then.</p>
