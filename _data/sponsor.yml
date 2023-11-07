@@ -256,7 +256,9 @@
       link: https://agile.esm.co.jp/
       desc: |-
         ESM is one of Japan's premier companies building Ruby/Rails applications in an agile way. We believe in Ruby and Agile because we believe in people. We build applications which work well and make customers happy.
-    
+    - name: "Red Hat"
+      logo: "sponsor_avatar/red_hat.png"
+
 - title: special thanks
   companies:
     - name: "日本・松江市 ( Matsue City JAPAN)"
