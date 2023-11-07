@@ -15,7 +15,8 @@
   end: 11:20 am
   sessions:
     - session_id: 1
-      subject: "TBD"
+      subject:  30 Years of Ruby
+      summary: Lessons Matz has learned from the history of Ruby development
       lang: "EN"
       speakers: [0]
 - id: 3
@@ -415,6 +416,7 @@
         What do curiosity, cooperation and cognisance mean for the budding Rubyist? And can these virtues help us follow the path of programmer happiness?
 
         As we enter a land where both peril and opportunity abound, how can we plot a course towards towards the Ruby of our future? Let’s find out together, as we embark on the adventure of our time!
+      img: assets/speaker_avatar/tim-riley-img.png
       lang: "EN"
       speakers: [1]
 - id: 31

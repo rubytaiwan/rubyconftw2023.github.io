@@ -49,7 +49,7 @@
     <p>In this presentation, I will introduce the details of the functionality that extends Ruby&#39;s <code>require</code> to provide guidance to users on what they can do to load them. And I will also show how $LOAD_PATH is build behind Ruby and Rails by Bundler.</p>
   language: English
 - index: 4
-  name: 政憲 邱
+  name: 蒼時弦也
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"
   title: Tech Lead, Gogolook
   urlGithub: https://github.com/elct9620

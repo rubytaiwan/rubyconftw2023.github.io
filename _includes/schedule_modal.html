@@ -61,6 +61,7 @@
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">{{ include.session.subject }}</p>
+        <img src="{{ include.session.img }}" />
         <div class="markdownify mt-3">{{ include.session.summary | markdownify }}</div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
           {{ include.session.lang }}
