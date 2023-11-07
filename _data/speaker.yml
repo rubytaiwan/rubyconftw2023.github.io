@@ -207,7 +207,7 @@
   urlGithub: https://github.com/junk0612
   urltwitter: https://twitter.com/junk0612
   bio: "<p>I am an engineer at ESM, Inc., with a keen interest in Ruby parsers and their related technologies.</p>"
-  subject: Understanding Parser Generators surronding Ruby with Contributing Lrama
+  subject: Understanding Parser Generators surrounding Ruby with Contributing Lrama
   summary: "<p>At RubyKaigi 2023, yui-knk introduced Lrama, for which I submitted
     a PR to implement the &#39;Named References&#39; feature, a functionality found
     in GNU Bison. In this presentation, I will delve into the internal workings of
