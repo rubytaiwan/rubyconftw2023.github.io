@@ -247,8 +247,9 @@
             10:20 am ~ 11:20 am
           </span>
         </div>
-        <p class="text-xl md:text-2xl font-bold text-dark-blue-200">TBD</p>
-        <div class="markdownify mt-3">
+        <p class="text-xl md:text-2xl font-bold text-dark-blue-200">30 Years of Ruby</p>
+        <img src="" />
+        <div class="markdownify mt-3"><p>Lessons Matz has learned from the history of Ruby development</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
           EN
@@ -337,6 +338,7 @@
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">A Rails performance guidebook: from 0 to 1B requests/day</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Building a feature is not good enough anymore: all your work won&#39;t be of use if it&#39;s not performant enough. So how to improve performance? After all, performance is not an easy discipline to master: all slow applications are slow in their own way, meaning that there is no silver bullet for these kinds of problems.</p>
 <p>In this presentation, we will guide you across patterns, strategies, and little tricks to improve performance. We will do that by sharing real stories of our daily experience facing and solving real performance issues in an application that daily serves billions of requests per day.</p>
 </div>
@@ -422,6 +424,7 @@
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Adventures in the Dungeons of OpenSSL</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>As part of implementing Hybrid Public Key Encryption (HPKE; RFC 9180)
 in Ruby, I had a chance to send a patch into Ruby's OpenSSL gem. Missing functionalities?
 Major version upgrade of the OpenSSL backend? There is a deep dungeon behind one
@@ -513,6 +516,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Developing cross-platform mruby software for Dreamcast and Wii</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>With mruby, we can write Ruby for many environments including old video game consoles. I am working on a cross-platform library for mruby so software written for mruby on Dreamcast can be run on Wii with little change to the source. I have ported the block puzzle I showed at RubyConfTW 2019 to Wii, and am now working on the presentation tool.</p>
 <p>I will tell you about what is involved in making a cross-platform mruby library for Dreamcast and Wii, as well as challenges and lessons learned.</p>
 <p>This presentation will (hopefully) be delivered on either of those consoles and will include some live demos.</p>
@@ -609,6 +613,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">High Speed Parsing Massive XML Data in Ruby</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>A massive XML called BioProject has been published. However, when I parsed the XML as it was, rexml got freeze somewhere, and nokogiri ended up consuming a large amount of memory and being slow. Looking at the sample implementation in Python, it uses iterparse() to parse each element in the first layer. Therefore, we created a similar mechanism in Ruby and also used ractor to speed it up.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -697,6 +702,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Refining Fork Management: From Workarounds to `Process#_fork`</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>With the release of Ruby 3.1 in 2021, an enhancement arrived as <code>Process#_fork</code>, allowing us to override the fork method. This addition simplifies creating callbacks when forking. While there was no official method to track fork events prior to Ruby 3.1, this limitation didn&#39;t deter the community from exploring various approaches to achieve the same goal.</p>
 <p>In the past, Rails encouraged the use of <code>before_fork</code> and <code>after_fork</code> for connection management, redis-rb ensured fork safety by storing the <code>Process#pid</code> in a variable, and some even used threads to track fork events.</p>
 <p>During this session, I will delve into the backstory of <code>_fork</code> and explore the diverse methods the community employed for creating callbacks during forking prior to Ruby 3.1.</p>
@@ -783,6 +789,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Translating XML and Epub using ChatGPT</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Natsukantou and epub-translator gems offer XML translation by allowing users to mix &amp; match filters and translation services (DeepL/ChatGPT). The gem&#39;s architecture will be presented, showcasing its middleware pattern, the use cases and wizard configuration inference.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -871,6 +878,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Deep dive into Ruby require</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Since Ruby&#39;s bundled and default gems change every year with each release, some versions may suddenly happen <code>LoadError</code> at <code>require</code> when running <code>bundle exec</code> or <code>bin/rails</code>, for example <code>matrix</code> or <code>net-smtp</code>.</p>
 <p>In this presentation, I will introduce the details of the functionality that extends Ruby&#39;s <code>require</code> to provide guidance to users on what they can do to load them. And I will also show how $LOAD_PATH is build behind Ruby and Rails by Bundler.</p>
 </div>
@@ -958,6 +966,7 @@ He(lio) met Ruby v1.8.7 and Rails 2.x in 2010 and it is a Happy Developer since 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Let's pop into Passkeys</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Can you recall a world without having to remember passwords? If Passkeys becomes widely available, that world is a few steps away in our future. Instead of remembering passwords, we will use our biometrics, already available in our phones, laptops, and desktops, and public key encryption!
 To a future with no passwords!</p>
 </div>
@@ -1050,6 +1059,7 @@ To a future with no passwords!</p>
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">從設計階段就開始元件化 Rails 專案</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>介紹如何從 Figma 設計稿，就開始規劃、製作與預覽元件（View Component + Lookbook）。
 說明目前偏好的元件組成方式，協助製作元件的工具和注意事項，以及安置元件到頁面中的方式（partial + helper）。
 展示利用 settings 搭配 builder 活用元件的嘗試。</p>
@@ -1136,6 +1146,7 @@ To a future with no passwords!</p>
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Understanding Parser Generators surronding Ruby with Contributing Lrama</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>At RubyKaigi 2023, yui-knk introduced Lrama, for which I submitted a PR to implement the &#39;Named References&#39; feature, a functionality found in GNU Bison. In this presentation, I will delve into the internal workings of Lrama gained through this implementation. Alongside, I will touch upon the foundational knowledge of parsers and parser generators, as well as the current state of parsers surrounding Ruby.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -1227,6 +1238,7 @@ Twice first prize winner of the Fukuoka Ruby Award in 2020 and 2022.</p></div>
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">The Rise of Microcontroller Ruby</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>In this presentation, we will embark on a journey of live coding to bring microcontrollers to life.
 All you need is (at least) two &quot;Raspberry Pi Pico W&quot; boards, the same number of USB cables, and a laptop.
 Witness the realization of PicoRuby, a production-ready Ruby implementation for microcontrollers, as we delve into the world of innovation.</p>
@@ -1313,6 +1325,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Component Driven UI with ViewComponent gem</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>The View layer is the messiest part of a Ruby on Rails application. Developers are confused about where to put logic. Should it be in the model, presenter, decorator, helper, or partial?</p>
 <p>ViewComponents, developed by GitHub simplifies the View layer and makes it much easier to manage.</p>
 </div>
@@ -1343,7 +1356,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"/>
               </div>
               <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
-                <p class="font-bold">政憲 邱</p>
+                <p class="font-bold">蒼時弦也</p>
               </div>
             </div>
           </a>
@@ -1362,7 +1375,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
             src="//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"
           />
-          <p class="mt-2 text-lg text-gray font-bold">政憲 邱</p>
+          <p class="mt-2 text-lg text-gray font-bold">蒼時弦也</p>
           <p class="mt-1 text-gray text-sm font-semibold">Tech Lead, Gogolook</p>
           <div class="mt-2 text-gray bio markdownify"><p>程式語言愛好者，主要使用 Ruby 語言，認為軟體開發也能具備美感，正在尋找滿足敏捷、架構與享受開發過程之間的平衡點。</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
@@ -1402,6 +1415,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Rethink Rails Architecture</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Rails 讓開發 Web Application 變得相當容易，然而因為簡化了許多問題，當我們面臨更複雜的系統時感到極大的挑戰。複雜的 Rails 專案之所以難以維護是 Rails 在架構上的設計造成的限制，讓我們重新思考 Rails 來尋找更容易維護的架構。</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -1486,6 +1500,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Building LLM applications in Ruby</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>The Large-Language Models have taken application development by storm. Ruby has libraries that help build LLM applications, e.g.: Langchain.rb. We need to understand what kind of LLM applications can be built, how to build them, and what are common pitfalls when building them. We&#39;re going to look at building vector (semantic) search, chat bots and business process automation solutions. We&#39;re going to learn AI/LLM-related concepts, terms and ideas, learn what AI agents are, and look at some of the latest cutting edge AI research.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -1566,6 +1581,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Handling 225k requests per second to RubyGems.org</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Chances are you’ve run bundle install or gem install at some point, seeing as we’re at RubyConf. Turns out, you’re not alone. At peak times, RubyGems.org has received as many as 225 thousand requests per second. How does a small, mostly-volunteer team handle serving all that traffic with their rails app? Let’s dive into how using CDNs, scaling with static files, and wrangling expensive endpoints has kept your favorite gem index up and running over the past decade.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -1650,6 +1666,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">How Rails 7 Helped Us Achieve GDPR Compliance</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Rails 7 introduced a new feature called Active Record Encryption. I will go over what it is, how it works, and how Viewabo used it to help us achieve GDPR compliance. I will include example usage and an overview of the preparatory work that went into implementing Active Record Encryption.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -1730,6 +1747,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Yet Another Ruby DSL for LLM</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>在過去一年裏我們經歷了 LLM 的巨大衝擊，但是對於使用 LLM 實作應用依然困難重重。如何利用 Ruby 的 meta-programming 更好地對 LLM 進行處理和約束從而實作下一世代的 AI 應用是本 Topic 試圖討論的關鍵問題。</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -1814,6 +1832,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Monadic Approach to Ruby Error Handling</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Error handling is an essential part of software development. No matter how well-written your code is, there will always be errors. The key is to handle them in a way that minimizes their impact.</p>
 <p>In this talk, we will build a foundation of error handling concepts, categorizing errors and exceptions in Ruby. We&#39;ll look at practical code examples that demonstrate common issues when propagating errors through layers of code. Explore how Monadic Handling abstract away error handling details by combine Monads Result and Service Object in Ruby programming. </p>
 <p>This talk will empower you understand how to use Monadic Handling Ruby code. You&#39;ll leave with a deeper appreciation of monads and concrete strategies for encapsulating errors elegantly in your Ruby applications. Join me to discover how monads enable you to minimize disruption and maximize control over error handling in Ruby.</p>
@@ -1904,6 +1923,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Writing Minitest clone in 30 minutes</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Minitest is a testing library for Ruby that&#39;s bundled with CRuby. Unlike RSpec, it takes more straightforward approach. Class, method and assertion are all we need to write tests in Minitest.
 However, there are still some magical things going on here. What do assertions actually do? How does <code>autorun</code> feature work?
 In this talk, we&#39;ll write code together. More specifically, we&#39;ll write simpler clone of Minitest and make it work.</p>
@@ -1990,6 +2010,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">發掘 Ruby 的內建 Gems / Unearth Ruby builtin Gems</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>你曾經在不用外部 <code>Gems</code> 的情況下使用 Ruby 嗎？</p>
 <p>Ruby 其實內建了很多非常實用的 <code>Gems</code>。不需要做任何的額外安裝就可以直接使用。
 這些<code>Gems</code> 包括方便的資料結構與演算法，跨平台的檔案處理，實用的簡易伺服器等等。讓我們一起來發掘各種鮮為人知的內建 <code>Gems</code>。</p>
@@ -2082,6 +2103,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">How (and why) to run SQLite in production</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>You&#39;ve heard the whispers, sensed the hype, but you&#39;re still not sure what all the fuss is about with SQLite these days. Join me as we explore the use-cases and benefits of running SQLite in a production environment. Along the way, we will learn why SQLite makes sense as your next production database and how to ensure that your setup is optimized for end-user performance and developer happiness. We will setup and deploy a full Rails application—with caching, background jobs, websockets, and full-text search all backed by SQLite—in these 40 minutes. Come along for the ride!</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -2166,6 +2188,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">The Forgotten Web</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Is Rails still a good choice in 2023? For a new project at work? For a side hustle? How about for someone just looking to get into web development? How does it stack up against &quot;modern&quot; frameworks?</p>
 <p>In this presentation we explore the ancient history of web development, discuss the perils of &quot;the modern web application&quot;, highlight a brewing generational conflict, and examine how Rails&#39; connection to the past puts it in a unique position to project itself into the future.</p>
 </div>
@@ -2255,6 +2278,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">淺談 Generative AI Engineer: 給 Rubyist 的上手指南</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>在這場分享中，我們將新定義 Generative AI Engineer (生成式 AI 工程師) 這一新興職位。除了 LLM 模型本身之外，要真正開發 AI 應用，我們還需要面對許多的挑戰和工作。隨著開發 AI 應用的門檻逐漸降低，許多原先沒有 AI 背景的應用軟體工程師，現在也能透過呼叫 LLM API 轉型成為 AI 工程師，不再需要從零開始學習訓練機器學習模型，而是專注在 Prompt Engineering (提示工程) 和開發各種 AI 應用，如 Chatbot、Retrieval Augmented Generation(RAG)、Vector Search、Agents 和 OpenAI Function Calling 等。歡迎一起探索這個新時代的 AI 工程師角色。</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -2341,6 +2365,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Solving Real-World Challenges with Ruby Ractor</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>In this talk, we explore on how we can take advantage of Ractor to improve parallel processing in some real world scenarios, such as data encryption and transaction processing. We delve into some features of Ractor, with their strength and limitation, and how to migrate thread-based or process-based functionalities using them. This talk hopefully will give the audience more insights on how they can improve their application performance.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -2429,6 +2454,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Ruby on the Modern JVM with JRuby</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Over the past year, the JVM has added native support for fibers (via Project Loom virtual threads), native function calls (via Project Panama), and now has started to add support for native ahead-of-time compilation. JRuby is uniquely positioned to bring these features to Ruby! This talk will show how JRuby is taking advantage of the modern JVM with exciting examples you can try today!</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -2515,6 +2541,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">你有被同事打過嗎？ / Ever Been Punched by a Colleague?</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Race condition 是在 Ruby on Rails 應用程式中可能出現的問題之一，尤其涉及多執行緒的情況。這次演講提供了 race condition 的基本概念，以及如何在 Rails 中測試和解決這些問題的方法。測試 race condition 的方法至關重要，可以通過模擬並發情境來確保穩定性。</p>
 <p>&quot;Race condition&quot; is a potential issue in Ruby on Rails applications, especially in situations involving multiple threads. This presentation provides a basic understanding of race conditions and how to test and resolve them in Rails. Testing for race conditions is crucial and can be achieved by simulating concurrent scenarios to ensure stability.</p>
 </div>
@@ -2602,6 +2629,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Quest of the Rubyist</p>
+        <img src="assets/speaker_avatar/tim-riley-img.png" />
         <div class="markdownify mt-3"><p>What do curiosity, cooperation and cognisance mean for the budding Rubyist? And can these virtues help us follow the path of programmer happiness?</p>
 
 <p>As we enter a land where both peril and opportunity abound, how can we plot a course towards towards the Ruby of our future? Let’s find out together, as we embark on the adventure of our time!</p>
@@ -2731,7 +2759,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
   Speaker
 </p>
 <p class="group-hover:text-dark-pink-100 text-black text-xl font-bold">
-  TBD
+  30 Years of Ruby
 </p>
 <p class="text-black text-lg font-normal">
   Yukihiro Matsumoto (Matz)
@@ -2789,8 +2817,9 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             10:20 am ~ 11:20 am
           </span>
         </div>
-        <p class="text-xl md:text-2xl font-bold text-dark-blue-200">TBD</p>
-        <div class="markdownify mt-3">
+        <p class="text-xl md:text-2xl font-bold text-dark-blue-200">30 Years of Ruby</p>
+        <img src="" />
+        <div class="markdownify mt-3"><p>Lessons Matz has learned from the history of Ruby development</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
           EN
@@ -2924,6 +2953,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">A Rails performance guidebook: from 0 to 1B requests/day</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Building a feature is not good enough anymore: all your work won&#39;t be of use if it&#39;s not performant enough. So how to improve performance? After all, performance is not an easy discipline to master: all slow applications are slow in their own way, meaning that there is no silver bullet for these kinds of problems.</p>
 <p>In this presentation, we will guide you across patterns, strategies, and little tricks to improve performance. We will do that by sharing real stories of our daily experience facing and solving real performance issues in an application that daily serves billions of requests per day.</p>
 </div>
@@ -3028,6 +3058,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Adventures in the Dungeons of OpenSSL</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>As part of implementing Hybrid Public Key Encryption (HPKE; RFC 9180)
 in Ruby, I had a chance to send a patch into Ruby's OpenSSL gem. Missing functionalities?
 Major version upgrade of the OpenSSL backend? There is a deep dungeon behind one
@@ -3164,6 +3195,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Developing cross-platform mruby software for Dreamcast and Wii</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>With mruby, we can write Ruby for many environments including old video game consoles. I am working on a cross-platform library for mruby so software written for mruby on Dreamcast can be run on Wii with little change to the source. I have ported the block puzzle I showed at RubyConfTW 2019 to Wii, and am now working on the presentation tool.</p>
 <p>I will tell you about what is involved in making a cross-platform mruby library for Dreamcast and Wii, as well as challenges and lessons learned.</p>
 <p>This presentation will (hopefully) be delivered on either of those consoles and will include some live demos.</p>
@@ -3279,6 +3311,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">High Speed Parsing Massive XML Data in Ruby</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>A massive XML called BioProject has been published. However, when I parsed the XML as it was, rexml got freeze somewhere, and nokogiri ended up consuming a large amount of memory and being slow. Looking at the sample implementation in Python, it uses iterparse() to parse each element in the first layer. Therefore, we created a similar mechanism in Ruby and also used ractor to speed it up.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -3412,6 +3445,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Refining Fork Management: From Workarounds to `Process#_fork`</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>With the release of Ruby 3.1 in 2021, an enhancement arrived as <code>Process#_fork</code>, allowing us to override the fork method. This addition simplifies creating callbacks when forking. While there was no official method to track fork events prior to Ruby 3.1, this limitation didn&#39;t deter the community from exploring various approaches to achieve the same goal.</p>
 <p>In the past, Rails encouraged the use of <code>before_fork</code> and <code>after_fork</code> for connection management, redis-rb ensured fork safety by storing the <code>Process#pid</code> in a variable, and some even used threads to track fork events.</p>
 <p>During this session, I will delve into the backstory of <code>_fork</code> and explore the diverse methods the community employed for creating callbacks during forking prior to Ruby 3.1.</p>
@@ -3517,6 +3551,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Translating XML and Epub using ChatGPT</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Natsukantou and epub-translator gems offer XML translation by allowing users to mix &amp; match filters and translation services (DeepL/ChatGPT). The gem&#39;s architecture will be presented, showcasing its middleware pattern, the use cases and wizard configuration inference.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -3650,6 +3685,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Deep dive into Ruby require</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Since Ruby&#39;s bundled and default gems change every year with each release, some versions may suddenly happen <code>LoadError</code> at <code>require</code> when running <code>bundle exec</code> or <code>bin/rails</code>, for example <code>matrix</code> or <code>net-smtp</code>.</p>
 <p>In this presentation, I will introduce the details of the functionality that extends Ruby&#39;s <code>require</code> to provide guidance to users on what they can do to load them. And I will also show how $LOAD_PATH is build behind Ruby and Rails by Bundler.</p>
 </div>
@@ -3756,6 +3792,7 @@ He(lio) met Ruby v1.8.7 and Rails 2.x in 2010 and it is a Happy Developer since 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Let's pop into Passkeys</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Can you recall a world without having to remember passwords? If Passkeys becomes widely available, that world is a few steps away in our future. Instead of remembering passwords, we will use our biometrics, already available in our phones, laptops, and desktops, and public key encryption!
 To a future with no passwords!</p>
 </div>
@@ -3893,6 +3930,7 @@ To a future with no passwords!</p>
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">從設計階段就開始元件化 Rails 專案</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>介紹如何從 Figma 設計稿，就開始規劃、製作與預覽元件（View Component + Lookbook）。
 說明目前偏好的元件組成方式，協助製作元件的工具和注意事項，以及安置元件到頁面中的方式（partial + helper）。
 展示利用 settings 搭配 builder 活用元件的嘗試。</p>
@@ -3998,6 +4036,7 @@ To a future with no passwords!</p>
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Understanding Parser Generators surronding Ruby with Contributing Lrama</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>At RubyKaigi 2023, yui-knk introduced Lrama, for which I submitted a PR to implement the &#39;Named References&#39; feature, a functionality found in GNU Bison. In this presentation, I will delve into the internal workings of Lrama gained through this implementation. Alongside, I will touch upon the foundational knowledge of parsers and parser generators, as well as the current state of parsers surrounding Ruby.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -4134,6 +4173,7 @@ Twice first prize winner of the Fukuoka Ruby Award in 2020 and 2022.</p></div>
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">The Rise of Microcontroller Ruby</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>In this presentation, we will embark on a journey of live coding to bring microcontrollers to life.
 All you need is (at least) two &quot;Raspberry Pi Pico W&quot; boards, the same number of USB cables, and a laptop.
 Witness the realization of PicoRuby, a production-ready Ruby implementation for microcontrollers, as we delve into the world of innovation.</p>
@@ -4239,6 +4279,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Component Driven UI with ViewComponent gem</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>The View layer is the messiest part of a Ruby on Rails application. Developers are confused about where to put logic. Should it be in the model, presenter, decorator, helper, or partial?</p>
 <p>ViewComponents, developed by GitHub simplifies the View layer and makes it much easier to manage.</p>
 </div>
@@ -4311,7 +4352,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
   Rethink Rails Architecture
 </p>
 <p class="text-black text-lg font-normal">
-  政憲 邱
+  蒼時弦也
 </p>
 <p class="font-normal uppercase bg-dark-pink-100 px-2.5 py-1 h-fit w-fit text-white rounded-md">
   CN
@@ -4333,7 +4374,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
             src="//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"
           />
-          <p class="mt-2 text-lg text-gray font-bold">政憲 邱</p>
+          <p class="mt-2 text-lg text-gray font-bold">蒼時弦也</p>
           <p class="mt-1 text-gray text-sm font-semibold">Tech Lead, Gogolook</p>
           <div class="mt-2 text-gray bio markdownify"><p>程式語言愛好者，主要使用 Ruby 語言，認為軟體開發也能具備美感，正在尋找滿足敏捷、架構與享受開發過程之間的平衡點。</p></div>
           <div class="flex text-dark-pink-100 items-center gap-x-2">
@@ -4373,6 +4414,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Rethink Rails Architecture</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Rails 讓開發 Web Application 變得相當容易，然而因為簡化了許多問題，當我們面臨更複雜的系統時感到極大的挑戰。複雜的 Rails 專案之所以難以維護是 Rails 在架構上的設計造成的限制，讓我們重新思考 Rails 來尋找更容易維護的架構。</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -4476,6 +4518,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Building LLM applications in Ruby</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>The Large-Language Models have taken application development by storm. Ruby has libraries that help build LLM applications, e.g.: Langchain.rb. We need to understand what kind of LLM applications can be built, how to build them, and what are common pitfalls when building them. We&#39;re going to look at building vector (semantic) search, chat bots and business process automation solutions. We&#39;re going to learn AI/LLM-related concepts, terms and ideas, learn what AI agents are, and look at some of the latest cutting edge AI research.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -4601,6 +4644,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Handling 225k requests per second to RubyGems.org</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Chances are you’ve run bundle install or gem install at some point, seeing as we’re at RubyConf. Turns out, you’re not alone. At peak times, RubyGems.org has received as many as 225 thousand requests per second. How does a small, mostly-volunteer team handle serving all that traffic with their rails app? Let’s dive into how using CDNs, scaling with static files, and wrangling expensive endpoints has kept your favorite gem index up and running over the past decade.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -4704,6 +4748,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">How Rails 7 Helped Us Achieve GDPR Compliance</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Rails 7 introduced a new feature called Active Record Encryption. I will go over what it is, how it works, and how Viewabo used it to help us achieve GDPR compliance. I will include example usage and an overview of the preparatory work that went into implementing Active Record Encryption.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -4829,6 +4874,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Yet Another Ruby DSL for LLM</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>在過去一年裏我們經歷了 LLM 的巨大衝擊，但是對於使用 LLM 實作應用依然困難重重。如何利用 Ruby 的 meta-programming 更好地對 LLM 進行處理和約束從而實作下一世代的 AI 應用是本 Topic 試圖討論的關鍵問題。</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -4932,6 +4978,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Monadic Approach to Ruby Error Handling</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Error handling is an essential part of software development. No matter how well-written your code is, there will always be errors. The key is to handle them in a way that minimizes their impact.</p>
 <p>In this talk, we will build a foundation of error handling concepts, categorizing errors and exceptions in Ruby. We&#39;ll look at practical code examples that demonstrate common issues when propagating errors through layers of code. Explore how Monadic Handling abstract away error handling details by combine Monads Result and Service Object in Ruby programming. </p>
 <p>This talk will empower you understand how to use Monadic Handling Ruby code. You&#39;ll leave with a deeper appreciation of monads and concrete strategies for encapsulating errors elegantly in your Ruby applications. Join me to discover how monads enable you to minimize disruption and maximize control over error handling in Ruby.</p>
@@ -5067,6 +5114,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Writing Minitest clone in 30 minutes</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Minitest is a testing library for Ruby that&#39;s bundled with CRuby. Unlike RSpec, it takes more straightforward approach. Class, method and assertion are all we need to write tests in Minitest.
 However, there are still some magical things going on here. What do assertions actually do? How does <code>autorun</code> feature work?
 In this talk, we&#39;ll write code together. More specifically, we&#39;ll write simpler clone of Minitest and make it work.</p>
@@ -5172,6 +5220,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">發掘 Ruby 的內建 Gems / Unearth Ruby builtin Gems</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>你曾經在不用外部 <code>Gems</code> 的情況下使用 Ruby 嗎？</p>
 <p>Ruby 其實內建了很多非常實用的 <code>Gems</code>。不需要做任何的額外安裝就可以直接使用。
 這些<code>Gems</code> 包括方便的資料結構與演算法，跨平台的檔案處理，實用的簡易伺服器等等。讓我們一起來發掘各種鮮為人知的內建 <code>Gems</code>。</p>
@@ -5309,6 +5358,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">How (and why) to run SQLite in production</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>You&#39;ve heard the whispers, sensed the hype, but you&#39;re still not sure what all the fuss is about with SQLite these days. Join me as we explore the use-cases and benefits of running SQLite in a production environment. Along the way, we will learn why SQLite makes sense as your next production database and how to ensure that your setup is optimized for end-user performance and developer happiness. We will setup and deploy a full Rails application—with caching, background jobs, websockets, and full-text search all backed by SQLite—in these 40 minutes. Come along for the ride!</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -5412,6 +5462,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">The Forgotten Web</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Is Rails still a good choice in 2023? For a new project at work? For a side hustle? How about for someone just looking to get into web development? How does it stack up against &quot;modern&quot; frameworks?</p>
 <p>In this presentation we explore the ancient history of web development, discuss the perils of &quot;the modern web application&quot;, highlight a brewing generational conflict, and examine how Rails&#39; connection to the past puts it in a unique position to project itself into the future.</p>
 </div>
@@ -5546,6 +5597,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">淺談 Generative AI Engineer: 給 Rubyist 的上手指南</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>在這場分享中，我們將新定義 Generative AI Engineer (生成式 AI 工程師) 這一新興職位。除了 LLM 模型本身之外，要真正開發 AI 應用，我們還需要面對許多的挑戰和工作。隨著開發 AI 應用的門檻逐漸降低，許多原先沒有 AI 背景的應用軟體工程師，現在也能透過呼叫 LLM API 轉型成為 AI 工程師，不再需要從零開始學習訓練機器學習模型，而是專注在 Prompt Engineering (提示工程) 和開發各種 AI 應用，如 Chatbot、Retrieval Augmented Generation(RAG)、Vector Search、Agents 和 OpenAI Function Calling 等。歡迎一起探索這個新時代的 AI 工程師角色。</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -5651,6 +5703,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Solving Real-World Challenges with Ruby Ractor</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>In this talk, we explore on how we can take advantage of Ractor to improve parallel processing in some real world scenarios, such as data encryption and transaction processing. We delve into some features of Ractor, with their strength and limitation, and how to migrate thread-based or process-based functionalities using them. This talk hopefully will give the audience more insights on how they can improve their application performance.</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -5784,6 +5837,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Ruby on the Modern JVM with JRuby</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Over the past year, the JVM has added native support for fibers (via Project Loom virtual threads), native function calls (via Project Panama), and now has started to add support for native ahead-of-time compilation. JRuby is uniquely positioned to bring these features to Ruby! This talk will show how JRuby is taking advantage of the modern JVM with exciting examples you can try today!</p>
 </div>
         <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
@@ -5889,6 +5943,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">你有被同事打過嗎？ / Ever Been Punched by a Colleague?</p>
+        <img src="" />
         <div class="markdownify mt-3"><p>Race condition 是在 Ruby on Rails 應用程式中可能出現的問題之一，尤其涉及多執行緒的情況。這次演講提供了 race condition 的基本概念，以及如何在 Rails 中測試和解決這些問題的方法。測試 race condition 的方法至關重要，可以通過模擬並發情境來確保穩定性。</p>
 <p>&quot;Race condition&quot; is a potential issue in Ruby on Rails applications, especially in situations involving multiple threads. This presentation provides a basic understanding of race conditions and how to test and resolve them in Rails. Testing for race conditions is crucial and can be achieved by simulating concurrent scenarios to ensure stability.</p>
 </div>
@@ -6017,6 +6072,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           </span>
         </div>
         <p class="text-xl md:text-2xl font-bold text-dark-blue-200">Quest of the Rubyist</p>
+        <img src="assets/speaker_avatar/tim-riley-img.png" />
         <div class="markdownify mt-3"><p>What do curiosity, cooperation and cognisance mean for the budding Rubyist? And can these virtues help us follow the path of programmer happiness?</p>
 
 <p>As we enter a land where both peril and opportunity abound, how can we plot a course towards towards the Ruby of our future? Let’s find out together, as we embark on the adventure of our time!</p>
@@ -6270,7 +6326,7 @@ that moves people's hearts.
 </ul>
 
   </div>
-  <h33 class="mb-4 col-span-4 text-2xl md:text-3xl text-white font-bold"> NEW Game </h3>
+  <h3 class="mb-4 col-span-4 text-2xl md:text-3xl text-white font-bold"> NEW Game </h3>
   <div class="col-span-4 md:col-span-2"><img src="assets/sponsor_avatar/akatsuki_ad_img.png"/></div>
   <div class="leading-8 col-span-4 md:col-span-2">
     <div class="mb-4"><p>曉數碼旗下遊戲工作室品牌「曙光工作室」新作《The Star Named EOS》將於明年推出
