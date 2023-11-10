@@ -14,7 +14,7 @@
             {% elsif item.title=='Rails' %}
               class="w-50 mx-auto" 
             {% elsif company.logo_size=='square' %} class="h-24 mx-auto"
-            {%else %} class="w-full h-24 mx-auto px-12" {% endif %} src="/assets/{{ company.logo }}" />
+            {%else %} class="w-full h-24 mx-auto px-0 md:px-12" {% endif %} src="/assets/{{ company.logo }}" />
         </a>
         <!-- Modal -->
         <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">

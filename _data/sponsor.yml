@@ -127,6 +127,7 @@
       ad_2_right: |-
         曉數碼旗下遊戲工作室品牌「曙光工作室」新作《The Star Named EOS》將於明年推出
         歡迎至 Steam 試玩並加入願望清單！
+
 - title: Gem
   sponsor: true
   companies:
@@ -207,7 +208,9 @@
         * ☞ We have a bartender held up by the design team, a singer held up by the programming team, and many more interesting individuals for you to know!
 
         Join us now to become one of our proudest Kdan members! Be Awesome Today!
-
+    - name: Faria
+      logo: sponsor_avatar/feg.png
+      link: https://www.faria.org/
 - title: Bundler
   sponsor: true
   companies:
