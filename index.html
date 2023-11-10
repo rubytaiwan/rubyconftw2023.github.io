@@ -6121,21 +6121,21 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
 
 <div id="spotlight_zone" class="w-full">
 <section class="bg-gradient-to-b from-dark-blue-100/80 to-dark-pink-100/80">
-  <div x-data="{ 'showSection': 0 }" class="flex flex-col items-center mx-auto py-10 md:py-24 max-w-7xl px-6">
+  <div x-data="{ 'showSection': 0 }" class="flex flex-col items-center mx-auto py-10 md:py-24 max-w-7xl px-4">
     <div class="flex flex-col justify-center items-center gap-4">
       <h1 class="text-2xl md:text-3xl uppercase font-bold text-white">Spotlight Zone</h1>
       <img src="../assets/sec-line2.png" alt="" />
-  </div>
+    </div>
     
     <!-- 公司按鈕 -->
-    <div class="flex my-8 gap-4">
+    <div class="flex flex-wrap max-w-[16rem] md:max-w-none my-8 gap-4">
     
     
       
           <div x-on:click="showSection = 1"
-              class="flex items-center rounded-md py-8 px-2 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
-              :class="showSection != 1 ? 'bg-white/40': ''">
-            <img class="max-w-[12.25rem] max-h-[3rem]" src="assets/sponsor_avatar/piccollage.png">
+              class="flex items-center rounded-md w-28 h-28 py-8 px-1 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
+              :class="showSection != 1 ? 'bg-white/60': ''">
+            <img src="assets/sponsor_avatar/piccollage.png">
           </div>
       
     
@@ -6143,9 +6143,9 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
     
       
           <div x-on:click="showSection = 2"
-              class="flex items-center rounded-md py-8 px-2 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
-              :class="showSection != 2 ? 'bg-white/40': ''">
-            <img class="max-w-[12.25rem] max-h-[3rem]" src="assets/sponsor_avatar/akatsuki.png">
+              class="flex items-center rounded-md w-28 h-28 py-8 px-1 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
+              :class="showSection != 2 ? 'bg-white/60': ''">
+            <img src="assets/sponsor_avatar/akatsuki.png">
           </div>
       
     
@@ -6153,9 +6153,9 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
     
       
           <div x-on:click="showSection = 3"
-              class="flex items-center rounded-md py-8 px-2 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
-              :class="showSection != 3 ? 'bg-white/40': ''">
-            <img class="max-w-[12.25rem] max-h-[3rem]" src="assets/sponsor_avatar/kdan.png">
+              class="flex items-center rounded-md w-28 h-28 py-8 px-1 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
+              :class="showSection != 3 ? 'bg-white/60': ''">
+            <img src="assets/sponsor_avatar/kdan.png">
           </div>
       
     
@@ -6195,7 +6195,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       
       <div x-show="showSection == 1"
-          class="rounded-lg w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
+          class="rounded-lg md:w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
         <h2 class="mb-4 w-full text-2xl md:text-3xl text-white font-bold"> 『PicCollage拼貼趣』招募中 </h2>
         <div class="flex flex-wrap md:flex-nowrap">
           <div class="markdownify leading-8 w-full md:w-fit">
@@ -6248,7 +6248,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
         
 <div x-show="showSection == 2"
-  class="rounded-lg w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
+  class="rounded-lg md:w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
 <div class="grid grid-cols-4 gap-x-4">
   <h2 class="mb-4 col-span-4 text-2xl md:text-3xl text-white font-bold"> Recruitment </h2>
   <div class="markdownify leading-8 col-span-4 md:col-span-2">
@@ -6353,7 +6353,7 @@ that moves people's hearts.
       
       
       <div x-show="showSection == 3"
-          class="rounded-lg w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
+          class="rounded-lg md:w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
         <h2 class="mb-4 w-full text-2xl md:text-3xl text-white font-bold"> Recruitment </h2>
         <div class="flex flex-wrap md:flex-nowrap">
           <div class="markdownify leading-8 w-full md:w-fit">
@@ -6514,9 +6514,9 @@ that moves people's hearts.
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
-                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/piccollage.png" />
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/piccollage.png" />
                     </div>
-                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
                       Ruby
                       <div class='ml-2 h-1.5 invisible md:visible'>
                         <img src="assets/sec-line.png" alt="">
@@ -6573,9 +6573,9 @@ that moves people's hearts.
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
-                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/akatsuki.png" />
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/akatsuki.png" />
                     </div>
-                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
                       Rails
                       <div class='ml-2 h-1.5 invisible md:visible'>
                         <img src="assets/sec-line.png" alt="">
@@ -6632,9 +6632,9 @@ that moves people's hearts.
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
-                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/kdan.png" />
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/kdan.png" />
                     </div>
-                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
                       Gem
                       <div class='ml-2 h-1.5 invisible md:visible'>
                         <img src="assets/sec-line.png" alt="">
@@ -6702,9 +6702,9 @@ that moves people's hearts.
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
-                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/zuyou.svg" />
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/zuyou.svg" />
                     </div>
-                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
                       Bundler
                       <div class='ml-2 h-1.5 invisible md:visible'>
                         <img src="assets/sec-line.png" alt="">
@@ -6757,9 +6757,9 @@ that moves people's hearts.
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
-                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/5xRuby.png" />
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/5xRuby.png" />
                     </div>
-                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
                       partner
                       <div class='ml-2 h-1.5 invisible md:visible'>
                         <img src="assets/sec-line.png" alt="">
@@ -6807,9 +6807,9 @@ that moves people's hearts.
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
-                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/ntuedtd.png" />
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/ntuedtd.png" />
                     </div>
-                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
                       partner
                       <div class='ml-2 h-1.5 invisible md:visible'>
                         <img src="assets/sec-line.png" alt="">
@@ -6857,9 +6857,9 @@ that moves people's hearts.
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
-                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/ocf.png" />
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/ocf.png" />
                     </div>
-                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
                       partner
                       <div class='ml-2 h-1.5 invisible md:visible'>
                         <img src="assets/sec-line.png" alt="">
@@ -6912,9 +6912,9 @@ that moves people's hearts.
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
-                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/libhunt.png" />
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/libhunt.png" />
                     </div>
-                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
                       media partner
                       <div class='ml-2 h-1.5 invisible md:visible'>
                         <img src="assets/sec-line.png" alt="">
@@ -6967,9 +6967,9 @@ that moves people's hearts.
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
-                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/dogruninc.png" />
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/dogruninc.png" />
                     </div>
-                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
                       speaker sponsor
                       <div class='ml-2 h-1.5 invisible md:visible'>
                         <img src="assets/sec-line.png" alt="">
@@ -7018,9 +7018,9 @@ that moves people's hearts.
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
-                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/esm.png" />
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/esm.png" />
                     </div>
-                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
                       speaker sponsor
                       <div class='ml-2 h-1.5 invisible md:visible'>
                         <img src="assets/sec-line.png" alt="">
@@ -7068,9 +7068,9 @@ that moves people's hearts.
                 <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
                   <div class="w-full md:w-2/3 md:pr-4">
                     <div class="w-full md:hidden">
-                      <img class="h-20 mx-auto" src="../assets/sponsor_avatar/red_hat.png" />
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/red_hat.png" />
                     </div>
-                    <div class="flex items-center text-dark-pink-100 font-bold italic">
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
                       speaker sponsor
                       <div class='ml-2 h-1.5 invisible md:visible'>
                         <img src="assets/sec-line.png" alt="">
