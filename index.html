@@ -52,19 +52,19 @@
       x-bind:class="{'bg-dark-blue-200 shadow duration-100': !at_top}"
       class="hidden md:flex items-center justify-between max-w-7xl mx-auto gap-x-6 w-full p-6">
       <div class="inline-flex items-center gap-x-2">
-        <div class="text-3xl text-white font-extrabold font-russo">RubyConf Taiwan 2023</div>
+        <div class="text-xl text-white font-extrabold font-russo">RubyConf <br/>Taiwan 2023</div>
       </div>
-      <div class="hidden md:flex md:gap-x-12 uppercase items-center">
+      <div class="hidden md:flex md:gap-x-8 uppercase items-center">
         <!-- <a href="#news" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">News</a>
         <a href="#venue" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Venue</a> -->
-        <a href="#speakers" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Speakers</a>
-        <a href="#schedule" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Schedule</a>
-        <a href="#spotlight_zone" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Spotlight Zone</a>
-        <a href="#sponsor" class="text-lg font-semibold leading-6 text-white hover:text-dark-pink">Sponsor</a>
+        <a href="#speakers" class="font-semibold leading-6 text-white hover:text-dark-pink">Speakers</a>
+        <a href="#schedule" class="font-semibold leading-6 text-white hover:text-dark-pink">Schedule</a>
+        <a href="#spotlight_zone" class="font-semibold leading-6 text-white hover:text-dark-pink">Spotlight Zone</a>
+        <a href="#sponsor" class="font-semibold leading-6 text-white hover:text-dark-pink">Sponsor</a>
         <a
           href="https://rubytaiwan.kktix.cc/events/rubyconftw2023"
           target="_blank"
-          class="py-1 px-4 rounded-full bg-dark-pink-100 font-sans font-bold text-white text-lg tracking-wider text-center"
+          class="border py-1 px-4 rounded-full bg-dark-pink-100 hover:bg-white text-sm font-sans font-semibold text-white hover:text-dark-pink-100 tracking-wider text-center duration-300"
         >
         Register Now</a
         >
@@ -117,7 +117,7 @@
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Sponsor</a>
             <a href="https://rubytaiwan.kktix.cc/events/rubyconftw2023"
                target="_blank"
-               class="mt-2 py-1 px-4 rounded-full bg-dark-pink-100 font-sans font-semibold text-white tracking-wider text-center"
+               class="rounded-full mt-4 py-1 px-4 bg-dark-pink-100 font-sans font-bold text-white tracking-wider text-center"
             >
             Register Now</a
             >
@@ -179,7 +179,7 @@
         <h2 class="text-2xl md:text-3xl uppercase font-bold text-white">Speaker</h2>
         <img src="../assets/sec-line2.png" alt="" />
     </div>
-    <div x-data="{open_id: 0}" class="mt-10 flex flex-wrap justify-center">
+    <div x-data="{open_id: 0}" class="mt-10 flex flex-wrap justify-center gap-y-4">
       
       
       
@@ -190,17 +190,17 @@
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 1">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="assets/speaker_avatar/matz.jpg"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Yukihiro Matsumoto (Matz)</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 1" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 1" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -273,17 +273,17 @@
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 2">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/279106?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Cristian Planas</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 2" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 2" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -360,17 +360,17 @@
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 3">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/197/icon.png"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Ryo Kajiwara</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 3" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 3" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -452,17 +452,17 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 4">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/181/Yuji.jpeg"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Yuji Yokoo</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 4" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 4" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -539,17 +539,17 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 5">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/7455098?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Hirota Tetsuya</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 5" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 5" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -638,17 +638,17 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 6">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/304/tony.png"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">煒航 簡</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 6" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 6" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -725,17 +725,17 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 7">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/366910?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Mark Chao</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 7" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 7" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -814,17 +814,17 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 8">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/148/work_profile.jpeg"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Hiroshi SHIBATA</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 8" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 8" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -900,17 +900,17 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 9">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="assets/speaker_avatar/HelioCola.jpg"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Helio Cola</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 9" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 9" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -992,17 +992,17 @@ To a future with no passwords!</p>
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 10">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/12554?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Tse-Ching Ho</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 10" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 10" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -1082,17 +1082,17 @@ To a future with no passwords!</p>
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 11">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/203/my_icon.jpg"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Junichi Kobayashi</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 11" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 11" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -1171,17 +1171,17 @@ To a future with no passwords!</p>
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 12">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/277/hasumikin.jpg"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Hitoshi Hasumi</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 12" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 12" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -1261,17 +1261,17 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 13">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/9867?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Radoslav Stankov</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 13" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 13" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -1349,19 +1349,23 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
       
       
+      
+      
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 14">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">蒼時弦也</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 14" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 14" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -1436,17 +1440,17 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 15">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/541665?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Andrei Bondarev</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 15" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 15" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -1525,17 +1529,17 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 16">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/1946610?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Samuel Giddins</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 16" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 16" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -1602,17 +1606,17 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 17">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/302/proprofile.jpeg"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Warren Wong</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 17" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 17" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -1691,17 +1695,17 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 18">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/2303500?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Delton Ding</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 18" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 18" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -1768,17 +1772,17 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 19">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/299/3.jpg"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Huy Du Gia</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 19" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 19" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -1859,17 +1863,17 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 20">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/1012014?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Masafumi OKURA</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 20" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 20" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -1946,17 +1950,17 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 21">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/529248?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">John Lin</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 21" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 21" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -2039,17 +2043,17 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 22">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/5077225?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Stephen Margheim</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 22" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 22" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -2124,17 +2128,17 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 23">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/40/9KKRA.png"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Ted Johansson</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 23" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 23" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -2214,17 +2218,17 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 24">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/104/IMG_7663_square.jpg"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">ihower</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 24" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 24" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -2299,17 +2303,17 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 25">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/1930954?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Hiếu Nguyễn</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 25" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 25" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -2390,17 +2394,17 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 26">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/10135?v=3"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Charles Oliver Nutter</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 26" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 26" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -2475,17 +2479,17 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 27">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/289/icon.jpg"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">cindyliu923</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 27" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 27" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -2567,17 +2571,17 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 28">
-            <div class="w-full hover:-translate-y-6">
+            <div class="w-full hover:-translate-y-6 duration-300">
               <div class="px-20 w-full">
                 <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="assets/speaker_avatar/tim-riley.jpg"/>
               </div>
-              <div class="mt-4 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
+              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
                 <p class="font-bold">Tim Riley</p>
               </div>
             </div>
           </a>
           <!-- Modal  -->
-          <div x-show="open_id == 28" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div x-cloak x-show="open_id == 28" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -2770,7 +2774,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 1" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 1" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -2898,7 +2902,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 2" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 2" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -3004,7 +3008,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 3" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 3" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -3141,7 +3145,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 4" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 4" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -3247,7 +3251,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 5" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 5" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -3391,7 +3395,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 6" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 6" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -3497,7 +3501,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 7" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 7" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -3631,7 +3635,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 8" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 8" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -3736,7 +3740,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 9" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 9" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -3873,7 +3877,7 @@ To a future with no passwords!</p>
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 10" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 10" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -3982,7 +3986,7 @@ To a future with no passwords!</p>
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 11" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 11" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -4116,7 +4120,7 @@ To a future with no passwords!</p>
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 12" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 12" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -4225,7 +4229,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 13" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 13" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -4301,6 +4305,40 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           
         </div>
         
+        <div x-show="day == 1" x-data="{open_id: 0}">
+          
+          <!-- Title -->
+          <div class="grid grid-cols-3 justify-items-center items-center bg-zinc-100 font-medium text-base">
+            <div class="col-span-3 md:col-span-1 grid gap-1 justify-items-start py-5 font-semibold text-center text-2xl md:text-xl">
+              17:40 pm
+            </div>
+            <div
+              
+                class="col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center py-5 uppercase text-lg font-bold text-gray"
+              >
+              Break
+            </div>
+          </div>
+          
+        </div>
+        
+        <div x-show="day == 1" x-data="{open_id: 0}">
+          
+          <!-- Title -->
+          <div class="grid grid-cols-3 justify-items-center items-center bg-zinc-100 font-medium text-base">
+            <div class="col-span-3 md:col-span-1 grid gap-1 justify-items-start py-5 font-semibold text-center text-2xl md:text-xl">
+              18:30 pm
+            </div>
+            <div
+              
+                class="col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center py-5 uppercase text-lg font-bold text-dark-pink-100"
+              >
+              Official Party
+            </div>
+          </div>
+          
+        </div>
+        
         <div x-show="day == 2" x-data="{open_id: 0}">
           
           <!-- Title -->
@@ -4360,7 +4398,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 14" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 14" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -4464,7 +4502,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 15" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 15" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -4598,7 +4636,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 16" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 16" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -4694,7 +4732,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 17" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 17" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -4828,7 +4866,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 18" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 18" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -4924,7 +4962,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 19" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 19" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -5060,7 +5098,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 20" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 20" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -5166,7 +5204,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 21" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 21" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -5304,7 +5342,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 22" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 22" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -5408,7 +5446,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 23" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 23" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -5543,7 +5581,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 24" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 24" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -5647,7 +5685,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 25" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 25" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -5783,7 +5821,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 26" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 26" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -5887,7 +5925,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 27" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 27" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -6020,7 +6058,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == 28" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == 28" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
   <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
@@ -6133,7 +6171,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
     
       
           <div x-on:click="showSection = 1"
-              class="flex items-center rounded-md w-28 h-28 py-8 px-1 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
+              class="flex items-center rounded-md w-28 md:w-32 h-28 md:h-32 py-8 px-1 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
               :class="showSection != 1 ? 'bg-white/60': ''">
             <img src="assets/sponsor_avatar/piccollage.png">
           </div>
@@ -6143,7 +6181,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
     
       
           <div x-on:click="showSection = 2"
-              class="flex items-center rounded-md w-28 h-28 py-8 px-1 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
+              class="flex items-center rounded-md w-28 md:w-32 h-28 md:h-32 py-8 px-1 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
               :class="showSection != 2 ? 'bg-white/60': ''">
             <img src="assets/sponsor_avatar/akatsuki.png">
           </div>
@@ -6153,7 +6191,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
     
       
           <div x-on:click="showSection = 3"
-              class="flex items-center rounded-md w-28 h-28 py-8 px-1 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
+              class="flex items-center rounded-md w-28 md:w-32 h-28 md:h-32 py-8 px-1 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
               :class="showSection != 3 ? 'bg-white/60': ''">
             <img src="assets/sponsor_avatar/kdan.png">
           </div>
@@ -6201,7 +6239,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       <div x-show="showSection == 1"
           class="rounded-lg md:w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
         <h2 class="mb-4 w-full text-2xl md:text-3xl text-white font-bold"> 『PicCollage拼貼趣』招募中 </h2>
-        <div class="flex flex-wrap md:flex-nowrap">
+        <div class="flex flex-wrap md:flex-nowrap gap-x-4">
           <div class="markdownify leading-8 w-full md:w-fit">
             <h3>💡理念：</h3>
 <ul>
@@ -6359,7 +6397,7 @@ that moves people's hearts.
       <div x-show="showSection == 3"
           class="rounded-lg md:w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
         <h2 class="mb-4 w-full text-2xl md:text-3xl text-white font-bold"> Recruitment </h2>
-        <div class="flex flex-wrap md:flex-nowrap">
+        <div class="flex flex-wrap md:flex-nowrap gap-x-4">
           <div class="markdownify leading-8 w-full md:w-fit">
             <h3 class="mb-4 text-lg md:text-xl text-white font-bold"> ▶ 公司福利 </h3>
 <p>法定項目</p>
@@ -6507,7 +6545,7 @@ that moves people's hearts.
              src="/assets/sponsor_avatar/piccollage.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -6566,7 +6604,7 @@ that moves people's hearts.
              src="/assets/sponsor_avatar/akatsuki.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -6625,7 +6663,7 @@ that moves people's hearts.
              class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/kdan.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -6690,7 +6728,7 @@ that moves people's hearts.
              class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/feg.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -6714,7 +6752,7 @@ that moves people's hearts.
                       </div>
                     </div>
                     <p class="mt-2 md:mt-8 mb-4 text-3xl md:text-5xl italic font-bold">Faria</p>
-                    <p>
+                    <p><p>Faria Education Group is the trusted partner of over 10,000 schools and 4 million students in 155 countries worldwide. A leader in international education systems and services, Faria offers integrated support across all aspects of curriculum management, teaching and learning, admissions, school-to-home, online courses, revision and professional development. With rigorous standards for data protection and security, first-class training and support, and an unwavering commitment to innovation, Faria’s technology suite is built for the modern international school. Connect with us to explore our services, including ManageBac, OpenApply, Atlas, SchoolsBuddy, Pamoja and Oxford Study Courses.</p>
 </p>
                   </div>
                   <div class="w-1/3 hidden md:flex justify-center pl-5 pr-10">
@@ -6745,7 +6783,7 @@ that moves people's hearts.
              class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/zuyou.svg" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -6800,7 +6838,7 @@ that moves people's hearts.
              class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/5xRuby.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -6850,7 +6888,7 @@ that moves people's hearts.
              class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/ntuedtd.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -6900,7 +6938,7 @@ that moves people's hearts.
              class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/ocf.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -6955,7 +6993,7 @@ that moves people's hearts.
              class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/libhunt.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -7010,7 +7048,7 @@ that moves people's hearts.
              class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/andpad.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -7060,7 +7098,7 @@ that moves people's hearts.
              class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/dogruninc.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -7111,7 +7149,7 @@ that moves people's hearts.
              src="/assets/sponsor_avatar/esm.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -7161,7 +7199,7 @@ that moves people's hearts.
              class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/red_hat.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
@@ -7211,7 +7249,7 @@ that moves people's hearts.
              class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/matsue.png" />
         </a>
         <!-- Modal -->
-        <div x-show="showModal" class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
           <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4 text-center ">
