@@ -248,6 +248,11 @@
         Discover trending open-source projects and their alternatives.
 - title: speaker sponsor
   companies:
+    - name: "ANDPAD Inc."
+      logo: "sponsor_avatar/andpad.png"
+      link: https://andpad.co.jp/
+      desc: |-
+        ANDPAD is the No. 1 cloud-based construction project management service in Japan, enabling centralized management from site efficiency to management improvement.
     - name: "dogrun Inc."
       logo: "sponsor_avatar/dogruninc.png"
       link: https://dogrun.jp/en/ 
