@@ -71,7 +71,7 @@
             {% endfor %}
             </button>
             <!-- Modal start -->
-            <div x-show="open_id == {{session.session_id}}" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <div x-cloak x-show="open_id == {{session.session_id}}" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               {% include schedule_modal.html day=item.day time=item.time end=item.end speakers=session.speakers session=session %}
             </div>
             <!-- Modal end -->
