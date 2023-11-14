@@ -192,11 +192,21 @@
       lang: "EN"
       speakers: [15]
 - id: 15
+  day: 1
+  time: 17:40 pm
+  end: 18:30 pm
+  title: "Break"
+- id: 16
+  day: 1
+  time: 18:30 pm
+  end: 21:30 pm
+  title: "Official Party"
+- id: 17
   day: 2
   time: 09:30 am
   end: 10:00 am
   title: "Registration"
-- id: 16
+- id: 18
   day: 2
   time: 10:00 am
   end: 10:40 am
@@ -222,12 +232,12 @@
         AI agents are, and look at some of the latest cutting edge AI research.</p>"
       lang: "EN"
       speakers: [5]
-- id: 17
+- id: 19
   day: 2
   time: 10:40 am
   end: 10:45 am
   title: "Break"
-- id: 18
+- id: 20
   day: 2
   time: 10:45 am
   end: 11:25 am
@@ -249,12 +259,12 @@
         work that went into implementing Active Record Encryption.</p>"
       lang: "EN"
       speakers: [20]
-- id: 19
+- id: 21
   day: 2
   time: 11:25 am
   end: 11:30 am
   title: "Break"
-- id: 20
+- id: 22
   day: 2
   time: 11:30 am
   end: 12:10 am
@@ -275,12 +285,12 @@
         <p>This talk will empower you understand how to use Monadic Handling Ruby code. You&#39;ll leave with a deeper appreciation of monads and concrete strategies for encapsulating errors elegantly in your Ruby applications. Join me to discover how monads enable you to minimize disruption and maximize control over error handling in Ruby.</p>
       lang: "EN"
       speakers: [14]
-- id: 21
+- id: 23
   day: 2
   time: 12:10 pm
   end: 13:30 pm
   title: "LUNCH"
-- id: 22
+- id: 24
   day: 2
   time: 13:30 pm
   end: 14:10 pm
@@ -305,12 +315,12 @@
         <p>Ruby includes many <code>Gems</code> by default. We can use them without extra installation steps. These <code>Gems</code> includes convenient data structure and algorithms, cross platform file handling and practical simple server, etc. Let&#39;s unearth the less known builtin <code>Gems</code>.</p>
       lang: "CN"
       speakers: [21]
-- id: 23
+- id: 25
   day: 2
   time: 14:10 pm
   end: 14:15 pm
   title: "Break"
-- id: 24
+- id: 26
   day: 2
   time: 14:15 pm
   end: 14:55 pm
@@ -338,12 +348,12 @@
       lang: "EN"
       speakers: [25]
 
-- id: 25
+- id: 27
   day: 2
   time: 14:55 am
   end: 15:25 pm
   title: "Tea Time"
-- id: 26
+- id: 28
   day: 2
   time: 15:25 pm
   end: 16:05 pm
@@ -371,12 +381,12 @@
         can improve their application performance.</p>"
       lang: "EN"
       speakers: [6]
-- id: 27
+- id: 29
   day: 2
   time: 16:05 pm
   end: 16:10 pm
   title: "Break"
-- id: 28
+- id: 30
   day: 2
   time: 16:10 pm
   end: 16:50 pm
@@ -400,12 +410,12 @@
         <p>&quot;Race condition&quot; is a potential issue in Ruby on Rails applications, especially in situations involving multiple threads. This presentation provides a basic understanding of race conditions and how to test and resolve them in Rails. Testing for race conditions is crucial and can be achieved by simulating concurrent scenarios to ensure stability.</p>
       lang: "CN"
       speakers: [11]
-- id: 29
+- id: 31
   day: 2
   time: 16:50 am
   end: 16:55 pm
   title: "Break"
-- id: 30
+- id: 32
   day: 2
   time: 16:55 pm
   end: 17:55 pm
@@ -419,7 +429,7 @@
       img: assets/speaker_avatar/tim-riley-img.png
       lang: "EN"
       speakers: [1]
-- id: 31
+- id: 33
   day: 2
   time: 17:55 am
   end: 18:05 pm
