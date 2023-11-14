@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+[x-cloak] {
+  display: none !important;
+}
+
 .markdownify a {
   color: #0C0A81;
   text-decoration: underline;
