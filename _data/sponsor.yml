@@ -288,6 +288,10 @@
         ESM is one of Japan's premier companies building Ruby/Rails applications in an agile way. We believe in Ruby and Agile because we believe in people. We build applications which work well and make customers happy.
     - name: "Red Hat"
       logo: "sponsor_avatar/red_hat.png"
+    - name: "Ruby Central"
+      logo: "sponsor_avatar/RubyCentral.png"
+      desc: |-
+        Ruby Central is the US non-profit supporting the Ruby community around the world. We organize RubyConf & RailsConf, and fund maintenance and development work on RubyGems.org, Bundler, and other open source projects that Ruby developers use to create, manage, and install gems. To learn more about our work and mission, visit [rubycentral.org](https://rubycentral.org).
 
 - title: special thanks
   companies:
