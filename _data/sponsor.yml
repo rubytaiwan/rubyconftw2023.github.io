@@ -213,6 +213,26 @@
       link: https://www.faria.org/
       desc: |-
         Faria Education Group is the trusted partner of over 10,000 schools and 4 million students in 155 countries worldwide. A leader in international education systems and services, Faria offers integrated support across all aspects of curriculum management, teaching and learning, admissions, school-to-home, online courses, revision and professional development. With rigorous standards for data protection and security, first-class training and support, and an unwavering commitment to innovation, Faria’s technology suite is built for the modern international school. Connect with us to explore our services, including ManageBac, OpenApply, Atlas, SchoolsBuddy, Pamoja and Oxford Study Courses.
+    - name: Hong Kong CalDawin Software Technology Company Limited
+      logo: sponsor_avatar/caldawin.png
+      link: https://www.caldawin.com
+      desc: |-
+        Hong Kong CalDawin Software Technology Company Limited, established in February 2023, is a leading gaming solutions provider based in Hong Kong. Our primary focus is on serving the rapidly evolving Asian and global gaming market. At CalDawin, we are driven by a vision to deliver cutting-edge technological advancements and immersive multimedia entertainment that enhance the operational efficiency and exceed the expectations of land-based gaming operators.
+
+        Our world-class team at CalDawin comprises highly skilled professionals with a wealth of technical expertise, a track record of success, and extensive knowledge in various business domains. We are committed to ensuring the utmost satisfaction of our customers by providing them with unparalleled solutions and services.
+        
+        By leveraging our innovative technologies and comprehensive industry insights, we empower gaming operators to stay ahead in today's competitive landscape. CalDawin is dedicated to revolutionizing the gaming industry by delivering unparalleled gaming experiences and contributing to the success of our valued customers.
+
+        香港卡爾達文軟件科技有限公司（卡爾達文）成立於2023年2月，是一家總部位於香港的業界領先的遊戲解決方案提供商。我們的主要聚焦於服務快速發展的亞洲和全球遊戲市場。我們的願景是應用頂尖技術和提供身臨其境的多媒體娛樂，並且提高營運效率，從而使實體遊戲營運商達到超預期的效果。
+
+        卡爾達文的世界一流團隊由高技術的專業人士組成，他們擁有豐富的技術專業知識、成功的經驗以及各個業務領域的豐富知識。我們致力於透過為客戶提供貼心的解​​決方案和服務來確保他們的最大滿意度。
+
+        卡爾達文透過利用創新技術和全面的行業洞察力，我們幫助遊戲營運商在當今的競爭格局中保持領先地位。並致力於透過提供多元化的遊戲體驗並為我們寶貴的客戶的成功做出貢獻，從而徹底改變遊戲產業。
+    - name: Ascenda
+      logo: sponsor_avatar/ascenda.png
+      link: https://www.ascenda.com
+      desc: |-
+        Ascenda powers innovative premium rewards programs that accelerate the growth of financial services. We deliver easy-to-deploy rewards infrastructure to rapidly scale acquisition, card spending, cross-selling, and retention. We serve major financial services brands and disruptive fintechs across the globe, including Brex, HSBC, Virgin Money, American Express, and Capital One.
 - title: Bundler
   sponsor: true
   companies:
