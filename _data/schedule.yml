@@ -1,18 +1,18 @@
 - id: 0
   day: 1
-  time: 09:00 am
-  end: 10:00 am
+  time: '09:00' 
+  end: '10:00' 
   title: "Registration"
 - id: 1
   day: 1
   room: L405
-  time: 10:00 am
-  end: 10:20 am
+  time: '10:00'
+  end: '10:20' 
   title: "Opening"
 - id: 2
   day: 1
-  time: 10:20 am
-  end: 11:20 am
+  time: '10:20' 
+  end: '11:20' 
   sessions:
     - session_id: 1
       subject:  30 Years of Ruby
@@ -22,13 +22,13 @@
 - id: 3
   day: 1
   room: L405
-  time: 11:20 am
-  end: 11:25 am
+  time: '11:20' 
+  end: '11:25' 
   title: "Break"
 - id: 4
   day: 1
-  time: 11:25 am
-  end: 12:05 pm
+  time: '11:25' 
+  end: '12:05' 
   sessions:
     - session_id: 2
       room: L405
@@ -50,13 +50,13 @@
       speakers: [2]
 - id: 5
   day: 1
-  time: 12:05 pm
-  end: 13:30 pm
+  time: '12:05' 
+  end: '13:30' 
   title: "LUNCH"
 - id: 6
   day: 1
-  time: 13:30 pm
-  end: 14:10 pm
+  time: '13:30' 
+  end: '14:10' 
   sessions:
     - session_id: 4
       room: L405
@@ -80,13 +80,13 @@
       speakers: [8]
 - id: 7
   day: 1
-  time: 14:10 pm
-  end: 14:15 pm
+  time: '14:10' 
+  end: '14:15' 
   title: "Break"
 - id: 8
   day: 1
-  time: 14:15 pm
-  end: 14:55 pm
+  time: '14:15' 
+  end: '14:55' 
   sessions:
     - session_id: 6
       room: L405
@@ -109,13 +109,13 @@
       speakers: [9]
 - id: 9
   day: 1
-  time: 14:55 pm
-  end: 15:30 pm
+  time: '14:55' 
+  end: '15:30' 
   title: "Tea Time"
 - id: 10
   day: 1
-  time: 15:30 pm
-  end: 16:10 pm
+  time: '15:30' 
+  end: '16:10'
   sessions:
     - session_id: 8
       room: L405
@@ -135,13 +135,13 @@
       speakers: [10]
 - id: 11
   day: 1
-  time: 16:10 pm
-  end: 16:15 pm
+  time: '16:10' 
+  end: '16:15' 
   title: "Break"
 - id: 12
   day: 1
-  time: 16:15 pm
-  end: 16:55 pm
+  time: '16:15' 
+  end: '16:55' 
   sessions:
     - session_id: 10
       room: L405
@@ -166,13 +166,13 @@
       speakers: [13]
 - id: 13
   day: 1
-  time: 16:55 pm
-  end: 17:00 pm
+  time: '16:55' 
+  end: '17:00' 
   title: "Break"
 - id: 14
   day: 1
-  time: 17:00 pm
-  end: 17:40 pm
+  time: '17:00' 
+  end: '17:40' 
   sessions:
     - session_id: 12
       room: L405
@@ -193,23 +193,23 @@
       speakers: [15]
 - id: 15
   day: 1
-  time: 17:40 pm
-  end: 18:30 pm
+  time: '17:40' 
+  end: '18:30' 
   title: "Break"
 - id: 16
   day: 1
-  time: 18:30 pm
-  end: 21:30 pm
+  time: '18:30' 
+  end: '21:30' 
   title: "Official Party"
 - id: 17
   day: 2
-  time: 09:30 am
-  end: 10:00 am
+  time: '09:30' 
+  end: '10:00' 
   title: "Registration"
 - id: 18
   day: 2
-  time: 10:00 am
-  end: 10:40 am
+  time: '10:00' 
+  end: '10:40' 
   sessions:
     - session_id: 14
       room: L405
@@ -234,13 +234,13 @@
       speakers: [5]
 - id: 19
   day: 2
-  time: 10:40 am
-  end: 10:45 am
+  time: '10:40' 
+  end: '10:45' 
   title: "Break"
 - id: 20
   day: 2
-  time: 10:45 am
-  end: 11:25 am
+  time: '10:45' 
+  end: '11:25'
   sessions:
     - session_id: 16
       room: L405
@@ -261,13 +261,13 @@
       speakers: [20]
 - id: 21
   day: 2
-  time: 11:25 am
-  end: 11:30 am
+  time: '11:25' 
+  end: '11:30' 
   title: "Break"
 - id: 22
   day: 2
-  time: 11:30 am
-  end: 12:10 am
+  time: '11:30' 
+  end: '12:10' 
   sessions:
     - session_id: 18
       room: L405
@@ -287,13 +287,13 @@
       speakers: [14]
 - id: 23
   day: 2
-  time: 12:10 pm
-  end: 13:30 pm
+  time: '12:10' 
+  end: '13:30' 
   title: "LUNCH"
 - id: 24
   day: 2
-  time: 13:30 pm
-  end: 14:10 pm
+  time: '13:30' 
+  end: '14:10' 
   sessions:
     - session_id: 20
       room: L405
@@ -317,13 +317,13 @@
       speakers: [21]
 - id: 25
   day: 2
-  time: 14:10 pm
-  end: 14:15 pm
+  time: '14:10' 
+  end: '14:15' 
   title: "Break"
 - id: 26
   day: 2
-  time: 14:15 pm
-  end: 14:55 pm
+  time: '14:15' 
+  end: '14:55' 
   sessions:
     - session_id: 22
       room: L405
@@ -350,13 +350,13 @@
 
 - id: 27
   day: 2
-  time: 14:55 am
-  end: 15:25 pm
+  time: '14:55' 
+  end: '15:25' 
   title: "Tea Time"
 - id: 28
   day: 2
-  time: 15:25 pm
-  end: 16:05 pm
+  time: '15:25' 
+  end: '16:05' 
   sessions:
     - session_id: 24
       room: L405
@@ -383,13 +383,13 @@
       speakers: [6]
 - id: 29
   day: 2
-  time: 16:05 pm
-  end: 16:10 pm
+  time: '16:05' 
+  end: '16:10' 
   title: "Break"
 - id: 30
   day: 2
-  time: 16:10 pm
-  end: 16:50 pm
+  time: '16:10' 
+  end: '16:50' 
   sessions:
     - session_id: 26
       room: L405
@@ -412,13 +412,13 @@
       speakers: [11]
 - id: 31
   day: 2
-  time: 16:50 am
-  end: 16:55 pm
+  time: '16:50' 
+  end: '16:55' 
   title: "Break"
 - id: 32
   day: 2
-  time: 16:55 pm
-  end: 17:55 pm
+  time: '16:55' 
+  end: '17:55' 
   sessions:
     - session_id: 28
       subject: Quest of the Rubyist
@@ -431,6 +431,6 @@
       speakers: [1]
 - id: 33
   day: 2
-  time: 17:55 am
-  end: 18:05 pm
+  time: '17:55' 
+  end: '18:05' 
   title: "Closing"
