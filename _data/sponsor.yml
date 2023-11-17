@@ -127,11 +127,31 @@
       ad_2_right: |-
         曉數碼旗下遊戲工作室品牌「曙光工作室」新作《The Star Named EOS》將於明年推出
         歡迎至 Steam 試玩並加入願望清單！
+    - id: 3
+      name: hahow
+      link: https://hahow.in/joinus
+      logo: "sponsor_avatar/hahow.png"
+      desc: |-
+        - Hahow 以知識技能分享概念創立的線上學習平台，取名自台語的 “學校” ha̍k-hāu，透過全球首創群募開課機制，打造多元跨領域的學習內容，以既有內容轉譯專業技術及優質內容盟友，共創知識有價與分享創作的舞台。
+        - 我們稱所有團隊夥伴為 Hahower，是一群十分重視效率、積極地創新求變，且致力於驅使知識與技能交換的倡導者，我們相信透過創新與科技的結合，讓更多人發現『分享與學習』的熱情。
+        - 在 Hahow，我們擁有可以自律自主管理工作的環境，以及鼓勵挑戰學習的風氣，讓每一位 Hahower 沒有框架地在擅長領域中盡情發揮；因此，我們期待有自信接受多元挑戰、渴望持續成長的你，加入 Hahow！
+          更多徵才資訊：<a target="_blank" href="https://hahow.in/joinus">Ruby on Rails Backend Developer</a>
+      spotlight: true
+      spotlight_sub_title: Recruitment
+      find_out_more: https://hahow.in/joinus
+      ad_1_left: |-
+        Hahow 以知識技能分享概念創立的線上學習平台，取名自台語的 “學校” ha̍k-hāu，透過全球首創群募開課機制，打造多元跨領域的學習內容，以既有內容轉譯專業技術及優質內容盟友，共創知識有價與分享創作的舞台。
+
+        從 2015 年創立以來，每個月有 10,000+ 名來自台灣、美國、香港、馬來西亞的會員在這裡尋找新知，Hahow 協助超過 700 位老師將深藏的才藝分享給世界並獲得收入，服務守護好的課程內容，創造知識技能有效流動的社群，讓分享與學習成為一種生活體驗。長期研究、優化線上學習體驗，累積 8 年、91 萬使用者的 2C 端經驗，我們善於製作創新且高品質的課程影音，搭配鼓勵學習的系統機制，提高數位學習動機與自主性。
+
+        在 2019 年，Hahow 推出全新的產品，以 Hahow for Business 提供高品質的學習內容與數據中心後台，透過建立企業人才的數位學習習慣、創造內部學習社群生態，驅動企業高度自主學習與溝通交流的文化，有效管理發展人才，喚醒學習動能，升級企業潛能。
+
+        在 Hahow，我們擁有可以自律自主管理工作的環境，以及鼓勵挑戰學習的風氣，讓每一位 Hahower 沒有框架地在擅長領域中盡情發揮；因此，我們期待有自信接受多元挑戰、渴望持續成長的你，加入 Hahow！
 
 - title: Gem
   sponsor: true
   companies:
-    - id: 3
+    - id: 4
       name: "凱鈿行動科技股份有限公司"
       logo: "sponsor_avatar/kdan.png"
       link: https://www.kdanmobile.com/zh-tw
@@ -215,6 +235,7 @@
         Faria Education Group is the trusted partner of over 10,000 schools and 4 million students in 155 countries worldwide. A leader in international education systems and services, Faria offers integrated support across all aspects of curriculum management, teaching and learning, admissions, school-to-home, online courses, revision and professional development. With rigorous standards for data protection and security, first-class training and support, and an unwavering commitment to innovation, Faria’s technology suite is built for the modern international school. Connect with us to explore our services, including ManageBac, OpenApply, Atlas, SchoolsBuddy, Pamoja and Oxford Study Courses.
     - name: Hong Kong CalDawin Software Technology Company Limited
       logo: sponsor_avatar/caldawin.png
+      logo_size: "square"
       link: https://www.caldawin.com
       desc: |-
         Hong Kong CalDawin Software Technology Company Limited, established in February 2023, is a leading gaming solutions provider based in Hong Kong. Our primary focus is on serving the rapidly evolving Asian and global gaming market. At CalDawin, we are driven by a vision to deliver cutting-edge technological advancements and immersive multimedia entertainment that enhance the operational efficiency and exceed the expectations of land-based gaming operators.
