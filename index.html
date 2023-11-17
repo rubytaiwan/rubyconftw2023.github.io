@@ -6187,12 +6187,20 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           </div>
       
     
-    
-    
       
           <div x-on:click="showSection = 3"
               class="flex items-center rounded-md w-28 md:w-32 h-28 md:h-32 py-8 px-1 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
               :class="showSection != 3 ? 'bg-white/60': ''">
+            <img src="assets/sponsor_avatar/hahow.png">
+          </div>
+      
+    
+    
+    
+      
+          <div x-on:click="showSection = 4"
+              class="flex items-center rounded-md w-28 md:w-32 h-28 md:h-32 py-8 px-1 shadow-md shadow-white/20 bg-white hover:bg-white cursor-pointer"
+              :class="showSection != 4 ? 'bg-white/60': ''">
             <img src="assets/sponsor_avatar/kdan.png">
           </div>
       
@@ -6396,11 +6404,36 @@ that moves people's hearts.
       
       
     
-    
-    
       
       
       <div x-show="showSection == 3"
+          class="rounded-lg md:w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
+        <h2 class="mb-4 w-full text-2xl md:text-3xl text-white font-bold"> Recruitment </h2>
+        <div class="flex flex-wrap md:flex-nowrap gap-x-4">
+          <div class="markdownify leading-8 w-full md:w-fit">
+            <p>Hahow 以知識技能分享概念創立的線上學習平台，取名自台語的 “學校” ha̍k-hāu，透過全球首創群募開課機制，打造多元跨領域的學習內容，以既有內容轉譯專業技術及優質內容盟友，共創知識有價與分享創作的舞台。</p>
+
+<p>從 2015 年創立以來，每個月有 10,000+ 名來自台灣、美國、香港、馬來西亞的會員在這裡尋找新知，Hahow 協助超過 700 位老師將深藏的才藝分享給世界並獲得收入，服務守護好的課程內容，創造知識技能有效流動的社群，讓分享與學習成為一種生活體驗。長期研究、優化線上學習體驗，累積 8 年、91 萬使用者的 2C 端經驗，我們善於製作創新且高品質的課程影音，搭配鼓勵學習的系統機制，提高數位學習動機與自主性。</p>
+
+<p>在 2019 年，Hahow 推出全新的產品，以 Hahow for Business 提供高品質的學習內容與數據中心後台，透過建立企業人才的數位學習習慣、創造內部學習社群生態，驅動企業高度自主學習與溝通交流的文化，有效管理發展人才，喚醒學習動能，升級企業潛能。</p>
+
+<p>在 Hahow，我們擁有可以自律自主管理工作的環境，以及鼓勵挑戰學習的風氣，讓每一位 Hahower 沒有框架地在擅長領域中盡情發揮；因此，我們期待有自信接受多元挑戰、渴望持續成長的你，加入 Hahow！</p>
+
+          </div>
+          
+        </div>
+        <div class="flex justify-end mt-8">
+          <a target="_blank" href="https://hahow.in/joinus" class="rounded-md borde border-b-4 border-dark-pink-200 py-2 px-4 bg-dark-pink-100 text-white text-base md:text-xl font-bold hover:bg-dark-pink-100/70">FIND OUT MORE</a>
+        </div>
+      </div>
+      
+      
+    
+    
+    
+      
+      
+      <div x-show="showSection == 4"
           class="rounded-lg md:w-[80vw] h-[60vh] lg:h-[80vh] overflow-y-scroll p-4 md:p-8 text-black bg-white/40 shadow-[0_5px_5px_2px_rgba(255,255,255,0.5)]">
         <h2 class="mb-4 w-full text-2xl md:text-3xl text-white font-bold"> Recruitment </h2>
         <div class="flex flex-wrap md:flex-nowrap gap-x-4">
@@ -6612,7 +6645,7 @@ that moves people's hearts.
         <a @click="showModal = true" class="cursor-pointer align-center">
           <img
             
-              class="w-50 mx-auto" 
+              class="w-50 px-8 mx-auto" 
              src="/assets/sponsor_avatar/akatsuki.png" />
         </a>
         <!-- Modal -->
@@ -6654,6 +6687,63 @@ that moves people's hearts.
                 
                 <div class="mt-4 py-3 md:pr-10 text-end">
                   <a href="https://aktsk.com.tw/" target="_blank"
+                    class="py-3 px-8 rounded-md bg-gradient-to-r from-dark-pink-100 to-dark-pink-200 hover:from-dark-pink-200 hover:to-dark-pink-100 font-bold text-white">website</a>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
+        <a @click="showModal = true" class="cursor-pointer align-center">
+          <img
+            
+              class="w-50 px-8 mx-auto" 
+             src="/assets/sponsor_avatar/hahow.png" />
+        </a>
+        <!-- Modal -->
+        <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div class="fixed inset-0 bg-black bg-opacity-75 transition-opacity"></div>
+          <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4 text-center ">
+              <div
+                class="relative transform overflow-hidden rounded-lg p-4 md:p-8 w-[60rem] bg-white text-left shadow-xl transition-all ">
+                <a @click="showModal = false"
+                  class="cursor-pointer absolute right-4 md:right-10 top-4 md:top-10 text-xl">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+                
+                
+                <div class="flex flex-col md:flex-row-reverse  w-full bg-white">
+                  <div class="w-full md:w-2/3 md:pr-4">
+                    <div class="w-full md:hidden">
+                      <img class="w-48 mx-auto" src="../assets/sponsor_avatar/hahow.png" />
+                    </div>
+                    <div class="flex items-center text-dark-pink-100 font-bold italic mt-4 md:mt-0">
+                      Rails
+                      <div class='ml-2 h-1.5 invisible md:visible'>
+                        <img src="assets/sec-line.png" alt="">
+                      </div>
+                    </div>
+                    <p class="mt-2 md:mt-8 mb-4 text-3xl md:text-5xl italic font-bold">hahow</p>
+                    <p><ul>
+  <li>Hahow 以知識技能分享概念創立的線上學習平台，取名自台語的 “學校” ha̍k-hāu，透過全球首創群募開課機制，打造多元跨領域的學習內容，以既有內容轉譯專業技術及優質內容盟友，共創知識有價與分享創作的舞台。</li>
+  <li>我們稱所有團隊夥伴為 Hahower，是一群十分重視效率、積極地創新求變，且致力於驅使知識與技能交換的倡導者，我們相信透過創新與科技的結合，讓更多人發現『分享與學習』的熱情。</li>
+  <li>在 Hahow，我們擁有可以自律自主管理工作的環境，以及鼓勵挑戰學習的風氣，讓每一位 Hahower 沒有框架地在擅長領域中盡情發揮；因此，我們期待有自信接受多元挑戰、渴望持續成長的你，加入 Hahow！
+更多徵才資訊：<a target="_blank" href="https://hahow.in/joinus">Ruby on Rails Backend Developer</a></li>
+</ul>
+</p>
+                  </div>
+                  <div class="w-1/3 hidden md:flex justify-center pl-5 pr-10">
+                    <img class="w-full object-contain" src="../assets/sponsor_avatar/hahow.png" />
+                  </div>
+                </div>
+                
+                <div class="mt-4 py-3 md:pr-10 text-end">
+                  <a href="https://hahow.in/joinus" target="_blank"
                     class="py-3 px-8 rounded-md bg-gradient-to-r from-dark-pink-100 to-dark-pink-200 hover:from-dark-pink-200 hover:to-dark-pink-100 font-bold text-white">website</a>
                 </div>
                 
@@ -6787,7 +6877,8 @@ that moves people's hearts.
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
         <a @click="showModal = true" class="cursor-pointer align-center">
           <img
-             class="w-full h-24 mx-auto px-0 md:px-12"  src="/assets/sponsor_avatar/caldawin.png" />
+             class="h-28 mx-auto"
+             src="/assets/sponsor_avatar/caldawin.png" />
         </a>
         <!-- Modal -->
         <div x-cloak x-show="showModal" x-transition class="relative z-20" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -7267,7 +7358,7 @@ that moves people's hearts.
       <div x-data="{ 'showModal': false }" class="pt-10 p-4 md:w-1/3">
         <a @click="showModal = true" class="cursor-pointer align-center">
           <img
-             class="h-24 mx-auto"
+             class="h-28 mx-auto"
              src="/assets/sponsor_avatar/esm.png" />
         </a>
         <!-- Modal -->
