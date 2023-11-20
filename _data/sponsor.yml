@@ -303,7 +303,6 @@
         We develop databases, data search systems, and data visualization tools for the life sciences.
     - name: "ESM"
       logo: "sponsor_avatar/esm.png"
-      logo_size: "square"
       link: https://agile.esm.co.jp/
       desc: |-
         ESM is one of Japan's premier companies building Ruby/Rails applications in an agile way. We believe in Ruby and Agile because we believe in people. We build applications which work well and make customers happy.
