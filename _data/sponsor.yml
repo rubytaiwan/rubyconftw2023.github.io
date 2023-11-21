@@ -313,10 +313,10 @@
       desc: |-
         Ruby Central is the US non-profit supporting the Ruby community around the world. We organize RubyConf & RailsConf, and fund maintenance and development work on RubyGems.org, Bundler, and other open source projects that Ruby developers use to create, manage, and install gems. To learn more about our work and mission, visit [rubycentral.org](https://rubycentral.org).
     - name: "Test IO"
-      logo: "sponsor_avatar/TestIO_Teal_Icon_Black_Text.png"
+      logo: "sponsor_avatar/testio.png"
       link: https://test.io/
       desc: |-
-        Test IO delivers a full range of web, mobile and IoT testing through a flexible service model. With services available on-demand, we partner with you to navigate tight delivery constraints and complex requirements to drive sustained business value—at speed and scale.
+        Test IO has over a decade of experience and innovation building ‘crowd’ into a powerful, efficient, and impactful quality engine. In addition to Test IO’s crowd based solutions, Test IO offers a range of products and accelerators that can augment Test IO’s quality solutions or be used stand-alone. Offering unmatched scalability, solution customization, expertise across traditional testing solutions, as well as solutions that unlock the full power of AI – Test IO would be proud to help you ship better products with greater confidence, faster, for less.
 
 - title: special thanks
   companies:
