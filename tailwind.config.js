@@ -47,5 +47,16 @@ module.exports = {
   },
   plugins: [
       require('@tailwindcss/typography'),
+      plugin(function({ addUtilities }) {
+        const newUtilities = {
+          '.vertical-rl': {
+            writingMode: 'vertical-rl'
+          },
+          '.horizontal-tb': {
+            writingMode: 'horizontal-tb'
+          }
+        }
+        addUtilities(newUtilities)
+      })
   ],
 }
