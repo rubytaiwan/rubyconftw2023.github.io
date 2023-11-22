@@ -1,18 +1,23 @@
-<footer class="md:relative w-full text-white bg-gradient-to-b from-dark-blue-200 to-dark-blue-100">
+<footer class="md:relative w-full text-white bg-gradient-to-b from-dark-blue-200 to-dark-blue-100"
+        x-data="{
+          open_conduct: false,
+          open_team: false,
+        }">
   <div class="mx-auto max-w-7xl overflow-hidden px-6 py-6">
     <img src="../assets/logo_white.svg" class="w-36 mx-auto"></img>
-    <nav class="py-3 flex md:flex-row justify-center items-center gap-x-10 gap-y-5 flex-col border-b border-dashed border-b-white " aria-label="Footer">
-      <!-- <div>
-        <a href="#" class="text-white text-lg font-semibold hover:text-dark-pink-100">Code of Product</a>
-      </div> -->
-      <!-- <div>
-        <a href="#" class="text-white text-lg font-semibold hover:text-dark-pink-100">Team Member</a>
-      </div> -->
-      <div>
-        <a href="https://ruby.tw/" target="_blank" class="text-white text-lg font-semibold hover:text-dark-pink-100">Ruby Taiwan</a>
+    
+    <nav class="md:w-1/2 mx-auto pt-3 grid grid-cols-3 text-center gap-x-10 gap-y-4" aria-label="Footer">
+      <div class="col-span-3 md:col-span-1">
+        <a @click="open_conduct = true" class="cursor-pointer text-white text-lg font-semibold hover:text-dark-pink-100">Code of Product</a>
+      </div>
+      <div class="col-span-3 md:col-span-1">
+        <a @click="open_team = true" class="cursor-pointer text-white text-lg font-semibold hover:text-dark-pink-100">Team Member</a>
+      </div>
+      <div class="col-span-3 md:col-span-1">
+        <a href="https://ruby.tw/" target="_blank" class="cursor-pointer text-white text-lg font-semibold hover:text-dark-pink-100">Ruby Taiwan</a>
       </div>
     </nav>
-    <div class="mt-6 flex justify-center space-x-10 text-dark-pink-100 ">
+    <div class="border-t border-dashed border-t-white mt-6 pt-3 flex justify-center space-x-10 text-dark-pink-100 ">
       <a href="https://www.facebook.com/rubyconftw" target="_blank" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Facebook</span>
         <div class="flex justify-center items-center rounded-full bg-dark-pink-100 w-[1.875rem] h-[1.875rem]">
@@ -22,7 +27,7 @@
       <a href="https://twitter.com/rubyconftw" target="_blank" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Twitter</span>
         <div class="flex justify-center items-center rounded-full bg-dark-pink-100 w-[1.875rem] h-[1.875rem]">
-          <i class="fa fa-twitter text-white"></i>
+          <img src="assets/icons/twitter.png" />
         </div>
       </a>
       <a href="mailto:contact@rubyconf.tw" target="_blank" class="text-gray-400 hover:text-gray-500">
@@ -33,5 +38,13 @@
       </a>
     </div>
     <p class="mt-10 text-center text-xs leading-5 text-white">&copy; Ruby Conf Taiwan 2023</p>
+  </div>
+  <!-- Conduct Modal -->
+  <div x-cloak x-show="open_conduct" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    {% include conduct_modal.html %}
+  </div>
+  <!-- Team Members Modal -->
+  <div x-cloak x-show="open_team" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    {% include team_modal.html %}
   </div>
 </footer>

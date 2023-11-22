@@ -1,0 +1,38 @@
+
+<div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
+    <div @click="open_team=false" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
+    <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 md:py-16 w-[80vw] max-h-[80vh] text-black bg-white shadow-xl transition-all">
+      <a @click="open_team=false"
+        class="cursor-pointer absolute right-4 md:right-10 top-4 md:top-10 text-xl">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </a>
+      <div class="text-3xl md:text-3xl text-center font-bold">Team Members</div>
+      <div class="grid grid-cols-3">
+        {% for member in site.data.team %}
+          <div class="col-span-3 md:col-span-1 mt-8 text-center">
+            <div class="text-xl text-dark-blue-200 tracking-wider">
+              <span class="pb-1 border-b border-b-dark-pink-100">{{ member.name }}</span>
+            </div>
+            <div class="mt-1 text-gray font-light">{{ member.title }}</div>
+            <div class="flex justify-center items-center mt-2 text-dark-pink-100">
+              {% if member.urlGithub %}
+              <a target="_blank" href="{{ member.urlGithub }}" class="cursor-pointer hover:opacity-70 text-3xl">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              {% endif %}
+              {% if member.urltwitter %}
+              <a target="_blank" href="{{ member.urltwitter }}" class="mx-4 cursor-pointer hover:opacity-70">
+                <img src="assets/icons/twitter.png" class="w-6 h-6" />
+              </a>
+              {% endif %}
+              {% if member.personal_web %}
+              <a target="_blank" href="{{ member.personal_web }}" class="cursor-pointer hover:opacity-70">
+                <img src="assets/icons/home.png" class="w-6 h-6" />
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
