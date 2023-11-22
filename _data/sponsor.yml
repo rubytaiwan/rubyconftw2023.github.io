@@ -306,6 +306,11 @@
       link: https://agile.esm.co.jp/
       desc: |-
         ESM is one of Japan's premier companies building Ruby/Rails applications in an agile way. We believe in Ruby and Agile because we believe in people. We build applications which work well and make customers happy.
+    - name: "Rakuten Viki"
+      logo: "sponsor_avatar/rakuten_viki.png"
+      link: https://viki.com
+      desc: |-
+        The heart of Asian entertainment. Watch Korean Dramas, Chinese Dramas and Movies Online.
     - name: "Red Hat"
       logo: "sponsor_avatar/red_hat.png"
     - name: "Ruby Central"
