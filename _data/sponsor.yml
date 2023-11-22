@@ -228,11 +228,34 @@
         * ☞ We have a bartender held up by the design team, a singer held up by the programming team, and many more interesting individuals for you to know!
 
         Join us now to become one of our proudest Kdan members! Be Awesome Today!
-    - name: Faria
+    - id: 5
+      name: Faria
       logo: sponsor_avatar/feg.png
       link: https://www.faria.org/
       desc: |-
         Faria Education Group is the trusted partner of over 10,000 schools and 4 million students in 155 countries worldwide. A leader in international education systems and services, Faria offers integrated support across all aspects of curriculum management, teaching and learning, admissions, school-to-home, online courses, revision and professional development. With rigorous standards for data protection and security, first-class training and support, and an unwavering commitment to innovation, Faria’s technology suite is built for the modern international school. Connect with us to explore our services, including ManageBac, OpenApply, Atlas, SchoolsBuddy, Pamoja and Oxford Study Courses.
+      spotlight: true
+      spotlight_sub_title: Faria Education Group 招募
+      find_out_more: https://apply.workable.com/faria/j/43D230C1BB/
+      ad_1_left: |-
+        <h3>福利</h3>
+
+        <h3>法定福利</h3>
+        勞健保、特別休假、勞退
+
+        <h3>其他福利</h3>
+        優於勞基法之特休日
+
+        每月健身房補助
+
+        每年員工健康檢查
+
+        技術書籍補助
+
+        個人專業成長補助
+
+        <h3>職缺</h3>
+        <a target="_blank" href="https://apply.workable.com/faria/j/43D230C1BB/">Intermediate Backend Engineer</a>
     - name: Hong Kong CalDawin Software Technology Company Limited
       logo: sponsor_avatar/caldawin.png
       logo_size: "square"
