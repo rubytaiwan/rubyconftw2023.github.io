@@ -95,7 +95,7 @@
         <p>With the release of Ruby 3.1 in 2021, an enhancement arrived as <code>Process#_fork</code>, allowing us to override the fork method. This addition simplifies creating callbacks when forking. While there was no official method to track fork events prior to Ruby 3.1, this limitation didn&#39;t deter the community from exploring various approaches to achieve the same goal.</p>
         <p>In the past, Rails encouraged the use of <code>before_fork</code> and <code>after_fork</code> for connection management, redis-rb ensured fork safety by storing the <code>Process#pid</code> in a variable, and some even used threads to track fork events.</p>
         <p>During this session, I will delve into the backstory of <code>_fork</code> and explore the diverse methods the community employed for creating callbacks during forking prior to Ruby 3.1.</p>
-      lang: "CN"
+      lang: "CHT"
       speakers: [24]
     - session_id: 7
       room: L406
@@ -150,7 +150,7 @@
         <p>介紹如何從 Figma 設計稿，就開始規劃、製作與預覽元件（View Component + Lookbook）。
         說明目前偏好的元件組成方式，協助製作元件的工具和注意事項，以及安置元件到頁面中的方式（partial + helper）。
         展示利用 settings 搭配 builder 活用元件的嘗試。</p>
-      lang: "CN"
+      lang: "CHT"
       speakers: [19]
     - session_id: 11
       room: L406
@@ -217,7 +217,7 @@
       summary:
         "<p>Rails 讓開發 Web Application 變得相當容易，然而因為簡化了許多問題，當我們面臨更複雜的系統時感到極大的挑戰。複雜的
         Rails 專案之所以難以維護是 Rails 在架構上的設計造成的限制，讓我們重新思考 Rails 來尋找更容易維護的架構。</p>"
-      lang: "CN"
+      lang: "CHT"
       speakers: [4]
     - session_id: 15
       room: L406
@@ -274,7 +274,7 @@
       subject: Yet Another Ruby DSL for LLM
       summary: |-
         在過去一年裏我們經歷了 LLM 的巨大衝擊，但是對於使用 LLM 實作應用依然困難重重。如何利用 Ruby 的 meta-programming 更好地對 LLM 進行處理和約束從而實作下一世代的 AI 應用是本 Topic 試圖討論的關鍵問題。
-      lang: "CN"
+      lang: "CHT"
       speakers: [26]
     - session_id: 19
       room: L406
@@ -297,15 +297,6 @@
   sessions:
     - session_id: 20
       room: L405
-      subject: Writing Minitest clone in 30 minutes
-      summary: |-
-        <p>Minitest is a testing library for Ruby that&#39;s bundled with CRuby. Unlike RSpec, it takes more straightforward approach. Class, method and assertion are all we need to write tests in Minitest.
-        However, there are still some magical things going on here. What do assertions actually do? How does <code>autorun</code> feature work?
-        In this talk, we&#39;ll write code together. More specifically, we&#39;ll write simpler clone of Minitest and make it work.</p>
-      lang: "EN"
-      speakers: [17]
-    - session_id: 21
-      room: L406
       subject: 發掘 Ruby 的內建 Gems / Unearth Ruby builtin Gems
       summary: |-
         <p>你曾經在不用外部 <code>Gems</code> 的情況下使用 Ruby 嗎？</p>
@@ -313,8 +304,17 @@
         這些<code>Gems</code> 包括方便的資料結構與演算法，跨平台的檔案處理，實用的簡易伺服器等等。讓我們一起來發掘各種鮮為人知的內建 <code>Gems</code>。</p>
         <p>How many times did you run <code>ruby</code> without external <code>Gems</code>?</p>
         <p>Ruby includes many <code>Gems</code> by default. We can use them without extra installation steps. These <code>Gems</code> includes convenient data structure and algorithms, cross platform file handling and practical simple server, etc. Let&#39;s unearth the less known builtin <code>Gems</code>.</p>
-      lang: "CN"
+      lang: "CHT"
       speakers: [21]
+    - session_id: 21
+      room: L406
+      subject: Writing Minitest clone in 30 minutes
+      summary: |-
+        <p>Minitest is a testing library for Ruby that&#39;s bundled with CRuby. Unlike RSpec, it takes more straightforward approach. Class, method and assertion are all we need to write tests in Minitest.
+        However, there are still some magical things going on here. What do assertions actually do? How does <code>autorun</code> feature work?
+        In this talk, we&#39;ll write code together. More specifically, we&#39;ll write simpler clone of Minitest and make it work.</p>
+      lang: "EN"
+      speakers: [17]
 - id: 25
   day: 2
   time: '14:10' 
@@ -327,18 +327,12 @@
   sessions:
     - session_id: 22
       room: L405
-      subject: How (and why) to run SQLite in production
-      summary:
-        "<p>You&#39;ve heard the whispers, sensed the hype, but you&#39;re still
-        not sure what all the fuss is about with SQLite these days. Join me as we explore
-        the use-cases and benefits of running SQLite in a production environment. Along
-        the way, we will learn why SQLite makes sense as your next production database
-        and how to ensure that your setup is optimized for end-user performance and developer
-        happiness. We will setup and deploy a full Rails application—with caching, background
-        jobs, websockets, and full-text search all backed by SQLite—in these 40 minutes.
-        Come along for the ride!</p>"
-      lang: "EN"
-      speakers: [12]
+      subject: 你有被同事打過嗎？ / Ever Been Punched by a Colleague?
+      summary: |-
+        <p>Race condition 是在 Ruby on Rails 應用程式中可能出現的問題之一，尤其涉及多執行緒的情況。這次演講提供了 race condition 的基本概念，以及如何在 Rails 中測試和解決這些問題的方法。測試 race condition 的方法至關重要，可以通過模擬並發情境來確保穩定性。</p>
+        <p>&quot;Race condition&quot; is a potential issue in Ruby on Rails applications, especially in situations involving multiple threads. This presentation provides a basic understanding of race conditions and how to test and resolve them in Rails. Testing for race conditions is crucial and can be achieved by simulating concurrent scenarios to ensure stability.</p>
+      lang: "CHT"
+      speakers: [11]
     - session_id: 23
       room: L406
       subject: The Forgotten Web
@@ -367,7 +361,7 @@
         轉型成為 AI 工程師，不再需要從零開始學習訓練機器學習模型，而是專注在 Prompt Engineering (提示工程) 和開發各種 AI 應用，如 Chatbot、Retrieval
         Augmented Generation(RAG)、Vector Search、Agents 和 OpenAI Function Calling 等。歡迎一起探索這個新時代的
         AI 工程師角色。</p>"
-      lang: "CN"
+      lang: "CHT"
       speakers: [23]
     - session_id: 25
       room: L406
@@ -404,12 +398,18 @@
       speakers: [7]
     - session_id: 27
       room: L406
-      subject: 你有被同事打過嗎？ / Ever Been Punched by a Colleague?
-      summary: |-
-        <p>Race condition 是在 Ruby on Rails 應用程式中可能出現的問題之一，尤其涉及多執行緒的情況。這次演講提供了 race condition 的基本概念，以及如何在 Rails 中測試和解決這些問題的方法。測試 race condition 的方法至關重要，可以通過模擬並發情境來確保穩定性。</p>
-        <p>&quot;Race condition&quot; is a potential issue in Ruby on Rails applications, especially in situations involving multiple threads. This presentation provides a basic understanding of race conditions and how to test and resolve them in Rails. Testing for race conditions is crucial and can be achieved by simulating concurrent scenarios to ensure stability.</p>
-      lang: "CN"
-      speakers: [11]
+      subject: How (and why) to run SQLite in production
+      summary:
+        "<p>You&#39;ve heard the whispers, sensed the hype, but you&#39;re still
+        not sure what all the fuss is about with SQLite these days. Join me as we explore
+        the use-cases and benefits of running SQLite in a production environment. Along
+        the way, we will learn why SQLite makes sense as your next production database
+        and how to ensure that your setup is optimized for end-user performance and developer
+        happiness. We will setup and deploy a full Rails application—with caching, background
+        jobs, websockets, and full-text search all backed by SQLite—in these 40 minutes.
+        Come along for the ride!</p>"
+      lang: "EN"
+      speakers: [12]
 - id: 31
   day: 2
   time: '16:50' 
