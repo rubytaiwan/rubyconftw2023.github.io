@@ -1,5 +1,5 @@
 - index: 0
-  name: Yukihiro Matsumoto (Matz)
+  name: Yukihiro MATSUMOTO (Matz)
   avatar: assets/speaker_avatar/matz.jpg
   bio: Creator of Ruby, Heroku
   urlGithub: https://github.com/matz
@@ -20,7 +20,7 @@
 
     As we enter a land where both peril and opportunity abound, how can we plot a course towards towards the Ruby of our future? Let’s find out together, as we embark on the adventure of our time!
 - index: 2
-  name: Ryo Kajiwara
+  name: Ryo KAJIWARA
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/197/icon.png"
   urlGithub: https://github.com/sylph01
   urltwitter: https://twitter.com/s01
@@ -49,7 +49,7 @@
     <p>In this presentation, I will introduce the details of the functionality that extends Ruby&#39;s <code>require</code> to provide guidance to users on what they can do to load them. And I will also show how $LOAD_PATH is build behind Ruby and Rails by Bundler.</p>
   language: English
 - index: 4
-  name: 蒼時弦也
+  name: Aotokitsuruya
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"
   title: Tech Lead, Gogolook
   urlGithub: https://github.com/elct9620
@@ -114,7 +114,7 @@
     is taking advantage of the modern JVM with exciting examples you can try today!</p>"
   language: English
 - index: 8
-  name: Hirota Tetsuya
+  name: Tetsuya HIROTA
   avatar: "//avatars.githubusercontent.com/u/7455098?v=3"
   title: ''
   urlGithub: https://github.com/constdrop
@@ -139,7 +139,7 @@
     we created a similar mechanism in Ruby and also used ractor to speed it up.</p>"
   language: English
 - index: 9
-  name: Mark Chao
+  name: Mark CHAO
   avatar: "//avatars.githubusercontent.com/u/366910?v=3"
   title: GitLab
   urlGithub: https://github.com/lulalala
@@ -201,7 +201,7 @@
     Come along for the ride!</p>"
   language: English
 - index: 13
-  name: Junichi Kobayashi
+  name: Junichi KOBAYASHI
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/203/my_icon.jpg"
   title: ESM, Inc.
   urlGithub: https://github.com/junk0612
@@ -246,7 +246,7 @@
     <p>ViewComponents, developed by GitHub simplifies the View layer and makes it much easier to manage.</p>
   language: English
 - index: 16
-  name: Hitoshi Hasumi
+  name: Hitoshi HASUMI
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/277/hasumikin.jpg"
   title: Monstarlab
   urlGithub: https://github.com/hasumikin
@@ -337,7 +337,7 @@
     <p>Ruby includes many <code>Gems</code> by default. We can use them without extra installation steps. These <code>Gems</code> includes convenient data structure and algorithms, cross platform file handling and practical simple server, etc. Let&#39;s unearth the less known builtin <code>Gems</code>.</p>
   language: Chinese
 - index: 22
-  name: Yuji Yokoo
+  name: Yuji YOKOO
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/181/Yuji.jpeg"
   title: ''
   urlGithub: https://github.com/yujiyokoo
@@ -368,7 +368,7 @@
     AI 工程師角色。</p>"
   language: Chinese
 - index: 24
-  name: 煒航 簡
+  name: Weihang Jian
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/304/tony.png"
   title: ''
   urlGithub: https://github.com/tonytonyjan
