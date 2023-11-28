@@ -297,15 +297,6 @@
   sessions:
     - session_id: 20
       room: L405
-      subject: Writing Minitest clone in 30 minutes
-      summary: |-
-        <p>Minitest is a testing library for Ruby that&#39;s bundled with CRuby. Unlike RSpec, it takes more straightforward approach. Class, method and assertion are all we need to write tests in Minitest.
-        However, there are still some magical things going on here. What do assertions actually do? How does <code>autorun</code> feature work?
-        In this talk, we&#39;ll write code together. More specifically, we&#39;ll write simpler clone of Minitest and make it work.</p>
-      lang: "EN"
-      speakers: [17]
-    - session_id: 21
-      room: L406
       subject: 發掘 Ruby 的內建 Gems / Unearth Ruby builtin Gems
       summary: |-
         <p>你曾經在不用外部 <code>Gems</code> 的情況下使用 Ruby 嗎？</p>
@@ -315,6 +306,15 @@
         <p>Ruby includes many <code>Gems</code> by default. We can use them without extra installation steps. These <code>Gems</code> includes convenient data structure and algorithms, cross platform file handling and practical simple server, etc. Let&#39;s unearth the less known builtin <code>Gems</code>.</p>
       lang: "CHT"
       speakers: [21]
+    - session_id: 21
+      room: L406
+      subject: Writing Minitest clone in 30 minutes
+      summary: |-
+        <p>Minitest is a testing library for Ruby that&#39;s bundled with CRuby. Unlike RSpec, it takes more straightforward approach. Class, method and assertion are all we need to write tests in Minitest.
+        However, there are still some magical things going on here. What do assertions actually do? How does <code>autorun</code> feature work?
+        In this talk, we&#39;ll write code together. More specifically, we&#39;ll write simpler clone of Minitest and make it work.</p>
+      lang: "EN"
+      speakers: [17]
 - id: 25
   day: 2
   time: '14:10' 
@@ -327,18 +327,12 @@
   sessions:
     - session_id: 22
       room: L405
-      subject: How (and why) to run SQLite in production
-      summary:
-        "<p>You&#39;ve heard the whispers, sensed the hype, but you&#39;re still
-        not sure what all the fuss is about with SQLite these days. Join me as we explore
-        the use-cases and benefits of running SQLite in a production environment. Along
-        the way, we will learn why SQLite makes sense as your next production database
-        and how to ensure that your setup is optimized for end-user performance and developer
-        happiness. We will setup and deploy a full Rails application—with caching, background
-        jobs, websockets, and full-text search all backed by SQLite—in these 40 minutes.
-        Come along for the ride!</p>"
-      lang: "EN"
-      speakers: [12]
+      subject: 你有被同事打過嗎？ / Ever Been Punched by a Colleague?
+      summary: |-
+        <p>Race condition 是在 Ruby on Rails 應用程式中可能出現的問題之一，尤其涉及多執行緒的情況。這次演講提供了 race condition 的基本概念，以及如何在 Rails 中測試和解決這些問題的方法。測試 race condition 的方法至關重要，可以通過模擬並發情境來確保穩定性。</p>
+        <p>&quot;Race condition&quot; is a potential issue in Ruby on Rails applications, especially in situations involving multiple threads. This presentation provides a basic understanding of race conditions and how to test and resolve them in Rails. Testing for race conditions is crucial and can be achieved by simulating concurrent scenarios to ensure stability.</p>
+      lang: "CHT"
+      speakers: [11]
     - session_id: 23
       room: L406
       subject: The Forgotten Web
@@ -347,7 +341,6 @@
         <p>In this presentation we explore the ancient history of web development, discuss the perils of &quot;the modern web application&quot;, highlight a brewing generational conflict, and examine how Rails&#39; connection to the past puts it in a unique position to project itself into the future.</p>
       lang: "EN"
       speakers: [25]
-
 - id: 27
   day: 2
   time: '14:55' 
@@ -404,12 +397,18 @@
       speakers: [7]
     - session_id: 27
       room: L406
-      subject: 你有被同事打過嗎？ / Ever Been Punched by a Colleague?
-      summary: |-
-        <p>Race condition 是在 Ruby on Rails 應用程式中可能出現的問題之一，尤其涉及多執行緒的情況。這次演講提供了 race condition 的基本概念，以及如何在 Rails 中測試和解決這些問題的方法。測試 race condition 的方法至關重要，可以通過模擬並發情境來確保穩定性。</p>
-        <p>&quot;Race condition&quot; is a potential issue in Ruby on Rails applications, especially in situations involving multiple threads. This presentation provides a basic understanding of race conditions and how to test and resolve them in Rails. Testing for race conditions is crucial and can be achieved by simulating concurrent scenarios to ensure stability.</p>
-      lang: "CHT"
-      speakers: [11]
+      subject: How (and why) to run SQLite in production
+      summary:
+        "<p>You&#39;ve heard the whispers, sensed the hype, but you&#39;re still
+        not sure what all the fuss is about with SQLite these days. Join me as we explore
+        the use-cases and benefits of running SQLite in a production environment. Along
+        the way, we will learn why SQLite makes sense as your next production database
+        and how to ensure that your setup is optimized for end-user performance and developer
+        happiness. We will setup and deploy a full Rails application—with caching, background
+        jobs, websockets, and full-text search all backed by SQLite—in these 40 minutes.
+        Come along for the ride!</p>"
+      lang: "EN"
+      speakers: [12]
 - id: 31
   day: 2
   time: '16:50' 
