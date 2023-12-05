@@ -83,7 +83,11 @@
         <!-- Simultaneous Interpretation Service -->
         <div class="py-5 bg-dark-blue-200 text-white/80 text-center">
           We offer
+          {% if site.interpretation_link_enabled %}
           <a class="mr-1 underline cursor-pointer" target="_blank" x-bind:href="day == 1 ? '{{ site.interpretation_link_day1 }}': '{{ site.interpretation_link_day2 }}'"> Simultaneous Interpretation Service</a>
+          {% else %}
+          Simultaneous Interpretation Service
+          {% endif %}
           (Mandarin to English) on all Mandarin sessions.
         </div>
       </div>

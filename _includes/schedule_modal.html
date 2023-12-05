@@ -73,11 +73,15 @@
           </span>
           {% if include.session.lang == 'CHT' %}
             <span class="ml-2 text-gray"> |
+              {% if site.interpretation_link_enabled %}
               <a class="pl-2 underline text-sm text-gray"
                   href="{% if include.day == 1 %}{{site.interpretation_link_day1}}{% else %}{{site.interpretation_link_day2}}{% endif %}"
                   target="_blank">
                   with English interpretation
               </a>
+              {% else %}
+                with English interpretation
+              {% endif %}
             </span>
           {% endif %}
         </div>
