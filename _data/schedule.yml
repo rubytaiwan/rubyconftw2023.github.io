@@ -19,6 +19,7 @@
       summary: Lessons Matz has learned from the history of Ruby development
       lang: "EN"
       speakers: [0]
+      online: false
 - id: 3
   day: 1
   room: L405
@@ -232,6 +233,7 @@
         AI agents are, and look at some of the latest cutting edge AI research.</p>"
       lang: "EN"
       speakers: [5]
+      online: true
 - id: 19
   day: 2
   time: '10:40' 
@@ -276,6 +278,7 @@
         在過去一年裏我們經歷了 LLM 的巨大衝擊，但是對於使用 LLM 實作應用依然困難重重。如何利用 Ruby 的 meta-programming 更好地對 LLM 進行處理和約束從而實作下一世代的 AI 應用是本 Topic 試圖討論的關鍵問題。
       lang: "CHT"
       speakers: [26]
+      online: true
     - session_id: 19
       room: L406
       subject: Monadic Approach to Ruby Error Handling

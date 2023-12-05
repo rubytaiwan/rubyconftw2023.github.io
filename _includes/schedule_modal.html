@@ -40,31 +40,51 @@
         {% endfor %}
       </div>
       <!-- session -->
-      <div class="col-span-5 md:col-span-3 mt-4 md:mt-0">
-        <div class='flex flex-col max-h-14 md:flex-row content-start md:content-center md:items-center flex-wrap'>
-          <p class="order-2 md:order-1 font-bold md:w-full">
+      <div class="col-span-5 md:col-span-3 mt-8 md:mt-0">
+        <div class="flex mr-4">
+          {% if include.session.room %}
+            <span class="rounded py-1 px-2 mr-3 bg-dark-pink-100 text-white text-sm font-blod">
+              {{ include.session.room }}
+            </span>
+          {% endif %}
+          {% if include.session.online %}
+            <span class="text-dark-pink-100">| online</span>
+          {% endif %}
+        </div>
+
+        <div class="mt-4 flex font-bold text-lg gap-x-4">
+          <span>
             {% if include.day == 1 %}
             2023/12/15
             {% elsif include.day ==2 %}
             2023/12/16
             {% endif %}
-          </p>
-          {% if include.session.room %}
-          <div class="flex items-center justify-center h-14 w-14 order-1 md:order-2">
-            <span class="rounded py-1 px-2 mr-3 bg-dark-pink-100 text-white text-sm font-blod">
-              {{ include.session.room }}
-            </span>
-          </div>
-          {% endif %}
-          <span  class="order-3 md:my-3 font-bold text-lg">
+          </span>
+          <span>
             {{ include.time }} ~ {{ include.end }}
           </span>
         </div>
-        <p class="text-xl md:text-2xl font-bold text-dark-blue-200">{{ include.session.subject }}</p>
+
+        <p class="mt-2 text-xl md:text-2xl font-bold text-dark-blue-200">{{ include.session.subject }}</p>
         <div class="markdownify mt-3">{{ include.session.summary | markdownify }}</div>
-        <p class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
-          {{ include.session.lang }}
-        </p>
+        <div class="flex">
+          <span class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
+            {{ include.session.lang }}
+          </span>
+          {% if include.session.lang == 'CHT' %}
+            <span class="ml-2 text-gray"> |
+              {% if site.interpretation_link_enabled %}
+              <a class="pl-2 underline text-sm text-gray"
+                  href="{% if include.day == 1 %}{{site.interpretation_link_day1}}{% else %}{{site.interpretation_link_day2}}{% endif %}"
+                  target="_blank">
+                  with English interpretation
+              </a>
+              {% else %}
+                with English interpretation
+              {% endif %}
+            </span>
+          {% endif %}
+        </div>
       </div>
       <button @click="open_id=0" class="absolute right-5 top-5 text-2xl">
         <i class="fa fa-times text-dark-blue-200"></i>

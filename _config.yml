@@ -1,7 +1,9 @@
 title: Ruby Conf Taiwan 2023
 cfp_link: https://cfp.rubyconf.tw/activities/2023
 register_link: https://rubytaiwan.kktix.cc/events/rubyconftw2023
-
+interpretation_link_day1: '#'
+interpretation_link_day2: '#'
+interpretation_link_enabled: false
 plugins:
   - jekyll-postcss
 
