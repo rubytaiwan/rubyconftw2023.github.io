@@ -322,6 +322,10 @@
       link: https://andpad.co.jp/
       desc: |-
         ANDPAD is the No. 1 cloud-based construction project management service in Japan, enabling centralized management from site efficiency to management improvement.There are more than 130,000 companies using the service, thanks to our intuitive, easy-to-use development and our thorough support for installation and operation.Our service is used by more than 330,000 people in the construction and building industry.We are rising to the challenge of changing society with technology, to bring digital transformation to the construction industry.
+    - name: CipherStash
+      logo: "sponsor_avatar/CipherStash.png"
+      link: https://cipherstash.com
+      desc: Protect data, not systems
     - name: "dogrun Inc."
       logo: "sponsor_avatar/dogruninc.png"
       link: https://dogrun.jp/en/ 
