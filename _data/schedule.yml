@@ -19,7 +19,7 @@
       summary: Lessons Matz has learned from the history of Ruby development
       lang: "EN"
       speakers: [0]
-      online: false
+      online: true
 - id: 3
   day: 1
   room: L405
