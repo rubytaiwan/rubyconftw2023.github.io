@@ -31,7 +31,7 @@
           </div>
         </div>
         {% for item in site.data.schedule %}
-        <div x-show="day == {{item.day}}" x-data="{open_id: 0}">
+        <div x-show="day == {{item.day}}" x-transition x-data="{open_id: 0}">
           {% if item.title %}
           <!-- Title -->
           <div class="grid grid-cols-3 bg-zinc-100 font-medium text-base">

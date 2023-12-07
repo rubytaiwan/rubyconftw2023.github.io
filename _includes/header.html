@@ -55,6 +55,7 @@
         <div class="text-white">Menu</div>
       </div>
       <div 
+        x-cloak
         x-show="is_open_mobile_nav"
         x-transition:enter="transition ease-out duration-100"
         x-transition:enter-start="transform opacity-0 scale-95"
@@ -69,20 +70,20 @@
             <!-- <a href="#news"
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">News</a>
             -->
-            <a href="#speakers"
+            <a href="#speakers" x-on:click="is_open_mobile_nav = false"
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink-100">Speakers</a>
-            <a href="#schedule"
+            <a href="#schedule" x-on:click.away="is_open_mobile_nav = false"
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Schedule</a>
-            <a href="#venue"
+            <a href="#venue" x-on:click="is_open_mobile_nav = false"
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Venue</a>
-            <a href="#party"
+            <a href="#party" x-on:click="is_open_mobile_nav = false"
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Party</a>
-            <a href="#spotlight_zone"
+            <a href="#spotlight_zone" x-on:click="is_open_mobile_nav = false"
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Spotlight Zone</a>
-            <a href="#sponsor"
+            <a href="#sponsor" x-on:click="is_open_mobile_nav = false"
               class="-mx-3 block px-3 py-2 font-semibold leading-7 text-white hover:text-dark-pink">Sponsors</a>
             <a href="{{ site.register_link }}"
-               target="_blank"
+               target="_blank" x-on:click="is_open_mobile_nav = false"
                class="rounded-full mt-4 py-1 px-4 bg-dark-pink-100 font-sans font-bold text-white tracking-wider text-center"
             >
             Register Now</a
