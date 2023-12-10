@@ -1,5 +1,5 @@
 - index: 0
-  name: Yukihiro MATSUMOTO (Matz)
+  name: MATSUMOTO Yukihiro (Matz)
   avatar: assets/speaker_avatar/matz.jpg
   bio: Creator of Ruby, Heroku
   urlGithub: https://github.com/matz
@@ -34,7 +34,7 @@
     </p>"
   language: English
 - index: 3
-  name: Hiroshi SHIBATA
+  name: SHIBATA Hiroshi
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/148/work_profile.jpeg"
   title: Fellow, ANDPAD, Inc.
   urlGithub: https://github.com/hsbt
@@ -49,7 +49,7 @@
     <p>In this presentation, I will introduce the details of the functionality that extends Ruby&#39;s <code>require</code> to provide guidance to users on what they can do to load them. And I will also show how $LOAD_PATH is build behind Ruby and Rails by Bundler.</p>
   language: English
 - index: 4
-  name: Aotokitsuruya
+  name: Aotoki Tsuruya（蒼時弦也）
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/7/icon-256.png"
   title: Tech Lead, Gogolook
   urlGithub: https://github.com/elct9620
@@ -114,7 +114,7 @@
     is taking advantage of the modern JVM with exciting examples you can try today!</p>"
   language: English
 - index: 8
-  name: Tetsuya HIROTA
+  name: HIROTA Tetsuya
   avatar: "//avatars.githubusercontent.com/u/7455098?v=3"
   title: ''
   urlGithub: https://github.com/constdrop
@@ -201,7 +201,7 @@
     Come along for the ride!</p>"
   language: English
 - index: 13
-  name: Junichi KOBAYASHI
+  name: KOBAYASHI Junichi
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/203/my_icon.jpg"
   title: ESM, Inc.
   urlGithub: https://github.com/junk0612
@@ -246,7 +246,7 @@
     <p>ViewComponents, developed by GitHub simplifies the View layer and makes it much easier to manage.</p>
   language: English
 - index: 16
-  name: Hitoshi HASUMI
+  name: HASUMI Hitoshi
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/277/hasumikin.jpg"
   title: Monstarlab
   urlGithub: https://github.com/hasumikin
@@ -263,7 +263,7 @@
     Witness the realization of PicoRuby, a production-ready Ruby implementation for microcontrollers, as we delve into the world of innovation.</p>
   language: English
 - index: 17
-  name: Masafumi OKURA
+  name: OKURA Masafumi
   avatar: "//avatars.githubusercontent.com/u/1012014?v=3"
   title: Software developer
   urlGithub: https://github.com/okuramasafumi
@@ -290,7 +290,7 @@
     <p>In this presentation, we will guide you across patterns, strategies, and little tricks to improve performance. We will do that by sharing real stories of our daily experience facing and solving real performance issues in an application that daily serves billions of requests per day.</p>
   language: English
 - index: 19
-  name: Tse-Ching Ho
+  name: Ho Tse-Ching
   avatar: "//avatars.githubusercontent.com/u/12554?v=3"
   title: ''
   urlGithub: https://github.com/tsechingho
@@ -368,7 +368,7 @@
     AI 工程師角色。</p>"
   language: Chinese
 - index: 24
-  name: Weihang Jian
+  name: Jian Wei-Hang
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/304/tony.png"
   title: ''
   urlGithub: https://github.com/tonytonyjan
