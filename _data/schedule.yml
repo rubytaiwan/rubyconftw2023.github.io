@@ -20,6 +20,7 @@
       lang: "EN"
       speakers: [0]
       online: true
+      slido: https://app.sli.do/event/odjUJRR8U7HPybB5F4wksR
 - id: 3
   day: 1
   room: L405
@@ -39,6 +40,7 @@
         <p>In this presentation, we will guide you across patterns, strategies, and little tricks to improve performance. We will do that by sharing real stories of our daily experience facing and solving real performance issues in an application that daily serves billions of requests per day.</p>
       lang: "EN"
       speakers: [18]
+      slido: https://app.sli.do/event/9na6byDYL2c7Jfn3FnPDh8
     - session_id: 3
       room: L406
       subject: "Adventures in the Dungeons of OpenSSL"
@@ -49,6 +51,7 @@
         of Ruby&#39;s default gem, and I will talk about one adventure through this dungeon.
       lang: "EN"
       speakers: [2]
+      slido: https://app.sli.do/event/tpLMjtJdF6p7SMYr2NWqTd
 - id: 5
   day: 1
   time: '12:05' 
@@ -68,6 +71,7 @@
         <p>This presentation will (hopefully) be delivered on either of those consoles and will include some live demos.</p>
       lang: "EN"
       speakers: [22]
+      slido: https://app.sli.do/event/h4Am8Ky7aXPo5wWAo6cvKr
     - session_id: 5
       room: L406
       subject: High Speed Parsing Massive XML Data in Ruby
@@ -79,6 +83,7 @@
         we created a similar mechanism in Ruby and also used ractor to speed it up.</p>"
       lang: "EN"
       speakers: [8]
+      slido: https://app.sli.do/event/ecyBL238WuK4njQdm35ZQ1
 - id: 7
   day: 1
   time: '14:10' 
@@ -98,6 +103,7 @@
         <p>During this session, I will delve into the backstory of <code>_fork</code> and explore the diverse methods the community employed for creating callbacks during forking prior to Ruby 3.1.</p>
       lang: "CHT"
       speakers: [24]
+      slido: https://app.sli.do/event/bZUq5V9nXejtq2XizACFcU
     - session_id: 7
       room: L406
       subject: Translating XML and Epub using ChatGPT
@@ -108,6 +114,7 @@
         use cases and wizard configuration inference.</p>"
       lang: "EN"
       speakers: [9]
+      slido: https://app.sli.do/event/j4uRfk4fNhLGTtUeVFRfgE
 - id: 9
   day: 1
   time: '14:55' 
@@ -126,6 +133,7 @@
         <p>In this presentation, I will introduce the details of the functionality that extends Ruby&#39;s <code>require</code> to provide guidance to users on what they can do to load them. And I will also show how $LOAD_PATH is build behind Ruby and Rails by Bundler.</p>
       lang: "EN"
       speakers: [3]
+      slido: https://app.sli.do/event/77wKR9Zg3pC36tKMmYkR27
     - session_id: 9
       room: L406
       subject: "Let's pop into Passkeys"
@@ -134,6 +142,7 @@
         To a future with no passwords!</p>
       lang: "EN"
       speakers: [10]
+      slido: https://app.sli.do/event/gYbKZcuCfwSjrdG5zaSCQR
 - id: 11
   day: 1
   time: '16:10' 
@@ -153,6 +162,7 @@
         展示利用 settings 搭配 builder 活用元件的嘗試。</p><p>Let’s start to plan, create, and preview view components from the design stage with Figma, ViewComponent and Lookbook. I will introduce my preferred way to compose view components, the tools and tips which can help build, and how to use partial and helper to render it. I will also show you a pattern to rendering view components with settings and builder.</p>
       lang: "CHT"
       speakers: [19]
+      slido: https://app.sli.do/event/9LEJikTKvQnoVpSU82CDLM
     - session_id: 11
       room: L406
       subject: Understanding Parser Generators surronding Ruby with Contributing Lrama
@@ -165,6 +175,7 @@
         surrounding Ruby.</p>"
       lang: "EN"
       speakers: [13]
+      slido: https://app.sli.do/event/3FZniMWy8b6p7yhMfLWtUK
 - id: 13
   day: 1
   time: '16:55' 
@@ -184,6 +195,7 @@
         Witness the realization of PicoRuby, a production-ready Ruby implementation for microcontrollers, as we delve into the world of innovation.</p>
       lang: "EN"
       speakers: [16]
+      slido: https://app.sli.do/event/aiCp9QHHVh2N4xMszMniPk
     - session_id: 13
       room: L406
       subject: Component Driven UI with ViewComponent gem
@@ -192,6 +204,7 @@
         <p>ViewComponents, developed by GitHub simplifies the View layer and makes it much easier to manage.</p>
       lang: "EN"
       speakers: [15]
+      slido: https://app.sli.do/event/iUTvCK3M8E9P3qsdMK9xJM
 - id: 15
   day: 1
   time: '17:40' 
@@ -220,6 +233,7 @@
         Rails 專案之所以難以維護是 Rails 在架構上的設計造成的限制，讓我們重新思考 Rails 來尋找更容易維護的架構。</p>"
       lang: "CHT"
       speakers: [4]
+      slido: https://app.sli.do/event/4xEbQXNKoYZMJXjZrdPFQE
     - session_id: 15
       room: L406
       subject: Building LLM applications in Ruby
@@ -234,6 +248,7 @@
       lang: "EN"
       speakers: [5]
       online: true
+      slido: https://app.sli.do/event/oMofJ9BfKoYgwpG6Wf9jB1
 - id: 19
   day: 2
   time: '10:40' 
@@ -251,6 +266,7 @@
         Chances are you’ve run bundle install or gem install at some point, seeing as we’re at RubyConf. Turns out, you’re not alone. At peak times, RubyGems.org has received as many as 225 thousand requests per second. How does a small, mostly-volunteer team handle serving all that traffic with their rails app? Let’s dive into how using CDNs, scaling with static files, and wrangling expensive endpoints has kept your favorite gem index up and running over the past decade.
       lang: "EN"
       speakers: [27]
+      slido: https://app.sli.do/event/fTDCRt2ePEXrWM6ZtULTpy
     - session_id: 17
       room: L406
       subject: How Rails 7 Helped Us Achieve GDPR Compliance
@@ -261,6 +277,7 @@
         work that went into implementing Active Record Encryption.</p>"
       lang: "EN"
       speakers: [20]
+      slido: https://app.sli.do/event/c9LhJjMktWTPBiMV8FjSkX
 - id: 21
   day: 2
   time: '11:25' 
@@ -279,6 +296,7 @@
       lang: "CHT"
       speakers: [26]
       online: true
+      slido: https://app.sli.do/event/3gTZJsFKwbJ8PVGJRbftC4
     - session_id: 19
       room: L406
       subject: Monadic Approach to Ruby Error Handling
@@ -288,6 +306,7 @@
         <p>This talk will empower you understand how to use Monadic Handling Ruby code. You&#39;ll leave with a deeper appreciation of monads and concrete strategies for encapsulating errors elegantly in your Ruby applications. Join me to discover how monads enable you to minimize disruption and maximize control over error handling in Ruby.</p>
       lang: "EN"
       speakers: [14]
+      slido: https://app.sli.do/event/eBXRj9Q72yd6SNLPo4BMSL
 - id: 23
   day: 2
   time: '12:10' 
@@ -309,6 +328,7 @@
         <p>Ruby includes many <code>Gems</code> by default. We can use them without extra installation steps. These <code>Gems</code> includes convenient data structure and algorithms, cross platform file handling and practical simple server, etc. Let&#39;s unearth the less known builtin <code>Gems</code>.</p>
       lang: "CHT"
       speakers: [21]
+      slido: https://app.sli.do/event/qNHgkcC5ZctSPibf5diJNo
     - session_id: 21
       room: L406
       subject: Writing Minitest clone in 30 minutes
@@ -318,6 +338,7 @@
         In this talk, we&#39;ll write code together. More specifically, we&#39;ll write simpler clone of Minitest and make it work.</p>
       lang: "EN"
       speakers: [17]
+      slido: https://app.sli.do/event/7VvtV15nbo2UnE4LRysaDd
 - id: 25
   day: 2
   time: '14:10' 
@@ -336,6 +357,7 @@
         <p>&quot;Race condition&quot; is a potential issue in Ruby on Rails applications, especially in situations involving multiple threads. This presentation provides a basic understanding of race conditions and how to test and resolve them in Rails. Testing for race conditions is crucial and can be achieved by simulating concurrent scenarios to ensure stability.</p>
       lang: "CHT"
       speakers: [11]
+      slido: https://app.sli.do/event/4uxUz6PJnp9k4Pmy3q7NAD
     - session_id: 23
       room: L406
       subject: The Forgotten Web
@@ -344,6 +366,7 @@
         <p>In this presentation we explore the ancient history of web development, discuss the perils of &quot;the modern web application&quot;, highlight a brewing generational conflict, and examine how Rails&#39; connection to the past puts it in a unique position to project itself into the future.</p>
       lang: "EN"
       speakers: [25]
+      slido: https://app.sli.do/event/qsGqNdvPqQ3xtKAy2STjJB
 - id: 27
   day: 2
   time: '14:55' 
@@ -367,6 +390,7 @@ Beyond just the LLM itself, developing AI applications presents many challenges 
 Now software developers can build AI apps by using LLM APIs and don’t have to start learning machine learning from the beginning. We can focus on Prompt Engineering, Retrieval Augmented Generation(RAG), Vector Search, Agents, and OpenAI Function Calling. Join us in exploring the role of AI engineers in this new era.</p>"
       lang: "CHT"
       speakers: [23]
+      slido: https://app.sli.do/event/wuj3pnKwFsZW4TzrgmcWjp
     - session_id: 25
       room: L406
       subject: Solving Real-World Challenges with Ruby Ractor
@@ -379,6 +403,7 @@ Now software developers can build AI apps by using LLM APIs and don’t have to 
         can improve their application performance.</p>"
       lang: "EN"
       speakers: [6]
+      slido: https://app.sli.do/event/jmZgYERKqHgkyMN869w1SV
 - id: 29
   day: 2
   time: '16:05' 
@@ -400,6 +425,7 @@ Now software developers can build AI apps by using LLM APIs and don’t have to 
         is taking advantage of the modern JVM with exciting examples you can try today!</p>"
       lang: "EN"
       speakers: [7]
+      slido: https://app.sli.do/event/e6scck5gRsqaL12Qamu55g
     - session_id: 27
       room: L406
       subject: How (and why) to run SQLite in production
@@ -414,6 +440,7 @@ Now software developers can build AI apps by using LLM APIs and don’t have to 
         Come along for the ride!</p>"
       lang: "EN"
       speakers: [12]
+      slido: https://app.sli.do/event/br59bBZZ7vgoQWQxR41YKb
 - id: 31
   day: 2
   time: '16:50' 
@@ -433,6 +460,7 @@ Now software developers can build AI apps by using LLM APIs and don’t have to 
       img: assets/speaker_avatar/tim-riley-img.png
       lang: "EN"
       speakers: [1]
+      slido: https://app.sli.do/event/pfybCW94fCbDS21YgQw73k
 - id: 33
   day: 2
   time: '17:55' 
