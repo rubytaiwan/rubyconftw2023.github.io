@@ -12,7 +12,7 @@
 {% endif %}
 </div>
 
-<div class="w-full group" @click="open_id = {{session.session_id}}">
+<div class="w-full group" @click="open_id = {{include.session.session_id}}">
   <div class="w-64 h-64 mx-auto">
     <img
       src="{{include.speaker.avatar}}"
@@ -30,10 +30,11 @@
   </p>
 </div>
 
-<div class="mt-2">
+<div class="mt-2 flex items-center gap-x-2">
   <span class="font-normal uppercase bg-dark-pink-100 px-2.5 py-1 h-fit w-fit text-white rounded-md">{{ include.session.lang }}</span>
+  <a target="_blank" href="{{include.session.slido}}"><img class="w-8 h-8" src="assets/icons/slido.png"/></a>
   {% if include.session.lang == 'CHT' %}
-  <span class="ml-2 text-gray"> |
+  <span class="text-gray">|
     {% if site.interpretation_link_enabled %}
     <a class="pl-2 underline text-sm text-gray"
         href="{% if include.day == 1 %}{{site.interpretation_link_day1}}{% else %}{{site.interpretation_link_day2}}{% endif %}"
