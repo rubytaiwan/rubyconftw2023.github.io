@@ -32,7 +32,7 @@
 
 <div class="mt-2 flex items-center gap-x-2">
   <span class="font-normal uppercase bg-dark-pink-100 px-2.5 py-1 h-fit w-fit text-white rounded-md">{{ include.session.lang }}</span>
-  <a target="_blank" href="{{include.session.slido}}"><img class="w-8 h-8" src="assets/icons/slido.png"/></a>
+  <a target="_blank" href="{{include.session.slido}}" class="cursor-pointer"><img class="w-8 h-8" src="assets/icons/slido.png"/></a>
   {% if include.session.lang == 'CHT' %}
   <span class="text-gray">|
     {% if site.interpretation_link_enabled %}
