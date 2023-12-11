@@ -5,11 +5,6 @@
 </p>
 {% endif %}
 
-{% if include.session.online %}
-<p class="font-normal uppercase mt-8 mb-4 px-2.5 py-1 h-fit text-dark-pink-100 w-fitrounded-md">
-  <span class="hidden md:inline">●</span><span class="md:hidden">|</span> online
-</p>
-{% endif %}
 </div>
 
 <div class="w-full group" @click="open_id = {{include.session.session_id}}">
@@ -18,9 +13,14 @@
       src="{{include.speaker.avatar}}"
       class="w-full h-full mx-auto rounded-full border-4 border-dark-pink-100 object-cover"/>
   </div>
-  <p class="text-gray text-xs mt-2">
+  <p class="text-gray text-sm mt-2">
     <i class="fa fa-microphone pr-2 text-dark-pink-100"></i>
     Speaker
+    {% if include.session.online %}
+    <span class="font-normal uppercase mt-8 mb-4 px-2.5 py-1 h-fit text-dark-pink-100 w-fitrounded-md">
+      <span class="hidden md:inline">●</span><span class="md:hidden">|</span> online
+    </span>
+    {% endif %}
   </p>
   <p class="mt-4 group-hover:text-dark-pink-100 text-black text-xl font-bold">
     {{ include.session.subject }}
