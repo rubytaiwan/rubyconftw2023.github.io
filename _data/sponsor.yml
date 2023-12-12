@@ -357,7 +357,11 @@
       link: https://test.io/
       desc: |-
         Test IO has over a decade of experience and innovation building ‘crowd’ into a powerful, efficient, and impactful quality engine. In addition to Test IO’s crowd based solutions, Test IO offers a range of products and accelerators that can augment Test IO’s quality solutions or be used stand-alone. Offering unmatched scalability, solution customization, expertise across traditional testing solutions, as well as solutions that unlock the full power of AI – Test IO would be proud to help you ship better products with greater confidence, faster, for less.
-
+    - name: Zendesk
+      logo: "sponsor_avatar/zendesk.png"
+      link: https://www.zendesk.tw/
+      desc: |-
+        <p>This is our brand positioning: This is our Zendesk unlocks the power of customer interactions for your business.</p><p>The full company boilerplate: Zendesk is on a mission to simplify the complexity of business and make it easy for companies and customers to create connections. Our customer experience software unlocks the power of billions of interactions, enabling businesses to build rich, meaningful relationships with their customers. The company was conceived in Copenhagen, Denmark and today operates in more than 20 countries around the world.</p>
 - title: special thanks
   companies:
     - name: "日本・松江市 ( Matsue City JAPAN)"
