@@ -6,7 +6,7 @@
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
         {% for speaker_index in include.speakers %}
         {% assign speaker = site.data.speaker[speaker_index] %}
-        <div class="flex flex-col items-center mt-8 md:mt-0">
+        <div class="flex flex-col items-center mt-8 md:mt-0 md:mb-8">
           <img
             class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
             src="{{ speaker.avatar }}"
