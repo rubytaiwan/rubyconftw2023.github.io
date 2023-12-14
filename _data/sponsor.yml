@@ -362,6 +362,12 @@
       link: https://www.zendesk.tw/
       desc: |-
         <p>Zendesk is on a mission to simplify the complexity of business and make it easy for companies and customers to create connections. Our customer experience software unlocks the power of billions of interactions, enabling businesses to build rich, meaningful relationships with their customers. The company was conceived in Copenhagen, Denmark and today operates in more than 20 countries around the world.</p>
+- title: gift partner
+  companies:
+    - name: JetBrains
+      link: https://www.jetbrains.com/
+      logo: sponsor_avatar/jb_beam.png
+      logo_size: "height"
 - title: special thanks
   companies:
     - name: "日本・松江市 ( Matsue City JAPAN)"
