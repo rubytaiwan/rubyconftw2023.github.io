@@ -57,18 +57,21 @@
             <!-- Speaker avatar and info -->
             <div
               {% if session.room == 'L405' %}
-              class="col-statr-1 md:col-start-2 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center"
+              class="col-start-1 md:col-start-2 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center"
               {% elsif session.room == 'L406' %}
-              class="col-statr-1 md:col-start-3 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center"
+              class="col-start-1 md:col-start-3 col-span-3 md:col-span-1 grid gap-1 text-center justify-items-center"
               {% else %}
-              class="col-span-3 md:col-span-2 grid gap-1 text-center justify-items-center"
+              class="col-span-3 md:col-span-2 flex flex-col justify-center text-center justify-items-center"
               {% endif %}
             >
-            {% for speaker_index in session.speakers %}
-              {% assign speaker = site.data.speaker[speaker_index] %}
-              {% include schedule_card.html session = session speaker = speaker %}
-            {% endfor %}
-          </div>
+            {% if session.session_title %}
+            <div class="w-full py-5 uppercase text-lg font-bold text-center text-dark-pink-100">
+              {{ session.session_title }}
+            </div>
+            {% endif %}
+
+            {% include schedule_card.html session=session day=item.day speakers=session.speakers %}
+            </div>
             <!-- Modal start -->
             <div x-cloak x-show="open_id == {{session.session_id}}" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               {% include schedule_modal.html day=item.day time=item.time end=item.end speakers=session.speakers session=session %}

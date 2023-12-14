@@ -1,49 +1,67 @@
-<div class="flex justify-center">
-{% if include.session.room %}
-<p class="md:hidden font-normal uppercase bg-dark-blue-200 mt-8 mb-4 px-2.5 py-1 h-fit w-fit text-white rounded-md">
-  {{ include.session.room }}
-</p>
-{% endif %}
-
-</div>
-
-<div class="w-full group" @click="open_id = {{include.session.session_id}}">
-  <div class="w-64 h-64 mx-auto">
-    <img
-      src="{{include.speaker.avatar}}"
-      class="w-full h-full mx-auto rounded-full border-4 border-dark-pink-100 object-cover"/>
+<div class="group">
+  <div class="flex justify-center">
+    {% if include.session.room %}
+    <p class="md:hidden font-normal uppercase bg-dark-blue-200 mt-8 mb-4 px-2.5 py-1 h-fit w-fit text-white rounded-md">
+      {{ include.session.room }}
+    </p>
+    {% endif %}
   </div>
-  <p class="text-gray text-sm mt-2">
-    <i class="fa fa-microphone pr-2 text-dark-pink-100"></i>
-    Speaker
-    {% if include.session.online %}
-    <span class="font-normal uppercase mt-8 mb-4 px-2.5 py-1 h-fit text-dark-pink-100 w-fitrounded-md">
-      <span class="hidden md:inline">●</span><span class="md:hidden">|</span> online
-    </span>
-    {% endif %}
-  </p>
-  <p class="mt-4 group-hover:text-dark-pink-100 text-black text-xl font-bold">
-    {{ include.session.subject }}
-  </p>
-  <p class="mt-4 text-black text-lg font-normal">
-    {{ include.speaker.name}}
-  </p>
-</div>
 
-<div class="mt-2 flex items-center gap-x-2">
-  <span class="font-normal uppercase bg-dark-pink-100 px-2.5 py-1 h-fit w-fit text-white rounded-md">{{ include.session.lang }}</span>
-  <a target="_blank" href="{{include.session.slido}}" class="cursor-pointer"><img class="w-8 h-8" src="assets/icons/slido.png"/></a>
-  {% if include.session.lang == 'CHT' %}
-  <span class="text-gray">|
-    {% if site.interpretation_link_enabled %}
-    <a class="pl-2 underline text-sm text-gray"
-        href="{% if include.day == 1 %}{{site.interpretation_link_day1}}{% else %}{{site.interpretation_link_day2}}{% endif %}"
-        target="_blank">
-        with English interpretation
-    </a>
-    {% else %}
-      with English interpretation
+  <div class="w-full" @click="open_id = {{include.session.session_id}}">
+    {% if include.session.session_title %}
+      <p class="mb-8 group-hover:text-dark-pink-100 text-black text-xl font-bold">
+        {{ include.session.subject }}
+      </p>
     {% endif %}
-  </span>
-  {% endif %}
+    <div class="flex justify-center gap-1 md:gap-x-4">
+      {% for speaker_index in include.speakers %}
+        {% assign speaker = site.data.speaker[speaker_index] %}
+        {% assign size =  include.speakers | size %}
+        <div class="flex flex-col items-center">
+          <div class="mx-auto {% if size > 1 %}w-28 h-28 md:w-40 md:h-40{% else %}w-64 h-64{% endif %}">
+            <img
+              src="{{speaker.avatar}}"
+              class="w-full h-full mx-auto rounded-full border-4 border-dark-pink-100 object-cover"/>
+          </div>
+          <p class="text-gray text-sm mt-2">
+            <i class="fa fa-microphone pr-2 text-dark-pink-100"></i>
+            Speaker
+            {% if include.session.online %}
+            <span class="font-normal uppercase mt-8 mb-4 px-2.5 py-1 h-fit text-dark-pink-100 w-fitrounded-md">
+              <span class="hidden md:inline">●</span><span class="md:hidden">|</span> online
+            </span>
+            {% endif %}
+          </p>
+          {% unless include.session.session_title %}
+          <p class="mt-4 group-hover:text-dark-pink-100 text-black text-xl font-bold">
+            {{ include.session.subject }}
+          </p>
+          {% endunless %}
+          <p class="mt-2 text-black font-normal">
+            {{ speaker.name}}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  {% unless include.session.session_title %}
+    <div class="mt-2 flex justify-center items-center gap-x-2">
+      <span class="font-normal uppercase bg-dark-pink-100 px-2.5 py-1 h-fit w-fit text-white rounded-md">{{ include.session.lang }}</span>
+      <a target="_blank" href="{{include.session.slido}}" class="cursor-pointer"><img class="w-8 h-8" src="assets/icons/slido.png"/></a>
+      {% if include.session.lang == 'CHT' %}
+      <span class="text-gray">|
+        {% if site.interpretation_link_enabled %}
+        <a class="pl-2 underline text-sm text-gray"
+            href="{% if include.day == 1 %}{{site.interpretation_link_day1}}{% else %}{{site.interpretation_link_day2}}{% endif %}"
+            target="_blank">
+            with English interpretation
+        </a>
+        {% else %}
+          with English interpretation
+        {% endif %}
+      </span>
+      {% endif %}
+    </div>
+  {% endunless %}
 </div>
