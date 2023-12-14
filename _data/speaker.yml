@@ -72,7 +72,7 @@
     as an Architect/Engineering Manager/Fractional CTO on the client projects. In
     his free time he enjoys playing tennis and going on long runs while listening
     to podcasts.</p>"
-  subject: Building LLM applications in Ruby
+  subject: Catching the AI Train
   summary: "<p>The Large-Language Models have taken application development by storm.
     Ruby has libraries that help build LLM applications, e.g.: Langchain.rb. We need
     to understand what kind of LLM applications can be built, how to build them, and
@@ -216,7 +216,7 @@
     surrounding Ruby.</p>"
   language: English
 - index: 14
-  name: Huy Du Gia
+  name: Du Gia Huy 
   avatar: "//cfp.rubyconf.tw/uploads/user/photo/299/3.jpg"
   title: Software Engineer, Rakuten Viki
   urlGithub: https://github.com/dugiahuy

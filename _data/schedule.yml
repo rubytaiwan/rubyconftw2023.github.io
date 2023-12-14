@@ -245,7 +245,7 @@
       slido: https://app.sli.do/event/4xEbQXNKoYZMJXjZrdPFQE
     - session_id: 15
       room: L406
-      subject: Building LLM applications in Ruby
+      subject: Catching the AI Train
       summary:
         "<p>The Large-Language Models have taken application development by storm.
         Ruby has libraries that help build LLM applications, e.g.: Langchain.rb. We need
