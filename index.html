@@ -145,7 +145,7 @@
   <div class="absolute top-0 left-0 w-full h-full py-9 flex justify-center items-start md:items-center">
     <img src="/assets/logo_white.svg" class="w-64 md:w-[30vw]"/>
   </div>
-  <div class="absolute top-1/2 md:top-0 left-0 flex flex-col md:justify-center items-center md:items-start w-full h-full md:pl-[10vw]">
+  <div class="absolute -translate-y-10 md:translate-y-0 top-1/2 md:top-0 left-0 flex flex-col md:justify-center items-center md:items-start w-full h-full md:pl-[10vw]">
     <div class="text-center md:text-start">
       <p class="font-sans font-bold text-white text-2xl md:text-3xl">
         2023
@@ -196,6 +196,7 @@
       
       
       
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 1">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -211,7 +212,7 @@
           <div x-cloak x-show="open_id == 1" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -294,6 +295,8 @@
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 2">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -309,7 +312,7 @@
           <div x-cloak x-show="open_id == 2" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -392,6 +395,8 @@
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 3">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -407,7 +412,7 @@
           <div x-cloak x-show="open_id == 3" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -495,6 +500,8 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 4">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -510,7 +517,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           <div x-cloak x-show="open_id == 4" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -593,6 +600,8 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 5">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -608,7 +617,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           <div x-cloak x-show="open_id == 5" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -703,6 +712,8 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 6">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -718,7 +729,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           <div x-cloak x-show="open_id == 6" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -788,7 +799,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/fnq-uokc-dkd"
                   target="_blank">
                   with English interpretation
@@ -811,6 +822,8 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 7">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -826,7 +839,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           <div x-cloak x-show="open_id == 7" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -911,6 +924,8 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 8">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -926,7 +941,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           <div x-cloak x-show="open_id == 8" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -1008,6 +1023,8 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 9">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -1023,7 +1040,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           <div x-cloak x-show="open_id == 9" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -1111,6 +1128,8 @@ To a future with no passwords!</p>
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 10">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -1126,7 +1145,7 @@ To a future with no passwords!</p>
           <div x-cloak x-show="open_id == 10" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -1200,7 +1219,7 @@ To a future with no passwords!</p>
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/fnq-uokc-dkd"
                   target="_blank">
                   with English interpretation
@@ -1223,6 +1242,8 @@ To a future with no passwords!</p>
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 11">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -1238,7 +1259,7 @@ To a future with no passwords!</p>
           <div x-cloak x-show="open_id == 11" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -1323,6 +1344,8 @@ To a future with no passwords!</p>
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 12">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -1338,7 +1361,7 @@ To a future with no passwords!</p>
           <div x-cloak x-show="open_id == 12" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -1424,6 +1447,8 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 13">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -1439,7 +1464,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           <div x-cloak x-show="open_id == 13" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -1525,439 +1550,6 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
       
       
-        <div class="w-full md:w-1/2 lg:w-1/3">
-          <a class="w-full relative cursor-pointer" @click="open_id = 29">
-            <div class="w-full hover:-translate-y-6 duration-300">
-              <div class="px-20 w-full">
-                <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/279106?v=3"/>
-              </div>
-              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
-                <p class="font-bold">Cristian Planas</p>
-              </div>
-            </div>
-          </a>
-          <!-- Modal  -->
-          <div x-cloak x-show="open_id == 29" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
-  <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
-    <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
-      <!-- speaker -->
-      <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
-        
-        
-        <div class="flex flex-col items-center mt-8 md:mt-0 md:mb-8">
-          <img
-            class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
-            src="//avatars.githubusercontent.com/u/279106?v=3"
-          />
-          <span class="mt-2  text-sm  text-gray font-bold">Cristian Planas</span>
-          
-          <div class="flex text-dark-pink-100 items-center gap-x-2">
-            
-            <a target="_blank" href="https://github.com/Gawyn" class="cursor-pointer hover:opacity-70 text-4xl">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            
-            
-            
-            <a target="_blank" href="" class="cursor-pointer hover:opacity-70">
-              <img src="assets/icons/twitter.png" class="w-8 h-8" />
-            </a>
-            
-            
-          </div>
-        </div>
-        
-        
-        <div class="flex flex-col items-center mt-8 md:mt-0 md:mb-8">
-          <img
-            class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
-            src="//avatars.githubusercontent.com/u/10135?v=3"
-          />
-          <span class="mt-2  text-sm  text-gray font-bold">Charles Oliver Nutter</span>
-          
-          <div class="flex text-dark-pink-100 items-center gap-x-2">
-            
-            <a target="_blank" href="https://github.com/headius" class="cursor-pointer hover:opacity-70 text-4xl">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            
-            
-            
-            <a target="_blank" href="" class="cursor-pointer hover:opacity-70">
-              <img src="assets/icons/twitter.png" class="w-8 h-8" />
-            </a>
-            
-            
-          </div>
-        </div>
-        
-        
-        <div class="flex flex-col items-center mt-8 md:mt-0 md:mb-8">
-          <img
-            class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
-            src="//cfp.rubyconf.tw/uploads/user/photo/40/9KKRA.png"
-          />
-          <span class="mt-2  text-sm  text-gray font-bold">Ted Johansson</span>
-          
-          <div class="flex text-dark-pink-100 items-center gap-x-2">
-            
-            <a target="_blank" href="https://github.com/Drenmi" class="cursor-pointer hover:opacity-70 text-4xl">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            
-            
-            
-            <a target="_blank" href="https://twitter.com/drenmi" class="cursor-pointer hover:opacity-70">
-              <img src="assets/icons/twitter.png" class="w-8 h-8" />
-            </a>
-            
-            
-          </div>
-        </div>
-        
-      </div>
-      <!-- session -->
-      <div class="col-span-5 md:col-span-3 mt-4 md:mt-0">
-        <div class="flex mr-4">
-          
-          
-        </div>
-
-        <div class="mt-4 flex font-bold text-lg gap-x-4">
-          <span>
-            
-            2023/12/15
-            
-          </span>
-          <span>
-            18:30 ~ 21:30
-          </span>
-        </div>
-
-        <p class="mt-2 text-xl md:text-2xl font-bold text-dark-blue-200">「AI浪潮下工程師的快樂之道」/ The Path to Engineer Happiness in the Age of AI</p>
-        <div class="markdownify mt-3"><p>在生成式 AI 風起雲湧的今天，軟體開發的格局正迅速變革。從 GitHub Copilot 到 ChatGPT 的 Code Interpreter，生成式 AI的影響力滲透至開發工作的每一個角落。在這一波浪潮中，網頁應用開發者如何定位自己，保持創造力和專業熱情？</p>
-
-<p>本次座談會將邀請幾位在 LLM（Large Language Models）有相關經驗的資深工程師，共同探討在 Generative AI 的浪潮下，工程師如何保持專業的熱情與創造力。我們將圍繞一個核心問題：AI 是否將成為軟體工程師的威脅，或是進步的助力？</p>
-
-<p>在 Ruby 社群中，「開發者快樂」一直是其哲學的核心。那麼在AI的影響下，我們如何探索運用 Generative AI 的力量來提升開發者的幸福感？</p>
-
-<p>我們將在本次座談會中，尋找那些將會導引我們走向光明未來的答案。</p>
-
-<p>In today’s era of Generative AI, the landscape of software development is rapidly evolving. From GitHub Copilot to ChatGPT’s Code Interpreter, the influence of Generative AI permeates every corner of the development work. In the midst of this wave, how can web application developers position themselves and maintain creativity and professional enthusiasm?</p>
-
-<p>This panel discussion will invite several senior engineers with experience in Large Language Models (LLM) to explore how engineers can maintain their professional enthusiasm and creativity amidst the Generative AI wave. We will focus on a core question: Is AI a threat to software engineers or an advancement?</p>
-
-<p>In the Ruby community, “developer happiness” has always been a core philosophy. So, how can we explore the use of Generative AI to enhance developer happiness in the wake of AI’s influence?</p>
-
-<p>We will seek answers that will guide us towards a brighter future in this panel discussion.</p>
-</div>
-        <div class="flex items-center gap-x-2">
-          <span class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
-            EN
-          </span>
-          
-        </div>
-      </div>
-      <button @click="open_id=0" class="absolute right-4 top-4 text-2xl">
-        <i class="fa fa-times text-dark-blue-200"></i>
-      </button>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      
-      
-        <div class="w-full md:w-1/2 lg:w-1/3">
-          <a class="w-full relative cursor-pointer" @click="open_id = 29">
-            <div class="w-full hover:-translate-y-6 duration-300">
-              <div class="px-20 w-full">
-                <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//avatars.githubusercontent.com/u/10135?v=3"/>
-              </div>
-              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
-                <p class="font-bold">Charles Oliver Nutter</p>
-              </div>
-            </div>
-          </a>
-          <!-- Modal  -->
-          <div x-cloak x-show="open_id == 29" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
-  <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
-    <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
-      <!-- speaker -->
-      <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
-        
-        
-        <div class="flex flex-col items-center mt-8 md:mt-0 md:mb-8">
-          <img
-            class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
-            src="//avatars.githubusercontent.com/u/279106?v=3"
-          />
-          <span class="mt-2  text-sm  text-gray font-bold">Cristian Planas</span>
-          
-          <div class="flex text-dark-pink-100 items-center gap-x-2">
-            
-            <a target="_blank" href="https://github.com/Gawyn" class="cursor-pointer hover:opacity-70 text-4xl">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            
-            
-            
-            <a target="_blank" href="" class="cursor-pointer hover:opacity-70">
-              <img src="assets/icons/twitter.png" class="w-8 h-8" />
-            </a>
-            
-            
-          </div>
-        </div>
-        
-        
-        <div class="flex flex-col items-center mt-8 md:mt-0 md:mb-8">
-          <img
-            class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
-            src="//avatars.githubusercontent.com/u/10135?v=3"
-          />
-          <span class="mt-2  text-sm  text-gray font-bold">Charles Oliver Nutter</span>
-          
-          <div class="flex text-dark-pink-100 items-center gap-x-2">
-            
-            <a target="_blank" href="https://github.com/headius" class="cursor-pointer hover:opacity-70 text-4xl">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            
-            
-            
-            <a target="_blank" href="" class="cursor-pointer hover:opacity-70">
-              <img src="assets/icons/twitter.png" class="w-8 h-8" />
-            </a>
-            
-            
-          </div>
-        </div>
-        
-        
-        <div class="flex flex-col items-center mt-8 md:mt-0 md:mb-8">
-          <img
-            class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
-            src="//cfp.rubyconf.tw/uploads/user/photo/40/9KKRA.png"
-          />
-          <span class="mt-2  text-sm  text-gray font-bold">Ted Johansson</span>
-          
-          <div class="flex text-dark-pink-100 items-center gap-x-2">
-            
-            <a target="_blank" href="https://github.com/Drenmi" class="cursor-pointer hover:opacity-70 text-4xl">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            
-            
-            
-            <a target="_blank" href="https://twitter.com/drenmi" class="cursor-pointer hover:opacity-70">
-              <img src="assets/icons/twitter.png" class="w-8 h-8" />
-            </a>
-            
-            
-          </div>
-        </div>
-        
-      </div>
-      <!-- session -->
-      <div class="col-span-5 md:col-span-3 mt-4 md:mt-0">
-        <div class="flex mr-4">
-          
-          
-        </div>
-
-        <div class="mt-4 flex font-bold text-lg gap-x-4">
-          <span>
-            
-            2023/12/15
-            
-          </span>
-          <span>
-            18:30 ~ 21:30
-          </span>
-        </div>
-
-        <p class="mt-2 text-xl md:text-2xl font-bold text-dark-blue-200">「AI浪潮下工程師的快樂之道」/ The Path to Engineer Happiness in the Age of AI</p>
-        <div class="markdownify mt-3"><p>在生成式 AI 風起雲湧的今天，軟體開發的格局正迅速變革。從 GitHub Copilot 到 ChatGPT 的 Code Interpreter，生成式 AI的影響力滲透至開發工作的每一個角落。在這一波浪潮中，網頁應用開發者如何定位自己，保持創造力和專業熱情？</p>
-
-<p>本次座談會將邀請幾位在 LLM（Large Language Models）有相關經驗的資深工程師，共同探討在 Generative AI 的浪潮下，工程師如何保持專業的熱情與創造力。我們將圍繞一個核心問題：AI 是否將成為軟體工程師的威脅，或是進步的助力？</p>
-
-<p>在 Ruby 社群中，「開發者快樂」一直是其哲學的核心。那麼在AI的影響下，我們如何探索運用 Generative AI 的力量來提升開發者的幸福感？</p>
-
-<p>我們將在本次座談會中，尋找那些將會導引我們走向光明未來的答案。</p>
-
-<p>In today’s era of Generative AI, the landscape of software development is rapidly evolving. From GitHub Copilot to ChatGPT’s Code Interpreter, the influence of Generative AI permeates every corner of the development work. In the midst of this wave, how can web application developers position themselves and maintain creativity and professional enthusiasm?</p>
-
-<p>This panel discussion will invite several senior engineers with experience in Large Language Models (LLM) to explore how engineers can maintain their professional enthusiasm and creativity amidst the Generative AI wave. We will focus on a core question: Is AI a threat to software engineers or an advancement?</p>
-
-<p>In the Ruby community, “developer happiness” has always been a core philosophy. So, how can we explore the use of Generative AI to enhance developer happiness in the wake of AI’s influence?</p>
-
-<p>We will seek answers that will guide us towards a brighter future in this panel discussion.</p>
-</div>
-        <div class="flex items-center gap-x-2">
-          <span class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
-            EN
-          </span>
-          
-        </div>
-      </div>
-      <button @click="open_id=0" class="absolute right-4 top-4 text-2xl">
-        <i class="fa fa-times text-dark-blue-200"></i>
-      </button>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      
-      
-        <div class="w-full md:w-1/2 lg:w-1/3">
-          <a class="w-full relative cursor-pointer" @click="open_id = 29">
-            <div class="w-full hover:-translate-y-6 duration-300">
-              <div class="px-20 w-full">
-                <img class="w-full h-auto border-8 border-dark-pink-100 rounded-full" src="//cfp.rubyconf.tw/uploads/user/photo/40/9KKRA.png"/>
-              </div>
-              <div class="mt-2 flex flex-col justify-center items-center w-full min-h-[5rem] p-4 text-xl text-white">
-                <p class="font-bold">Ted Johansson</p>
-              </div>
-            </div>
-          </a>
-          <!-- Modal  -->
-          <div x-cloak x-show="open_id == 29" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
-  <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
-    <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
-      <!-- speaker -->
-      <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
-        
-        
-        <div class="flex flex-col items-center mt-8 md:mt-0 md:mb-8">
-          <img
-            class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
-            src="//avatars.githubusercontent.com/u/279106?v=3"
-          />
-          <span class="mt-2  text-sm  text-gray font-bold">Cristian Planas</span>
-          
-          <div class="flex text-dark-pink-100 items-center gap-x-2">
-            
-            <a target="_blank" href="https://github.com/Gawyn" class="cursor-pointer hover:opacity-70 text-4xl">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            
-            
-            
-            <a target="_blank" href="" class="cursor-pointer hover:opacity-70">
-              <img src="assets/icons/twitter.png" class="w-8 h-8" />
-            </a>
-            
-            
-          </div>
-        </div>
-        
-        
-        <div class="flex flex-col items-center mt-8 md:mt-0 md:mb-8">
-          <img
-            class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
-            src="//avatars.githubusercontent.com/u/10135?v=3"
-          />
-          <span class="mt-2  text-sm  text-gray font-bold">Charles Oliver Nutter</span>
-          
-          <div class="flex text-dark-pink-100 items-center gap-x-2">
-            
-            <a target="_blank" href="https://github.com/headius" class="cursor-pointer hover:opacity-70 text-4xl">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            
-            
-            
-            <a target="_blank" href="" class="cursor-pointer hover:opacity-70">
-              <img src="assets/icons/twitter.png" class="w-8 h-8" />
-            </a>
-            
-            
-          </div>
-        </div>
-        
-        
-        <div class="flex flex-col items-center mt-8 md:mt-0 md:mb-8">
-          <img
-            class="border-4 border-dark-pink-100 rounded-full object-cover w-24 md:w-32 h-24 md:h-32"
-            src="//cfp.rubyconf.tw/uploads/user/photo/40/9KKRA.png"
-          />
-          <span class="mt-2  text-sm  text-gray font-bold">Ted Johansson</span>
-          
-          <div class="flex text-dark-pink-100 items-center gap-x-2">
-            
-            <a target="_blank" href="https://github.com/Drenmi" class="cursor-pointer hover:opacity-70 text-4xl">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            
-            
-            
-            <a target="_blank" href="https://twitter.com/drenmi" class="cursor-pointer hover:opacity-70">
-              <img src="assets/icons/twitter.png" class="w-8 h-8" />
-            </a>
-            
-            
-          </div>
-        </div>
-        
-      </div>
-      <!-- session -->
-      <div class="col-span-5 md:col-span-3 mt-4 md:mt-0">
-        <div class="flex mr-4">
-          
-          
-        </div>
-
-        <div class="mt-4 flex font-bold text-lg gap-x-4">
-          <span>
-            
-            2023/12/15
-            
-          </span>
-          <span>
-            18:30 ~ 21:30
-          </span>
-        </div>
-
-        <p class="mt-2 text-xl md:text-2xl font-bold text-dark-blue-200">「AI浪潮下工程師的快樂之道」/ The Path to Engineer Happiness in the Age of AI</p>
-        <div class="markdownify mt-3"><p>在生成式 AI 風起雲湧的今天，軟體開發的格局正迅速變革。從 GitHub Copilot 到 ChatGPT 的 Code Interpreter，生成式 AI的影響力滲透至開發工作的每一個角落。在這一波浪潮中，網頁應用開發者如何定位自己，保持創造力和專業熱情？</p>
-
-<p>本次座談會將邀請幾位在 LLM（Large Language Models）有相關經驗的資深工程師，共同探討在 Generative AI 的浪潮下，工程師如何保持專業的熱情與創造力。我們將圍繞一個核心問題：AI 是否將成為軟體工程師的威脅，或是進步的助力？</p>
-
-<p>在 Ruby 社群中，「開發者快樂」一直是其哲學的核心。那麼在AI的影響下，我們如何探索運用 Generative AI 的力量來提升開發者的幸福感？</p>
-
-<p>我們將在本次座談會中，尋找那些將會導引我們走向光明未來的答案。</p>
-
-<p>In today’s era of Generative AI, the landscape of software development is rapidly evolving. From GitHub Copilot to ChatGPT’s Code Interpreter, the influence of Generative AI permeates every corner of the development work. In the midst of this wave, how can web application developers position themselves and maintain creativity and professional enthusiasm?</p>
-
-<p>This panel discussion will invite several senior engineers with experience in Large Language Models (LLM) to explore how engineers can maintain their professional enthusiasm and creativity amidst the Generative AI wave. We will focus on a core question: Is AI a threat to software engineers or an advancement?</p>
-
-<p>In the Ruby community, “developer happiness” has always been a core philosophy. So, how can we explore the use of Generative AI to enhance developer happiness in the wake of AI’s influence?</p>
-
-<p>We will seek answers that will guide us towards a brighter future in this panel discussion.</p>
-</div>
-        <div class="flex items-center gap-x-2">
-          <span class="font-normal text-xs uppercase bg-dark-blue-200 px-2.5 py-1 h-fit w-fit text-white rounded-md">
-            EN
-          </span>
-          
-        </div>
-      </div>
-      <button @click="open_id=0" class="absolute right-4 top-4 text-2xl">
-        <i class="fa fa-times text-dark-blue-200"></i>
-      </button>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
       
       
       
@@ -1981,7 +1573,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           <div x-cloak x-show="open_id == 14" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -2049,7 +1641,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/znz-dpmk-ntw"
                   target="_blank">
                   with English interpretation
@@ -2072,6 +1664,8 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 15">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -2087,7 +1681,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           <div x-cloak x-show="open_id == 15" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -2174,6 +1768,8 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 16">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -2189,7 +1785,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           <div x-cloak x-show="open_id == 16" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -2262,6 +1858,8 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 17">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -2277,7 +1875,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           <div x-cloak x-show="open_id == 17" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -2362,6 +1960,8 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 18">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -2377,7 +1977,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           <div x-cloak x-show="open_id == 18" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -2439,7 +2039,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/znz-dpmk-ntw"
                   target="_blank">
                   with English interpretation
@@ -2462,6 +2062,8 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 19">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -2477,7 +2079,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           <div x-cloak x-show="open_id == 19" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -2564,6 +2166,8 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 20">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -2579,7 +2183,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           <div x-cloak x-show="open_id == 20" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -2651,7 +2255,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/znz-dpmk-ntw"
                   target="_blank">
                   with English interpretation
@@ -2674,6 +2278,8 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 21">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -2689,7 +2295,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           <div x-cloak x-show="open_id == 21" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -2776,6 +2382,8 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 22">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -2791,7 +2399,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
           <div x-cloak x-show="open_id == 22" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -2862,7 +2470,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/znz-dpmk-ntw"
                   target="_blank">
                   with English interpretation
@@ -2885,6 +2493,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 23">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -2900,7 +2510,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           <div x-cloak x-show="open_id == 23" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -2986,6 +2596,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 24">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -3001,7 +2613,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           <div x-cloak x-show="open_id == 24" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -3070,7 +2682,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/znz-dpmk-ntw"
                   target="_blank">
                   with English interpretation
@@ -3093,6 +2705,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 25">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -3108,7 +2722,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           <div x-cloak x-show="open_id == 25" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -3195,6 +2809,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 26">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -3210,7 +2826,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           <div x-cloak x-show="open_id == 26" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -3291,6 +2907,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 27">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -3306,7 +2924,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           <div x-cloak x-show="open_id == 27" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -3391,6 +3009,8 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
       
       
       
+      
+      
         <div class="w-full md:w-1/2 lg:w-1/3">
           <a class="w-full relative cursor-pointer" @click="open_id = 28">
             <div class="w-full hover:-translate-y-6 duration-300">
@@ -3406,7 +3026,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           <div x-cloak x-show="open_id == 28" class="fiexd" aria-labelledby="modal-title" role="dialog" aria-modal="true">
             <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -3485,6 +3105,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
 </div>
           </div>
         </div>
+      
       
       
       
@@ -3648,7 +3269,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             <div x-cloak x-show="open_id == 1" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -3814,7 +3435,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             <div x-cloak x-show="open_id == 2" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -3954,7 +3575,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             <div x-cloak x-show="open_id == 3" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -4125,7 +3746,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             <div x-cloak x-show="open_id == 4" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -4265,7 +3886,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             <div x-cloak x-show="open_id == 5" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -4453,7 +4074,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             <div x-cloak x-show="open_id == 6" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -4523,7 +4144,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/fnq-uokc-dkd"
                   target="_blank">
                   with English interpretation
@@ -4603,7 +4224,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             <div x-cloak x-show="open_id == 7" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -4771,7 +4392,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             <div x-cloak x-show="open_id == 8" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -4910,7 +4531,7 @@ of Ruby's default gem, and I will talk about one adventure through this dungeon.
             <div x-cloak x-show="open_id == 9" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -5091,7 +4712,7 @@ To a future with no passwords!</p>
             <div x-cloak x-show="open_id == 10" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -5165,7 +4786,7 @@ To a future with no passwords!</p>
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/fnq-uokc-dkd"
                   target="_blank">
                   with English interpretation
@@ -5245,7 +4866,7 @@ To a future with no passwords!</p>
             <div x-cloak x-show="open_id == 11" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -5413,7 +5034,7 @@ To a future with no passwords!</p>
             <div x-cloak x-show="open_id == 12" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -5556,7 +5177,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             <div x-cloak x-show="open_id == 13" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -5757,7 +5378,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             <div x-cloak x-show="open_id == 29" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -5986,7 +5607,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             <div x-cloak x-show="open_id == 14" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -6054,7 +5675,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/znz-dpmk-ntw"
                   target="_blank">
                   with English interpretation
@@ -6138,7 +5759,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             <div x-cloak x-show="open_id == 15" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -6308,7 +5929,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             <div x-cloak x-show="open_id == 16" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -6438,7 +6059,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             <div x-cloak x-show="open_id == 17" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -6620,7 +6241,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             <div x-cloak x-show="open_id == 18" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -6682,7 +6303,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/znz-dpmk-ntw"
                   target="_blank">
                   with English interpretation
@@ -6762,7 +6383,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             <div x-cloak x-show="open_id == 19" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -6942,7 +6563,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             <div x-cloak x-show="open_id == 20" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -7014,7 +6635,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/znz-dpmk-ntw"
                   target="_blank">
                   with English interpretation
@@ -7094,7 +6715,7 @@ Witness the realization of PicoRuby, a production-ready Ruby implementation for 
             <div x-cloak x-show="open_id == 21" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -7274,7 +6895,7 @@ In this talk, we&#39;ll write code together. More specifically, we&#39;ll write 
             <div x-cloak x-show="open_id == 22" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -7345,7 +6966,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/znz-dpmk-ntw"
                   target="_blank">
                   with English interpretation
@@ -7425,7 +7046,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             <div x-cloak x-show="open_id == 23" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -7604,7 +7225,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             <div x-cloak x-show="open_id == 24" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -7673,7 +7294,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
           
             <span class="text-gray"> |
               
-              <a class="pl-2 underline text-sm text-gray"
+              <a class="underline text-sm text-gray"
                   href="https://meet.google.com/znz-dpmk-ntw"
                   target="_blank">
                   with English interpretation
@@ -7753,7 +7374,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             <div x-cloak x-show="open_id == 25" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -7923,7 +7544,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             <div x-cloak x-show="open_id == 26" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -8061,7 +7682,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             <div x-cloak x-show="open_id == 27" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
@@ -8225,7 +7846,7 @@ Hello, everyone! I&#39;m Cindy, with 5 years of experience as a Rails engineer. 
             <div x-cloak x-show="open_id == 28" class="fixed z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
               <div  class="z-10 fixed inset-0 w-full h-full pt-24 transition-opacity">
   <div @click="open_id=0" class="absolute top-0 w-full h-full bg-black bg-opacity-75"></div>
-  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[24rem] md:w-[60rem] max-h-[80vh] bg-white text-left shadow-xl transition-all">
+  <div class="absolute left-1/2 -translate-x-1/2 overflow-y-auto top-28 rounded-lg p-4 md:p-8 w-[90vw] md:w-[60rem] max-h-[70vh] md:max-h-[80vh] bg-white text-left shadow-xl transition-all">
     <div class="relative w-full p-4 bg-white grid grid-cols-5 gap-x-4">
       <!-- speaker -->
       <div class="col-span-5 md:col-span-2 flex md:flex-col justify-center md:justify-start items-center text-center">
