@@ -223,7 +223,28 @@
   day: 1
   time: '18:30' 
   end: '21:30' 
-  title: "Official Party"
+  sessions:
+    - session_title: Official Party + Panel Discussion
+      session_id: 29
+      lang: "EN"
+      speakers: [18,7,25]
+      subject: 「AI浪潮下工程師的快樂之道」/ The Path to Engineer Happiness in the Age of AI
+      summary: |-
+        在生成式 AI 風起雲湧的今天，軟體開發的格局正迅速變革。從 GitHub Copilot 到 ChatGPT 的 Code Interpreter，生成式 AI的影響力滲透至開發工作的每一個角落。在這一波浪潮中，網頁應用開發者如何定位自己，保持創造力和專業熱情？
+
+        本次座談會將邀請幾位在 LLM（Large Language Models）有相關經驗的資深工程師，共同探討在 Generative AI 的浪潮下，工程師如何保持專業的熱情與創造力。我們將圍繞一個核心問題：AI 是否將成為軟體工程師的威脅，或是進步的助力？
+
+        在 Ruby 社群中，「開發者快樂」一直是其哲學的核心。那麼在AI的影響下，我們如何探索運用 Generative AI 的力量來提升開發者的幸福感？
+
+        我們將在本次座談會中，尋找那些將會導引我們走向光明未來的答案。
+
+        In today’s era of Generative AI, the landscape of software development is rapidly evolving. From GitHub Copilot to ChatGPT’s Code Interpreter, the influence of Generative AI permeates every corner of the development work. In the midst of this wave, how can web application developers position themselves and maintain creativity and professional enthusiasm?
+
+        This panel discussion will invite several senior engineers with experience in Large Language Models (LLM) to explore how engineers can maintain their professional enthusiasm and creativity amidst the Generative AI wave. We will focus on a core question: Is AI a threat to software engineers or an advancement?
+
+        In the Ruby community, “developer happiness” has always been a core philosophy. So, how can we explore the use of Generative AI to enhance developer happiness in the wake of AI’s influence?
+
+        We will seek answers that will guide us towards a brighter future in this panel discussion.
 - id: 17
   day: 2
   time: '09:30' 
