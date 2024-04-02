@@ -30,6 +30,7 @@
       speakers: [0]
       online: true
       slido: https://app.sli.do/event/odjUJRR8U7HPybB5F4wksR
+      video: https://www.youtube.com/embed/YpRXqcULyVI?si=zESpb1y1lEAFETIK
 - id: 3
   day: 1
   room: L405
@@ -50,6 +51,7 @@
       lang: "EN"
       speakers: [18]
       slido: https://app.sli.do/event/9na6byDYL2c7Jfn3FnPDh8
+      video: https://www.youtube.com/embed/6fE94oa5xjo?si=ncUw1ROFuSZbdGP4
     - session_id: 3
       room: L406
       subject: "Adventures in the Dungeons of OpenSSL"
@@ -61,6 +63,7 @@
       lang: "EN"
       speakers: [2]
       slido: https://app.sli.do/event/tpLMjtJdF6p7SMYr2NWqTd
+      video: https://www.youtube.com/embed/kFBe9hVMgR8?si=CJjOUBQ_u6VVwqco
 - id: 5
   day: 1
   time: '12:05' 
@@ -81,6 +84,7 @@
       lang: "EN"
       speakers: [22]
       slido: https://app.sli.do/event/h4Am8Ky7aXPo5wWAo6cvKr
+      video: https://www.youtube.com/embed/8bts8Ko6jkA?si=BN5QVYrsmMKfk_K1
     - session_id: 5
       room: L406
       subject: High Speed Parsing Massive XML Data in Ruby
@@ -93,6 +97,8 @@
       lang: "EN"
       speakers: [8]
       slido: https://app.sli.do/event/ecyBL238WuK4njQdm35ZQ1
+      video: https://www.youtube.com/embed/0W7P29jxUmI?si=gNqyypQ877ne9Kw_
+
 - id: 7
   day: 1
   time: '14:10' 
@@ -113,6 +119,7 @@
       lang: "CHT"
       speakers: [24]
       slido: https://app.sli.do/event/bZUq5V9nXejtq2XizACFcU
+      video: https://www.youtube.com/embed/nOTLdEpj8oo?si=nsfdHg44jk5yOjK7
     - session_id: 7
       room: L406
       subject: Translating XML and Epub using ChatGPT
@@ -124,6 +131,7 @@
       lang: "EN"
       speakers: [9]
       slido: https://app.sli.do/event/j4uRfk4fNhLGTtUeVFRfgE
+      video: https://www.youtube.com/embed/P4jCrhoCKmQ?si=nVpQASyJVoccXFL_
 - id: 9
   day: 1
   time: '14:55' 
@@ -143,6 +151,7 @@
       lang: "EN"
       speakers: [3]
       slido: https://app.sli.do/event/77wKR9Zg3pC36tKMmYkR27
+      video: https://www.youtube.com/embed/qK3FTOSSD3A?si=Up6kbCIt7yNxKEBC
     - session_id: 9
       room: L406
       subject: "Let's pop into Passkeys"
@@ -152,6 +161,7 @@
       lang: "EN"
       speakers: [10]
       slido: https://app.sli.do/event/gYbKZcuCfwSjrdG5zaSCQR
+      video: https://www.youtube.com/embed/VpJrEVmVTRM?si=m_NWVMTI0pRvR4XX
 - id: 11
   day: 1
   time: '16:10' 
@@ -172,6 +182,7 @@
       lang: "CHT"
       speakers: [19]
       slido: https://app.sli.do/event/9LEJikTKvQnoVpSU82CDLM
+      video: https://www.youtube.com/embed/Mx4ir49-hQs?si=Qhggnytcai0uHcCS
     - session_id: 11
       room: L406
       subject: Understanding Parser Generators surronding Ruby with Contributing Lrama
@@ -185,6 +196,7 @@
       lang: "EN"
       speakers: [13]
       slido: https://app.sli.do/event/3FZniMWy8b6p7yhMfLWtUK
+      video: https://www.youtube.com/embed/QvU7uvPN5XM?si=DJG71UJaHPeBLDVq
 - id: 13
   day: 1
   time: '16:55' 
@@ -205,6 +217,7 @@
       lang: "EN"
       speakers: [16]
       slido: https://app.sli.do/event/aiCp9QHHVh2N4xMszMniPk
+      video: https://www.youtube.com/embed/WxZNE5zTAjg?si=QBEI_qb9qIeYxpcF
     - session_id: 13
       room: L406
       subject: Component Driven UI with ViewComponent gem
@@ -214,6 +227,7 @@
       lang: "EN"
       speakers: [15]
       slido: https://app.sli.do/event/iUTvCK3M8E9P3qsdMK9xJM
+      video: https://www.youtube.com/embed/JlksEZMXt8Y?si=16PRK0AdDCcwFf0q
 - id: 15
   day: 1
   time: '17:40' 
@@ -264,6 +278,7 @@
       lang: "CHT"
       speakers: [4]
       slido: https://app.sli.do/event/4xEbQXNKoYZMJXjZrdPFQE
+      video: https://www.youtube.com/embed/g0iumjmIwnk?si=PBiMt30cROpVYfqa
     - session_id: 15
       room: L406
       subject: Catching the AI Train
@@ -279,6 +294,7 @@
       speakers: [5]
       online: true
       slido: https://app.sli.do/event/oMofJ9BfKoYgwpG6Wf9jB1
+      video: https://www.youtube.com/embed/DdEamGfNg6o?si=__2vXkvZ0SSFQ1ma
 - id: 19
   day: 2
   time: '10:40' 
@@ -297,6 +313,7 @@
       lang: "EN"
       speakers: [27]
       slido: https://app.sli.do/event/fTDCRt2ePEXrWM6ZtULTpy
+      video: https://www.youtube.com/embed/53VESJCfnz4?si=Ky5ZK7Llar0U0OTY
     - session_id: 17
       room: L406
       subject: How Rails 7 Helped Us Achieve GDPR Compliance
@@ -308,6 +325,7 @@
       lang: "EN"
       speakers: [20]
       slido: https://app.sli.do/event/c9LhJjMktWTPBiMV8FjSkX
+      video: https://www.youtube.com/embed/ZhfQwvE_zBU?si=1qDE0UeXnRW0AyJ1
 - id: 21
   day: 2
   time: '11:25' 
@@ -327,6 +345,7 @@
       speakers: [26]
       online: true
       slido: https://app.sli.do/event/3gTZJsFKwbJ8PVGJRbftC4
+      video: https://www.youtube.com/embed/IAMMhoA9bmg?si=11q4v-88XDDmrfQC
     - session_id: 19
       room: L406
       subject: Monadic Approach to Ruby Error Handling
@@ -337,6 +356,7 @@
       lang: "EN"
       speakers: [14]
       slido: https://app.sli.do/event/eBXRj9Q72yd6SNLPo4BMSL
+      video: https://www.youtube.com/embed/6_bqotkr3dk?si=wTY4Vvonx19PzZZn
 - id: 23
   day: 2
   time: '12:10' 
@@ -359,6 +379,7 @@
       lang: "CHT"
       speakers: [21]
       slido: https://app.sli.do/event/qNHgkcC5ZctSPibf5diJNo
+      video: https://www.youtube.com/embed/WVS_cxn2HuY?si=44s18U7J4sRnhXrU
     - session_id: 21
       room: L406
       subject: Writing Minitest clone in 30 minutes
@@ -369,6 +390,7 @@
       lang: "EN"
       speakers: [17]
       slido: https://app.sli.do/event/7VvtV15nbo2UnE4LRysaDd
+      video: https://www.youtube.com/embed/4pF5SP1dDq4?si=A4gf2COn1_fbh6I7
 - id: 25
   day: 2
   time: '14:10' 
@@ -388,6 +410,7 @@
       lang: "CHT"
       speakers: [11]
       slido: https://app.sli.do/event/4uxUz6PJnp9k4Pmy3q7NAD
+      video: https://www.youtube.com/embed/Vgud5hkMmJ4?si=-7ihWe1LJOzT0xAeeve
     - session_id: 23
       room: L406
       subject: The Forgotten Web
@@ -397,6 +420,7 @@
       lang: "EN"
       speakers: [25]
       slido: https://app.sli.do/event/qsGqNdvPqQ3xtKAy2STjJB
+      video: https://www.youtube.com/embed/CF1DcKV-U0o?si=8BWTG7UnCwnSUNXj
 - id: 27
   day: 2
   time: '14:55' 
@@ -421,6 +445,7 @@ Now software developers can build AI apps by using LLM APIs and don’t have to 
       lang: "CHT"
       speakers: [23]
       slido: https://app.sli.do/event/wuj3pnKwFsZW4TzrgmcWjp
+      video: https://www.youtube.com/embed/a2-h2nJqWHA?si=P1TKvjPfpnKOj2jb
     - session_id: 25
       room: L406
       subject: Solving Real-World Challenges with Ruby Ractor
@@ -434,6 +459,7 @@ Now software developers can build AI apps by using LLM APIs and don’t have to 
       lang: "EN"
       speakers: [6]
       slido: https://app.sli.do/event/jmZgYERKqHgkyMN869w1SV
+      video: https://www.youtube.com/embed/Zrck3-lx_Mo?si=ck1YsxETCdtUIFb7
 - id: 29
   day: 2
   time: '16:05' 
@@ -471,6 +497,7 @@ Now software developers can build AI apps by using LLM APIs and don’t have to 
       lang: "EN"
       speakers: [12]
       slido: https://app.sli.do/event/br59bBZZ7vgoQWQxR41YKb
+      video: https://www.youtube.com/embed/uT6TUfopY6E?si=_o7Z6rO7WQZQI5S4
 - id: 31
   day: 2
   time: '16:50' 
@@ -491,6 +518,7 @@ Now software developers can build AI apps by using LLM APIs and don’t have to 
       lang: "EN"
       speakers: [1]
       slido: https://app.sli.do/event/pfybCW94fCbDS21YgQw73k
+      video: https://www.youtube.com/embed/nMmwFzP8brI?si=ojOPmT-CPBSIkjz7
 - id: 33
   day: 2
   time: '17:55' 
