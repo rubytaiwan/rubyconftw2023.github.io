@@ -90,6 +90,21 @@
           {% endif %}
           {% endunless %}
         </div>
+        <div class="mt-8">
+          {% if include.session.slide %}
+          <p class="text-xl md:text-xl font-bold text-gray">Presentation Material</p>
+          <div class="mt-4">
+            <a src="{{ include.session.slide }}" class="cursor-pointer rounded-full px-3 py-2 bg-dark-blue-200 font-semibold text-white tracking-wider text-sm">
+              <i class="fa fa-file mr-1 text-white text-sm" aria-hidden="true"></i>
+              Slides
+            </a>
+          </div>
+          {% endif %}
+          {% if include.session.video %}
+          <p class="mt-8 text-xl md:text-xl font-bold text-gray">Recorded Video</p>
+          <iframe class="mt-4 w-full min-h-[10rem] md:min-h-[18rem]" src="{{include.session.video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          {% endif %}
+        </div>
       </div>
       <button @click="open_id=0" class="absolute right-4 top-4 text-2xl">
         <i class="fa fa-times text-dark-blue-200"></i>
